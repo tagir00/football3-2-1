@@ -1,32 +1,25 @@
 import { clubs, countries } from './data.js';
 import {
-  playerPool,
+  loadPlayerPool,
   getEligiblePlayers,
   buildClubClubConnections,
   buildCountryClubConnections,
 } from './playerData.js';
+import { template } from './template.js';
 
-const modeGrid = document.querySelector('#modeGrid');
-const homePanel = document.querySelector('#homePanel');
-const modePanel = document.querySelector('#modePanel');
-const gamePanel = document.querySelector('#gamePanel');
-const modeLabel = document.querySelector('#modeLabel');
-const roundTitle = document.querySelector('#roundTitle');
-const roundBadge = document.querySelector('#roundBadge');
-const orientationHint = document.querySelector('#orientationHint');
-const statusStrip = document.querySelector('#statusStrip');
-const leftCard = document.querySelector('#leftCard');
-const rightCard = document.querySelector('#rightCard');
-const countdownLayer = document.querySelector('#countdownLayer');
-const countdownValue = document.querySelector('#countdownValue');
-const startButton = document.querySelector('#startButton');
-const retryButton = document.querySelector('#retryButton');
-const backButton = document.querySelector('#backButton');
-const openModesButton = document.querySelector('#openModesButton');
-const modeBackButton = document.querySelector('#modeBackButton');
-const infoButton = document.querySelector('#infoButton');
-const closeInfoButton = document.querySelector('#closeInfoButton');
-const infoModal = document.querySelector('#infoModal');
+const STYLE_HREF = new URL('./game.css', import.meta.url).href;
+
+function ensureStylesheet() {
+  if (document.querySelector('link[data-game-style="futbol321"]')) {
+    return;
+  }
+
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = STYLE_HREF;
+  link.dataset.gameStyle = 'futbol321';
+  document.head.append(link);
+}
 
 const modes = [
   {
@@ -43,27 +36,8 @@ const modes = [
   },
 ];
 
-const state = {
-  mode: null,
-  round: 0,
-  isCounting: false,
-  nextCountryClubOrientation: 'country-left',
-  lastCountryClubOrientation: 'country-left',
-  currentPair: null,
-};
-
 const clubsByName = new Map(clubs.map((club) => [club.name, club]));
 const countriesByName = new Map(countries.map((country) => [country.name, country]));
-const eligiblePlayers = getEligiblePlayers(playerPool, 1970);
-const clubClubConnections = buildClubClubConnections(
-  eligiblePlayers,
-  clubs.map((club) => club.name),
-).filter((connection) => connection.clubs.every((clubName) => clubsByName.has(clubName)));
-const countryClubConnections = buildCountryClubConnections(
-  eligiblePlayers,
-  countries.map((country) => country.name),
-  clubs.map((club) => club.name),
-).filter((connection) => countriesByName.has(connection.country) && clubsByName.has(connection.club));
 
 const clubBadgeCache = new Map();
 const localBadgeAvailability = new Map();
@@ -92,13 +66,30 @@ const wikiClubTitleOverrides = new Map([
   ['PSV Eindhoven', 'PSV Eindhoven'],
 ]);
 
-if (!LOCAL_BADGES_ONLY) {
-  try {
-    const response = await fetch('./assets/logos/remote-badges.json', { cache: 'no-store' });
-    remoteBadgeMap = response.ok ? await response.json() : {};
-  } catch {
-    remoteBadgeMap = {};
+let connectionsPromise = null;
+
+async function ensureConnections() {
+  if (!connectionsPromise) {
+    connectionsPromise = (async () => {
+      const playerPool = await loadPlayerPool();
+      const eligiblePlayers = getEligiblePlayers(playerPool, 1970);
+      const clubClubConnections = buildClubClubConnections(
+        eligiblePlayers,
+        clubs.map((club) => club.name),
+      ).filter((connection) => connection.clubs.every((clubName) => clubsByName.has(clubName)));
+      const countryClubConnections = buildCountryClubConnections(
+        eligiblePlayers,
+        countries.map((country) => country.name),
+        clubs.map((club) => club.name),
+      ).filter(
+        (connection) => countriesByName.has(connection.country) && clubsByName.has(connection.club),
+      );
+
+      return { clubClubConnections, countryClubConnections };
+    })();
   }
+
+  return connectionsPromise;
 }
 
 async function fetchWikipediaPageImage(title) {
@@ -184,8 +175,6 @@ async function fetchWikipediaBadgeUrl(name) {
   return null;
 }
 
-const sleep = (ms) => new Promise((resolve) => window.setTimeout(resolve, ms));
-
 function normalizeLookupValue(value) {
   return String(value ?? '')
     .normalize('NFD')
@@ -255,11 +244,6 @@ async function fetchSportsDbBadgeUrl(name) {
 
 function pickRandomEntry(list) {
   return list[Math.floor(Math.random() * list.length)];
-}
-
-function pickRandom(list, excludedNames = new Set()) {
-  const filtered = list.filter((item) => !excludedNames.has(item.name));
-  return filtered[Math.floor(Math.random() * filtered.length)];
 }
 
 function buildInitials(name) {
@@ -362,7 +346,6 @@ function loadImageSource(url) {
   return new Promise((resolve) => {
     const image = new Image();
     image.className = 'badge-image badge-live';
-    image.loading = 'lazy';
     image.referrerPolicy = 'no-referrer';
 
     image.addEventListener(
@@ -389,52 +372,7 @@ function countryFlagUrl(code) {
   return `https://flagcdn.com/w320/${code}.png`;
 }
 
-function setStatus(message) {
-  statusStrip.textContent = message;
-}
-
-function renderModeCards() {
-  modeGrid.innerHTML = modes
-    .map(
-      (mode) => `
-        <button class="mode-card ${mode.accent}" data-mode="${mode.id}" type="button">
-          <span class="mode-pill">Mod</span>
-          <strong>${mode.title}</strong>
-          <span>${mode.subtitle}</span>
-        </button>
-      `,
-    )
-    .join('');
-
-  modeGrid.querySelectorAll('[data-mode]').forEach((button) => {
-    button.addEventListener('click', () => selectMode(button.dataset.mode));
-  });
-}
-
-function showModeSelection() {
-  homePanel.classList.add('hidden');
-  gamePanel.classList.add('hidden');
-  modePanel.classList.remove('hidden');
-  document.body.dataset.mode = 'modes';
-}
-
-function showHome() {
-  state.mode = null;
-  state.round = 0;
-  state.currentPair = null;
-  homePanel.classList.remove('hidden');
-  modePanel.classList.add('hidden');
-  gamePanel.classList.add('hidden');
-  document.body.dataset.mode = 'home';
-}
-
-function toggleInfoModal(forceOpen) {
-  const shouldOpen = typeof forceOpen === 'boolean' ? forceOpen : infoModal.classList.contains('hidden');
-  infoModal.classList.toggle('hidden', !shouldOpen);
-  infoModal.setAttribute('aria-hidden', String(!shouldOpen));
-}
-
-function createCardMarkup(entry, side) {
+function createCardMarkup(entry) {
   const isCountry = entry.type === 'country';
   const visibleName = entry.displayName ?? entry.name;
   const media = isCountry
@@ -448,7 +386,7 @@ function createCardMarkup(entry, side) {
   const meta = isCountry ? 'Milli takim havuzu' : entry.leagueDisplayName ?? entry.league;
 
   return `
-    <div class="entity-card entity-${side} ${isCountry ? 'country-card' : 'club-card'}">
+    <div class="entity-card ${isCountry ? 'country-card' : 'club-card'}">
       <div class="badge-shell">${media}</div>
       <p class="entity-type">${isCountry ? 'Ulke' : 'Kulup'}</p>
       <h3>${visibleName}</h3>
@@ -512,202 +450,328 @@ async function hydrateClubBadges(scope) {
   );
 }
 
-function updateOrientationHint() {
-  if (!orientationHint) {
-    return;
+let cleanup = null;
+
+export async function mount(container) {
+  ensureStylesheet();
+  container.innerHTML = template();
+
+  const els = {
+    modeGrid: container.querySelector('#modeGrid'),
+    homePanel: container.querySelector('#homePanel'),
+    modePanel: container.querySelector('#modePanel'),
+    gamePanel: container.querySelector('#gamePanel'),
+    modeLabel: container.querySelector('#modeLabel'),
+    roundTitle: container.querySelector('#roundTitle'),
+    roundBadge: container.querySelector('#roundBadge'),
+    orientationHint: container.querySelector('#orientationHint'),
+    statusStrip: container.querySelector('#statusStrip'),
+    leftCard: container.querySelector('#leftCard'),
+    rightCard: container.querySelector('#rightCard'),
+    countdownLayer: container.querySelector('#countdownLayer'),
+    countdownValue: container.querySelector('#countdownValue'),
+    startButton: container.querySelector('#startButton'),
+    retryButton: container.querySelector('#retryButton'),
+    backButton: container.querySelector('#backButton'),
+    openModesButton: container.querySelector('#openModesButton'),
+    modeBackButton: container.querySelector('#modeBackButton'),
+    infoButton: container.querySelector('#infoButton'),
+    closeInfoButton: container.querySelector('#closeInfoButton'),
+    infoModal: container.querySelector('#infoModal'),
+  };
+
+  const state = {
+    mode: null,
+    round: 0,
+    isCounting: false,
+    nextCountryClubOrientation: 'country-left',
+    lastCountryClubOrientation: 'country-left',
+    currentPair: null,
+  };
+
+  const boundListeners = [];
+  function bind(el, type, handler, options) {
+    el.addEventListener(type, handler, options);
+    boundListeners.push(() => el.removeEventListener(type, handler, options));
   }
 
-  if (state.mode !== 'country-club') {
-    orientationHint.textContent = 'Iki kulup gelecek';
-    return;
+  const pendingTimeouts = new Set();
+  function scheduleTimeout(fn, delay) {
+    const id = window.setTimeout(() => {
+      pendingTimeouts.delete(id);
+      fn();
+    }, delay);
+    pendingTimeouts.add(id);
+    return id;
   }
 
-  if (state.round === 0) {
-    orientationHint.textContent = 'Ilk tur: ulke solda';
-    return;
+  function sleep(ms) {
+    return new Promise((resolve) => scheduleTimeout(resolve, ms));
   }
 
-  orientationHint.textContent =
-    state.lastCountryClubOrientation === 'country-left'
-      ? 'Bu tur: ulke solda · sonraki Baslatta sagda'
-      : 'Bu tur: ulke sagda · sonraki Baslatta solda';
-}
-
-function renderPair(pair) {
-  leftCard.innerHTML = createCardMarkup(pair.left, 'left');
-  rightCard.innerHTML = createCardMarkup(pair.right, 'right');
-  hydrateClubBadges(leftCard);
-  hydrateClubBadges(rightCard);
-  leftCard.classList.add('reveal');
-  rightCard.classList.add('reveal');
-  window.setTimeout(() => {
-    leftCard.classList.remove('reveal');
-    rightCard.classList.remove('reveal');
-  }, 520);
-}
-
-function generateClubClubPair() {
-  if (clubClubConnections.length > 0) {
-    const connection = pickRandomEntry(clubClubConnections);
-    return {
-      left: clubsByName.get(connection.clubs[0]),
-      right: clubsByName.get(connection.clubs[1]),
-      connection,
-    };
+  function setStatus(message) {
+    els.statusStrip.textContent = message;
   }
 
-  return null;
-}
+  function renderModeCards() {
+    els.modeGrid.innerHTML = modes
+      .map(
+        (mode) => `
+          <button class="mode-card ${mode.accent}" data-mode="${mode.id}" type="button">
+            <span class="mode-pill">Mod</span>
+            <strong>${mode.title}</strong>
+            <span>${mode.subtitle}</span>
+          </button>
+        `,
+      )
+      .join('');
 
-function generateCountryClubPair(orientation) {
-  if (countryClubConnections.length > 0) {
-    const connection = pickRandomEntry(countryClubConnections);
-    const country = countriesByName.get(connection.country);
-    const club = clubsByName.get(connection.club);
+    els.modeGrid.querySelectorAll('[data-mode]').forEach((button) => {
+      bind(button, 'click', () => selectMode(button.dataset.mode));
+    });
+  }
 
-    if (orientation === 'country-left') {
-      return { left: country, right: club, connection };
+  function showModeSelection() {
+    els.homePanel.classList.add('hidden');
+    els.gamePanel.classList.add('hidden');
+    els.modePanel.classList.remove('hidden');
+    container.dataset.mode = 'modes';
+  }
+
+  function showHome() {
+    state.mode = null;
+    state.round = 0;
+    state.currentPair = null;
+    els.homePanel.classList.remove('hidden');
+    els.modePanel.classList.add('hidden');
+    els.gamePanel.classList.add('hidden');
+    container.dataset.mode = 'home';
+  }
+
+  function toggleInfoModal(forceOpen) {
+    const shouldOpen =
+      typeof forceOpen === 'boolean' ? forceOpen : els.infoModal.classList.contains('hidden');
+    els.infoModal.classList.toggle('hidden', !shouldOpen);
+    els.infoModal.setAttribute('aria-hidden', String(!shouldOpen));
+  }
+
+  function updateOrientationHint() {
+    if (!els.orientationHint) {
+      return;
     }
 
-    return { left: club, right: country, connection };
+    if (state.mode !== 'country-club') {
+      els.orientationHint.textContent = 'Iki kulup gelecek';
+      return;
+    }
+
+    if (state.round === 0) {
+      els.orientationHint.textContent = 'Ilk tur: ulke solda';
+      return;
+    }
+
+    els.orientationHint.textContent =
+      state.lastCountryClubOrientation === 'country-left'
+        ? 'Bu tur: ulke solda · sonraki Baslatta sagda'
+        : 'Bu tur: ulke sagda · sonraki Baslatta solda';
   }
 
-  return null;
-}
-
-function updateRoundUI() {
-  const activeMode = modes.find((mode) => mode.id === state.mode);
-  modeLabel.textContent = activeMode.title;
-  roundTitle.textContent = state.round === 0 ? 'Yeni Tur' : 'Eslesme Hazir';
-  roundBadge.textContent = `Tur ${state.round}`;
-  document.body.dataset.mode = activeMode.id;
-  retryButton.classList.toggle('hidden', state.mode !== 'country-club');
-  updateOrientationHint();
-}
-
-function selectMode(modeId) {
-  state.mode = modeId;
-  state.round = 0;
-  state.currentPair = null;
-  state.nextCountryClubOrientation = 'country-left';
-  state.lastCountryClubOrientation = 'country-left';
-
-  modePanel.classList.add('hidden');
-  gamePanel.classList.remove('hidden');
-  leftCard.innerHTML = `
-    <div class="slot-placeholder">
-      <span class="placeholder-icon">3</span>
-      <p>Baslat'a bas ve eslesmeyi getir.</p>
-    </div>
-  `;
-  rightCard.innerHTML = `
-    <div class="slot-placeholder">
-      <span class="placeholder-icon">2</span>
-      <p>${modeId === 'country-club' ? 'Ulke ve kulup sirayla gelecek.' : 'Ikinci kulup burada gorunecek.'}</p>
-    </div>
-  `;
-
-  updateRoundUI();
-  setStatus(
-    modeId === 'country-club'
-      ? 'Baslat yeni turu acsin. Oyuncu Bulamadik ayni taraf dizilimini koruyarak yeni eslesme getirir.'
-      : 'Baslat her seferinde yeni iki kulup getirir.',
-  );
-}
-
-async function runCountdown() {
-  state.isCounting = true;
-  countdownLayer.classList.remove('hidden');
-  leftCard.classList.remove('reveal');
-  rightCard.classList.remove('reveal');
-
-  for (const value of [3, 2, 1]) {
-    countdownValue.textContent = String(value);
-    countdownLayer.classList.remove('pulse');
-    void countdownLayer.offsetWidth;
-    countdownLayer.classList.add('pulse');
-    await sleep(820);
+  function renderPair(pair) {
+    window.__renderPairCalls = (window.__renderPairCalls ?? 0) + 1;
+    els.leftCard.innerHTML = createCardMarkup(pair.left);
+    els.rightCard.innerHTML = createCardMarkup(pair.right);
+    hydrateClubBadges(els.leftCard);
+    hydrateClubBadges(els.rightCard);
+    els.leftCard.classList.add('reveal');
+    els.rightCard.classList.add('reveal');
+    scheduleTimeout(() => {
+      els.leftCard.classList.remove('reveal');
+      els.rightCard.classList.remove('reveal');
+    }, 520);
   }
 
-  countdownLayer.classList.add('hidden');
-  state.isCounting = false;
-}
+  function generateClubClubPair() {
+    if (clubClubConnections.length > 0) {
+      const connection = pickRandomEntry(clubClubConnections);
+      return {
+        left: clubsByName.get(connection.clubs[0]),
+        right: clubsByName.get(connection.clubs[1]),
+        connection,
+      };
+    }
 
-async function startRound() {
-  if (!state.mode || state.isCounting) {
-    return;
+    return null;
   }
 
-  setStatus('3-2-1 basladi. Hazir olun.');
-  await runCountdown();
+  function generateCountryClubPair(orientation) {
+    if (countryClubConnections.length > 0) {
+      const connection = pickRandomEntry(countryClubConnections);
+      const country = countriesByName.get(connection.country);
+      const club = clubsByName.get(connection.club);
 
-  let pair;
+      if (orientation === 'country-left') {
+        return { left: country, right: club, connection };
+      }
 
-  if (state.mode === 'club-club') {
-    pair = generateClubClubPair();
-  } else {
-    const orientation = state.nextCountryClubOrientation;
-    pair = generateCountryClubPair(orientation);
-    state.lastCountryClubOrientation = orientation;
-    state.nextCountryClubOrientation = orientation === 'country-left' ? 'country-right' : 'country-left';
+      return { left: club, right: country, connection };
+    }
+
+    return null;
   }
 
-  if (!pair) {
-    setStatus('Gecerli oyuncu baglantisi bulunamadi. Veri havuzunu genisletmek gerekiyor.');
-    return;
+  function updateRoundUI() {
+    const activeMode = modes.find((mode) => mode.id === state.mode);
+    els.modeLabel.textContent = activeMode.title;
+    els.roundTitle.textContent = state.round === 0 ? 'Yeni Tur' : 'Eslesme Hazir';
+    els.roundBadge.textContent = `Tur ${state.round}`;
+    container.dataset.mode = activeMode.id;
+    els.retryButton.classList.toggle('hidden', state.mode !== 'country-club');
+    updateOrientationHint();
   }
 
-  state.round += 1;
-  state.currentPair = pair;
-  renderPair(pair);
-  updateRoundUI();
-  setStatus('Eslesme geldi. Oyuncular ismi soyler, yeni tur icin tekrar Baslat kullanilir.');
-}
+  function selectMode(modeId) {
+    state.mode = modeId;
+    state.round = 0;
+    state.currentPair = null;
+    state.nextCountryClubOrientation = 'country-left';
+    state.lastCountryClubOrientation = 'country-left';
 
-async function rerollCountryClub() {
-  if (state.mode !== 'country-club' || !state.currentPair || state.isCounting) {
-    return;
+    els.modePanel.classList.add('hidden');
+    els.gamePanel.classList.remove('hidden');
+    els.leftCard.innerHTML = `
+      <div class="slot-placeholder">
+        <span class="placeholder-icon">3</span>
+        <p>Baslat'a bas ve eslesmeyi getir.</p>
+      </div>
+    `;
+    els.rightCard.innerHTML = `
+      <div class="slot-placeholder">
+        <span class="placeholder-icon">2</span>
+        <p>${modeId === 'country-club' ? 'Ulke ve kulup sirayla gelecek.' : 'Ikinci kulup burada gorunecek.'}</p>
+      </div>
+    `;
+
+    updateRoundUI();
+    setStatus(
+      modeId === 'country-club'
+        ? 'Baslat yeni turu acsin. Oyuncu Bulamadik ayni taraf dizilimini koruyarak yeni eslesme getirir.'
+        : 'Baslat her seferinde yeni iki kulup getirir.',
+    );
   }
 
-  setStatus('Oyuncu bulunamadi. Yeni eslesme icin 3-2-1 basliyor.');
-  await runCountdown();
-  state.currentPair = generateCountryClubPair(state.lastCountryClubOrientation);
+  async function runCountdown() {
+    state.isCounting = true;
+    els.countdownLayer.classList.remove('hidden');
+    els.leftCard.classList.remove('reveal');
+    els.rightCard.classList.remove('reveal');
 
-  if (!state.currentPair) {
-    setStatus('Gecerli oyuncu baglantisi bulunamadi. Veri havuzunu genisletmek gerekiyor.');
-    return;
+    for (const value of [3, 2, 1]) {
+      els.countdownValue.textContent = String(value);
+      els.countdownLayer.classList.remove('pulse');
+      void els.countdownLayer.offsetWidth;
+      els.countdownLayer.classList.add('pulse');
+      await sleep(820);
+    }
+
+    els.countdownLayer.classList.add('hidden');
+    state.isCounting = false;
   }
 
-  renderPair(state.currentPair);
-  setStatus('Ayni taraf diziliminde yeni ulke-kulup geldi.');
-}
+  async function startRound() {
+    if (!state.mode || state.isCounting) {
+      return;
+    }
 
-function goBack() {
-  state.mode = null;
-  state.round = 0;
-  state.currentPair = null;
-  gamePanel.classList.add('hidden');
-  modePanel.classList.remove('hidden');
-  document.body.dataset.mode = 'modes';
-}
+    setStatus('3-2-1 basladi. Hazir olun.');
+    await runCountdown();
 
-startButton.addEventListener('click', startRound);
-retryButton.addEventListener('click', rerollCountryClub);
-backButton.addEventListener('click', goBack);
-openModesButton.addEventListener('click', showModeSelection);
-modeBackButton.addEventListener('click', showHome);
-infoButton.addEventListener('click', () => toggleInfoModal(true));
-closeInfoButton.addEventListener('click', () => toggleInfoModal(false));
-infoModal.addEventListener('click', (event) => {
-  if (event.target === infoModal) {
-    toggleInfoModal(false);
+    let pair;
+
+    if (state.mode === 'club-club') {
+      pair = generateClubClubPair();
+    } else {
+      const orientation = state.nextCountryClubOrientation;
+      pair = generateCountryClubPair(orientation);
+      state.lastCountryClubOrientation = orientation;
+      state.nextCountryClubOrientation = orientation === 'country-left' ? 'country-right' : 'country-left';
+    }
+
+    if (!pair) {
+      setStatus('Gecerli oyuncu baglantisi bulunamadi. Veri havuzunu genisletmek gerekiyor.');
+      return;
+    }
+
+    state.round += 1;
+    state.currentPair = pair;
+    renderPair(pair);
+    updateRoundUI();
+    setStatus('Eslesme geldi. Oyuncular ismi soyler, yeni tur icin tekrar Baslat kullanilir.');
   }
-});
 
-renderModeCards();
+  async function rerollCountryClub() {
+    if (state.mode !== 'country-club' || !state.currentPair || state.isCounting) {
+      return;
+    }
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('./sw.js').catch(() => {});
+    setStatus('Oyuncu bulunamadi. Yeni eslesme icin 3-2-1 basliyor.');
+    await runCountdown();
+    state.currentPair = generateCountryClubPair(state.lastCountryClubOrientation);
+
+    if (!state.currentPair) {
+      setStatus('Gecerli oyuncu baglantisi bulunamadi. Veri havuzunu genisletmek gerekiyor.');
+      return;
+    }
+
+    renderPair(state.currentPair);
+    setStatus('Ayni taraf diziliminde yeni ulke-kulup geldi.');
+  }
+
+  function goBack() {
+    state.mode = null;
+    state.round = 0;
+    state.currentPair = null;
+    els.gamePanel.classList.add('hidden');
+    els.modePanel.classList.remove('hidden');
+    container.dataset.mode = 'modes';
+  }
+
+  const { clubClubConnections, countryClubConnections } = await ensureConnections();
+
+  bind(els.startButton, 'click', startRound);
+  bind(els.retryButton, 'click', rerollCountryClub);
+  bind(els.backButton, 'click', goBack);
+  bind(els.openModesButton, 'click', showModeSelection);
+  bind(els.modeBackButton, 'click', showHome);
+  bind(els.infoButton, 'click', () => toggleInfoModal(true));
+  bind(els.closeInfoButton, 'click', () => toggleInfoModal(false));
+  bind(els.infoModal, 'click', (event) => {
+    if (event.target === els.infoModal) {
+      toggleInfoModal(false);
+    }
   });
+
+  renderModeCards();
+
+  if (!LOCAL_BADGES_ONLY) {
+    try {
+      const response = await fetch('./assets/logos/remote-badges.json', { cache: 'no-store' });
+      remoteBadgeMap = response.ok ? await response.json() : {};
+    } catch {
+      remoteBadgeMap = {};
+    }
+  }
+
+  cleanup = () => {
+    boundListeners.forEach((off) => off());
+    boundListeners.length = 0;
+    pendingTimeouts.forEach((id) => window.clearTimeout(id));
+    pendingTimeouts.clear();
+  };
+}
+
+export function unmount() {
+  if (cleanup) {
+    cleanup();
+    cleanup = null;
+  }
 }

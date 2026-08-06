@@ -1,0 +1,1164 @@
+[
+  {
+    "name": "Cristiano Ronaldo",
+    "birthYear": 1985,
+    "tier": "elite",
+    "countries": ["Portugal"],
+    "clubs": ["Sporting CP", "Manchester United", "Real Madrid", "Juventus"]
+  },
+  {
+    "name": "Zlatan Ibrahimovic",
+    "birthYear": 1981,
+    "tier": "elite",
+    "countries": ["Sweden"],
+    "clubs": ["Ajax", "Juventus", "Inter Milan", "Barcelona", "AC Milan"]
+  },
+  {
+    "name": "Luka Modric",
+    "birthYear": 1985,
+    "tier": "elite",
+    "countries": ["Croatia"],
+    "clubs": ["Tottenham Hotspur", "Real Madrid"]
+  },
+  {
+    "name": "Thierry Henry",
+    "birthYear": 1977,
+    "tier": "elite",
+    "countries": ["France"],
+    "clubs": ["Monaco", "Juventus", "Arsenal", "Barcelona"]
+  },
+  {
+    "name": "Roberto Carlos",
+    "birthYear": 1973,
+    "tier": "elite",
+    "countries": ["Brazil"],
+    "clubs": ["Inter Milan", "Real Madrid"]
+  },
+  {
+    "name": "Andrea Pirlo",
+    "birthYear": 1979,
+    "tier": "elite",
+    "countries": ["Italy"],
+    "clubs": ["Inter Milan", "AC Milan", "Juventus"]
+  },
+  {
+    "name": "Wesley Sneijder",
+    "birthYear": 1984,
+    "tier": "high",
+    "countries": ["Netherlands"],
+    "clubs": ["Ajax", "Real Madrid", "Inter Milan", "Galatasaray", "Nice"]
+  },
+  {
+    "name": "Arjen Robben",
+    "birthYear": 1984,
+    "tier": "elite",
+    "countries": ["Netherlands"],
+    "clubs": ["PSV Eindhoven", "Chelsea", "Real Madrid", "Bayern Munich"]
+  },
+  {
+    "name": "Xabi Alonso",
+    "birthYear": 1981,
+    "tier": "elite",
+    "countries": ["Spain"],
+    "clubs": ["Liverpool", "Real Sociedad", "Real Madrid", "Bayern Munich"]
+  },
+  {
+    "name": "Pepe",
+    "birthYear": 1983,
+    "tier": "high",
+    "countries": ["Portugal"],
+    "clubs": ["Real Madrid", "Besiktas"]
+  },
+  {
+    "name": "Nani",
+    "birthYear": 1986,
+    "tier": "high",
+    "countries": ["Portugal"],
+    "clubs": ["Sporting CP", "Manchester United", "Valencia", "Fenerbahce"]
+  },
+  {
+    "name": "Edin Dzeko",
+    "birthYear": 1986,
+    "tier": "high",
+    "countries": ["Bosnia and Herzegovina"],
+    "clubs": ["Wolfsburg", "Manchester City", "Roma", "Inter Milan", "Fenerbahce"]
+  },
+  {
+    "name": "Ivan Rakitic",
+    "birthYear": 1988,
+    "tier": "high",
+    "countries": ["Croatia"],
+    "clubs": ["Sevilla", "Barcelona"]
+  },
+  {
+    "name": "Mario Mandzukic",
+    "birthYear": 1986,
+    "tier": "high",
+    "countries": ["Croatia"],
+    "clubs": ["Wolfsburg", "Bayern Munich", "Atletico Madrid", "Juventus", "AC Milan"]
+  },
+  {
+    "name": "Pierre-Emerick Aubameyang",
+    "birthYear": 1989,
+    "tier": "high",
+    "countries": ["Gabon"],
+    "clubs": ["Lille", "Monaco", "Borussia Dortmund", "Arsenal", "Barcelona", "Chelsea", "Marseille"]
+  },
+  {
+    "name": "Hakan Calhanoglu",
+    "birthYear": 1994,
+    "tier": "high",
+    "countries": ["Turkey"],
+    "clubs": ["Hamburger SV", "Bayer Leverkusen", "AC Milan", "Inter Milan"]
+  },
+  {
+    "name": "Michael Ballack",
+    "birthYear": 1976,
+    "tier": "elite",
+    "countries": ["Germany"],
+    "clubs": ["Bayer Leverkusen", "Bayern Munich", "Chelsea"]
+  },
+  {
+    "name": "Bernd Leno",
+    "birthYear": 1992,
+    "tier": "high",
+    "countries": ["Germany"],
+    "clubs": ["Bayer Leverkusen", "Arsenal", "Fulham"]
+  },
+  {
+    "name": "Kai Havertz",
+    "birthYear": 1999,
+    "tier": "elite",
+    "countries": ["Germany"],
+    "clubs": ["Bayer Leverkusen", "Chelsea", "Arsenal"]
+  },
+  {
+    "name": "Arturo Vidal",
+    "birthYear": 1987,
+    "tier": "elite",
+    "countries": ["Chile"],
+    "clubs": ["Bayer Leverkusen", "Juventus", "Bayern Munich", "Barcelona", "Inter Milan"]
+  },
+  {
+    "name": "Dimitar Berbatov",
+    "birthYear": 1981,
+    "tier": "elite",
+    "countries": ["Bulgaria"],
+    "clubs": ["Bayer Leverkusen", "Tottenham Hotspur", "Manchester United", "Fulham", "Monaco"]
+  },
+  {
+    "name": "Lucio",
+    "birthYear": 1978,
+    "tier": "elite",
+    "countries": ["Brazil"],
+    "clubs": ["Bayer Leverkusen", "Bayern Munich", "Inter Milan"]
+  },
+  {
+    "name": "Arda Turan",
+    "birthYear": 1987,
+    "tier": "high",
+    "countries": ["Turkey"],
+    "clubs": ["Galatasaray", "Atletico Madrid", "Barcelona"]
+  },
+  {
+    "name": "Ryan Babel",
+    "birthYear": 1986,
+    "tier": "solid",
+    "countries": ["Netherlands"],
+    "clubs": ["Ajax", "Liverpool", "Fulham", "Besiktas", "Galatasaray"]
+  },
+  {
+    "name": "Jeremain Lens",
+    "birthYear": 1987,
+    "tier": "solid",
+    "countries": ["Netherlands"],
+    "clubs": ["PSV Eindhoven", "Sunderland", "Fenerbahce", "Besiktas"]
+  },
+  {
+    "name": "Jordan Henderson",
+    "birthYear": 1990,
+    "tier": "high",
+    "countries": ["United Kingdom"],
+    "clubs": ["Sunderland", "Liverpool", "Ajax"]
+  },
+  {
+    "name": "Jermain Defoe",
+    "birthYear": 1982,
+    "tier": "high",
+    "countries": ["United Kingdom"],
+    "clubs": ["West Ham United", "Tottenham Hotspur", "Sunderland"]
+  },
+  {
+    "name": "Simon Mignolet",
+    "birthYear": 1988,
+    "tier": "high",
+    "countries": ["Belgium"],
+    "clubs": ["Sunderland", "Liverpool"]
+  },
+  {
+    "name": "Jordan Pickford",
+    "birthYear": 1994,
+    "tier": "high",
+    "countries": ["United Kingdom"],
+    "clubs": ["Sunderland", "Everton"]
+  },
+  {
+    "name": "Asamoah Gyan",
+    "birthYear": 1985,
+    "tier": "high",
+    "countries": ["Ghana"],
+    "clubs": ["Rennes", "Sunderland", "Kayserispor"]
+  },
+  {
+    "name": "Robin van Persie",
+    "birthYear": 1983,
+    "tier": "elite",
+    "countries": ["Netherlands"],
+    "clubs": ["Arsenal", "Manchester United", "Fenerbahce"]
+  },
+  {
+    "name": "Martin Skrtel",
+    "birthYear": 1984,
+    "tier": "solid",
+    "countries": ["Slovakia"],
+    "clubs": ["Liverpool", "Fenerbahce", "Basaksehir"]
+  },
+  {
+    "name": "Demba Ba",
+    "birthYear": 1985,
+    "tier": "solid",
+    "countries": ["Senegal"],
+    "clubs": ["Chelsea", "Newcastle United", "Besiktas", "Basaksehir"]
+  },
+  {
+    "name": "Sofiane Feghouli",
+    "birthYear": 1989,
+    "tier": "solid",
+    "countries": ["Algeria"],
+    "clubs": ["Valencia", "West Ham United", "Galatasaray", "Fatih Karagumruk"]
+  },
+  {
+    "name": "Didier Drogba",
+    "birthYear": 1978,
+    "tier": "elite",
+    "countries": ["Ivory Coast"],
+    "clubs": ["Marseille", "Chelsea", "Galatasaray"]
+  },
+  {
+    "name": "Samuel Eto\"o",
+    "birthYear": 1981,
+    "tier": "elite",
+    "countries": ["Cameroon"],
+    "clubs": ["Real Madrid", "Barcelona", "Inter Milan", "Chelsea", "Everton", "Antalyaspor"]
+  },
+  {
+    "name": "Jay-Jay Okocha",
+    "birthYear": 1973,
+    "tier": "high",
+    "countries": ["Nigeria"],
+    "clubs": ["Eintracht Frankfurt", "Fenerbahce", "Paris Saint-Germain"]
+  },
+  {
+    "name": "Kevin Trapp",
+    "birthYear": 1990,
+    "tier": "high",
+    "countries": ["Germany"],
+    "clubs": ["Eintracht Frankfurt", "Paris Saint-Germain"]
+  },
+  {
+    "name": "Luka Jovic",
+    "birthYear": 1997,
+    "tier": "high",
+    "countries": ["Serbia"],
+    "clubs": ["Eintracht Frankfurt", "Real Madrid", "Fiorentina"]
+  },
+  {
+    "name": "Ante Rebic",
+    "birthYear": 1993,
+    "tier": "high",
+    "countries": ["Croatia"],
+    "clubs": ["Eintracht Frankfurt", "AC Milan"]
+  },
+  {
+    "name": "Sebastien Haller",
+    "birthYear": 1994,
+    "tier": "high",
+    "countries": ["Ivory Coast"],
+    "clubs": ["Eintracht Frankfurt", "West Ham United", "Ajax", "Borussia Dortmund"]
+  },
+  {
+    "name": "Evan Ndicka",
+    "birthYear": 1999,
+    "tier": "high",
+    "countries": ["Ivory Coast"],
+    "clubs": ["Eintracht Frankfurt", "Roma"]
+  },
+  {
+    "name": "Elvir Baljic",
+    "birthYear": 1974,
+    "tier": "solid",
+    "countries": ["Bosnia and Herzegovina"],
+    "clubs": ["Fenerbahce", "Real Madrid", "Galatasaray"]
+  },
+  {
+    "name": "Milan Baros",
+    "birthYear": 1981,
+    "tier": "high",
+    "countries": ["Czechia"],
+    "clubs": ["Liverpool", "Aston Villa", "Galatasaray"]
+  },
+  {
+    "name": "Dirk Kuyt",
+    "birthYear": 1980,
+    "tier": "high",
+    "countries": ["Netherlands"],
+    "clubs": ["Liverpool", "Fenerbahce"]
+  },
+  {
+    "name": "Jose Sosa",
+    "birthYear": 1985,
+    "tier": "solid",
+    "countries": ["Argentina"],
+    "clubs": ["Bayern Munich", "Atletico Madrid", "Besiktas", "Fenerbahce", "Trabzonspor"]
+  },
+  {
+    "name": "Alex Sandro",
+    "birthYear": 1991,
+    "tier": "high",
+    "countries": ["Brazil"],
+    "clubs": ["Juventus", "Flamengo"]
+  },
+  {
+    "name": "Nico Paz",
+    "birthYear": 2004,
+    "tier": "solid",
+    "countries": ["Argentina"],
+    "clubs": ["Real Madrid", "Como"]
+  },
+  {
+    "name": "Pepe Reina",
+    "birthYear": 1982,
+    "tier": "high",
+    "countries": ["Spain"],
+    "clubs": ["Barcelona", "Villarreal", "Napoli", "AC Milan", "Como"]
+  },
+  {
+    "name": "Robin Gosens",
+    "birthYear": 1994,
+    "tier": "high",
+    "countries": ["Germany"],
+    "clubs": ["Atalanta", "Inter Milan"]
+  },
+  {
+    "name": "Charles De Ketelaere",
+    "birthYear": 2001,
+    "tier": "high",
+    "countries": ["Belgium"],
+    "clubs": ["AC Milan", "Atalanta"]
+  },
+  {
+    "name": "Josip Ilicic",
+    "birthYear": 1988,
+    "tier": "high",
+    "countries": ["Slovenia"],
+    "clubs": ["Fiorentina", "Atalanta"]
+  },
+  {
+    "name": "Javi Martinez",
+    "birthYear": 1988,
+    "tier": "elite",
+    "countries": ["Spain"],
+    "clubs": ["Athletic Club", "Bayern Munich"]
+  },
+  {
+    "name": "Ander Herrera",
+    "birthYear": 1989,
+    "tier": "high",
+    "countries": ["Spain"],
+    "clubs": ["Athletic Club", "Manchester United", "Paris Saint-Germain"]
+  },
+  {
+    "name": "Aymeric Laporte",
+    "birthYear": 1994,
+    "tier": "high",
+    "countries": ["Spain"],
+    "clubs": ["Athletic Club", "Manchester City"]
+  },
+  {
+    "name": "Nathan Ake",
+    "birthYear": 1995,
+    "tier": "high",
+    "countries": ["Netherlands"],
+    "clubs": ["Chelsea", "Bournemouth", "Manchester City"]
+  },
+  {
+    "name": "Dominic Solanke",
+    "birthYear": 1997,
+    "tier": "high",
+    "countries": ["United Kingdom"],
+    "clubs": ["Chelsea", "Liverpool", "Bournemouth", "Tottenham Hotspur"]
+  },
+  {
+    "name": "Dean Huijsen",
+    "birthYear": 2005,
+    "tier": "solid",
+    "countries": ["Spain"],
+    "clubs": ["Juventus", "Bournemouth", "Real Madrid"]
+  },
+  {
+    "name": "Mesut Ozil",
+    "birthYear": 1988,
+    "tier": "elite",
+    "countries": ["Germany"],
+    "clubs": ["Werder Bremen", "Real Madrid", "Arsenal", "Fenerbahce"]
+  },
+  {
+    "name": "Nicolas Anelka",
+    "birthYear": 1979,
+    "tier": "elite",
+    "countries": ["France"],
+    "clubs": ["Arsenal", "Real Madrid", "Liverpool", "Manchester City", "Chelsea", "Fenerbahce"]
+  },
+  {
+    "name": "Bafetimbi Gomis",
+    "birthYear": 1985,
+    "tier": "high",
+    "countries": ["France"],
+    "clubs": ["Lyon", "Marseille", "Galatasaray"]
+  },
+  {
+    "name": "Dries Mertens",
+    "birthYear": 1987,
+    "tier": "high",
+    "countries": ["Belgium"],
+    "clubs": ["PSV Eindhoven", "Napoli", "Galatasaray"]
+  },
+  {
+    "name": "Mauro Icardi",
+    "birthYear": 1993,
+    "tier": "high",
+    "countries": ["Argentina"],
+    "clubs": ["Inter Milan", "Paris Saint-Germain", "Galatasaray"]
+  },
+  {
+    "name": "Juan Mata",
+    "birthYear": 1988,
+    "tier": "high",
+    "countries": ["Spain"],
+    "clubs": ["Valencia", "Chelsea", "Manchester United"]
+  },
+  {
+    "name": "Memphis Depay",
+    "birthYear": 1994,
+    "tier": "high",
+    "countries": ["Netherlands"],
+    "clubs": ["PSV Eindhoven", "Manchester United", "Lyon", "Barcelona", "Atletico Madrid"]
+  },
+  {
+    "name": "Luis Suarez",
+    "birthYear": 1987,
+    "tier": "elite",
+    "countries": ["Uruguay"],
+    "clubs": ["Ajax", "Liverpool", "Barcelona", "Atletico Madrid"]
+  },
+  {
+    "name": "Edgar Davids",
+    "birthYear": 1973,
+    "tier": "elite",
+    "countries": ["Netherlands"],
+    "clubs": ["Ajax", "AC Milan", "Juventus", "Inter Milan", "Barcelona"]
+  },
+  {
+    "name": "Patrick Kluivert",
+    "birthYear": 1976,
+    "tier": "elite",
+    "countries": ["Netherlands"],
+    "clubs": ["Ajax", "AC Milan", "Barcelona"]
+  },
+  {
+    "name": "Diego Forlan",
+    "birthYear": 1979,
+    "tier": "elite",
+    "countries": ["Uruguay"],
+    "clubs": ["Manchester United", "Villarreal", "Atletico Madrid", "Inter Milan"]
+  },
+  {
+    "name": "Raul Albiol",
+    "birthYear": 1985,
+    "tier": "high",
+    "countries": ["Spain"],
+    "clubs": ["Valencia", "Real Madrid", "Napoli", "Villarreal"]
+  },
+  {
+    "name": "David Villa",
+    "birthYear": 1981,
+    "tier": "elite",
+    "countries": ["Spain"],
+    "clubs": ["Valencia", "Barcelona", "Atletico Madrid"]
+  },
+  {
+    "name": "Antoine Griezmann",
+    "birthYear": 1991,
+    "tier": "elite",
+    "countries": ["France"],
+    "clubs": ["Real Sociedad", "Atletico Madrid", "Barcelona"]
+  },
+  {
+    "name": "Diego Godin",
+    "birthYear": 1986,
+    "tier": "high",
+    "countries": ["Uruguay"],
+    "clubs": ["Villarreal", "Atletico Madrid", "Inter Milan"]
+  },
+  {
+    "name": "Miralem Pjanic",
+    "birthYear": 1990,
+    "tier": "high",
+    "countries": ["Bosnia and Herzegovina"],
+    "clubs": ["Lyon", "Roma", "Juventus", "Barcelona", "Besiktas"]
+  },
+  {
+    "name": "Mario Gomez",
+    "birthYear": 1985,
+    "tier": "high",
+    "countries": ["Germany"],
+    "clubs": ["Stuttgart", "Bayern Munich", "Fiorentina", "Besiktas"]
+  },
+  {
+    "name": "Ricardo Quaresma",
+    "birthYear": 1983,
+    "tier": "high",
+    "countries": ["Portugal"],
+    "clubs": ["Sporting CP", "Barcelona", "Chelsea", "Inter Milan", "Besiktas"]
+  },
+  {
+    "name": "Vagner Love",
+    "birthYear": 1984,
+    "tier": "high",
+    "countries": ["Brazil"],
+    "clubs": ["Monaco", "Alanyaspor", "Besiktas"]
+  },
+  {
+    "name": "Josef de Souza",
+    "birthYear": 1989,
+    "tier": "solid",
+    "countries": ["Brazil"],
+    "clubs": ["Fenerbahce", "Besiktas", "Basaksehir"]
+  },
+  {
+    "name": "Emre Belozoglu",
+    "birthYear": 1980,
+    "tier": "high",
+    "countries": ["Turkey"],
+    "clubs": ["Galatasaray", "Inter Milan", "Newcastle United", "Atletico Madrid", "Fenerbahce", "Basaksehir"]
+  },
+  {
+    "name": "Burak Yilmaz",
+    "birthYear": 1985,
+    "tier": "high",
+    "countries": ["Turkey"],
+    "clubs": ["Besiktas", "Fenerbahce", "Trabzonspor", "Galatasaray", "Lille"]
+  },
+  {
+    "name": "Moussa Sow",
+    "birthYear": 1986,
+    "tier": "high",
+    "countries": ["Senegal"],
+    "clubs": ["Lille", "Fenerbahce"]
+  },
+  {
+    "name": "Moussa Dembele",
+    "birthYear": 1987,
+    "tier": "high",
+    "countries": ["Belgium"],
+    "clubs": ["Fulham", "Tottenham Hotspur", "Atletico Madrid"]
+  },
+  {
+    "name": "Kevin De Bruyne",
+    "birthYear": 1991,
+    "tier": "elite",
+    "countries": ["Belgium"],
+    "clubs": ["Chelsea", "Wolfsburg", "Manchester City"]
+  },
+  {
+    "name": "Fernando Muslera",
+    "birthYear": 1986,
+    "tier": "high",
+    "countries": ["Uruguay"],
+    "clubs": ["Lazio", "Galatasaray"]
+  },
+  {
+    "name": "Marek Hamsik",
+    "birthYear": 1987,
+    "tier": "high",
+    "countries": ["Slovakia"],
+    "clubs": ["Napoli", "Trabzonspor"]
+  },
+  {
+    "name": "Gonzalo Higuain",
+    "birthYear": 1987,
+    "tier": "elite",
+    "countries": ["Argentina"],
+    "clubs": ["Real Madrid", "Napoli", "Juventus", "AC Milan", "Chelsea"]
+  },
+  {
+    "name": "Sergio Canales",
+    "birthYear": 1991,
+    "tier": "solid",
+    "countries": ["Spain"],
+    "clubs": ["Real Madrid", "Valencia", "Real Sociedad", "Real Betis"]
+  },
+  {
+    "name": "Alvaro Morata",
+    "birthYear": 1992,
+    "tier": "high",
+    "countries": ["Spain"],
+    "clubs": ["Real Madrid", "Juventus", "Chelsea", "Atletico Madrid"]
+  },
+  {
+    "name": "Cesc Fabregas",
+    "birthYear": 1987,
+    "tier": "elite",
+    "countries": ["Spain"],
+    "clubs": ["Arsenal", "Barcelona", "Chelsea", "Monaco"]
+  },
+  {
+    "name": "Fernando Torres",
+    "birthYear": 1984,
+    "tier": "elite",
+    "countries": ["Spain"],
+    "clubs": ["Atletico Madrid", "Liverpool", "Chelsea", "AC Milan"]
+  },
+  {
+    "name": "Robinho",
+    "birthYear": 1984,
+    "tier": "high",
+    "countries": ["Brazil"],
+    "clubs": ["Santos", "Real Madrid", "Manchester City", "AC Milan"]
+  },
+  {
+    "name": "Raul Meireles",
+    "birthYear": 1983,
+    "tier": "high",
+    "countries": ["Portugal"],
+    "clubs": ["Liverpool", "Chelsea", "Fenerbahce"]
+  },
+  {
+    "name": "Diego Ribas",
+    "birthYear": 1985,
+    "tier": "high",
+    "countries": ["Brazil"],
+    "clubs": ["Werder Bremen", "Juventus", "Wolfsburg", "Atletico Madrid", "Fenerbahce"]
+  },
+  {
+    "name": "Lukas Podolski",
+    "birthYear": 1985,
+    "tier": "high",
+    "countries": ["Germany"],
+    "clubs": ["Bayern Munich", "Arsenal", "Galatasaray", "Antalyaspor"]
+  },
+  {
+    "name": "Klaas-Jan Huntelaar",
+    "birthYear": 1983,
+    "tier": "high",
+    "countries": ["Netherlands"],
+    "clubs": ["Ajax", "Real Madrid", "AC Milan"]
+  },
+  {
+    "name": "Didier Zokora",
+    "birthYear": 1980,
+    "tier": "solid",
+    "countries": ["Togo"],
+    "clubs": ["Tottenham Hotspur", "Sevilla", "Trabzonspor"]
+  },
+  {
+    "name": "Sadio Mane",
+    "birthYear": 1992,
+    "tier": "elite",
+    "countries": ["Senegal"],
+    "clubs": ["Liverpool", "Bayern Munich"]
+  },
+  {
+    "name": "Mats Hummels",
+    "birthYear": 1988,
+    "tier": "elite",
+    "countries": ["Germany"],
+    "clubs": ["Bayern Munich", "Borussia Dortmund"]
+  },
+  {
+    "name": "Mario Gotze",
+    "birthYear": 1992,
+    "tier": "high",
+    "countries": ["Germany"],
+    "clubs": ["Borussia Dortmund", "Bayern Munich"]
+  },
+  {
+    "name": "Thorgan Hazard",
+    "birthYear": 1993,
+    "tier": "high",
+    "countries": ["Belgium"],
+    "clubs": ["Borussia Monchengladbach", "Borussia Dortmund"]
+  },
+  {
+    "name": "Sokratis Papastathopoulos",
+    "birthYear": 1988,
+    "tier": "high",
+    "countries": ["Greece"],
+    "clubs": ["Werder Bremen", "Borussia Dortmund", "Arsenal"]
+  },
+  {
+    "name": "Cenk Tosun",
+    "birthYear": 1991,
+    "tier": "high",
+    "countries": ["Turkey"],
+    "clubs": ["Besiktas", "Everton", "Crystal Palace", "Fenerbahce"]
+  },
+  {
+    "name": "Michy Batshuayi",
+    "birthYear": 1993,
+    "tier": "high",
+    "countries": ["Belgium"],
+    "clubs": ["Marseille", "Chelsea", "Crystal Palace", "Besiktas", "Fenerbahce", "Galatasaray"]
+  },
+  {
+    "name": "Dusan Tadic",
+    "birthYear": 1988,
+    "tier": "high",
+    "countries": ["Serbia"],
+    "clubs": ["Ajax", "Fenerbahce"]
+  },
+  {
+    "name": "Edin Visca",
+    "birthYear": 1990,
+    "tier": "high",
+    "countries": ["Bosnia and Herzegovina"],
+    "clubs": ["Basaksehir", "Trabzonspor"]
+  },
+  {
+    "name": "Gokhan Gonul",
+    "birthYear": 1985,
+    "tier": "high",
+    "countries": ["Turkey"],
+    "clubs": ["Genclerbirligi", "Fenerbahce", "Besiktas"]
+  },
+  {
+    "name": "Caner Erkin",
+    "birthYear": 1988,
+    "tier": "high",
+    "countries": ["Turkey"],
+    "clubs": ["Galatasaray", "Fenerbahce", "Inter Milan", "Besiktas", "Basaksehir"]
+  },
+  {
+    "name": "Mert Gunok",
+    "birthYear": 1989,
+    "tier": "solid",
+    "countries": ["Turkey"],
+    "clubs": ["Fenerbahce", "Basaksehir", "Besiktas"]
+  },
+  {
+    "name": "Selcuk Inan",
+    "birthYear": 1985,
+    "tier": "high",
+    "countries": ["Turkey"],
+    "clubs": ["Trabzonspor", "Galatasaray"]
+  },
+  {
+    "name": "Oguzhan Ozyakup",
+    "birthYear": 1992,
+    "tier": "solid",
+    "countries": ["Turkey"],
+    "clubs": ["Arsenal", "Besiktas"]
+  },
+  {
+    "name": "James Milner",
+    "birthYear": 1986,
+    "tier": "high",
+    "countries": ["United Kingdom"],
+    "clubs": ["Newcastle United", "Aston Villa", "Manchester City", "Liverpool", "Brighton & Hove Albion"]
+  },
+  {
+    "name": "Christian Benteke",
+    "birthYear": 1990,
+    "tier": "high",
+    "countries": ["Belgium"],
+    "clubs": ["Aston Villa", "Liverpool", "Crystal Palace"]
+  },
+  {
+    "name": "Andros Townsend",
+    "birthYear": 1991,
+    "tier": "solid",
+    "countries": ["United Kingdom"],
+    "clubs": ["Tottenham Hotspur", "Newcastle United", "Crystal Palace", "Everton"]
+  },
+  {
+    "name": "Joe Hart",
+    "birthYear": 1987,
+    "tier": "high",
+    "countries": ["United Kingdom"],
+    "clubs": ["Manchester City", "West Ham United", "Burnley", "Tottenham Hotspur"]
+  },
+  {
+    "name": "Craig Bellamy",
+    "birthYear": 1979,
+    "tier": "high",
+    "countries": ["United Kingdom"],
+    "clubs": ["Newcastle United", "Liverpool", "West Ham United", "Manchester City"]
+  },
+  {
+    "name": "Ollie Watkins",
+    "birthYear": 1995,
+    "tier": "high",
+    "countries": ["United Kingdom"],
+    "clubs": ["Brentford", "Aston Villa"]
+  },
+  {
+    "name": "Neal Maupay",
+    "birthYear": 1996,
+    "tier": "solid",
+    "countries": ["France"],
+    "clubs": ["Brentford", "Brighton & Hove Albion", "Everton"]
+  },
+  {
+    "name": "Wilfried Zaha",
+    "birthYear": 1992,
+    "tier": "high",
+    "countries": ["Ivory Coast"],
+    "clubs": ["Crystal Palace", "Manchester United"]
+  },
+  {
+    "name": "Loic Remy",
+    "birthYear": 1987,
+    "tier": "high",
+    "countries": ["France"],
+    "clubs": ["Marseille", "Newcastle United", "Chelsea", "Crystal Palace", "Lille", "Rizespor"]
+  },
+  {
+    "name": "Salomon Kalou",
+    "birthYear": 1985,
+    "tier": "high",
+    "countries": ["Ivory Coast"],
+    "clubs": ["Chelsea", "Lille"]
+  },
+  {
+    "name": "Trezeguet",
+    "birthYear": 1994,
+    "tier": "solid",
+    "countries": ["Egypt"],
+    "clubs": ["Kasimpasa", "Aston Villa", "Trabzonspor"]
+  },
+  {
+    "name": "Mame Thiam",
+    "birthYear": 1992,
+    "tier": "solid",
+    "countries": ["Senegal"],
+    "clubs": ["Kasimpasa", "Fenerbahce", "Eyupspor"]
+  },
+  {
+    "name": "Stefano Okaka",
+    "birthYear": 1989,
+    "tier": "solid",
+    "countries": ["Italy"],
+    "clubs": ["Roma", "Basaksehir"]
+  },
+  {
+    "name": "David Luiz",
+    "birthYear": 1987,
+    "tier": "elite",
+    "countries": ["Brazil"],
+    "clubs": ["Benfica", "Chelsea", "Arsenal", "Flamengo"]
+  },
+  {
+    "name": "Angel Di Maria",
+    "birthYear": 1988,
+    "tier": "elite",
+    "countries": ["Argentina"],
+    "clubs": ["Benfica", "Real Madrid", "Manchester United", "Paris Saint-Germain"]
+  },
+  {
+    "name": "Joao Mario",
+    "birthYear": 1993,
+    "tier": "high",
+    "countries": ["Portugal"],
+    "clubs": ["Sporting CP", "Inter Milan", "West Ham United", "Benfica"]
+  },
+  {
+    "name": "Pablo Mari",
+    "birthYear": 1993,
+    "tier": "solid",
+    "countries": ["Spain"],
+    "clubs": ["Manchester City", "Arsenal", "Flamengo"]
+  },
+  {
+    "name": "Vincent Aboubakar",
+    "birthYear": 1992,
+    "tier": "high",
+    "countries": ["Cameroon"],
+    "clubs": ["Besiktas"]
+  },
+  {
+    "name": "Vincent Kompany",
+    "birthYear": 1986,
+    "tier": "elite",
+    "countries": ["Belgium"],
+    "clubs": ["Hamburger SV", "Manchester City", "Burnley"]
+  },
+  {
+    "name": "Kalvin Phillips",
+    "birthYear": 1995,
+    "tier": "high",
+    "countries": ["United Kingdom"],
+    "clubs": ["Leeds United", "Manchester City"]
+  },
+  {
+    "name": "Raphinha",
+    "birthYear": 1996,
+    "tier": "high",
+    "countries": ["Brazil"],
+    "clubs": ["Rennes", "Leeds United", "Barcelona"]
+  },
+  {
+    "name": "Rio Ferdinand",
+    "birthYear": 1978,
+    "tier": "elite",
+    "countries": ["United Kingdom"],
+    "clubs": ["West Ham United", "Leeds United", "Manchester United"]
+  },
+  {
+    "name": "Morgan Gibbs-White",
+    "birthYear": 2000,
+    "tier": "high",
+    "countries": ["United Kingdom"],
+    "clubs": ["Wolverhampton Wanderers", "Nottingham Forest"]
+  },
+  {
+    "name": "Anthony Elanga",
+    "birthYear": 2002,
+    "tier": "high",
+    "countries": ["Sweden"],
+    "clubs": ["Manchester United", "Nottingham Forest"]
+  },
+  {
+    "name": "Jonjo Shelvey",
+    "birthYear": 1992,
+    "tier": "solid",
+    "countries": ["United Kingdom"],
+    "clubs": ["Liverpool", "Newcastle United", "Nottingham Forest", "Rizespor"]
+  },
+  {
+    "name": "Raul Jimenez",
+    "birthYear": 1991,
+    "tier": "high",
+    "countries": ["Mexico"],
+    "clubs": ["Atletico Madrid", "Wolverhampton Wanderers", "Fulham"]
+  },
+  {
+    "name": "Diogo Jota",
+    "birthYear": 1996,
+    "tier": "elite",
+    "countries": ["Portugal"],
+    "clubs": ["Atletico Madrid", "Wolverhampton Wanderers", "Liverpool"]
+  },
+  {
+    "name": "Pedro Neto",
+    "birthYear": 2000,
+    "tier": "high",
+    "countries": ["Portugal"],
+    "clubs": ["Wolverhampton Wanderers", "Chelsea"]
+  },
+  {
+    "name": "Jeremy Doku",
+    "birthYear": 2002,
+    "tier": "high",
+    "countries": ["Belgium"],
+    "clubs": ["Rennes", "Manchester City"]
+  },
+  {
+    "name": "Ousmane Dembele",
+    "birthYear": 1997,
+    "tier": "elite",
+    "countries": ["France"],
+    "clubs": ["Rennes", "Borussia Dortmund", "Barcelona", "Paris Saint-Germain"]
+  },
+  {
+    "name": "Eduardo Camavinga",
+    "birthYear": 2002,
+    "tier": "elite",
+    "countries": ["France"],
+    "clubs": ["Rennes", "Real Madrid"]
+  },
+  {
+    "name": "Petr Cech",
+    "birthYear": 1982,
+    "tier": "elite",
+    "countries": ["Czechia"],
+    "clubs": ["Rennes", "Chelsea", "Arsenal"]
+  },
+  {
+    "name": "Wissam Ben Yedder",
+    "birthYear": 1990,
+    "tier": "high",
+    "countries": ["France"],
+    "clubs": ["Toulouse", "Sevilla", "Monaco"]
+  },
+  {
+    "name": "Alexis Sanchez",
+    "birthYear": 1988,
+    "tier": "elite",
+    "countries": ["Chile"],
+    "clubs": ["Udinese", "Barcelona", "Arsenal", "Manchester United", "Inter Milan", "Marseille"]
+  },
+  {
+    "name": "Ciro Immobile",
+    "birthYear": 1990,
+    "tier": "high",
+    "countries": ["Italy"],
+    "clubs": ["Juventus", "Sevilla", "Borussia Dortmund", "Torino", "Lazio"]
+  },
+  {
+    "name": "Domenico Berardi",
+    "birthYear": 1994,
+    "tier": "high",
+    "countries": ["Italy"],
+    "clubs": ["Juventus", "Sassuolo"]
+  },
+  {
+    "name": "Manuel Locatelli",
+    "birthYear": 1998,
+    "tier": "high",
+    "countries": ["Italy"],
+    "clubs": ["AC Milan", "Sassuolo", "Juventus"]
+  },
+  {
+    "name": "Giacomo Raspadori",
+    "birthYear": 2000,
+    "tier": "high",
+    "countries": ["Italy"],
+    "clubs": ["Sassuolo", "Napoli"]
+  },
+  {
+    "name": "Mert Muldur",
+    "birthYear": 1999,
+    "tier": "high",
+    "countries": ["Turkey"],
+    "clubs": ["Sassuolo", "Fenerbahce"]
+  },
+  {
+    "name": "Merih Demiral",
+    "birthYear": 1998,
+    "tier": "high",
+    "countries": ["Turkey"],
+    "clubs": ["Alanyaspor", "Sassuolo", "Juventus", "Atalanta"]
+  },
+  {
+    "name": "Joaquin",
+    "birthYear": 1981,
+    "tier": "high",
+    "countries": ["Spain"],
+    "clubs": ["Valencia", "Fiorentina", "Real Betis"]
+  },
+  {
+    "name": "Nabil Fekir",
+    "birthYear": 1993,
+    "tier": "high",
+    "countries": ["France"],
+    "clubs": ["Lyon", "Real Betis"]
+  },
+  {
+    "name": "James Rodriguez",
+    "birthYear": 1991,
+    "tier": "elite",
+    "countries": ["Colombia"],
+    "clubs": ["Monaco", "Real Madrid", "Bayern Munich", "Everton", "Rayo Vallecano"]
+  },
+  {
+    "name": "Radamel Falcao",
+    "birthYear": 1986,
+    "tier": "elite",
+    "countries": ["Colombia"],
+    "clubs": ["Atletico Madrid", "Manchester United", "Chelsea", "Monaco", "Galatasaray", "Rayo Vallecano"]
+  },
+  {
+    "name": "Alexandru Maxim",
+    "birthYear": 1990,
+    "tier": "solid",
+    "countries": ["Romania"],
+    "clubs": ["Stuttgart", "Gaziantep FK"]
+  },
+  {
+    "name": "Amir Hadziahmetovic",
+    "birthYear": 1997,
+    "tier": "solid",
+    "countries": ["Bosnia and Herzegovina"],
+    "clubs": ["Konyaspor", "Besiktas"]
+  },
+  {
+    "name": "Hasan Ali Kaldirim",
+    "birthYear": 1989,
+    "tier": "solid",
+    "countries": ["Turkey"],
+    "clubs": ["Kayserispor", "Fenerbahce", "Basaksehir"]
+  },
+  {
+    "name": "Bernard Mensah",
+    "birthYear": 1994,
+    "tier": "solid",
+    "countries": ["Ghana"],
+    "clubs": ["Kayserispor", "Besiktas"]
+  },
+  {
+    "name": "Eren Derdiyok",
+    "birthYear": 1988,
+    "tier": "solid",
+    "countries": ["Switzerland"],
+    "clubs": ["Galatasaray", "Goztepe"]
+  },
+  {
+    "name": "Halil Akbunar",
+    "birthYear": 1993,
+    "tier": "solid",
+    "countries": ["Turkey"],
+    "clubs": ["Goztepe", "Eyupspor"]
+  },
+  {
+    "name": "Romulo",
+    "birthYear": 2002,
+    "tier": "solid",
+    "countries": ["Brazil"],
+    "clubs": ["Goztepe", "RB Leipzig"]
+  },
+  {
+    "name": "Ogulcan Caglayan",
+    "birthYear": 1996,
+    "tier": "solid",
+    "countries": ["Turkey"],
+    "clubs": ["Galatasaray", "Kocaelispor"]
+  },
+  {
+    "name": "Emre Akbaba",
+    "birthYear": 1992,
+    "tier": "high",
+    "countries": ["Turkey"],
+    "clubs": ["Alanyaspor", "Galatasaray", "Eyupspor"]
+  },
+  {
+    "name": "Welinton",
+    "birthYear": 1989,
+    "tier": "solid",
+    "countries": ["Brazil"],
+    "clubs": ["Alanyaspor", "Besiktas"]
+  },
+  {
+    "name": "Ait Bennasser",
+    "birthYear": 1996,
+    "tier": "solid",
+    "countries": ["Morocco"],
+    "clubs": ["Monaco", "Samsunspor"]
+  },
+  {
+    "name": "Neymar",
+    "birthYear": 1992,
+    "tier": "elite",
+    "countries": ["Brazil"],
+    "clubs": ["Santos", "Barcelona", "Paris Saint-Germain"]
+  }
+]
