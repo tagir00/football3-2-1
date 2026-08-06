@@ -1,0 +1,404 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "sync-local-club-logos",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\sync-local-club-logos.ps1",
+				"-Overwrite"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "fill-missing-club-logos",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\fill-missing-club-logo-placeholders.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "fix-inter-logo-name",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"if (Test-Path '.\\assets\\logos\\clubs\\nter-milan.png') { Rename-Item '.\\assets\\logos\\clubs\\nter-milan.png' 'inter-milan.png' -Force }"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "fix-inter-logo-name-2",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"if (Test-Path \"./assets/logos/clubs/nter-milan.png\") { Rename-Item \"./assets/logos/clubs/nter-milan.png\" \"inter-milan.png\" -Force }"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "sync-local-club-logos-v2",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\sync-local-club-logos.ps1",
+				"-Overwrite"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "audit-logo-coverage",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"$data = Get-Content './src/data.js' -Raw; $blocks = @('premierLeague','laLiga','bundesliga','serieA','ligue1','superLig','extraClubs'); $clubs = New-Object System.Collections.Generic.List[string]; foreach($b in $blocks){ $m=[regex]::Match($data,\"const $b = \\[(.*?)\\];\",'Singleline'); if($m.Success){ foreach($x in [regex]::Matches($m.Groups[1].Value,\"'([^']+)'\") | ForEach-Object {$_.Groups[1].Value}){ if(-not $clubs.Contains($x)){ $clubs.Add($x) } } } }; function Slug([string]$n){ $normalized=$n.Normalize([Text.NormalizationForm]::FormD); $sb=New-Object System.Text.StringBuilder; foreach($c in $normalized.ToCharArray()){ if([Globalization.CharUnicodeInfo]::GetUnicodeCategory($c) -ne [Globalization.UnicodeCategory]::NonSpacingMark){ [void]$sb.Append($c) } }; $a=$sb.ToString(); $a=$a -replace '&','and'; $a=$a -replace '[^a-zA-Z0-9]+','-'; $a=$a -replace '^-+|-+$',''; $a.ToLowerInvariant() }; $missing=@(); foreach($club in $clubs){ $slug=Slug $club; $png=Test-Path (\"./assets/logos/clubs/\" + $slug + '.png'); if(-not $png){ $missing += $club } }; \"TOTAL_CLUBS=$($clubs.Count)\"; \"PNG_REAL=$($clubs.Count - $missing.Count)\"; \"MISSING_REAL=$($missing.Count)\"; if($missing.Count -gt 0){ \"MISSING_LIST=$($missing -join ', ')\" }"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "audit-logo-coverage-script",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\audit-logo-coverage.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "fetch-napoli-logo",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"$resp = Invoke-WebRequest -UseBasicParsing -Uri \"https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=Napoli\" -ErrorAction Stop; $json = $resp.Content | ConvertFrom-Json; $url = $null; if ($json.teams -and $json.teams.Count -gt 0) { $url = $json.teams[0].strBadge }; if ([string]::IsNullOrWhiteSpace($url)) { Write-Output \"NAPOLI_FAIL\" } else { Invoke-WebRequest -UseBasicParsing -Uri $url -OutFile \"./assets/logos/clubs/napoli.png\" -ErrorAction Stop; Write-Output \"NAPOLI_OK\" }"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "audit-logo-coverage-script-2",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\audit-logo-coverage.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "cleanup-logo-artifacts",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"if (Test-Path './assets/logos/clubs/nter-milan.png') { Remove-Item './assets/logos/clubs/nter-milan.png' -Force }; Get-ChildItem './assets/logos/clubs/*.svg' -ErrorAction SilentlyContinue | Remove-Item -Force"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "cleanup-logo-artifacts-2",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"if (Test-Path \"./assets/logos/clubs/nter-milan.png\") { Remove-Item \"./assets/logos/clubs/nter-milan.png\" -Force }; Get-ChildItem \"./assets/logos/clubs/*.svg\" -ErrorAction SilentlyContinue | Remove-Item -Force"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "audit-logo-duplicates",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"$files = Get-ChildItem './assets/logos/clubs/*.png'; $groups = $files | Group-Object { (Get-FileHash $_.FullName -Algorithm SHA256).Hash } | Sort-Object Count -Descending; $groups | Select-Object -First 10 | ForEach-Object { \"HASH_COUNT=$($_.Count)\"; $_.Group | Select-Object -ExpandProperty Name }; \"TOTAL_FILES=$($files.Count)\""
+			],
+			"isBackground": false
+		},
+		{
+			"label": "audit-logo-duplicates-2",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"$files = Get-ChildItem \"./assets/logos/clubs/*.png\"; $groups = $files | Group-Object { (Get-FileHash $_.FullName -Algorithm SHA256).Hash } | Sort-Object Count -Descending; $groups | Select-Object -First 10 | ForEach-Object { Write-Output (\"HASH_COUNT=\" + $_.Count); $_.Group | Select-Object -ExpandProperty Name }; Write-Output (\"TOTAL_FILES=\" + $files.Count)"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "rebuild-club-logos-clean",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"Get-ChildItem \"./assets/logos/clubs/*.png\" -ErrorAction SilentlyContinue | Remove-Item -Force; powershell -ExecutionPolicy Bypass -File .\\scripts\\sync-local-club-logos.ps1 -Overwrite"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "rebuild-club-logos-pass2",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\sync-local-club-logos.ps1",
+				"-Overwrite"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "logo-health",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\logo-health.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "fill-missing-from-wikipedia",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\fill-missing-from-wikipedia.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "fill-missing-from-wikipedia-pass2",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\fill-missing-from-wikipedia.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "logo-health-after-fix",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\logo-health.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "probe-missing-sportsdb",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\probe-missing-sportsdb.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "fill-remaining-logos",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\fill-remaining-logos.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "logo-health-final",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\logo-health.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "fill-trabzonspor-last",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"$url = 'https://www.thesportsdb.com/api/v1/json/3/search_all_teams.php?l=' + [uri]::EscapeDataString('Turkish Super Lig'); $resp = Invoke-WebRequest -UseBasicParsing -Uri $url -Method Get -ErrorAction Stop; $json = $resp.Content | ConvertFrom-Json; $team = @($json.teams) | Where-Object { ([string]$_.strTeam -match 'Trabzon') -or ([string]$_.strAlternate -match 'Trabzon') } | Select-Object -First 1; if ($null -eq $team) { Write-Output 'NO_TEAM' } else { $badge = [string]$team.strBadge; if ([string]::IsNullOrWhiteSpace($badge)) { $badge = [string]$team.strTeamBadge }; if ([string]::IsNullOrWhiteSpace($badge)) { Write-Output 'NO_BADGE' } else { Invoke-WebRequest -UseBasicParsing -Uri $badge -OutFile './assets/logos/clubs/trabzonspor.png' -ErrorAction Stop; Write-Output 'TRABZON_OK' } }"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "fill-trabzonspor-script",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\fill-trabzonspor.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "fill-trabzonspor-wikimedia",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"Invoke-WebRequest -UseBasicParsing -Uri \"https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Trabzonspor_logo.svg/512px-Trabzonspor_logo.svg.png\" -OutFile \"./assets/logos/clubs/trabzonspor.png\" -ErrorAction Stop; Write-Output \"TRABZON_OK\""
+			],
+			"isBackground": false
+		},
+		{
+			"label": "check-trabzon-file",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"if (Test-Path \"./assets/logos/clubs/trabzonspor.png\") { $f = Get-Item \"./assets/logos/clubs/trabzonspor.png\"; Write-Output (\"SIZE=\" + $f.Length) } else { Write-Output \"MISSING\" }"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "fill-trabzonspor-wikimedia-330",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"Invoke-WebRequest -UseBasicParsing -Uri \"https://upload.wikimedia.org/wikipedia/en/thumb/0/09/Trabzonspor_logo.svg/330px-Trabzonspor_logo.svg.png\" -OutFile \"./assets/logos/clubs/trabzonspor.png\" -ErrorAction Stop; $f=Get-Item \"./assets/logos/clubs/trabzonspor.png\"; Write-Output (\"SIZE=\" + $f.Length)"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "create-trabzonspor-temp-png",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\create-trabzonspor-temp-png.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "logo-health-after-trabzon",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\logo-health.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "probe-club-badge-urls",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"$clubs = @('Sevilla','Stuttgart','Valencia','Trabzonspor'); foreach($club in $clubs){ try { $u = 'https://www.thesportsdb.com/api/v1/json/3/searchteams.php?t=' + [uri]::EscapeDataString($club); $r = Invoke-WebRequest -UseBasicParsing -Uri $u -Method Get -ErrorAction Stop; $j = $r.Content | ConvertFrom-Json; $team = @($j.teams) | Select-Object -First 1; if($null -eq $team){ Write-Output ('MISS|' + $club) } else { $badge = [string]$team.strBadge; if([string]::IsNullOrWhiteSpace($badge)){ $badge = [string]$team.strTeamBadge }; Write-Output ('HIT|' + $club + '|' + [string]$team.strTeam + '|' + [string]$team.strLeague + '|' + $badge) } } catch { Write-Output ('ERR|' + $club + '|' + $_.Exception.Message) } }"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "replace-problem-logos",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\replace-problem-logos.ps1"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "replace-arsenal-logo",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-Command",
+				"Invoke-WebRequest -UseBasicParsing -Uri \"https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/512px-Arsenal_FC.svg.png\" -OutFile \"./assets/logos/clubs/arsenal.png\" -ErrorAction Stop; $f = Get-Item \"./assets/logos/clubs/arsenal.png\"; Write-Output (\"ARSENAL_SIZE=\" + $f.Length)"
+			],
+			"isBackground": false
+		},
+		{
+			"label": "replace-arsenal-script",
+			"type": "shell",
+			"command": "powershell",
+			"args": [
+				"-ExecutionPolicy",
+				"Bypass",
+				"-File",
+				".\\scripts\\replace-arsenal.ps1"
+			],
+			"isBackground": false
+		}
+	]
+}

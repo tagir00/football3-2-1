@@ -1,0 +1,18 @@
+{
+  "name": "Futbol 3-2-1",
+  "short_name": "Futbol321",
+  "description": "Iki kisilik kulup-kulup ve ulke-kulup futbol oyunu.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#08111f",
+  "theme_color": "#0f172a",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "./assets/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
