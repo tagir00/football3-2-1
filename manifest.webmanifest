@@ -1,7 +1,7 @@
 {
-  "name": "Futbol 3-2-1",
-  "short_name": "Futbol321",
-  "description": "Iki kisilik kulup-kulup ve ulke-kulup futbol oyunu.",
+  "name": "Oyun Kutusu",
+  "short_name": "OyunKutusu",
+  "description": "Birden fazla mini oyun barindiran mobil parti uygulamasi.",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#08111f",

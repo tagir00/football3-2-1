@@ -1,13 +1,18 @@
-const CACHE_NAME = 'futbol-3-2-1-v6';
+const CACHE_NAME = 'oyun-kutusu-v7';
 const APP_ASSETS = [
   './',
   './index.html',
-  './src/app.js',
-  './src/data.js',
-  './src/styles.css',
+  './src/main.js',
+  './src/shell.css',
+  './src/core/router.js',
+  './src/core/registry.js',
+  './src/core/storage.js',
   './manifest.webmanifest',
   './assets/icons/icon.svg',
 ];
+
+// Oyun modulleri (src/games/**) burada onceden yuklenmez; lazy-load edildikce
+// asagidaki fetch handler onlari otomatik olarak runtime cache'e ekler.
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_ASSETS)));
