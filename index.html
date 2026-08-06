@@ -6,13 +6,13 @@
     <meta name="theme-color" content="#0f172a" />
     <meta
       name="description"
-      content="Futbol 3-2-1: Iki kisilik kulup-kulup ve ulke-kulup futbol oyunu."
+      content="Oyun Kutusu: Birden fazla mini oyun barindiran mobil parti uygulamasi."
     />
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="icon" href="./assets/icons/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./assets/icons/icon.svg" />
-    <title>Futbol 3-2-1</title>
-    <link rel="stylesheet" href="./src/styles.css" />
+    <title>Oyun Kutusu</title>
+    <link rel="stylesheet" href="./src/shell.css" />
   </head>
   <body>
     <div class="app-shell">
@@ -20,107 +20,16 @@
       <div class="ambient ambient-b"></div>
       <div class="ambient ambient-c"></div>
 
-      <main class="app" id="app">
-        <section class="hero-panel" id="homePanel">
-          <div class="home-header-row">
-            <p class="eyebrow">Mobil Futbol Partisi</p>
-            <button class="icon-button" id="infoButton" type="button" aria-label="Bilgilendirme">
-              ?
-            </button>
-          </div>
+      <header class="topbar">
+        <a class="topbar-brand" href="#/">Oyun Kutusu</a>
+      </header>
 
-          <div class="home-copy-block">
-            <h1>Futbol 3-2-1</h1>
-            <p class="hero-copy">Hos geldiniz. Hazirsan oyunu baslat ve modu sec.</p>
-          </div>
-
-          <button class="primary-button home-start-button" id="openModesButton" type="button">
-            Oyunu Baslat
-          </button>
-        </section>
-
-        <section class="mode-panel hidden" id="modePanel">
-          <div class="mode-panel-header">
-            <div>
-              <p class="eyebrow">Mod Secimi</p>
-              <h2>Hangi modda oynayacaksiniz?</h2>
-            </div>
-            <button class="ghost-button" id="modeBackButton" type="button">Geri Don</button>
-          </div>
-
-          <div class="mode-grid" id="modeGrid"></div>
-        </section>
-
-        <section class="game-panel hidden" id="gamePanel">
-          <header class="game-header">
-            <button class="ghost-button" id="backButton" type="button">Modlara Don</button>
-            <div>
-              <p class="eyebrow" id="modeLabel"></p>
-              <h2 id="roundTitle">Yeni Tur</h2>
-            </div>
-            <div class="header-side">
-              <div class="round-badge" id="roundBadge">Tur 0</div>
-              <div class="mini-note" id="orientationHint">Sayac hazir</div>
-            </div>
-          </header>
-
-          <div class="status-strip" id="statusStrip">
-            Baslat'a bas, 3-2-1 sayaci baslasin.
-          </div>
-
-          <section class="board" id="board">
-            <div class="countdown-layer hidden" id="countdownLayer" aria-live="polite">
-              <div class="countdown-ring"></div>
-              <div class="countdown-value" id="countdownValue">3</div>
-            </div>
-
-            <article class="slot-card slot-left" id="leftCard">
-              <div class="slot-placeholder">
-                <span class="placeholder-icon">3</span>
-                <p>Baslat'a bas ve ilk eslesmeyi getir.</p>
-              </div>
-            </article>
-
-            <article class="slot-card slot-right" id="rightCard">
-              <div class="slot-placeholder">
-                <span class="placeholder-icon">2</span>
-                <p>Burada ikinci takim ya da ulke gorunecek.</p>
-              </div>
-            </article>
-          </section>
-
-          <div class="action-row">
-            <button class="primary-button" id="startButton" type="button">Baslat</button>
-            <button class="danger-button hidden" id="retryButton" type="button">
-              Oyuncu Bulamadik
-            </button>
-          </div>
-        </section>
-
-        <section class="info-modal hidden" id="infoModal" aria-hidden="true">
-          <div class="info-card">
-            <div class="info-header">
-              <div>
-                <p class="eyebrow">Bilgilendirme</p>
-                <h2>Oyun Kurallari</h2>
-              </div>
-              <button class="icon-button" id="closeInfoButton" type="button" aria-label="Kapat">
-                x
-              </button>
-            </div>
-
-            <div class="info-list">
-              <p>1. Oyuncular ekrandaki ulke veya kulup eslesmesine gore ortak oyuncu ismi soyler.</p>
-              <p>2. Uygulama sadece 3-2-1 sayaci ve random eslesme getirir.</p>
-              <p>3. Puan takibini oyuncular kendileri yapar.</p>
-              <p>4. Ulke-Kulup modunda Oyuncu Bulamadik ayni sag-sol duzenini korur.</p>
-              <p>5. Baslat yeni turu acarken ulke-kulup modunda taraflari degistirir.</p>
-            </div>
-          </div>
-        </section>
+      <main class="app">
+        <div id="hubRoot"></div>
+        <div id="gameRoot" class="hidden"></div>
       </main>
     </div>
 
-    <script type="module" src="./src/app.js"></script>
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
