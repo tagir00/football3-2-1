@@ -187,14 +187,13 @@
 }
 
 .badge-shell {
+  position: relative;
   width: min(11rem, 55vw);
   aspect-ratio: 1;
   border-radius: 2rem;
   padding: 0.9rem;
   background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.03));
   border: 1px solid rgba(255, 255, 255, 0.1);
-  display: grid;
-  place-items: center;
   overflow: hidden;
 }
 
@@ -206,35 +205,21 @@
 }
 
 .badge-stack {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  display: grid;
-  place-items: center;
+  position: absolute;
+  inset: 0.9rem;
+  display: block;
 }
 
 .badge-stack[data-badge-source='local'],
 .badge-stack[data-badge-source='remote'] {
+  inset: 0.25rem;
   filter: drop-shadow(0 16px 26px rgba(0, 0, 0, 0.18));
 }
 
-.badge-fallback,
-.badge-live {
-  grid-area: 1 / 1;
-}
-
-.badge-live {
-  position: relative;
-  z-index: 2;
-  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.12), transparent 55%);
-}
-
-.badge-loading {
-  display: none;
-}
-
-.badge-ready .badge-loading {
-  display: none;
+.badge-stack[data-badge-source='local'] .badge-image,
+.badge-stack[data-badge-source='remote'] .badge-image {
+  border-radius: 0;
+  background: none;
 }
 
 .entity-type {
@@ -398,6 +383,15 @@
     width: min(8.2rem, 33vw);
     border-radius: 1.45rem;
     padding: 0.65rem;
+  }
+
+  .badge-stack {
+    inset: 0.65rem;
+  }
+
+  .badge-stack[data-badge-source='local'],
+  .badge-stack[data-badge-source='remote'] {
+    inset: 0.2rem;
   }
 
   .entity-card {

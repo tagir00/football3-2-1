@@ -246,49 +246,6 @@ function pickRandomEntry(list) {
   return list[Math.floor(Math.random() * list.length)];
 }
 
-function buildInitials(name) {
-  return name
-    .split(/\s+/)
-    .filter(Boolean)
-    .slice(0, 3)
-    .map((part) => part[0])
-    .join('')
-    .toUpperCase();
-}
-
-function clubPalette(name) {
-  const palettes = [
-    ['#9a3412', '#fb923c'],
-    ['#1d4ed8', '#60a5fa'],
-    ['#166534', '#4ade80'],
-    ['#7e22ce', '#c084fc'],
-    ['#be123c', '#fb7185'],
-    ['#0f766e', '#5eead4'],
-  ];
-
-  const hash = [...name].reduce((accumulator, char) => accumulator + char.charCodeAt(0), 0);
-  return palettes[hash % palettes.length];
-}
-
-function createClubLogo(name) {
-  const [start, end] = clubPalette(name);
-  const initials = buildInitials(name);
-  const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="${name}">
-      <defs>
-        <linearGradient id="crestGradient" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="${start}" />
-          <stop offset="100%" stop-color="${end}" />
-        </linearGradient>
-      </defs>
-      <path d="M60 6 104 20v34c0 27.3-17.8 51.8-44 60C33.8 105.8 16 81.3 16 54V20L60 6Z" fill="url(#crestGradient)" />
-      <path d="M60 16 95 27v26c0 21.7-13.9 41.4-35 48.1C38.9 94.4 25 74.7 25 53V27l35-11Z" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.4)" stroke-width="2" />
-      <text x="60" y="67" text-anchor="middle" font-size="30" font-family="Arial, sans-serif" font-weight="700" fill="#fff">${initials}</text>
-    </svg>
-  `;
-  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
-}
-
 async function fetchClubBadgeUrl(name) {
   if (clubBadgeCache.has(name)) {
     return clubBadgeCache.get(name);
@@ -305,14 +262,6 @@ async function fetchClubBadgeUrl(name) {
   const badgeUrl = sportsDbBadgeUrl ?? wikipediaBadgeUrl ?? staticRemoteBadgeUrl;
   clubBadgeCache.set(name, badgeUrl);
   return badgeUrl;
-}
-
-function createFallbackBadge(name) {
-  return `
-    <div class="badge-fallback" aria-hidden="true">
-      <img class="badge-image" src="${createClubLogo(name)}" alt="" />
-    </div>
-  `;
 }
 
 async function resolveLocalClubBadge(entry) {
@@ -377,11 +326,7 @@ function createCardMarkup(entry) {
   const visibleName = entry.displayName ?? entry.name;
   const media = isCountry
     ? `<img class="badge-image" src="${countryFlagUrl(entry.code)}" alt="${visibleName} bayragi" loading="lazy" />`
-    : `
-      <div class="badge-stack" data-club-badge data-club-name="${entry.name}">
-        ${createFallbackBadge(entry.name)}
-      </div>
-    `;
+    : `<div class="badge-stack" data-club-badge data-club-name="${entry.name}"></div>`;
 
   const meta = isCountry ? 'Milli takim havuzu' : entry.leagueDisplayName ?? entry.league;
 
@@ -441,7 +386,7 @@ async function hydrateClubBadges(scope) {
       }
 
       if (resolvedImage) {
-        node.prepend(resolvedImage);
+        node.append(resolvedImage);
       }
 
       node.dataset.badgeSource = resolvedSource;
@@ -590,33 +535,50 @@ export async function mount(container) {
     }, 520);
   }
 
+  function previousEntityNames() {
+    if (!state.currentPair) {
+      return new Set();
+    }
+    return new Set([state.currentPair.left?.name, state.currentPair.right?.name].filter(Boolean));
+  }
+
   function generateClubClubPair() {
-    if (clubClubConnections.length > 0) {
-      const connection = pickRandomEntry(clubClubConnections);
-      return {
-        left: clubsByName.get(connection.clubs[0]),
-        right: clubsByName.get(connection.clubs[1]),
-        connection,
-      };
+    if (clubClubConnections.length === 0) {
+      return null;
     }
 
-    return null;
+    const excluded = previousEntityNames();
+    const fresh = clubClubConnections.filter(
+      (c) => !excluded.has(c.clubs[0]) && !excluded.has(c.clubs[1]),
+    );
+    const pool = fresh.length > 0 ? fresh : clubClubConnections;
+    const connection = pickRandomEntry(pool);
+    return {
+      left: clubsByName.get(connection.clubs[0]),
+      right: clubsByName.get(connection.clubs[1]),
+      connection,
+    };
   }
 
   function generateCountryClubPair(orientation) {
-    if (countryClubConnections.length > 0) {
-      const connection = pickRandomEntry(countryClubConnections);
-      const country = countriesByName.get(connection.country);
-      const club = clubsByName.get(connection.club);
-
-      if (orientation === 'country-left') {
-        return { left: country, right: club, connection };
-      }
-
-      return { left: club, right: country, connection };
+    if (countryClubConnections.length === 0) {
+      return null;
     }
 
-    return null;
+    const excluded = previousEntityNames();
+    const fresh = countryClubConnections.filter(
+      (c) => !excluded.has(c.country) && !excluded.has(c.club),
+    );
+    const pool = fresh.length > 0 ? fresh : countryClubConnections;
+    const connection = pickRandomEntry(pool);
+    const country = countriesByName.get(connection.country);
+    const club = clubsByName.get(connection.club);
+
+    if (orientation === 'country-left') {
+      return { left: country, right: club, connection };
+    }
+
+    return { left: club, right: country, connection };
   }
 
   function updateRoundUI() {
