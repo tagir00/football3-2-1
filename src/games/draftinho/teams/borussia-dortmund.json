@@ -1,0 +1,298 @@
+{
+    "id":  "borussia-dortmund",
+    "name":  "Borussia Dortmund",
+    "displayName":  "Borussia Dortmund",
+    "logo":  "./assets/logos/clubs/borussia-dortmund.png",
+    "players":  [
+                    {
+                        "name":  "Gregor Kobel",
+                        "slug":  "gregor-kobel",
+                        "position":  "GK",
+                        "shirt":  1,
+                        "age":  28,
+                        "birth":  "1997-12-06",
+                        "height":  193,
+                        "marketValue":  41000000
+                    },
+                    {
+                        "name":  "Patrick Drewes",
+                        "slug":  "patrick-drewes",
+                        "position":  "GK",
+                        "shirt":  30,
+                        "age":  33,
+                        "birth":  "1993-02-04",
+                        "height":  194,
+                        "marketValue":  315000
+                    },
+                    {
+                        "name":  "Silas Ostrzinski",
+                        "slug":  "silas-ostrzinski",
+                        "position":  "GK",
+                        "shirt":  31,
+                        "age":  22,
+                        "birth":  "2003-11-19",
+                        "height":  197,
+                        "marketValue":  205000
+                    },
+                    {
+                        "name":  "Alexander Meyer",
+                        "slug":  "alexander-meyer",
+                        "position":  "GK",
+                        "shirt":  33,
+                        "age":  35,
+                        "birth":  "1991-04-13",
+                        "height":  196,
+                        "marketValue":  475000
+                    },
+                    {
+                        "name":  "Diant Ramaj",
+                        "slug":  "diant-ramaj",
+                        "position":  "GK",
+                        "shirt":  41,
+                        "age":  24,
+                        "birth":  "2001-09-19",
+                        "height":  189,
+                        "marketValue":  6300000
+                    },
+                    {
+                        "name":  "Waldemar Anton",
+                        "slug":  "waldemar-anton",
+                        "position":  "DEF",
+                        "shirt":  3,
+                        "age":  30,
+                        "birth":  "1996-07-20",
+                        "height":  189,
+                        "marketValue":  19700000
+                    },
+                    {
+                        "name":  "Nico Schlotterbeck",
+                        "slug":  "nico-schlotterbeck",
+                        "position":  "DEF",
+                        "shirt":  4,
+                        "age":  26,
+                        "birth":  "1999-12-01",
+                        "height":  191,
+                        "marketValue":  57000000
+                    },
+                    {
+                        "name":  "Ramy Bensebaini",
+                        "slug":  "ramy-bensebaini",
+                        "position":  "DEF",
+                        "shirt":  5,
+                        "age":  31,
+                        "birth":  "1995-04-16",
+                        "height":  186,
+                        "marketValue":  7400000
+                    },
+                    {
+                        "name":  "Joane Gadou",
+                        "slug":  "joane-gadou",
+                        "position":  "DEF",
+                        "shirt":  22,
+                        "age":  19,
+                        "birth":  "2007-01-17",
+                        "height":  195,
+                        "marketValue":  18500000
+                    },
+                    {
+                        "name":  "Emre Can",
+                        "slug":  "emre-can",
+                        "position":  "DEF",
+                        "shirt":  23,
+                        "age":  32,
+                        "birth":  "1994-01-12",
+                        "height":  186,
+                        "marketValue":  3200000
+                    },
+                    {
+                        "name":  "Niklas Süle",
+                        "slug":  "niklas-sule",
+                        "position":  "DEF",
+                        "shirt":  25,
+                        "age":  30,
+                        "birth":  "1995-09-03",
+                        "height":  195,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Filippo Mané",
+                        "slug":  "filippo-calixte-mane",
+                        "position":  "DEF",
+                        "shirt":  39,
+                        "age":  21,
+                        "birth":  "2005-03-08",
+                        "height":  188,
+                        "marketValue":  2400000
+                    },
+                    {
+                        "name":  "Almugera Kabar",
+                        "slug":  "almugera-kabar",
+                        "position":  "DEF",
+                        "shirt":  42,
+                        "age":  20,
+                        "birth":  "2006-02-06",
+                        "height":  181,
+                        "marketValue":  3100000
+                    },
+                    {
+                        "name":  "Luca Reggiani",
+                        "slug":  "luca-reggiani",
+                        "position":  "DEF",
+                        "shirt":  49,
+                        "age":  18,
+                        "birth":  "2008-01-09",
+                        "height":  192,
+                        "marketValue":  9700000
+                    },
+                    {
+                        "name":  "Yan Couto",
+                        "slug":  "yan-couto",
+                        "position":  "MID",
+                        "shirt":  2,
+                        "age":  24,
+                        "birth":  "2002-06-03",
+                        "height":  169,
+                        "marketValue":  17500000
+                    },
+                    {
+                        "name":  "Jobe Bellingham",
+                        "slug":  "jobe-bellingham",
+                        "position":  "MID",
+                        "shirt":  7,
+                        "age":  20,
+                        "birth":  "2005-09-23",
+                        "height":  189,
+                        "marketValue":  38000000
+                    },
+                    {
+                        "name":  "Felix Nmecha",
+                        "slug":  "felix-nmecha",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  25,
+                        "birth":  "2000-10-10",
+                        "height":  190,
+                        "marketValue":  53000000
+                    },
+                    {
+                        "name":  "Carney Chukwuemeka",
+                        "slug":  "carney-chukwuemeka",
+                        "position":  "MID",
+                        "shirt":  17,
+                        "age":  22,
+                        "birth":  "2003-10-20",
+                        "height":  185,
+                        "marketValue":  18100000
+                    },
+                    {
+                        "name":  "Konstantinos Karetsas",
+                        "slug":  "konstantinos-karetsas",
+                        "position":  "MID",
+                        "shirt":  20,
+                        "age":  18,
+                        "birth":  "2007-11-19",
+                        "height":  171,
+                        "marketValue":  34000000
+                    },
+                    {
+                        "name":  "Marcel Sabitzer",
+                        "slug":  "marcel-sabitzer",
+                        "position":  "MID",
+                        "shirt":  20,
+                        "age":  32,
+                        "birth":  "1994-03-17",
+                        "height":  177,
+                        "marketValue":  6200000
+                    },
+                    {
+                        "name":  "Daniel Svensson",
+                        "slug":  "daniel-svensson",
+                        "position":  "MID",
+                        "shirt":  24,
+                        "age":  24,
+                        "birth":  "2002-02-12",
+                        "height":  183,
+                        "marketValue":  20000000
+                    },
+                    {
+                        "name":  "Julian Ryerson",
+                        "slug":  "julian-ryerson",
+                        "position":  "MID",
+                        "shirt":  26,
+                        "age":  28,
+                        "birth":  "1997-11-17",
+                        "height":  183,
+                        "marketValue":  24000000
+                    },
+                    {
+                        "name":  "Justin Lerma",
+                        "slug":  "lerma-justin",
+                        "position":  "MID",
+                        "shirt":  28,
+                        "age":  18,
+                        "birth":  "2008-05-05",
+                        "height":  176,
+                        "marketValue":  3100000
+                    },
+                    {
+                        "name":  "Samuele Inacio",
+                        "slug":  "samuele-inacio",
+                        "position":  "MID",
+                        "shirt":  40,
+                        "age":  18,
+                        "birth":  "2008-04-02",
+                        "height":  175,
+                        "marketValue":  15900000
+                    },
+                    {
+                        "name":  "Mussa Kaba",
+                        "slug":  "mussa-kaba",
+                        "position":  "MID",
+                        "shirt":  48,
+                        "age":  17,
+                        "birth":  "2008-11-17",
+                        "height":  194,
+                        "marketValue":  215000
+                    },
+                    {
+                        "name":  "Serhou Guirassy",
+                        "slug":  "serhou-guirassy",
+                        "position":  "FW",
+                        "shirt":  9,
+                        "age":  30,
+                        "birth":  "1996-03-12",
+                        "height":  187,
+                        "marketValue":  34000000
+                    },
+                    {
+                        "name":  "Maximilian Beier",
+                        "slug":  "maximilian-beier",
+                        "position":  "FW",
+                        "shirt":  14,
+                        "age":  23,
+                        "birth":  "2002-10-17",
+                        "height":  183,
+                        "marketValue":  43000000
+                    },
+                    {
+                        "name":  "Fábio Silva",
+                        "slug":  "fabio-silva",
+                        "position":  "FW",
+                        "shirt":  21,
+                        "age":  24,
+                        "birth":  "2002-07-19",
+                        "height":  185,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Mathis Albert",
+                        "slug":  "mathis-albert",
+                        "position":  "FW",
+                        "shirt":  41,
+                        "age":  17,
+                        "birth":  "2009-05-21",
+                        "height":  175,
+                        "marketValue":  310000
+                    }
+                ]
+}

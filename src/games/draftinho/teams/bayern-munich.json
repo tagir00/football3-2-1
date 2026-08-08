@@ -1,0 +1,308 @@
+{
+    "id":  "bayern-munich",
+    "name":  "Bayern Munih",
+    "displayName":  "Bayern Munih",
+    "logo":  "./assets/logos/clubs/bayern-munich.png",
+    "players":  [
+                    {
+                        "name":  "Manuel Neuer",
+                        "slug":  "manuel-neuer",
+                        "position":  "GK",
+                        "shirt":  1,
+                        "age":  40,
+                        "birth":  "1986-03-27",
+                        "height":  193,
+                        "marketValue":  4099999
+                    },
+                    {
+                        "name":  "Sven Ulreich",
+                        "slug":  "sven-ulreich",
+                        "position":  "GK",
+                        "shirt":  26,
+                        "age":  38,
+                        "birth":  "1988-08-03",
+                        "height":  192,
+                        "marketValue":  515000
+                    },
+                    {
+                        "name":  "Jonas Urbig",
+                        "slug":  "jonas-urbig",
+                        "position":  "GK",
+                        "shirt":  40,
+                        "age":  23,
+                        "birth":  "2003-08-08",
+                        "height":  189,
+                        "marketValue":  19600000
+                    },
+                    {
+                        "name":  "Dayot Upamecano",
+                        "slug":  "dayot-upamecano",
+                        "position":  "DEF",
+                        "shirt":  2,
+                        "age":  27,
+                        "birth":  "1998-10-27",
+                        "height":  185,
+                        "marketValue":  69000000
+                    },
+                    {
+                        "name":  "Kim Min-jae",
+                        "slug":  "kim-min-jae",
+                        "position":  "DEF",
+                        "shirt":  3,
+                        "age":  29,
+                        "birth":  "1996-11-15",
+                        "height":  190,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Jonathan Tah",
+                        "slug":  "jonathan-tah",
+                        "position":  "DEF",
+                        "shirt":  4,
+                        "age":  30,
+                        "birth":  "1996-02-11",
+                        "height":  194,
+                        "marketValue":  26000000
+                    },
+                    {
+                        "name":  "Nathaniel Brown",
+                        "slug":  "nathaniel-brown",
+                        "position":  "DEF",
+                        "shirt":  11,
+                        "age":  23,
+                        "birth":  "2003-06-16",
+                        "height":  179,
+                        "marketValue":  46000000
+                    },
+                    {
+                        "name":  "Alphonso Davies",
+                        "slug":  "alphonso-davies",
+                        "position":  "DEF",
+                        "shirt":  19,
+                        "age":  25,
+                        "birth":  "2000-11-02",
+                        "height":  185,
+                        "marketValue":  39000000
+                    },
+                    {
+                        "name":  "Hiroki Itō",
+                        "slug":  "hiroki-ito",
+                        "position":  "DEF",
+                        "shirt":  21,
+                        "age":  27,
+                        "birth":  "1999-05-12",
+                        "height":  188,
+                        "marketValue":  19800000
+                    },
+                    {
+                        "name":  "Sacha Boey",
+                        "slug":  "sacha-boey",
+                        "position":  "DEF",
+                        "shirt":  23,
+                        "age":  25,
+                        "birth":  "2000-09-13",
+                        "height":  178,
+                        "marketValue":  9200000
+                    },
+                    {
+                        "name":  "Konrad Laimer",
+                        "slug":  "konrad-laimer",
+                        "position":  "DEF",
+                        "shirt":  27,
+                        "age":  29,
+                        "birth":  "1997-05-27",
+                        "height":  180,
+                        "marketValue":  31000000
+                    },
+                    {
+                        "name":  "Tarek Buchmann",
+                        "slug":  "buchmann-tarek",
+                        "position":  "DEF",
+                        "shirt":  28,
+                        "age":  21,
+                        "birth":  "2005-02-28",
+                        "height":  188,
+                        "marketValue":  310000
+                    },
+                    {
+                        "name":  "Josip Stanišić",
+                        "slug":  "josip-stanisic",
+                        "position":  "DEF",
+                        "shirt":  44,
+                        "age":  26,
+                        "birth":  "2000-04-02",
+                        "height":  186,
+                        "marketValue":  39000000
+                    },
+                    {
+                        "name":  "Joshua Kimmich",
+                        "slug":  "joshua-kimmich",
+                        "position":  "MID",
+                        "shirt":  6,
+                        "age":  31,
+                        "birth":  "1995-02-08",
+                        "height":  176,
+                        "marketValue":  38000000
+                    },
+                    {
+                        "name":  "Serge Gnabry",
+                        "slug":  "serge-gnabry",
+                        "position":  "MID",
+                        "shirt":  7,
+                        "age":  31,
+                        "birth":  "1995-07-14",
+                        "height":  176,
+                        "marketValue":  18900000
+                    },
+                    {
+                        "name":  "Tom Bischof",
+                        "slug":  "tom-bischof",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  21,
+                        "birth":  "2005-06-28",
+                        "height":  176,
+                        "marketValue":  39000000
+                    },
+                    {
+                        "name":  "Jamal Musiala",
+                        "slug":  "jamal-musiala",
+                        "position":  "MID",
+                        "shirt":  10,
+                        "age":  23,
+                        "birth":  "2003-02-26",
+                        "height":  184,
+                        "marketValue":  97000000
+                    },
+                    {
+                        "name":  "Luis Díaz",
+                        "slug":  "luis-diaz",
+                        "position":  "MID",
+                        "shirt":  14,
+                        "age":  29,
+                        "birth":  "1997-01-13",
+                        "height":  178,
+                        "marketValue":  76000000
+                    },
+                    {
+                        "name":  "João Palhinha",
+                        "slug":  "joao-palhinha",
+                        "position":  "MID",
+                        "shirt":  16,
+                        "age":  31,
+                        "birth":  "1995-07-09",
+                        "height":  189,
+                        "marketValue":  13800000
+                    },
+                    {
+                        "name":  "Michael Olise",
+                        "slug":  "michael-olise",
+                        "position":  "MID",
+                        "shirt":  17,
+                        "age":  24,
+                        "birth":  "2001-12-12",
+                        "height":  184,
+                        "marketValue":  164000000
+                    },
+                    {
+                        "name":  "Arijon Ibrahimović",
+                        "slug":  "arijon-ibrahimovic",
+                        "position":  "MID",
+                        "shirt":  22,
+                        "age":  20,
+                        "birth":  "2005-12-11",
+                        "height":  176,
+                        "marketValue":  10500000
+                    },
+                    {
+                        "name":  "Felipe Chávez",
+                        "slug":  "felipe-chavez",
+                        "position":  "MID",
+                        "shirt":  30,
+                        "age":  19,
+                        "birth":  "2007-04-10",
+                        "height":  175,
+                        "marketValue":  3700000
+                    },
+                    {
+                        "name":  "Ismael Saibari",
+                        "slug":  "ismael-saibari",
+                        "position":  "MID",
+                        "shirt":  34,
+                        "age":  25,
+                        "birth":  "2001-01-28",
+                        "height":  185,
+                        "marketValue":  60000000
+                    },
+                    {
+                        "name":  "Lennart Karl",
+                        "slug":  "lennart-karl",
+                        "position":  "MID",
+                        "shirt":  42,
+                        "age":  18,
+                        "birth":  "2008-02-22",
+                        "height":  168,
+                        "marketValue":  63000000
+                    },
+                    {
+                        "name":  "Aleksandar Pavlović",
+                        "slug":  "aleksandar-pavlovic",
+                        "position":  "MID",
+                        "shirt":  45,
+                        "age":  22,
+                        "birth":  "2004-05-03",
+                        "height":  186,
+                        "marketValue":  96000000
+                    },
+                    {
+                        "name":  "Harry Kane",
+                        "slug":  "harry-kane",
+                        "position":  "FW",
+                        "shirt":  9,
+                        "age":  33,
+                        "birth":  "1993-07-28",
+                        "height":  188,
+                        "marketValue":  65000000
+                    },
+                    {
+                        "name":  "Bryan Zaragoza",
+                        "slug":  "bryan-zaragoza",
+                        "position":  "FW",
+                        "shirt":  17,
+                        "age":  24,
+                        "birth":  "2001-09-09",
+                        "height":  165,
+                        "marketValue":  7500000
+                    },
+                    {
+                        "name":  "Armindo Sieb",
+                        "slug":  "armindo-sieb",
+                        "position":  "FW",
+                        "shirt":  30,
+                        "age":  23,
+                        "birth":  "2003-02-17",
+                        "height":  175,
+                        "marketValue":  2600000
+                    },
+                    {
+                        "name":  "Tim Binder",
+                        "slug":  "tim-binder",
+                        "position":  "FW",
+                        "shirt":  31,
+                        "age":  19,
+                        "birth":  "2007-01-30",
+                        "height":  178,
+                        "marketValue":  390000
+                    },
+                    {
+                        "name":  "Maycon Cardozo",
+                        "slug":  "maycon-cardozo",
+                        "position":  "FW",
+                        "shirt":  35,
+                        "age":  17,
+                        "birth":  "2008-10-07",
+                        "height":  165,
+                        "marketValue":  2900000
+                    }
+                ]
+}

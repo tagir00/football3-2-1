@@ -1,0 +1,398 @@
+{
+    "id":  "arsenal",
+    "name":  "Arsenal",
+    "displayName":  "Arsenal",
+    "logo":  "./assets/logos/clubs/arsenal.png",
+    "players":  [
+                    {
+                        "name":  "David Raya",
+                        "slug":  "david-raya",
+                        "position":  "GK",
+                        "shirt":  1,
+                        "age":  30,
+                        "birth":  "1995-09-15",
+                        "height":  183,
+                        "marketValue":  33000000
+                    },
+                    {
+                        "name":  "Kepa Arrizabalaga",
+                        "slug":  "kepa-arrizabalaga",
+                        "position":  "GK",
+                        "shirt":  13,
+                        "age":  31,
+                        "birth":  "1994-10-03",
+                        "height":  188,
+                        "marketValue":  5300000
+                    },
+                    {
+                        "name":  "Illan Meslier",
+                        "slug":  "illan-meslier",
+                        "position":  "GK",
+                        "shirt":  30,
+                        "age":  26,
+                        "birth":  "2000-03-02",
+                        "height":  196,
+                        "marketValue":  7500000
+                    },
+                    {
+                        "name":  "Tommy Setford",
+                        "slug":  "tommy-setford",
+                        "position":  "GK",
+                        "shirt":  35,
+                        "age":  20,
+                        "birth":  "2006-03-13",
+                        "height":  185,
+                        "marketValue":  515000
+                    },
+                    {
+                        "name":  "Khari Ranson",
+                        "slug":  "khari-ranson",
+                        "position":  "GK",
+                        "shirt":  42,
+                        "age":  18,
+                        "birth":  "2007-09-13",
+                        "height":  183,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "William Saliba",
+                        "slug":  "william-saliba",
+                        "position":  "DEF",
+                        "shirt":  2,
+                        "age":  25,
+                        "birth":  "2001-03-24",
+                        "height":  193,
+                        "marketValue":  94000000
+                    },
+                    {
+                        "name":  "Cristhian Mosquera",
+                        "slug":  "cristhian-mosquera",
+                        "position":  "DEF",
+                        "shirt":  3,
+                        "age":  22,
+                        "birth":  "2004-06-27",
+                        "height":  191,
+                        "marketValue":  38000000
+                    },
+                    {
+                        "name":  "Ben White",
+                        "slug":  "ben-white",
+                        "position":  "DEF",
+                        "shirt":  4,
+                        "age":  28,
+                        "birth":  "1997-10-08",
+                        "height":  186,
+                        "marketValue":  27000000
+                    },
+                    {
+                        "name":  "Piero Hincapié",
+                        "slug":  "piero-hincapie",
+                        "position":  "DEF",
+                        "shirt":  5,
+                        "age":  24,
+                        "birth":  "2002-01-09",
+                        "height":  184,
+                        "marketValue":  46000000
+                    },
+                    {
+                        "name":  "Gabriel Magalhães",
+                        "slug":  "gabriel-magalhaes",
+                        "position":  "DEF",
+                        "shirt":  6,
+                        "age":  28,
+                        "birth":  "1997-12-19",
+                        "height":  190,
+                        "marketValue":  70000000
+                    },
+                    {
+                        "name":  "Jurriën Timber",
+                        "slug":  "jurrien-timber",
+                        "position":  "DEF",
+                        "shirt":  12,
+                        "age":  25,
+                        "birth":  "2001-06-17",
+                        "height":  179,
+                        "marketValue":  73000000
+                    },
+                    {
+                        "name":  "Riccardo Calafiori",
+                        "slug":  "riccardo-calafiori",
+                        "position":  "DEF",
+                        "shirt":  33,
+                        "age":  24,
+                        "birth":  "2002-05-19",
+                        "height":  188,
+                        "marketValue":  53000000
+                    },
+                    {
+                        "name":  "Brayden Clarke",
+                        "slug":  "brayden-clarke",
+                        "position":  "DEF",
+                        "shirt":  38,
+                        "age":  19,
+                        "birth":  "2007-07-03",
+                        "height":  181,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Theo Julienne",
+                        "slug":  "theo-julienne",
+                        "position":  "DEF",
+                        "shirt":  45,
+                        "age":  18,
+                        "birth":  "2008-01-11",
+                        "height":  0,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Myles Lewis-Skelly",
+                        "slug":  "lewis-skelly-myles",
+                        "position":  "DEF",
+                        "shirt":  49,
+                        "age":  19,
+                        "birth":  "2006-09-26",
+                        "height":  178,
+                        "marketValue":  48000000
+                    },
+                    {
+                        "name":  "Josh Ogunnaike",
+                        "slug":  "josh-ogunnaike",
+                        "position":  "DEF",
+                        "shirt":  52,
+                        "age":  18,
+                        "birth":  "2008-04-04",
+                        "height":  0,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Marli Salmon",
+                        "slug":  "marli-salmon",
+                        "position":  "DEF",
+                        "shirt":  89,
+                        "age":  16,
+                        "birth":  "2009-08-29",
+                        "height":  186,
+                        "marketValue":  4800000
+                    },
+                    {
+                        "name":  "Martin Ødegaard",
+                        "slug":  "martin-degaard",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  27,
+                        "birth":  "1998-12-17",
+                        "height":  178,
+                        "marketValue":  77000000
+                    },
+                    {
+                        "name":  "Eberechi Eze",
+                        "slug":  "eberechi-eze",
+                        "position":  "MID",
+                        "shirt":  10,
+                        "age":  28,
+                        "birth":  "1998-06-29",
+                        "height":  178,
+                        "marketValue":  69000000
+                    },
+                    {
+                        "name":  "Christos Tzolis",
+                        "slug":  "christos-tzolis",
+                        "position":  "MID",
+                        "shirt":  17,
+                        "age":  24,
+                        "birth":  "2002-01-30",
+                        "height":  180,
+                        "marketValue":  42000000
+                    },
+                    {
+                        "name":  "Fábio Vieira",
+                        "slug":  "fabio-vieira",
+                        "position":  "MID",
+                        "shirt":  21,
+                        "age":  26,
+                        "birth":  "2000-05-30",
+                        "height":  170,
+                        "marketValue":  16600000
+                    },
+                    {
+                        "name":  "Ethan Nwaneri",
+                        "slug":  "ethan-nwaneri",
+                        "position":  "MID",
+                        "shirt":  22,
+                        "age":  19,
+                        "birth":  "2007-03-21",
+                        "height":  176,
+                        "marketValue":  34000000
+                    },
+                    {
+                        "name":  "Mikel Merino",
+                        "slug":  "mikel-merino",
+                        "position":  "MID",
+                        "shirt":  23,
+                        "age":  30,
+                        "birth":  "1996-06-22",
+                        "height":  188,
+                        "marketValue":  26000000
+                    },
+                    {
+                        "name":  "Reiss Nelson",
+                        "slug":  "reiss-nelson",
+                        "position":  "MID",
+                        "shirt":  24,
+                        "age":  26,
+                        "birth":  "1999-12-10",
+                        "height":  175,
+                        "marketValue":  8800000
+                    },
+                    {
+                        "name":  "Martín Zubimendi",
+                        "slug":  "martin-zubimendi",
+                        "position":  "MID",
+                        "shirt":  36,
+                        "age":  27,
+                        "birth":  "1999-02-02",
+                        "height":  180,
+                        "marketValue":  77000000
+                    },
+                    {
+                        "name":  "Louie Copley",
+                        "slug":  "louie-copley",
+                        "position":  "MID",
+                        "shirt":  39,
+                        "age":  19,
+                        "birth":  "2006-10-20",
+                        "height":  175,
+                        "marketValue":  68000
+                    },
+                    {
+                        "name":  "Declan Rice",
+                        "slug":  "declan-rice",
+                        "position":  "MID",
+                        "shirt":  41,
+                        "age":  27,
+                        "birth":  "1999-01-14",
+                        "height":  188,
+                        "marketValue":  114000000
+                    },
+                    {
+                        "name":  "Andre Harriman-Annous",
+                        "slug":  "andre-annous",
+                        "position":  "MID",
+                        "shirt":  43,
+                        "age":  18,
+                        "birth":  "2007-12-27",
+                        "height":  181,
+                        "marketValue":  1100000
+                    },
+                    {
+                        "name":  "Ife Ibrahim",
+                        "slug":  "ife-ibrahim",
+                        "position":  "MID",
+                        "shirt":  44,
+                        "age":  18,
+                        "birth":  "2008-01-20",
+                        "height":  187,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Max Dowman",
+                        "slug":  "max-dowman",
+                        "position":  "MID",
+                        "shirt":  56,
+                        "age":  16,
+                        "birth":  "2009-12-31",
+                        "height":  183,
+                        "marketValue":  31000000
+                    },
+                    {
+                        "name":  "Bukayo Saka",
+                        "slug":  "bukayo-saka",
+                        "position":  "FW",
+                        "shirt":  7,
+                        "age":  24,
+                        "birth":  "2001-09-05",
+                        "height":  178,
+                        "marketValue":  115000000
+                    },
+                    {
+                        "name":  "Gabriel Jesus",
+                        "slug":  "gabriel-jesus",
+                        "position":  "FW",
+                        "shirt":  9,
+                        "age":  29,
+                        "birth":  "1997-04-03",
+                        "height":  175,
+                        "marketValue":  17600000
+                    },
+                    {
+                        "name":  "Gabriel Martinelli",
+                        "slug":  "gabriel-martinelli",
+                        "position":  "FW",
+                        "shirt":  11,
+                        "age":  25,
+                        "birth":  "2001-06-18",
+                        "height":  180,
+                        "marketValue":  42000000
+                    },
+                    {
+                        "name":  "Viktor Gyökeres",
+                        "slug":  "viktor-gyokeres",
+                        "position":  "FW",
+                        "shirt":  14,
+                        "age":  28,
+                        "birth":  "1998-06-04",
+                        "height":  187,
+                        "marketValue":  61000000
+                    },
+                    {
+                        "name":  "Noni Madueke",
+                        "slug":  "noni-madueke",
+                        "position":  "FW",
+                        "shirt":  20,
+                        "age":  24,
+                        "birth":  "2002-03-10",
+                        "height":  182,
+                        "marketValue":  54000000
+                    },
+                    {
+                        "name":  "Kai Havertz",
+                        "slug":  "kai-havertz",
+                        "position":  "FW",
+                        "shirt":  29,
+                        "age":  27,
+                        "birth":  "1999-06-11",
+                        "height":  193,
+                        "marketValue":  53000000
+                    },
+                    {
+                        "name":  "Demiane Agustien",
+                        "slug":  "demiane-agustien",
+                        "position":  "FW",
+                        "shirt":  37,
+                        "age":  19,
+                        "birth":  "2007-07-28",
+                        "height":  183,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Ismeal Kabia",
+                        "slug":  "ismeal-kabia",
+                        "position":  "FW",
+                        "shirt":  46,
+                        "age":  20,
+                        "birth":  "2005-12-10",
+                        "height":  176,
+                        "marketValue":  97000
+                    },
+                    {
+                        "name":  "Ceadach O\u0027Neill",
+                        "slug":  "ceadach-oneill",
+                        "position":  "FW",
+                        "shirt":  53,
+                        "age":  18,
+                        "birth":  "2008-04-10",
+                        "height":  175,
+                        "marketValue":  0
+                    }
+                ]
+}

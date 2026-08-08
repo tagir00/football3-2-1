@@ -1,0 +1,338 @@
+{
+    "id":  "barcelona",
+    "name":  "Barcelona",
+    "displayName":  "Barcelona",
+    "logo":  "./assets/logos/clubs/barcelona.png",
+    "players":  [
+                    {
+                        "name":  "Marc-André Ter Stegen",
+                        "slug":  "marc-andre-ter-stegen",
+                        "position":  "GK",
+                        "shirt":  1,
+                        "age":  34,
+                        "birth":  "1992-04-30",
+                        "height":  187,
+                        "marketValue":  3100000
+                    },
+                    {
+                        "name":  "Áron Yaakobishvili",
+                        "slug":  "aron-yaakobishvili",
+                        "position":  "GK",
+                        "shirt":  13,
+                        "age":  20,
+                        "birth":  "2006-03-06",
+                        "height":  185,
+                        "marketValue":  3200000
+                    },
+                    {
+                        "name":  "Joan García",
+                        "slug":  "joan-garcia",
+                        "position":  "GK",
+                        "shirt":  13,
+                        "age":  25,
+                        "birth":  "2001-05-04",
+                        "height":  193,
+                        "marketValue":  46000000
+                    },
+                    {
+                        "name":  "Wojciech Szczęsny",
+                        "slug":  "wojciech-szczesny",
+                        "position":  "GK",
+                        "shirt":  25,
+                        "age":  36,
+                        "birth":  "1990-04-18",
+                        "height":  196,
+                        "marketValue":  730000
+                    },
+                    {
+                        "name":  "Hector Fort",
+                        "slug":  "fort-hector",
+                        "position":  "DEF",
+                        "shirt":  2,
+                        "age":  20,
+                        "birth":  "2006-08-02",
+                        "height":  185,
+                        "marketValue":  11600000
+                    },
+                    {
+                        "name":  "Ronald Araújo",
+                        "slug":  "ronald-araujo",
+                        "position":  "DEF",
+                        "shirt":  4,
+                        "age":  27,
+                        "birth":  "1999-03-07",
+                        "height":  191,
+                        "marketValue":  22000000
+                    },
+                    {
+                        "name":  "Álvaro Cortés",
+                        "slug":  "alvaro-cortes",
+                        "position":  "DEF",
+                        "shirt":  5,
+                        "age":  21,
+                        "birth":  "2005-03-17",
+                        "height":  189,
+                        "marketValue":  3600000
+                    },
+                    {
+                        "name":  "Pau Cubarsí",
+                        "slug":  "pau-cubarsi",
+                        "position":  "DEF",
+                        "shirt":  5,
+                        "age":  19,
+                        "birth":  "2007-01-22",
+                        "height":  184,
+                        "marketValue":  94000000
+                    },
+                    {
+                        "name":  "Xavi Espart",
+                        "slug":  "xavi-espart",
+                        "position":  "DEF",
+                        "shirt":  12,
+                        "age":  19,
+                        "birth":  "2007-05-21",
+                        "height":  175,
+                        "marketValue":  5300000
+                    },
+                    {
+                        "name":  "Andreas Christensen",
+                        "slug":  "andreas-christensen",
+                        "position":  "DEF",
+                        "shirt":  15,
+                        "age":  30,
+                        "birth":  "1996-04-10",
+                        "height":  188,
+                        "marketValue":  7700000
+                    },
+                    {
+                        "name":  "Gerard Martín",
+                        "slug":  "gerard-martin",
+                        "position":  "DEF",
+                        "shirt":  18,
+                        "age":  24,
+                        "birth":  "2002-02-26",
+                        "height":  186,
+                        "marketValue":  32000000
+                    },
+                    {
+                        "name":  "Jofre Torrents ",
+                        "slug":  "jofre-torrents",
+                        "position":  "DEF",
+                        "shirt":  21,
+                        "age":  19,
+                        "birth":  "2007-01-28",
+                        "height":  187,
+                        "marketValue":  970000
+                    },
+                    {
+                        "name":  "Jules Koundé",
+                        "slug":  "jules-kounde",
+                        "position":  "DEF",
+                        "shirt":  23,
+                        "age":  27,
+                        "birth":  "1998-11-12",
+                        "height":  180,
+                        "marketValue":  64000000
+                    },
+                    {
+                        "name":  "Eric García",
+                        "slug":  "eric-garcia",
+                        "position":  "DEF",
+                        "shirt":  24,
+                        "age":  25,
+                        "birth":  "2001-01-09",
+                        "height":  182,
+                        "marketValue":  39000000
+                    },
+                    {
+                        "name":  "Alejandro Balde",
+                        "slug":  "alejandro-balde",
+                        "position":  "DEF",
+                        "shirt":  99,
+                        "age":  22,
+                        "birth":  "2003-10-18",
+                        "height":  177,
+                        "marketValue":  55000000
+                    },
+                    {
+                        "name":  "Gavi",
+                        "slug":  "gavi",
+                        "position":  "MID",
+                        "shirt":  6,
+                        "age":  22,
+                        "birth":  "2004-08-05",
+                        "height":  173,
+                        "marketValue":  31000000
+                    },
+                    {
+                        "name":  "Brian Fariñas",
+                        "slug":  "brian-farinas",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  20,
+                        "birth":  "2006-02-09",
+                        "height":  180,
+                        "marketValue":  2700000
+                    },
+                    {
+                        "name":  "Pedri",
+                        "slug":  "pedri",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  23,
+                        "birth":  "2002-11-25",
+                        "height":  174,
+                        "marketValue":  164000000
+                    },
+                    {
+                        "name":  "Lamine Yamal",
+                        "slug":  "lamine-yamal",
+                        "position":  "MID",
+                        "shirt":  10,
+                        "age":  19,
+                        "birth":  "2007-07-13",
+                        "height":  183,
+                        "marketValue":  237000000
+                    },
+                    {
+                        "name":  "Raphinha",
+                        "slug":  "raphinha",
+                        "position":  "MID",
+                        "shirt":  11,
+                        "age":  29,
+                        "birth":  "1996-12-14",
+                        "height":  176,
+                        "marketValue":  63000000
+                    },
+                    {
+                        "name":  "Fermín López",
+                        "slug":  "fermin-lopez",
+                        "position":  "MID",
+                        "shirt":  16,
+                        "age":  23,
+                        "birth":  "2003-05-11",
+                        "height":  176,
+                        "marketValue":  103000000
+                    },
+                    {
+                        "name":  "Marc Casadó",
+                        "slug":  "marc-casado",
+                        "position":  "MID",
+                        "shirt":  17,
+                        "age":  22,
+                        "birth":  "2003-09-14",
+                        "height":  172,
+                        "marketValue":  17400000
+                    },
+                    {
+                        "name":  "Dani Olmo",
+                        "slug":  "dani-olmo",
+                        "position":  "MID",
+                        "shirt":  20,
+                        "age":  28,
+                        "birth":  "1998-05-07",
+                        "height":  179,
+                        "marketValue":  58000000
+                    },
+                    {
+                        "name":  "Frenkie de Jong",
+                        "slug":  "frenkie-de-jong",
+                        "position":  "MID",
+                        "shirt":  21,
+                        "age":  29,
+                        "birth":  "1997-05-12",
+                        "height":  180,
+                        "marketValue":  32000000
+                    },
+                    {
+                        "name":  "Marc Bernal",
+                        "slug":  "marc-bernal",
+                        "position":  "MID",
+                        "shirt":  22,
+                        "age":  19,
+                        "birth":  "2007-05-26",
+                        "height":  193,
+                        "marketValue":  29000000
+                    },
+                    {
+                        "name":  "Toni Fernández",
+                        "slug":  "toni-fernandez",
+                        "position":  "MID",
+                        "shirt":  30,
+                        "age":  18,
+                        "birth":  "2008-07-15",
+                        "height":  175,
+                        "marketValue":  3100000
+                    },
+                    {
+                        "name":  "Jesse Bisiwu",
+                        "slug":  "jesse-bisiwu",
+                        "position":  "MID",
+                        "shirt":  74,
+                        "age":  18,
+                        "birth":  "2008-01-22",
+                        "height":  182,
+                        "marketValue":  775000
+                    },
+                    {
+                        "name":  "Tomás Marqués",
+                        "slug":  "tomas-marques",
+                        "position":  "MID",
+                        "shirt":  91,
+                        "age":  19,
+                        "birth":  "2006-10-30",
+                        "height":  185,
+                        "marketValue":  3100000
+                    },
+                    {
+                        "name":  "Ferran Torres",
+                        "slug":  "ferran-torres",
+                        "position":  "FW",
+                        "shirt":  7,
+                        "age":  26,
+                        "birth":  "2000-02-29",
+                        "height":  183,
+                        "marketValue":  59000000
+                    },
+                    {
+                        "name":  "Anthony Gordon",
+                        "slug":  "anthony-gordon",
+                        "position":  "FW",
+                        "shirt":  10,
+                        "age":  25,
+                        "birth":  "2001-02-24",
+                        "height":  183,
+                        "marketValue":  82000000
+                    },
+                    {
+                        "name":  "Karim Adeyemi",
+                        "slug":  "karim-adeyemi",
+                        "position":  "FW",
+                        "shirt":  14,
+                        "age":  24,
+                        "birth":  "2002-01-18",
+                        "height":  180,
+                        "marketValue":  41000000
+                    },
+                    {
+                        "name":  "Roony Bardghji",
+                        "slug":  "roony-bardghji",
+                        "position":  "FW",
+                        "shirt":  19,
+                        "age":  20,
+                        "birth":  "2005-11-15",
+                        "height":  173,
+                        "marketValue":  15500000
+                    },
+                    {
+                        "name":  "Shane Patrick Kluivert",
+                        "slug":  "kluivert-shane-patrick",
+                        "position":  "FW",
+                        "shirt":  24,
+                        "age":  18,
+                        "birth":  "2007-09-24",
+                        "height":  0,
+                        "marketValue":  0
+                    }
+                ]
+}

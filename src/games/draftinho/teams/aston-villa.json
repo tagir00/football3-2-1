@@ -1,0 +1,328 @@
+{
+    "id":  "aston-villa",
+    "name":  "Aston Villa",
+    "displayName":  "Aston Villa",
+    "logo":  "./assets/logos/clubs/aston-villa.png",
+    "players":  [
+                    {
+                        "name":  "Emiliano Martínez",
+                        "slug":  "emiliano-martinez",
+                        "position":  "GK",
+                        "shirt":  23,
+                        "age":  33,
+                        "birth":  "1992-09-02",
+                        "height":  195,
+                        "marketValue":  11500000
+                    },
+                    {
+                        "name":  "Marco Bizot",
+                        "slug":  "marco-bizot",
+                        "position":  "GK",
+                        "shirt":  40,
+                        "age":  35,
+                        "birth":  "1991-03-10",
+                        "height":  194,
+                        "marketValue":  1400000
+                    },
+                    {
+                        "name":  "James Wright",
+                        "slug":  "wright-james",
+                        "position":  "GK",
+                        "shirt":  42,
+                        "age":  21,
+                        "birth":  "2004-12-02",
+                        "height":  188,
+                        "marketValue":  220000
+                    },
+                    {
+                        "name":  "Matty Cash",
+                        "slug":  "matty-cash",
+                        "position":  "DEF",
+                        "shirt":  2,
+                        "age":  29,
+                        "birth":  "1997-08-07",
+                        "height":  185,
+                        "marketValue":  19800000
+                    },
+                    {
+                        "name":  "Victor Lindelöf",
+                        "slug":  "victor-lindelof",
+                        "position":  "DEF",
+                        "shirt":  3,
+                        "age":  32,
+                        "birth":  "1994-07-17",
+                        "height":  187,
+                        "marketValue":  4800000
+                    },
+                    {
+                        "name":  "Ezri Konsa",
+                        "slug":  "ezri-konsa",
+                        "position":  "DEF",
+                        "shirt":  4,
+                        "age":  28,
+                        "birth":  "1997-10-23",
+                        "height":  183,
+                        "marketValue":  47000000
+                    },
+                    {
+                        "name":  "Tyrone Mings",
+                        "slug":  "tyrone-mings",
+                        "position":  "DEF",
+                        "shirt":  5,
+                        "age":  33,
+                        "birth":  "1993-03-13",
+                        "height":  195,
+                        "marketValue":  3200000
+                    },
+                    {
+                        "name":  "Lucas Digne",
+                        "slug":  "lucas-digne",
+                        "position":  "DEF",
+                        "shirt":  12,
+                        "age":  33,
+                        "birth":  "1993-07-20",
+                        "height":  178,
+                        "marketValue":  5500000
+                    },
+                    {
+                        "name":  "Pau Torres",
+                        "slug":  "pau-torres",
+                        "position":  "DEF",
+                        "shirt":  14,
+                        "age":  29,
+                        "birth":  "1997-01-16",
+                        "height":  192,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Ian Maatsen",
+                        "slug":  "ian-maatsen",
+                        "position":  "DEF",
+                        "shirt":  22,
+                        "age":  24,
+                        "birth":  "2002-03-10",
+                        "height":  178,
+                        "marketValue":  28000000
+                    },
+                    {
+                        "name":  "Kosta Nedeljković",
+                        "slug":  "kosta-nedeljkovic",
+                        "position":  "DEF",
+                        "shirt":  32,
+                        "age":  20,
+                        "birth":  "2005-12-16",
+                        "height":  184,
+                        "marketValue":  6600000
+                    },
+                    {
+                        "name":  "Modou Kéba Cissé",
+                        "slug":  "modou-keba-cisse",
+                        "position":  "DEF",
+                        "shirt":  48,
+                        "age":  21,
+                        "birth":  "2005-08-04",
+                        "height":  191,
+                        "marketValue":  5400000
+                    },
+                    {
+                        "name":  "TJ Carroll",
+                        "slug":  "tj-carroll",
+                        "position":  "DEF",
+                        "shirt":  71,
+                        "age":  19,
+                        "birth":  "2006-10-19",
+                        "height":  197,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Ross Barkley",
+                        "slug":  "ross-barkley",
+                        "position":  "MID",
+                        "shirt":  6,
+                        "age":  32,
+                        "birth":  "1993-12-05",
+                        "height":  188,
+                        "marketValue":  3600000
+                    },
+                    {
+                        "name":  "John McGinn",
+                        "slug":  "john-mcginn",
+                        "position":  "MID",
+                        "shirt":  7,
+                        "age":  31,
+                        "birth":  "1994-10-18",
+                        "height":  175,
+                        "marketValue":  12600000
+                    },
+                    {
+                        "name":  "Boubacar Kamara",
+                        "slug":  "boubacar-kamara",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  26,
+                        "birth":  "1999-11-23",
+                        "height":  184,
+                        "marketValue":  39000000
+                    },
+                    {
+                        "name":  "Emiliano Buendía",
+                        "slug":  "emiliano-buendia",
+                        "position":  "MID",
+                        "shirt":  10,
+                        "age":  29,
+                        "birth":  "1996-12-25",
+                        "height":  170,
+                        "marketValue":  14600000
+                    },
+                    {
+                        "name":  "Samuel Iling Junior",
+                        "slug":  "samuel-iling-junior",
+                        "position":  "MID",
+                        "shirt":  19,
+                        "age":  22,
+                        "birth":  "2003-10-04",
+                        "height":  182,
+                        "marketValue":  6300000
+                    },
+                    {
+                        "name":  "Amadou Onana",
+                        "slug":  "amadou-onana",
+                        "position":  "MID",
+                        "shirt":  24,
+                        "age":  24,
+                        "birth":  "2001-08-16",
+                        "height":  195,
+                        "marketValue":  41000000
+                    },
+                    {
+                        "name":  "Lamare Bogarde",
+                        "slug":  "lamare-bogarde",
+                        "position":  "MID",
+                        "shirt":  26,
+                        "age":  22,
+                        "birth":  "2004-01-05",
+                        "height":  183,
+                        "marketValue":  17500000
+                    },
+                    {
+                        "name":  "João Gomes",
+                        "slug":  "joao-gomes",
+                        "position":  "MID",
+                        "shirt":  35,
+                        "age":  25,
+                        "birth":  "2001-02-12",
+                        "height":  176,
+                        "marketValue":  36000000
+                    },
+                    {
+                        "name":  "Johan Manzambi",
+                        "slug":  "johan-manzambi",
+                        "position":  "MID",
+                        "shirt":  44,
+                        "age":  20,
+                        "birth":  "2005-10-14",
+                        "height":  182,
+                        "marketValue":  71000000
+                    },
+                    {
+                        "name":  "Triston Rowe",
+                        "slug":  "triston-rowe",
+                        "position":  "MID",
+                        "shirt":  45,
+                        "age":  19,
+                        "birth":  "2006-10-02",
+                        "height":  183,
+                        "marketValue":  1600000
+                    },
+                    {
+                        "name":  "Alysson",
+                        "slug":  "alysson-edward-franco-da-rocha",
+                        "position":  "MID",
+                        "shirt":  47,
+                        "age":  20,
+                        "birth":  "2006-05-05",
+                        "height":  184,
+                        "marketValue":  10800000
+                    },
+                    {
+                        "name":  "Bradley Burrowes",
+                        "slug":  "bradley-burrowes",
+                        "position":  "MID",
+                        "shirt":  49,
+                        "age":  18,
+                        "birth":  "2008-03-04",
+                        "height":  169,
+                        "marketValue":  1800000
+                    },
+                    {
+                        "name":  "Ollie Watkins",
+                        "slug":  "ollie-watkins",
+                        "position":  "FW",
+                        "shirt":  11,
+                        "age":  30,
+                        "birth":  "1995-12-30",
+                        "height":  179,
+                        "marketValue":  26000000
+                    },
+                    {
+                        "name":  "Alejandro Garnacho",
+                        "slug":  "alejandro-garnacho",
+                        "position":  "FW",
+                        "shirt":  17,
+                        "age":  22,
+                        "birth":  "2004-07-01",
+                        "height":  180,
+                        "marketValue":  26000000
+                    },
+                    {
+                        "name":  "Tammy Abraham",
+                        "slug":  "tammy-abraham",
+                        "position":  "FW",
+                        "shirt":  18,
+                        "age":  28,
+                        "birth":  "1997-10-02",
+                        "height":  195,
+                        "marketValue":  16500000
+                    },
+                    {
+                        "name":  "Evann Guessand",
+                        "slug":  "evann-guessand",
+                        "position":  "FW",
+                        "shirt":  29,
+                        "age":  25,
+                        "birth":  "2001-07-01",
+                        "height":  185,
+                        "marketValue":  24000000
+                    },
+                    {
+                        "name":  "Leon Bailey",
+                        "slug":  "leon-bailey",
+                        "position":  "FW",
+                        "shirt":  31,
+                        "age":  28,
+                        "birth":  "1997-08-09",
+                        "height":  178,
+                        "marketValue":  13100000
+                    },
+                    {
+                        "name":  "Brian Madjo",
+                        "slug":  "brian-madjo",
+                        "position":  "FW",
+                        "shirt":  39,
+                        "age":  17,
+                        "birth":  "2009-01-12",
+                        "height":  193,
+                        "marketValue":  12600000
+                    },
+                    {
+                        "name":  "Luka Lynch",
+                        "slug":  "luka-lynch",
+                        "position":  "FW",
+                        "shirt":  74,
+                        "age":  19,
+                        "birth":  "2007-01-11",
+                        "height":  0,
+                        "marketValue":  0
+                    }
+                ]
+}

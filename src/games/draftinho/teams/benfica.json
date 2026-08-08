@@ -1,0 +1,278 @@
+{
+    "id":  "benfica",
+    "name":  "Benfica",
+    "displayName":  "Benfica",
+    "logo":  "./assets/logos/clubs/benfica.png",
+    "players":  [
+                    {
+                        "name":  "Anatoliy Trubin",
+                        "slug":  "anatoliy-trubin",
+                        "position":  "GK",
+                        "shirt":  1,
+                        "age":  25,
+                        "birth":  "2001-08-01",
+                        "height":  200,
+                        "marketValue":  26000000
+                    },
+                    {
+                        "name":  "Samuel Soares",
+                        "slug":  "samuel-soares",
+                        "position":  "GK",
+                        "shirt":  24,
+                        "age":  24,
+                        "birth":  "2002-06-15",
+                        "height":  189,
+                        "marketValue":  3100000
+                    },
+                    {
+                        "name":  "Clément Lenglet",
+                        "slug":  "clement-lenglet",
+                        "position":  "DEF",
+                        "shirt":  2,
+                        "age":  31,
+                        "birth":  "1995-06-17",
+                        "height":  186,
+                        "marketValue":  4200000
+                    },
+                    {
+                        "name":  "Alexander Bah",
+                        "slug":  "alexander-bah",
+                        "position":  "DEF",
+                        "shirt":  6,
+                        "age":  28,
+                        "birth":  "1997-12-09",
+                        "height":  183,
+                        "marketValue":  7400000
+                    },
+                    {
+                        "name":  "Amar Dedić",
+                        "slug":  "amar-dedic",
+                        "position":  "DEF",
+                        "shirt":  17,
+                        "age":  23,
+                        "birth":  "2002-08-18",
+                        "height":  180,
+                        "marketValue":  19400000
+                    },
+                    {
+                        "name":  "Samuel Dahl",
+                        "slug":  "samuel-dahl",
+                        "position":  "DEF",
+                        "shirt":  26,
+                        "age":  23,
+                        "birth":  "2003-03-04",
+                        "height":  171,
+                        "marketValue":  13600000
+                    },
+                    {
+                        "name":  "Gabriel Indio",
+                        "slug":  "gabriel-indio",
+                        "position":  "DEF",
+                        "shirt":  33,
+                        "age":  18,
+                        "birth":  "2008-07-26",
+                        "height":  186,
+                        "marketValue":  54000
+                    },
+                    {
+                        "name":  "Tomás Araújo",
+                        "slug":  "tomas-araujo",
+                        "position":  "DEF",
+                        "shirt":  44,
+                        "age":  24,
+                        "birth":  "2002-05-16",
+                        "height":  186,
+                        "marketValue":  33000000
+                    },
+                    {
+                        "name":  "Rafael Obrador",
+                        "slug":  "rafael-obrador",
+                        "position":  "MID",
+                        "shirt":  3,
+                        "age":  22,
+                        "birth":  "2004-02-24",
+                        "height":  181,
+                        "marketValue":  5200000
+                    },
+                    {
+                        "name":  "Enzo Barrenechea",
+                        "slug":  "enzo-barrenechea",
+                        "position":  "MID",
+                        "shirt":  5,
+                        "age":  25,
+                        "birth":  "2001-05-22",
+                        "height":  186,
+                        "marketValue":  11100000
+                    },
+                    {
+                        "name":  "Fredrik Aursnes",
+                        "slug":  "fredrik-aursnes",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  30,
+                        "birth":  "1995-12-10",
+                        "height":  179,
+                        "marketValue":  14000000
+                    },
+                    {
+                        "name":  "Georgiy Sudakov",
+                        "slug":  "georgiy-sudakov",
+                        "position":  "MID",
+                        "shirt":  10,
+                        "age":  23,
+                        "birth":  "2002-09-01",
+                        "height":  177,
+                        "marketValue":  26000000
+                    },
+                    {
+                        "name":  "Dodi Lukebakio",
+                        "slug":  "dodi-lukebakio",
+                        "position":  "MID",
+                        "shirt":  11,
+                        "age":  28,
+                        "birth":  "1997-09-24",
+                        "height":  187,
+                        "marketValue":  14100000
+                    },
+                    {
+                        "name":  "Jakub Kamiński",
+                        "slug":  "jakub-kaminski",
+                        "position":  "MID",
+                        "shirt":  13,
+                        "age":  24,
+                        "birth":  "2002-06-05",
+                        "height":  178,
+                        "marketValue":  15400000
+                    },
+                    {
+                        "name":  "Manu Silva",
+                        "slug":  "manu-silva",
+                        "position":  "MID",
+                        "shirt":  16,
+                        "age":  25,
+                        "birth":  "2001-06-12",
+                        "height":  190,
+                        "marketValue":  7600000
+                    },
+                    {
+                        "name":  "Leandro Barreiro",
+                        "slug":  "leandro-barreiro",
+                        "position":  "MID",
+                        "shirt":  18,
+                        "age":  26,
+                        "birth":  "2000-01-03",
+                        "height":  170,
+                        "marketValue":  17400000
+                    },
+                    {
+                        "name":  "Richard Ríos",
+                        "slug":  "richard-rios",
+                        "position":  "MID",
+                        "shirt":  20,
+                        "age":  26,
+                        "birth":  "2000-06-02",
+                        "height":  185,
+                        "marketValue":  27000000
+                    },
+                    {
+                        "name":  "Andreas Schjelderup",
+                        "slug":  "andreas-schjelderup",
+                        "position":  "MID",
+                        "shirt":  21,
+                        "age":  22,
+                        "birth":  "2004-06-01",
+                        "height":  177,
+                        "marketValue":  41000000
+                    },
+                    {
+                        "name":  "Gianluca Prestianni",
+                        "slug":  "gianluca-prestianni",
+                        "position":  "MID",
+                        "shirt":  25,
+                        "age":  20,
+                        "birth":  "2006-01-31",
+                        "height":  165,
+                        "marketValue":  19400000
+                    },
+                    {
+                        "name":  "Rafa Silva",
+                        "slug":  "rafa-silva",
+                        "position":  "MID",
+                        "shirt":  27,
+                        "age":  33,
+                        "birth":  "1993-05-17",
+                        "height":  170,
+                        "marketValue":  4200000
+                    },
+                    {
+                        "name":  "Bruma",
+                        "slug":  "bruma",
+                        "position":  "FW",
+                        "shirt":  7,
+                        "age":  31,
+                        "birth":  "1994-10-24",
+                        "height":  173,
+                        "marketValue":  3200000
+                    },
+                    {
+                        "name":  "Franjo Ivanović",
+                        "slug":  "franjo-ivanovic",
+                        "position":  "FW",
+                        "shirt":  9,
+                        "age":  22,
+                        "birth":  "2003-10-01",
+                        "height":  185,
+                        "marketValue":  14600000
+                    },
+                    {
+                        "name":  "Vangelis Pavlidis",
+                        "slug":  "vangelis-pavlidis",
+                        "position":  "FW",
+                        "shirt":  14,
+                        "age":  27,
+                        "birth":  "1998-11-21",
+                        "height":  186,
+                        "marketValue":  30000000
+                    },
+                    {
+                        "name":  "Jhon Durán",
+                        "slug":  "jhon-duran",
+                        "position":  "FW",
+                        "shirt":  22,
+                        "age":  22,
+                        "birth":  "2003-12-13",
+                        "height":  185,
+                        "marketValue":  16500000
+                    },
+                    {
+                        "name":  "Tiago Gouveia",
+                        "slug":  "tiago-gouveia",
+                        "position":  "FW",
+                        "shirt":  47,
+                        "age":  25,
+                        "birth":  "2001-06-18",
+                        "height":  176,
+                        "marketValue":  3600000
+                    },
+                    {
+                        "name":  "Anísio Cabral",
+                        "slug":  "anisio-cabral",
+                        "position":  "FW",
+                        "shirt":  72,
+                        "age":  18,
+                        "birth":  "2008-02-15",
+                        "height":  189,
+                        "marketValue":  5200000
+                    },
+                    {
+                        "name":  "João Rêgo",
+                        "slug":  "joao-rego",
+                        "position":  "FW",
+                        "shirt":  84,
+                        "age":  21,
+                        "birth":  "2005-06-20",
+                        "height":  185,
+                        "marketValue":  3100000
+                    }
+                ]
+}

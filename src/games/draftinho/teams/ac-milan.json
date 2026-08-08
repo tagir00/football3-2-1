@@ -1,0 +1,418 @@
+{
+    "id":  "ac-milan",
+    "name":  "Milan",
+    "displayName":  "Milan",
+    "logo":  "./assets/logos/clubs/ac-milan.png",
+    "players":  [
+                    {
+                        "name":  "Mike Maignan",
+                        "slug":  "mike-maignan",
+                        "position":  "GK",
+                        "shirt":  16,
+                        "age":  31,
+                        "birth":  "1995-07-03",
+                        "height":  190,
+                        "marketValue":  22000000
+                    },
+                    {
+                        "name":  "Matteo Pittarella",
+                        "slug":  "matteo-pittarella",
+                        "position":  "GK",
+                        "shirt":  37,
+                        "age":  18,
+                        "birth":  "2008-05-26",
+                        "height":  194,
+                        "marketValue":  97000
+                    },
+                    {
+                        "name":  "Leo Paul Bouyer",
+                        "slug":  "leo-paul-bouyer",
+                        "position":  "GK",
+                        "shirt":  41,
+                        "age":  17,
+                        "birth":  "2008-08-14",
+                        "height":  194,
+                        "marketValue":  120000
+                    },
+                    {
+                        "name":  "Pietro Terracciano",
+                        "slug":  "pietro-terracciano",
+                        "position":  "GK",
+                        "shirt":  42,
+                        "age":  36,
+                        "birth":  "1990-03-08",
+                        "height":  193,
+                        "marketValue":  960000
+                    },
+                    {
+                        "name":  "Lorenzo Torriani",
+                        "slug":  "lorenzo-torriani",
+                        "position":  "GK",
+                        "shirt":  96,
+                        "age":  21,
+                        "birth":  "2005-01-31",
+                        "height":  197,
+                        "marketValue":  770000
+                    },
+                    {
+                        "name":  "Koni De Winter",
+                        "slug":  "de-winter-koni",
+                        "position":  "DEF",
+                        "shirt":  5,
+                        "age":  24,
+                        "birth":  "2002-06-12",
+                        "height":  191,
+                        "marketValue":  22000000
+                    },
+                    {
+                        "name":  "Sankhoun Diawara",
+                        "slug":  "sankhoun-diawara",
+                        "position":  "DEF",
+                        "shirt":  13,
+                        "age":  20,
+                        "birth":  "2006-01-12",
+                        "height":  188,
+                        "marketValue":  2100000
+                    },
+                    {
+                        "name":  "Fikayo Tomori",
+                        "slug":  "fikayo-tomori",
+                        "position":  "DEF",
+                        "shirt":  23,
+                        "age":  28,
+                        "birth":  "1997-12-19",
+                        "height":  185,
+                        "marketValue":  15700000
+                    },
+                    {
+                        "name":  "Zachary Athekame",
+                        "slug":  "zachary-athekame",
+                        "position":  "DEF",
+                        "shirt":  24,
+                        "age":  21,
+                        "birth":  "2004-12-13",
+                        "height":  180,
+                        "marketValue":  15500000
+                    },
+                    {
+                        "name":  "David Odogu",
+                        "slug":  "odogu-david",
+                        "position":  "DEF",
+                        "shirt":  27,
+                        "age":  20,
+                        "birth":  "2006-06-03",
+                        "height":  190,
+                        "marketValue":  4600000
+                    },
+                    {
+                        "name":  "Strahinja Pavlović",
+                        "slug":  "strahinja-pavlovic",
+                        "position":  "DEF",
+                        "shirt":  31,
+                        "age":  25,
+                        "birth":  "2001-05-24",
+                        "height":  194,
+                        "marketValue":  38000000
+                    },
+                    {
+                        "name":  "Mario Gila",
+                        "slug":  "mario-gila",
+                        "position":  "DEF",
+                        "shirt":  34,
+                        "age":  25,
+                        "birth":  "2000-08-29",
+                        "height":  185,
+                        "marketValue":  31000000
+                    },
+                    {
+                        "name":  "Valeri Ivanov Vladimirov ",
+                        "slug":  "valeri-ivanov-vladimirov",
+                        "position":  "DEF",
+                        "shirt":  35,
+                        "age":  18,
+                        "birth":  "2008-06-04",
+                        "height":  190,
+                        "marketValue":  155000
+                    },
+                    {
+                        "name":  "Filippo Terracciano",
+                        "slug":  "filippo-terracciano",
+                        "position":  "DEF",
+                        "shirt":  42,
+                        "age":  23,
+                        "birth":  "2003-02-08",
+                        "height":  181,
+                        "marketValue":  4600000
+                    },
+                    {
+                        "name":  "Matteo Gabbia",
+                        "slug":  "matteo-gabbia",
+                        "position":  "DEF",
+                        "shirt":  46,
+                        "age":  26,
+                        "birth":  "1999-10-21",
+                        "height":  185,
+                        "marketValue":  17500000
+                    },
+                    {
+                        "name":  "Pervis Estupiñán",
+                        "slug":  "pervis-estupinan",
+                        "position":  "MID",
+                        "shirt":  2,
+                        "age":  28,
+                        "birth":  "1998-01-21",
+                        "height":  175,
+                        "marketValue":  11100000
+                    },
+                    {
+                        "name":  "Ismaël Bennacer",
+                        "slug":  "ismael-bennacer",
+                        "position":  "MID",
+                        "shirt":  4,
+                        "age":  28,
+                        "birth":  "1997-12-01",
+                        "height":  175,
+                        "marketValue":  8500000
+                    },
+                    {
+                        "name":  "Samuele Ricci",
+                        "slug":  "samuele-ricci",
+                        "position":  "MID",
+                        "shirt":  4,
+                        "age":  24,
+                        "birth":  "2001-08-21",
+                        "height":  182,
+                        "marketValue":  20000000
+                    },
+                    {
+                        "name":  "Ruben Loftus-Cheek",
+                        "slug":  "ruben-loftus-cheek",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  30,
+                        "birth":  "1996-01-23",
+                        "height":  191,
+                        "marketValue":  9000000
+                    },
+                    {
+                        "name":  "Adrien Rabiot",
+                        "slug":  "adrien-rabiot",
+                        "position":  "MID",
+                        "shirt":  12,
+                        "age":  31,
+                        "birth":  "1995-04-03",
+                        "height":  191,
+                        "marketValue":  17300000
+                    },
+                    {
+                        "name":  "Luka Modrić",
+                        "slug":  "luka-modric",
+                        "position":  "MID",
+                        "shirt":  14,
+                        "age":  40,
+                        "birth":  "1985-09-09",
+                        "height":  173,
+                        "marketValue":  3800000
+                    },
+                    {
+                        "name":  "Youssouf Fofana",
+                        "slug":  "youssouf-fofana",
+                        "position":  "MID",
+                        "shirt":  19,
+                        "age":  27,
+                        "birth":  "1999-01-10",
+                        "height":  185,
+                        "marketValue":  25000000
+                    },
+                    {
+                        "name":  "Christian Comotto",
+                        "slug":  "christian-comotto",
+                        "position":  "MID",
+                        "shirt":  28,
+                        "age":  18,
+                        "birth":  "2008-04-25",
+                        "height":  183,
+                        "marketValue":  5500000
+                    },
+                    {
+                        "name":  "Ardon Jashari",
+                        "slug":  "ardon-jashari",
+                        "position":  "MID",
+                        "shirt":  30,
+                        "age":  24,
+                        "birth":  "2002-07-30",
+                        "height":  180,
+                        "marketValue":  24000000
+                    },
+                    {
+                        "name":  "Davide Bartesaghi",
+                        "slug":  "davide-bartesaghi",
+                        "position":  "MID",
+                        "shirt":  33,
+                        "age":  20,
+                        "birth":  "2005-12-29",
+                        "height":  193,
+                        "marketValue":  20000000
+                    },
+                    {
+                        "name":  "Warren Bondo",
+                        "slug":  "warren-bondo",
+                        "position":  "MID",
+                        "shirt":  38,
+                        "age":  22,
+                        "birth":  "2003-09-15",
+                        "height":  177,
+                        "marketValue":  5700000
+                    },
+                    {
+                        "name":  "Lorenzo Ossola",
+                        "slug":  "lorenzo-ossola",
+                        "position":  "MID",
+                        "shirt":  40,
+                        "age":  19,
+                        "birth":  "2007-02-13",
+                        "height":  178,
+                        "marketValue":  290000
+                    },
+                    {
+                        "name":  "Silvano Vos",
+                        "slug":  "silvano-vos",
+                        "position":  "MID",
+                        "shirt":  55,
+                        "age":  21,
+                        "birth":  "2005-03-16",
+                        "height":  190,
+                        "marketValue":  480000
+                    },
+                    {
+                        "name":  "Alexis Saelemaekers",
+                        "slug":  "alexis-saelemaekers",
+                        "position":  "MID",
+                        "shirt":  56,
+                        "age":  27,
+                        "birth":  "1999-06-27",
+                        "height":  180,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Yunus Musah",
+                        "slug":  "yunus-musah",
+                        "position":  "MID",
+                        "shirt":  80,
+                        "age":  23,
+                        "birth":  "2002-11-29",
+                        "height":  178,
+                        "marketValue":  14500000
+                    },
+                    {
+                        "name":  "Santiago Giménez",
+                        "slug":  "santiago-gimenez",
+                        "position":  "FW",
+                        "shirt":  7,
+                        "age":  25,
+                        "birth":  "2001-04-18",
+                        "height":  182,
+                        "marketValue":  18600000
+                    },
+                    {
+                        "name":  "Gonçalo Ramos",
+                        "slug":  "goncalo-ramos",
+                        "position":  "FW",
+                        "shirt":  9,
+                        "age":  25,
+                        "birth":  "2001-06-20",
+                        "height":  185,
+                        "marketValue":  46000000
+                    },
+                    {
+                        "name":  "Rafael Leão",
+                        "slug":  "rafael-leao",
+                        "position":  "FW",
+                        "shirt":  10,
+                        "age":  27,
+                        "birth":  "1999-06-10",
+                        "height":  188,
+                        "marketValue":  48000000
+                    },
+                    {
+                        "name":  "Christian Pulišić",
+                        "slug":  "christian-pulisic",
+                        "position":  "FW",
+                        "shirt":  11,
+                        "age":  27,
+                        "birth":  "1998-09-18",
+                        "height":  177,
+                        "marketValue":  43000000
+                    },
+                    {
+                        "name":  "Christopher Nkunku",
+                        "slug":  "christopher-nkunku",
+                        "position":  "FW",
+                        "shirt":  18,
+                        "age":  28,
+                        "birth":  "1997-11-14",
+                        "height":  175,
+                        "marketValue":  26000000
+                    },
+                    {
+                        "name":  "Samuel Chukwueze",
+                        "slug":  "samuel-chukwueze",
+                        "position":  "FW",
+                        "shirt":  21,
+                        "age":  27,
+                        "birth":  "1999-05-22",
+                        "height":  172,
+                        "marketValue":  18500000
+                    },
+                    {
+                        "name":  "Aurelien Guernier",
+                        "slug":  "aurelien-gurnier",
+                        "position":  "FW",
+                        "shirt":  44,
+                        "age":  18,
+                        "birth":  "2007-12-02",
+                        "height":  184,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Emanuele Borsani",
+                        "slug":  "emanuele-borsani",
+                        "position":  "FW",
+                        "shirt":  45,
+                        "age":  18,
+                        "birth":  "2008-01-08",
+                        "height":  178,
+                        "marketValue":  140000
+                    },
+                    {
+                        "name":  "Andrej Kostić",
+                        "slug":  "andrej-kostic",
+                        "position":  "FW",
+                        "shirt":  47,
+                        "age":  19,
+                        "birth":  "2007-01-16",
+                        "height":  188,
+                        "marketValue":  4800000
+                    },
+                    {
+                        "name":  "Alphadjo Cissè",
+                        "slug":  "alphadjo-cisse",
+                        "position":  "FW",
+                        "shirt":  70,
+                        "age":  19,
+                        "birth":  "2006-10-22",
+                        "height":  181,
+                        "marketValue":  7400000
+                    },
+                    {
+                        "name":  "Francesco Camarda",
+                        "slug":  "camarda-francesco",
+                        "position":  "FW",
+                        "shirt":  73,
+                        "age":  18,
+                        "birth":  "2008-03-10",
+                        "height":  189,
+                        "marketValue":  15500000
+                    }
+                ]
+}

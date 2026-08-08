@@ -1,0 +1,258 @@
+{
+    "id":  "atletico-madrid",
+    "name":  "Atletico Madrid",
+    "displayName":  "Atletico Madrid",
+    "logo":  "./assets/logos/clubs/atletico-madrid.png",
+    "players":  [
+                    {
+                        "name":  "Juan Musso",
+                        "slug":  "juan-musso",
+                        "position":  "GK",
+                        "shirt":  1,
+                        "age":  32,
+                        "birth":  "1994-05-06",
+                        "height":  191,
+                        "marketValue":  3200000
+                    },
+                    {
+                        "name":  "Jan Oblak",
+                        "slug":  "jan-oblak",
+                        "position":  "GK",
+                        "shirt":  13,
+                        "age":  33,
+                        "birth":  "1993-01-07",
+                        "height":  189,
+                        "marketValue":  16000000
+                    },
+                    {
+                        "name":  "José María Giménez",
+                        "slug":  "jose-maria-gimenez",
+                        "position":  "DEF",
+                        "shirt":  2,
+                        "age":  31,
+                        "birth":  "1995-01-20",
+                        "height":  185,
+                        "marketValue":  8600000
+                    },
+                    {
+                        "name":  "Matteo Ruggeri",
+                        "slug":  "matteo-ruggeri",
+                        "position":  "DEF",
+                        "shirt":  3,
+                        "age":  24,
+                        "birth":  "2002-07-11",
+                        "height":  187,
+                        "marketValue":  27000000
+                    },
+                    {
+                        "name":  "Marcos Llorente",
+                        "slug":  "marcos-llorente",
+                        "position":  "DEF",
+                        "shirt":  14,
+                        "age":  31,
+                        "birth":  "1995-01-30",
+                        "height":  184,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Nahuel Molina",
+                        "slug":  "nahuel-molina",
+                        "position":  "DEF",
+                        "shirt":  16,
+                        "age":  28,
+                        "birth":  "1998-04-06",
+                        "height":  175,
+                        "marketValue":  14600000
+                    },
+                    {
+                        "name":  "Dávid Hancko",
+                        "slug":  "david-hancko",
+                        "position":  "DEF",
+                        "shirt":  17,
+                        "age":  28,
+                        "birth":  "1997-12-13",
+                        "height":  188,
+                        "marketValue":  36000000
+                    },
+                    {
+                        "name":  "Marc Pubill",
+                        "slug":  "marc-pubill",
+                        "position":  "DEF",
+                        "shirt":  18,
+                        "age":  23,
+                        "birth":  "2003-06-20",
+                        "height":  190,
+                        "marketValue":  33000000
+                    },
+                    {
+                        "name":  "Robin Le Normand",
+                        "slug":  "robin-le-normand",
+                        "position":  "DEF",
+                        "shirt":  24,
+                        "age":  29,
+                        "birth":  "1996-11-11",
+                        "height":  187,
+                        "marketValue":  19100000
+                    },
+                    {
+                        "name":  "Rodrigo Mendoza",
+                        "slug":  "rodrigo-mendoza",
+                        "position":  "MID",
+                        "shirt":  4,
+                        "age":  21,
+                        "birth":  "2005-03-15",
+                        "height":  182,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Johnny Cardoso",
+                        "slug":  "johnny-cardoso",
+                        "position":  "MID",
+                        "shirt":  5,
+                        "age":  24,
+                        "birth":  "2001-09-20",
+                        "height":  186,
+                        "marketValue":  18700000
+                    },
+                    {
+                        "name":  "Koke",
+                        "slug":  "koke",
+                        "position":  "MID",
+                        "shirt":  6,
+                        "age":  34,
+                        "birth":  "1992-01-08",
+                        "height":  177,
+                        "marketValue":  4600000
+                    },
+                    {
+                        "name":  "Kang-in Lee",
+                        "slug":  "kang-in-lee",
+                        "position":  "MID",
+                        "shirt":  7,
+                        "age":  25,
+                        "birth":  "2001-02-19",
+                        "height":  173,
+                        "marketValue":  30000000
+                    },
+                    {
+                        "name":  "Pablo Barrios",
+                        "slug":  "pablo-barrios",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  23,
+                        "birth":  "2003-06-15",
+                        "height":  181,
+                        "marketValue":  60000000
+                    },
+                    {
+                        "name":  "Alex Baena",
+                        "slug":  "alex-baena",
+                        "position":  "MID",
+                        "shirt":  10,
+                        "age":  25,
+                        "birth":  "2001-07-19",
+                        "height":  174,
+                        "marketValue":  43000000
+                    },
+                    {
+                        "name":  "Thiago Almada",
+                        "slug":  "thiago-almada",
+                        "position":  "MID",
+                        "shirt":  11,
+                        "age":  25,
+                        "birth":  "2001-04-26",
+                        "height":  171,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Thomas Lemar",
+                        "slug":  "thomas-lemar",
+                        "position":  "MID",
+                        "shirt":  15,
+                        "age":  30,
+                        "birth":  "1995-11-12",
+                        "height":  170,
+                        "marketValue":  1900000
+                    },
+                    {
+                        "name":  "Alejandro Grimaldo",
+                        "slug":  "alex-grimaldo",
+                        "position":  "MID",
+                        "shirt":  20,
+                        "age":  30,
+                        "birth":  "1995-09-20",
+                        "height":  171,
+                        "marketValue":  19400000
+                    },
+                    {
+                        "name":  "Giuliano Simeone",
+                        "slug":  "giuliano-simeone",
+                        "position":  "MID",
+                        "shirt":  20,
+                        "age":  23,
+                        "birth":  "2002-12-18",
+                        "height":  173,
+                        "marketValue":  44000000
+                    },
+                    {
+                        "name":  "Obed Vargas",
+                        "slug":  "obed-vargas",
+                        "position":  "MID",
+                        "shirt":  21,
+                        "age":  21,
+                        "birth":  "2005-08-05",
+                        "height":  175,
+                        "marketValue":  9300000
+                    },
+                    {
+                        "name":  "Morten Hjulmand",
+                        "slug":  "morten-hjulmand",
+                        "position":  "MID",
+                        "shirt":  23,
+                        "age":  27,
+                        "birth":  "1999-06-25",
+                        "height":  185,
+                        "marketValue":  48000000
+                    },
+                    {
+                        "name":  "Alexander Sørloth",
+                        "slug":  "alexander-srloth",
+                        "position":  "FW",
+                        "shirt":  9,
+                        "age":  30,
+                        "birth":  "1995-12-05",
+                        "height":  195,
+                        "marketValue":  18600000
+                    },
+                    {
+                        "name":  "Carlos Martín",
+                        "slug":  "carlos-martin",
+                        "position":  "FW",
+                        "shirt":  12,
+                        "age":  24,
+                        "birth":  "2002-04-22",
+                        "height":  182,
+                        "marketValue":  1500000
+                    },
+                    {
+                        "name":  "Julián Alvarez",
+                        "slug":  "julian-alvarez",
+                        "position":  "FW",
+                        "shirt":  19,
+                        "age":  26,
+                        "birth":  "2000-01-31",
+                        "height":  170,
+                        "marketValue":  116000000
+                    },
+                    {
+                        "name":  "Ademola Lookman",
+                        "slug":  "ademola-lookman",
+                        "position":  "FW",
+                        "shirt":  22,
+                        "age":  28,
+                        "birth":  "1997-10-20",
+                        "height":  174,
+                        "marketValue":  44000000
+                    }
+                ]
+}

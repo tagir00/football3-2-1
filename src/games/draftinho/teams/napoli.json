@@ -1,0 +1,378 @@
+{
+    "id":  "napoli",
+    "name":  "Napoli",
+    "displayName":  "Napoli",
+    "logo":  "./assets/logos/clubs/napoli.png",
+    "players":  [
+                    {
+                        "name":  "Alex Meret",
+                        "slug":  "alex-meret",
+                        "position":  "GK",
+                        "shirt":  1,
+                        "age":  29,
+                        "birth":  "1997-03-22",
+                        "height":  190,
+                        "marketValue":  7200000
+                    },
+                    {
+                        "name":  "Nikita Contini",
+                        "slug":  "nikita-contini",
+                        "position":  "GK",
+                        "shirt":  14,
+                        "age":  30,
+                        "birth":  "1996-05-21",
+                        "height":  190,
+                        "marketValue":  390000
+                    },
+                    {
+                        "name":  "Vanja Milinković-Savić",
+                        "slug":  "vanja-milinkovic-savic",
+                        "position":  "GK",
+                        "shirt":  32,
+                        "age":  29,
+                        "birth":  "1997-02-20",
+                        "height":  202,
+                        "marketValue":  18600000
+                    },
+                    {
+                        "name":  "Alessandro Buongiorno",
+                        "slug":  "alessandro-buongiorno",
+                        "position":  "DEF",
+                        "shirt":  4,
+                        "age":  27,
+                        "birth":  "1999-06-06",
+                        "height":  191,
+                        "marketValue":  32000000
+                    },
+                    {
+                        "name":  "Nosa Edward Obaretin",
+                        "slug":  "obaretin-nosa-edward",
+                        "position":  "DEF",
+                        "shirt":  5,
+                        "age":  23,
+                        "birth":  "2003-01-26",
+                        "height":  193,
+                        "marketValue":  1400000
+                    },
+                    {
+                        "name":  "Amir Rrahmani",
+                        "slug":  "amir-rrahmani",
+                        "position":  "DEF",
+                        "shirt":  13,
+                        "age":  32,
+                        "birth":  "1994-02-24",
+                        "height":  190,
+                        "marketValue":  10600000
+                    },
+                    {
+                        "name":  "Rafa Marín",
+                        "slug":  "rafa-marin",
+                        "position":  "DEF",
+                        "shirt":  16,
+                        "age":  24,
+                        "birth":  "2002-05-19",
+                        "height":  190,
+                        "marketValue":  11600000
+                    },
+                    {
+                        "name":  "Mathías Olivera",
+                        "slug":  "mathias-olivera",
+                        "position":  "DEF",
+                        "shirt":  17,
+                        "age":  28,
+                        "birth":  "1997-10-31",
+                        "height":  184,
+                        "marketValue":  14500000
+                    },
+                    {
+                        "name":  "Giovanni Di Lorenzo",
+                        "slug":  "giovanni-di-lorenzo",
+                        "position":  "DEF",
+                        "shirt":  22,
+                        "age":  33,
+                        "birth":  "1993-08-04",
+                        "height":  182,
+                        "marketValue":  6800000
+                    },
+                    {
+                        "name":  "Sam Beukema",
+                        "slug":  "sam-beukema",
+                        "position":  "DEF",
+                        "shirt":  31,
+                        "age":  27,
+                        "birth":  "1998-11-17",
+                        "height":  188,
+                        "marketValue":  24000000
+                    },
+                    {
+                        "name":  "Luca Marianucci",
+                        "slug":  "marianucci-luca",
+                        "position":  "DEF",
+                        "shirt":  35,
+                        "age":  22,
+                        "birth":  "2004-07-23",
+                        "height":  186,
+                        "marketValue":  7500000
+                    },
+                    {
+                        "name":  "Leonardo Spinazzola",
+                        "slug":  "leonardo-spinazzola",
+                        "position":  "DEF",
+                        "shirt":  37,
+                        "age":  33,
+                        "birth":  "1993-03-25",
+                        "height":  185,
+                        "marketValue":  3400000
+                    },
+                    {
+                        "name":  "Christian Garofalo",
+                        "slug":  "christian-garofalo",
+                        "position":  "DEF",
+                        "shirt":  56,
+                        "age":  19,
+                        "birth":  "2007-01-04",
+                        "height":  182,
+                        "marketValue":  260000
+                    },
+                    {
+                        "name":  "Billy Gilmour",
+                        "slug":  "billy-gilmour",
+                        "position":  "MID",
+                        "shirt":  6,
+                        "age":  25,
+                        "birth":  "2001-06-11",
+                        "height":  169,
+                        "marketValue":  18800000
+                    },
+                    {
+                        "name":  "Scott McTominay",
+                        "slug":  "scott-mctominay",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  29,
+                        "birth":  "1996-12-08",
+                        "height":  193,
+                        "marketValue":  38000000
+                    },
+                    {
+                        "name":  "Kevin De Bruyne",
+                        "slug":  "kevin-de-bruyne",
+                        "position":  "MID",
+                        "shirt":  11,
+                        "age":  35,
+                        "birth":  "1991-06-28",
+                        "height":  181,
+                        "marketValue":  8300000
+                    },
+                    {
+                        "name":  "Matteo Politano",
+                        "slug":  "matteo-politano",
+                        "position":  "MID",
+                        "shirt":  21,
+                        "age":  33,
+                        "birth":  "1993-08-03",
+                        "height":  171,
+                        "marketValue":  5300000
+                    },
+                    {
+                        "name":  "Jens-Lys Cajuste",
+                        "slug":  "jens-lys-cajuste",
+                        "position":  "MID",
+                        "shirt":  24,
+                        "age":  26,
+                        "birth":  "1999-08-10",
+                        "height":  188,
+                        "marketValue":  6600000
+                    },
+                    {
+                        "name":  "Jesper Lindstrøm",
+                        "slug":  "jesper-lindstrom",
+                        "position":  "MID",
+                        "shirt":  29,
+                        "age":  26,
+                        "birth":  "2000-02-29",
+                        "height":  182,
+                        "marketValue":  4300000
+                    },
+                    {
+                        "name":  "Pasquale Mazzocchi",
+                        "slug":  "pasquale-mazzocchi",
+                        "position":  "MID",
+                        "shirt":  30,
+                        "age":  31,
+                        "birth":  "1995-07-27",
+                        "height":  183,
+                        "marketValue":  1400000
+                    },
+                    {
+                        "name":  "Stanislav Lobotka",
+                        "slug":  "stanislav-lobotka",
+                        "position":  "MID",
+                        "shirt":  68,
+                        "age":  31,
+                        "birth":  "1994-11-25",
+                        "height":  170,
+                        "marketValue":  10300000
+                    },
+                    {
+                        "name":  "Gennaro Iaccarino",
+                        "slug":  "gennaro-iaccarino",
+                        "position":  "MID",
+                        "shirt":  78,
+                        "age":  23,
+                        "birth":  "2003-07-01",
+                        "height":  170,
+                        "marketValue":  185000
+                    },
+                    {
+                        "name":  "Michael Folorunsho",
+                        "slug":  "michael-folorunsho",
+                        "position":  "MID",
+                        "shirt":  90,
+                        "age":  28,
+                        "birth":  "1998-02-07",
+                        "height":  190,
+                        "marketValue":  4600000
+                    },
+                    {
+                        "name":  "Frank Anguissa",
+                        "slug":  "frank-anguissa",
+                        "position":  "MID",
+                        "shirt":  99,
+                        "age":  30,
+                        "birth":  "1995-11-16",
+                        "height":  184,
+                        "marketValue":  14600000
+                    },
+                    {
+                        "name":  "Lorenzo Russo",
+                        "slug":  "russo-lorenzo",
+                        "position":  "MID",
+                        "shirt":  null,
+                        "age":  21,
+                        "birth":  "2005-04-19",
+                        "height":  182,
+                        "marketValue":  53000
+                    },
+                    {
+                        "name":  "David Neres",
+                        "slug":  "david-neres",
+                        "position":  "FW",
+                        "shirt":  7,
+                        "age":  29,
+                        "birth":  "1997-03-03",
+                        "height":  175,
+                        "marketValue":  22000000
+                    },
+                    {
+                        "name":  "Romelu Lukaku",
+                        "slug":  "romelu-lukaku",
+                        "position":  "FW",
+                        "shirt":  9,
+                        "age":  33,
+                        "birth":  "1993-05-13",
+                        "height":  191,
+                        "marketValue":  5800000
+                    },
+                    {
+                        "name":  "Lorenzo Lucca",
+                        "slug":  "lorenzo-lucca",
+                        "position":  "FW",
+                        "shirt":  17,
+                        "age":  25,
+                        "birth":  "2000-09-10",
+                        "height":  201,
+                        "marketValue":  22000000
+                    },
+                    {
+                        "name":  "Rasmus Højlund",
+                        "slug":  "rasmus-hojlund",
+                        "position":  "FW",
+                        "shirt":  19,
+                        "age":  23,
+                        "birth":  "2003-02-04",
+                        "height":  191,
+                        "marketValue":  66000000
+                    },
+                    {
+                        "name":  "Giovane",
+                        "slug":  "giovane",
+                        "position":  "FW",
+                        "shirt":  23,
+                        "age":  22,
+                        "birth":  "2003-11-24",
+                        "height":  184,
+                        "marketValue":  12600000
+                    },
+                    {
+                        "name":  "Cyril Ngonge",
+                        "slug":  "cyril-ngonge",
+                        "position":  "FW",
+                        "shirt":  26,
+                        "age":  26,
+                        "birth":  "2000-05-26",
+                        "height":  179,
+                        "marketValue":  6800000
+                    },
+                    {
+                        "name":  "Antonio Vergara",
+                        "slug":  "antonio-vergara",
+                        "position":  "FW",
+                        "shirt":  26,
+                        "age":  23,
+                        "birth":  "2003-01-16",
+                        "height":  182,
+                        "marketValue":  13600000
+                    },
+                    {
+                        "name":  "Alisson Santos",
+                        "slug":  "alisson-santos",
+                        "position":  "FW",
+                        "shirt":  27,
+                        "age":  23,
+                        "birth":  "2002-09-27",
+                        "height":  177,
+                        "marketValue":  29000000
+                    },
+                    {
+                        "name":  "Lorenzo Sgarbi",
+                        "slug":  "lorenzo-sgarbi",
+                        "position":  "FW",
+                        "shirt":  36,
+                        "age":  25,
+                        "birth":  "2001-03-24",
+                        "height":  189,
+                        "marketValue":  360000
+                    },
+                    {
+                        "name":  "Noa Lang",
+                        "slug":  "noa-lang",
+                        "position":  "FW",
+                        "shirt":  70,
+                        "age":  27,
+                        "birth":  "1999-06-17",
+                        "height":  173,
+                        "marketValue":  24000000
+                    },
+                    {
+                        "name":  "Walid Cheddira",
+                        "slug":  "walid-cheddira",
+                        "position":  "FW",
+                        "shirt":  77,
+                        "age":  28,
+                        "birth":  "1998-01-22",
+                        "height":  187,
+                        "marketValue":  1900000
+                    },
+                    {
+                        "name":  "Antonio Cioffi",
+                        "slug":  "antonio-cioffi",
+                        "position":  "FW",
+                        "shirt":  null,
+                        "age":  23,
+                        "birth":  "2002-12-19",
+                        "height":  180,
+                        "marketValue":  190000
+                    }
+                ]
+}

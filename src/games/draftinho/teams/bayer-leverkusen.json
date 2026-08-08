@@ -1,0 +1,338 @@
+{
+    "id":  "bayer-leverkusen",
+    "name":  "Bayer Leverkusen",
+    "displayName":  "Bayer Leverkusen",
+    "logo":  "./assets/logos/clubs/bayer-leverkusen.png",
+    "players":  [
+                    {
+                        "name":  "Mark Flekken",
+                        "slug":  "mark-flekken",
+                        "position":  "GK",
+                        "shirt":  1,
+                        "age":  33,
+                        "birth":  "1993-06-13",
+                        "height":  194,
+                        "marketValue":  6400000
+                    },
+                    {
+                        "name":  "Janis Blaswich",
+                        "slug":  "janis-blaswich",
+                        "position":  "GK",
+                        "shirt":  28,
+                        "age":  35,
+                        "birth":  "1991-05-02",
+                        "height":  193,
+                        "marketValue":  650000
+                    },
+                    {
+                        "name":  "Niklas Lomb",
+                        "slug":  "niklas-lomb",
+                        "position":  "GK",
+                        "shirt":  36,
+                        "age":  33,
+                        "birth":  "1993-07-28",
+                        "height":  188,
+                        "marketValue":  240000
+                    },
+                    {
+                        "name":  "Jarell Quansah",
+                        "slug":  "jarell-quansah",
+                        "position":  "DEF",
+                        "shirt":  4,
+                        "age":  23,
+                        "birth":  "2003-01-29",
+                        "height":  190,
+                        "marketValue":  48000000
+                    },
+                    {
+                        "name":  "Loïc Badé",
+                        "slug":  "loic-bade",
+                        "position":  "DEF",
+                        "shirt":  5,
+                        "age":  26,
+                        "birth":  "2000-04-11",
+                        "height":  191,
+                        "marketValue":  19400000
+                    },
+                    {
+                        "name":  "Robert Andrich",
+                        "slug":  "robert-andrich",
+                        "position":  "DEF",
+                        "shirt":  8,
+                        "age":  31,
+                        "birth":  "1994-09-22",
+                        "height":  189,
+                        "marketValue":  6200000
+                    },
+                    {
+                        "name":  "Edmond Tapsoba",
+                        "slug":  "edmond-tapsoba",
+                        "position":  "DEF",
+                        "shirt":  12,
+                        "age":  27,
+                        "birth":  "1999-02-02",
+                        "height":  193,
+                        "marketValue":  37000000
+                    },
+                    {
+                        "name":  "Tim Oermann",
+                        "slug":  "tim-oermann",
+                        "position":  "DEF",
+                        "shirt":  15,
+                        "age":  22,
+                        "birth":  "2003-10-06",
+                        "height":  187,
+                        "marketValue":  4099999
+                    },
+                    {
+                        "name":  "Axel Tape",
+                        "slug":  "axel-tape",
+                        "position":  "DEF",
+                        "shirt":  16,
+                        "age":  18,
+                        "birth":  "2007-08-10",
+                        "height":  180,
+                        "marketValue":  8700000
+                    },
+                    {
+                        "name":  "Jeanuël Belocian",
+                        "slug":  "jeanuel-belocian",
+                        "position":  "DEF",
+                        "shirt":  44,
+                        "age":  21,
+                        "birth":  "2005-02-17",
+                        "height":  186,
+                        "marketValue":  12900000
+                    },
+                    {
+                        "name":  "Ezequiel Fernández",
+                        "slug":  "ezequiel-fernandez",
+                        "position":  "MID",
+                        "shirt":  6,
+                        "age":  24,
+                        "birth":  "2002-07-25",
+                        "height":  178,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Malik Tillman",
+                        "slug":  "malik-tillman",
+                        "position":  "MID",
+                        "shirt":  10,
+                        "age":  24,
+                        "birth":  "2002-05-28",
+                        "height":  186,
+                        "marketValue":  27000000
+                    },
+                    {
+                        "name":  "Arthur",
+                        "slug":  "arthur",
+                        "position":  "MID",
+                        "shirt":  13,
+                        "age":  23,
+                        "birth":  "2003-03-17",
+                        "height":  173,
+                        "marketValue":  7400000
+                    },
+                    {
+                        "name":  "Farid Alfa-Ruprecht",
+                        "slug":  "alfa-ruprecht-farid",
+                        "position":  "MID",
+                        "shirt":  17,
+                        "age":  20,
+                        "birth":  "2006-03-28",
+                        "height":  181,
+                        "marketValue":  3200000
+                    },
+                    {
+                        "name":  "Noah Mbamba",
+                        "slug":  "noah-mbamba",
+                        "position":  "MID",
+                        "shirt":  18,
+                        "age":  21,
+                        "birth":  "2005-01-05",
+                        "height":  187,
+                        "marketValue":  1800000
+                    },
+                    {
+                        "name":  "Lucas Vázquez",
+                        "slug":  "lucas-vazquez",
+                        "position":  "MID",
+                        "shirt":  21,
+                        "age":  35,
+                        "birth":  "1991-07-01",
+                        "height":  173,
+                        "marketValue":  1600000
+                    },
+                    {
+                        "name":  "Kennet Eichhorn",
+                        "slug":  "kennet-eichhorn",
+                        "position":  "MID",
+                        "shirt":  23,
+                        "age":  17,
+                        "birth":  "2009-07-27",
+                        "height":  186,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Aleix García",
+                        "slug":  "aleix-garcia",
+                        "position":  "MID",
+                        "shirt":  24,
+                        "age":  29,
+                        "birth":  "1997-06-28",
+                        "height":  173,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Exequiel Palacios",
+                        "slug":  "exequiel-palacios",
+                        "position":  "MID",
+                        "shirt":  25,
+                        "age":  27,
+                        "birth":  "1998-10-05",
+                        "height":  177,
+                        "marketValue":  26000000
+                    },
+                    {
+                        "name":  "Montrell Culbreath",
+                        "slug":  "montrell-culbreath",
+                        "position":  "MID",
+                        "shirt":  42,
+                        "age":  18,
+                        "birth":  "2007-08-29",
+                        "height":  172,
+                        "marketValue":  15600000
+                    },
+                    {
+                        "name":  "Naba Mensah",
+                        "slug":  "naba-mensah",
+                        "position":  "MID",
+                        "shirt":  45,
+                        "age":  19,
+                        "birth":  "2007-05-08",
+                        "height":  0,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Jonas Hofmann",
+                        "slug":  "jonas-hofmann",
+                        "position":  "FW",
+                        "shirt":  7,
+                        "age":  34,
+                        "birth":  "1992-07-14",
+                        "height":  176,
+                        "marketValue":  1600000
+                    },
+                    {
+                        "name":  "Martin Terrier",
+                        "slug":  "martin-terrier",
+                        "position":  "FW",
+                        "shirt":  11,
+                        "age":  29,
+                        "birth":  "1997-03-04",
+                        "height":  184,
+                        "marketValue":  7400000
+                    },
+                    {
+                        "name":  "Patrik Schick",
+                        "slug":  "patrik-schick",
+                        "position":  "FW",
+                        "shirt":  14,
+                        "age":  30,
+                        "birth":  "1996-01-24",
+                        "height":  191,
+                        "marketValue":  16600000
+                    },
+                    {
+                        "name":  "Eliesse Ben Seghir",
+                        "slug":  "eliesse-ben-seghir",
+                        "position":  "FW",
+                        "shirt":  17,
+                        "age":  21,
+                        "birth":  "2005-02-16",
+                        "height":  178,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Afonso Moreira",
+                        "slug":  "afonso-moreira",
+                        "position":  "FW",
+                        "shirt":  17,
+                        "age":  21,
+                        "birth":  "2005-03-19",
+                        "height":  175,
+                        "marketValue":  18400000
+                    },
+                    {
+                        "name":  "Aleksa Damjanović",
+                        "slug":  "damjanovic-aleksa",
+                        "position":  "FW",
+                        "shirt":  19,
+                        "age":  17,
+                        "birth":  "2008-12-04",
+                        "height":  198,
+                        "marketValue":  4700000
+                    },
+                    {
+                        "name":  "Ernest Poku",
+                        "slug":  "ernest-poku",
+                        "position":  "FW",
+                        "shirt":  19,
+                        "age":  22,
+                        "birth":  "2004-01-28",
+                        "height":  172,
+                        "marketValue":  24000000
+                    },
+                    {
+                        "name":  "Victor Okoh Boniface",
+                        "slug":  "victor-okoh-boniface",
+                        "position":  "FW",
+                        "shirt":  22,
+                        "age":  25,
+                        "birth":  "2000-12-23",
+                        "height":  193,
+                        "marketValue":  5500000
+                    },
+                    {
+                        "name":  "Nathan Tella",
+                        "slug":  "nathan-tella",
+                        "position":  "FW",
+                        "shirt":  23,
+                        "age":  27,
+                        "birth":  "1999-07-05",
+                        "height":  173,
+                        "marketValue":  15800000
+                    },
+                    {
+                        "name":  "Ibrahim Maza",
+                        "slug":  "ibrahim-maza",
+                        "position":  "FW",
+                        "shirt":  30,
+                        "age":  20,
+                        "birth":  "2005-11-24",
+                        "height":  181,
+                        "marketValue":  41000000
+                    },
+                    {
+                        "name":  "Christian Kofane",
+                        "slug":  "christian-kofane",
+                        "position":  "FW",
+                        "shirt":  35,
+                        "age":  20,
+                        "birth":  "2006-07-26",
+                        "height":  189,
+                        "marketValue":  41000000
+                    },
+                    {
+                        "name":  "Ndjicoura Bomba",
+                        "slug":  "ndjicoura-bomba",
+                        "position":  "FW",
+                        "shirt":  null,
+                        "age":  18,
+                        "birth":  "2008-03-12",
+                        "height":  188,
+                        "marketValue":  1600000
+                    }
+                ]
+}

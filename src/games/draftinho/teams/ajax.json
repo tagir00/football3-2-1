@@ -1,0 +1,298 @@
+{
+    "id":  "ajax",
+    "name":  "Ajax",
+    "displayName":  "Ajax",
+    "logo":  "./assets/logos/clubs/ajax.png",
+    "players":  [
+                    {
+                        "name":  "Marc-André Ter Stegen",
+                        "slug":  "marc-andre-ter-stegen",
+                        "position":  "GK",
+                        "shirt":  1,
+                        "age":  34,
+                        "birth":  "1992-04-30",
+                        "height":  187,
+                        "marketValue":  3100000
+                    },
+                    {
+                        "name":  "Joeri Heerkens",
+                        "slug":  "jesse-joeri-heerkens",
+                        "position":  "GK",
+                        "shirt":  12,
+                        "age":  20,
+                        "birth":  "2006-05-08",
+                        "height":  193,
+                        "marketValue":  970000
+                    },
+                    {
+                        "name":  "Maarten Paes",
+                        "slug":  "maarten-paes",
+                        "position":  "GK",
+                        "shirt":  26,
+                        "age":  28,
+                        "birth":  "1998-05-14",
+                        "height":  191,
+                        "marketValue":  1900000
+                    },
+                    {
+                        "name":  "Lucas Rosa",
+                        "slug":  "lucas-rosa",
+                        "position":  "DEF",
+                        "shirt":  2,
+                        "age":  26,
+                        "birth":  "2000-04-03",
+                        "height":  177,
+                        "marketValue":  5300000
+                    },
+                    {
+                        "name":  "Anton Gaaei",
+                        "slug":  "anton-gaaei",
+                        "position":  "DEF",
+                        "shirt":  2,
+                        "age":  23,
+                        "birth":  "2002-11-19",
+                        "height":  183,
+                        "marketValue":  4800000
+                    },
+                    {
+                        "name":  "Ko Itakura",
+                        "slug":  "kou-itakura",
+                        "position":  "DEF",
+                        "shirt":  4,
+                        "age":  29,
+                        "birth":  "1997-01-27",
+                        "height":  189,
+                        "marketValue":  8400000
+                    },
+                    {
+                        "name":  "Youri Baas",
+                        "slug":  "youri-baas",
+                        "position":  "DEF",
+                        "shirt":  4,
+                        "age":  23,
+                        "birth":  "2003-03-17",
+                        "height":  188,
+                        "marketValue":  19400000
+                    },
+                    {
+                        "name":  "Caio Henrique",
+                        "slug":  "caio-henrique",
+                        "position":  "DEF",
+                        "shirt":  5,
+                        "age":  29,
+                        "birth":  "1997-07-31",
+                        "height":  178,
+                        "marketValue":  11500000
+                    },
+                    {
+                        "name":  "Ahmetcan Kaplan",
+                        "slug":  "ahmetcan-kaplan",
+                        "position":  "DEF",
+                        "shirt":  13,
+                        "age":  23,
+                        "birth":  "2003-01-16",
+                        "height":  189,
+                        "marketValue":  6500000
+                    },
+                    {
+                        "name":  "Owen Wijndal",
+                        "slug":  "owen-wijndal",
+                        "position":  "DEF",
+                        "shirt":  15,
+                        "age":  26,
+                        "birth":  "1999-11-28",
+                        "height":  174,
+                        "marketValue":  3200000
+                    },
+                    {
+                        "name":  "Daley Blind",
+                        "slug":  "daley-blind",
+                        "position":  "DEF",
+                        "shirt":  17,
+                        "age":  36,
+                        "birth":  "1990-03-09",
+                        "height":  180,
+                        "marketValue":  1200000
+                    },
+                    {
+                        "name":  "Aaron Bouwman",
+                        "slug":  "aaron-bouwman",
+                        "position":  "DEF",
+                        "shirt":  30,
+                        "age":  18,
+                        "birth":  "2007-08-28",
+                        "height":  188,
+                        "marketValue":  3700000
+                    },
+                    {
+                        "name":  "Dies Janse",
+                        "slug":  "janse-dies",
+                        "position":  "DEF",
+                        "shirt":  36,
+                        "age":  20,
+                        "birth":  "2006-01-17",
+                        "height":  196,
+                        "marketValue":  6200000
+                    },
+                    {
+                        "name":  "Josip Šutalo",
+                        "slug":  "josip-sutalo",
+                        "position":  "DEF",
+                        "shirt":  37,
+                        "age":  26,
+                        "birth":  "2000-02-28",
+                        "height":  190,
+                        "marketValue":  13100000
+                    },
+                    {
+                        "name":  "Jorthy Mokio",
+                        "slug":  "jorthy-mokio",
+                        "position":  "MID",
+                        "shirt":  6,
+                        "age":  18,
+                        "birth":  "2008-02-29",
+                        "height":  182,
+                        "marketValue":  7800000
+                    },
+                    {
+                        "name":  "Maher Carrizo",
+                        "slug":  "carrizo-maher",
+                        "position":  "MID",
+                        "shirt":  7,
+                        "age":  20,
+                        "birth":  "2006-02-19",
+                        "height":  180,
+                        "marketValue":  7600000
+                    },
+                    {
+                        "name":  "Youri Regeer",
+                        "slug":  "youri-regeer",
+                        "position":  "MID",
+                        "shirt":  16,
+                        "age":  22,
+                        "birth":  "2003-08-18",
+                        "height":  177,
+                        "marketValue":  4700000
+                    },
+                    {
+                        "name":  "Davy Klaassen",
+                        "slug":  "davy-klaassen",
+                        "position":  "MID",
+                        "shirt":  18,
+                        "age":  33,
+                        "birth":  "1993-02-21",
+                        "height":  179,
+                        "marketValue":  2100000
+                    },
+                    {
+                        "name":  "Oscar Gloukh",
+                        "slug":  "oscar-gloukh",
+                        "position":  "MID",
+                        "shirt":  20,
+                        "age":  22,
+                        "birth":  "2004-04-01",
+                        "height":  170,
+                        "marketValue":  13400000
+                    },
+                    {
+                        "name":  "Rayane Bounida",
+                        "slug":  "rayane-bounida",
+                        "position":  "MID",
+                        "shirt":  43,
+                        "age":  20,
+                        "birth":  "2006-03-03",
+                        "height":  179,
+                        "marketValue":  4900000
+                    },
+                    {
+                        "name":  "Marcos Leonardo",
+                        "slug":  "marcos-leonardo",
+                        "position":  "FW",
+                        "shirt":  9,
+                        "age":  23,
+                        "birth":  "2003-05-02",
+                        "height":  177,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Kasper Dolberg",
+                        "slug":  "kasper-dolberg",
+                        "position":  "FW",
+                        "shirt":  9,
+                        "age":  28,
+                        "birth":  "1997-10-06",
+                        "height":  187,
+                        "marketValue":  7600000
+                    },
+                    {
+                        "name":  "Oliver Valaker Edvardsen",
+                        "slug":  "oliver-valaker-edvardsen",
+                        "position":  "FW",
+                        "shirt":  11,
+                        "age":  27,
+                        "birth":  "1999-03-19",
+                        "height":  175,
+                        "marketValue":  3100000
+                    },
+                    {
+                        "name":  "Mika Godts",
+                        "slug":  "mika-godts",
+                        "position":  "FW",
+                        "shirt":  11,
+                        "age":  21,
+                        "birth":  "2005-06-07",
+                        "height":  176,
+                        "marketValue":  32000000
+                    },
+                    {
+                        "name":  "Don-Angelo Konadu",
+                        "slug":  "don-angelo-konadu",
+                        "position":  "FW",
+                        "shirt":  19,
+                        "age":  20,
+                        "birth":  "2006-05-03",
+                        "height":  184,
+                        "marketValue":  860000
+                    },
+                    {
+                        "name":  "Steven Berghuis",
+                        "slug":  "steven-berghuis",
+                        "position":  "FW",
+                        "shirt":  23,
+                        "age":  34,
+                        "birth":  "1991-12-19",
+                        "height":  182,
+                        "marketValue":  2100000
+                    },
+                    {
+                        "name":  "Amourricho van Axel-Dongen",
+                        "slug":  "amourricho-van-axel-dongen",
+                        "position":  "FW",
+                        "shirt":  27,
+                        "age":  21,
+                        "birth":  "2004-09-29",
+                        "height":  175,
+                        "marketValue":  370000
+                    },
+                    {
+                        "name":  "Tolu Arokodare",
+                        "slug":  "tolu-arokodare",
+                        "position":  "FW",
+                        "shirt":  99,
+                        "age":  25,
+                        "birth":  "2000-11-23",
+                        "height":  196,
+                        "marketValue":  18200000
+                    },
+                    {
+                        "name":  "Julian Brandt",
+                        "slug":  "julian-brandt",
+                        "position":  "FW",
+                        "shirt":  null,
+                        "age":  30,
+                        "birth":  "1996-05-02",
+                        "height":  186,
+                        "marketValue":  15500000
+                    }
+                ]
+}

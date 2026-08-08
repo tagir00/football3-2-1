@@ -1,0 +1,288 @@
+{
+    "id":  "juventus",
+    "name":  "Juventus",
+    "displayName":  "Juventus",
+    "logo":  "./assets/logos/clubs/juventus.png",
+    "players":  [
+                    {
+                        "name":  "Mattia Perin",
+                        "slug":  "mattia-perin",
+                        "position":  "GK",
+                        "shirt":  1,
+                        "age":  33,
+                        "birth":  "1992-11-10",
+                        "height":  188,
+                        "marketValue":  1900000
+                    },
+                    {
+                        "name":  "Michele Di Gregorio",
+                        "slug":  "michele-di-gregorio",
+                        "position":  "GK",
+                        "shirt":  16,
+                        "age":  29,
+                        "birth":  "1997-07-27",
+                        "height":  187,
+                        "marketValue":  9600000
+                    },
+                    {
+                        "name":  "Carlo Pinsoglio",
+                        "slug":  "carlo-pinsoglio",
+                        "position":  "GK",
+                        "shirt":  23,
+                        "age":  36,
+                        "birth":  "1990-03-16",
+                        "height":  194,
+                        "marketValue":  195000
+                    },
+                    {
+                        "name":  "Zeki Çelik",
+                        "slug":  "zeki-celik",
+                        "position":  "DEF",
+                        "shirt":  2,
+                        "age":  29,
+                        "birth":  "1997-02-17",
+                        "height":  180,
+                        "marketValue":  14500000
+                    },
+                    {
+                        "name":  "Bremer",
+                        "slug":  "bremer",
+                        "position":  "DEF",
+                        "shirt":  3,
+                        "age":  29,
+                        "birth":  "1997-03-18",
+                        "height":  188,
+                        "marketValue":  33000000
+                    },
+                    {
+                        "name":  "Federico Gatti",
+                        "slug":  "federico-gatti",
+                        "position":  "DEF",
+                        "shirt":  4,
+                        "age":  28,
+                        "birth":  "1998-06-24",
+                        "height":  190,
+                        "marketValue":  13200000
+                    },
+                    {
+                        "name":  "Lloyd Kelly",
+                        "slug":  "lloyd-kelly",
+                        "position":  "DEF",
+                        "shirt":  6,
+                        "age":  27,
+                        "birth":  "1998-10-06",
+                        "height":  191,
+                        "marketValue":  24000000
+                    },
+                    {
+                        "name":  "Pierre Kalulu",
+                        "slug":  "pierre-kalulu",
+                        "position":  "DEF",
+                        "shirt":  15,
+                        "age":  26,
+                        "birth":  "2000-06-05",
+                        "height":  183,
+                        "marketValue":  31000000
+                    },
+                    {
+                        "name":  "Daniele Rugani",
+                        "slug":  "daniele-rugani",
+                        "position":  "DEF",
+                        "shirt":  24,
+                        "age":  32,
+                        "birth":  "1994-07-29",
+                        "height":  188,
+                        "marketValue":  2100000
+                    },
+                    {
+                        "name":  "Juan Cabal",
+                        "slug":  "juan-cabal",
+                        "position":  "DEF",
+                        "shirt":  32,
+                        "age":  25,
+                        "birth":  "2001-01-08",
+                        "height":  185,
+                        "marketValue":  7200000
+                    },
+                    {
+                        "name":  "Manuel Locatelli",
+                        "slug":  "manuel-locatelli",
+                        "position":  "MID",
+                        "shirt":  5,
+                        "age":  28,
+                        "birth":  "1998-01-08",
+                        "height":  185,
+                        "marketValue":  24000000
+                    },
+                    {
+                        "name":  "Teun Koopmeiners",
+                        "slug":  "teun-koopmeiners",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  28,
+                        "birth":  "1998-02-28",
+                        "height":  183,
+                        "marketValue":  13200000
+                    },
+                    {
+                        "name":  "Nicolás González",
+                        "slug":  "nicolas-gonzalez",
+                        "position":  "MID",
+                        "shirt":  11,
+                        "age":  28,
+                        "birth":  "1998-04-06",
+                        "height":  180,
+                        "marketValue":  23000000
+                    },
+                    {
+                        "name":  "Khéphren Thuram",
+                        "slug":  "khephren-thuram",
+                        "position":  "MID",
+                        "shirt":  19,
+                        "age":  25,
+                        "birth":  "2001-03-26",
+                        "height":  191,
+                        "marketValue":  36000000
+                    },
+                    {
+                        "name":  "Fabio Miretti",
+                        "slug":  "fabio-miretti",
+                        "position":  "MID",
+                        "shirt":  21,
+                        "age":  23,
+                        "birth":  "2003-08-03",
+                        "height":  179,
+                        "marketValue":  14600000
+                    },
+                    {
+                        "name":  "Weston McKennie",
+                        "slug":  "weston-mckennie",
+                        "position":  "MID",
+                        "shirt":  22,
+                        "age":  27,
+                        "birth":  "1998-08-28",
+                        "height":  180,
+                        "marketValue":  31000000
+                    },
+                    {
+                        "name":  "Douglas Luiz",
+                        "slug":  "douglas-luiz",
+                        "position":  "MID",
+                        "shirt":  26,
+                        "age":  28,
+                        "birth":  "1998-05-09",
+                        "height":  175,
+                        "marketValue":  19200000
+                    },
+                    {
+                        "name":  "Andrea Cambiaso",
+                        "slug":  "cambiaso-andrea",
+                        "position":  "MID",
+                        "shirt":  27,
+                        "age":  26,
+                        "birth":  "2000-02-20",
+                        "height":  181,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Kerim Alajbegović",
+                        "slug":  "kerim-alajbegovic",
+                        "position":  "MID",
+                        "shirt":  27,
+                        "age":  18,
+                        "birth":  "2007-09-21",
+                        "height":  185,
+                        "marketValue":  23000000
+                    },
+                    {
+                        "name":  "Arthur",
+                        "slug":  "arthur",
+                        "position":  "MID",
+                        "shirt":  98,
+                        "age":  29,
+                        "birth":  "1996-08-12",
+                        "height":  172,
+                        "marketValue":  4200000
+                    },
+                    {
+                        "name":  "Francisco Conceição",
+                        "slug":  "francisco-conceicao",
+                        "position":  "FW",
+                        "shirt":  7,
+                        "age":  23,
+                        "birth":  "2002-12-13",
+                        "height":  166,
+                        "marketValue":  28000000
+                    },
+                    {
+                        "name":  "Kenan Yıldız",
+                        "slug":  "yildiz-kenan",
+                        "position":  "FW",
+                        "shirt":  10,
+                        "age":  21,
+                        "birth":  "2005-05-04",
+                        "height":  187,
+                        "marketValue":  72000000
+                    },
+                    {
+                        "name":  "Edon Zhegrova",
+                        "slug":  "edon-zhegrova",
+                        "position":  "FW",
+                        "shirt":  11,
+                        "age":  27,
+                        "birth":  "1999-03-31",
+                        "height":  181,
+                        "marketValue":  9500000
+                    },
+                    {
+                        "name":  "Jérémie Boga",
+                        "slug":  "jeremie-boga",
+                        "position":  "FW",
+                        "shirt":  13,
+                        "age":  29,
+                        "birth":  "1997-01-03",
+                        "height":  172,
+                        "marketValue":  7700000
+                    },
+                    {
+                        "name":  "Arkadiusz Milik",
+                        "slug":  "arkadiusz-milik",
+                        "position":  "FW",
+                        "shirt":  14,
+                        "age":  32,
+                        "birth":  "1994-02-28",
+                        "height":  186,
+                        "marketValue":  1600000
+                    },
+                    {
+                        "name":  "Jeff Ekhator",
+                        "slug":  "jeff-ekhator",
+                        "position":  "FW",
+                        "shirt":  18,
+                        "age":  19,
+                        "birth":  "2006-11-11",
+                        "height":  188,
+                        "marketValue":  19200000
+                    },
+                    {
+                        "name":  "Randal Kolo Muani",
+                        "slug":  "randal-kolo-muani",
+                        "position":  "FW",
+                        "shirt":  23,
+                        "age":  27,
+                        "birth":  "1998-12-05",
+                        "height":  187,
+                        "marketValue":  18200000
+                    },
+                    {
+                        "name":  "Jonathan David",
+                        "slug":  "jonathan-david",
+                        "position":  "FW",
+                        "shirt":  30,
+                        "age":  26,
+                        "birth":  "2000-01-14",
+                        "height":  180,
+                        "marketValue":  29000000
+                    }
+                ]
+}

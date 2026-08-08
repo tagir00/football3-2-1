@@ -1,0 +1,258 @@
+{
+    "id":  "inter-milan",
+    "name":  "Inter",
+    "displayName":  "Inter",
+    "logo":  "./assets/logos/clubs/inter-milan.png",
+    "players":  [
+                    {
+                        "name":  "Raffaele Di Gennaro",
+                        "slug":  "raffaele-di-gennaro",
+                        "position":  "GK",
+                        "shirt":  12,
+                        "age":  32,
+                        "birth":  "1993-10-03",
+                        "height":  188,
+                        "marketValue":  325000
+                    },
+                    {
+                        "name":  "Josep Martínez",
+                        "slug":  "josep-martinez",
+                        "position":  "GK",
+                        "shirt":  13,
+                        "age":  28,
+                        "birth":  "1998-05-27",
+                        "height":  191,
+                        "marketValue":  10500000
+                    },
+                    {
+                        "name":  "Ivan Provedel",
+                        "slug":  "ivan-provedel",
+                        "position":  "GK",
+                        "shirt":  49,
+                        "age":  32,
+                        "birth":  "1994-03-17",
+                        "height":  194,
+                        "marketValue":  2800000
+                    },
+                    {
+                        "name":  "Benjamin Pavard",
+                        "slug":  "benjamin-pavard",
+                        "position":  "DEF",
+                        "shirt":  5,
+                        "age":  30,
+                        "birth":  "1996-03-28",
+                        "height":  186,
+                        "marketValue":  12700000
+                    },
+                    {
+                        "name":  "Manuel Akanji",
+                        "slug":  "manuel-akanji",
+                        "position":  "DEF",
+                        "shirt":  25,
+                        "age":  31,
+                        "birth":  "1995-07-19",
+                        "height":  187,
+                        "marketValue":  15500000
+                    },
+                    {
+                        "name":  "Carlos Augusto",
+                        "slug":  "carlos-augusto",
+                        "position":  "DEF",
+                        "shirt":  30,
+                        "age":  27,
+                        "birth":  "1999-01-07",
+                        "height":  184,
+                        "marketValue":  22000000
+                    },
+                    {
+                        "name":  "Yann Bisseck",
+                        "slug":  "yann-bisseck",
+                        "position":  "DEF",
+                        "shirt":  31,
+                        "age":  25,
+                        "birth":  "2000-11-29",
+                        "height":  194,
+                        "marketValue":  47000000
+                    },
+                    {
+                        "name":  "Alessandro Bastoni",
+                        "slug":  "alessandro-bastoni",
+                        "position":  "DEF",
+                        "shirt":  95,
+                        "age":  27,
+                        "birth":  "1999-04-13",
+                        "height":  190,
+                        "marketValue":  61000000
+                    },
+                    {
+                        "name":  "John Stones",
+                        "slug":  "john-stones",
+                        "position":  "DEF",
+                        "shirt":  null,
+                        "age":  32,
+                        "birth":  "1994-05-28",
+                        "height":  188,
+                        "marketValue":  10900000
+                    },
+                    {
+                        "name":  "Aleksandar Stanković",
+                        "slug":  "aleksandar-stankovic",
+                        "position":  "MID",
+                        "shirt":  5,
+                        "age":  21,
+                        "birth":  "2005-08-03",
+                        "height":  187,
+                        "marketValue":  31000000
+                    },
+                    {
+                        "name":  "Piotr Zieliński",
+                        "slug":  "piotr-zielinski",
+                        "position":  "MID",
+                        "shirt":  7,
+                        "age":  32,
+                        "birth":  "1994-05-20",
+                        "height":  180,
+                        "marketValue":  10300000
+                    },
+                    {
+                        "name":  "Petar Sučić",
+                        "slug":  "petar-sucic",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  22,
+                        "birth":  "2003-10-25",
+                        "height":  184,
+                        "marketValue":  49000000
+                    },
+                    {
+                        "name":  "Luís Henrique",
+                        "slug":  "luis-henrique",
+                        "position":  "MID",
+                        "shirt":  11,
+                        "age":  24,
+                        "birth":  "2001-12-14",
+                        "height":  181,
+                        "marketValue":  24000000
+                    },
+                    {
+                        "name":  "Davide Frattesi",
+                        "slug":  "davide-frattesi",
+                        "position":  "MID",
+                        "shirt":  16,
+                        "age":  26,
+                        "birth":  "1999-09-22",
+                        "height":  178,
+                        "marketValue":  20000000
+                    },
+                    {
+                        "name":  "Yanis Massolin",
+                        "slug":  "yanis-massolin",
+                        "position":  "MID",
+                        "shirt":  17,
+                        "age":  23,
+                        "birth":  "2002-09-20",
+                        "height":  197,
+                        "marketValue":  4300000
+                    },
+                    {
+                        "name":  "Andy Diouf",
+                        "slug":  "andy-diouf",
+                        "position":  "MID",
+                        "shirt":  17,
+                        "age":  23,
+                        "birth":  "2003-05-17",
+                        "height":  187,
+                        "marketValue":  22000000
+                    },
+                    {
+                        "name":  "Hakan Çalhanoğlu",
+                        "slug":  "hakan-calhanoglu",
+                        "position":  "MID",
+                        "shirt":  20,
+                        "age":  32,
+                        "birth":  "1994-02-08",
+                        "height":  178,
+                        "marketValue":  16700000
+                    },
+                    {
+                        "name":  "Kristjan Asllani",
+                        "slug":  "kristjan-asllani",
+                        "position":  "MID",
+                        "shirt":  21,
+                        "age":  24,
+                        "birth":  "2002-03-09",
+                        "height":  179,
+                        "marketValue":  12400000
+                    },
+                    {
+                        "name":  "Henrikh Mkhitaryan",
+                        "slug":  "henrikh-mkhitaryan",
+                        "position":  "MID",
+                        "shirt":  22,
+                        "age":  37,
+                        "birth":  "1989-01-21",
+                        "height":  178,
+                        "marketValue":  2900000
+                    },
+                    {
+                        "name":  "Nicolò Barella",
+                        "slug":  "nicolo-barella",
+                        "position":  "MID",
+                        "shirt":  23,
+                        "age":  29,
+                        "birth":  "1997-02-07",
+                        "height":  175,
+                        "marketValue":  54000000
+                    },
+                    {
+                        "name":  "Federico Dimarco",
+                        "slug":  "federico-dimarco",
+                        "position":  "MID",
+                        "shirt":  32,
+                        "age":  28,
+                        "birth":  "1997-11-10",
+                        "height":  174,
+                        "marketValue":  48000000
+                    },
+                    {
+                        "name":  "Marcus Thuram",
+                        "slug":  "marcus-thuram",
+                        "position":  "FW",
+                        "shirt":  9,
+                        "age":  29,
+                        "birth":  "1997-08-06",
+                        "height":  192,
+                        "marketValue":  52000000
+                    },
+                    {
+                        "name":  "Lautaro Martínez",
+                        "slug":  "lautaro-martinez",
+                        "position":  "FW",
+                        "shirt":  10,
+                        "age":  28,
+                        "birth":  "1997-08-22",
+                        "height":  175,
+                        "marketValue":  80000000
+                    },
+                    {
+                        "name":  "Ange-Yoan Bonny",
+                        "slug":  "ange-bonny",
+                        "position":  "FW",
+                        "shirt":  14,
+                        "age":  22,
+                        "birth":  "2003-10-25",
+                        "height":  189,
+                        "marketValue":  34000000
+                    },
+                    {
+                        "name":  "Francesco Pio Esposito",
+                        "slug":  "francesco-pio-esposito",
+                        "position":  "FW",
+                        "shirt":  94,
+                        "age":  21,
+                        "birth":  "2005-06-28",
+                        "height":  189,
+                        "marketValue":  47000000
+                    }
+                ]
+}

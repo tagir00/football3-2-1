@@ -1,0 +1,388 @@
+{
+    "id":  "basaksehir",
+    "name":  "Basaksehir",
+    "displayName":  "Basaksehir",
+    "logo":  "./assets/logos/clubs/basaksehir.png",
+    "players":  [
+                    {
+                        "name":  "Volkan Babacan",
+                        "slug":  "volkan-babacan",
+                        "position":  "GK",
+                        "shirt":  1,
+                        "age":  37,
+                        "birth":  "1988-08-11",
+                        "height":  192,
+                        "marketValue":  52000
+                    },
+                    {
+                        "name":  "Muhammed Şengezer",
+                        "slug":  "muhammed-sengezer",
+                        "position":  "GK",
+                        "shirt":  16,
+                        "age":  29,
+                        "birth":  "1997-01-05",
+                        "height":  185,
+                        "marketValue":  3600000
+                    },
+                    {
+                        "name":  "Luca Stancic",
+                        "slug":  "luca-stancic",
+                        "position":  "GK",
+                        "shirt":  78,
+                        "age":  19,
+                        "birth":  "2007-01-20",
+                        "height":  189,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Yusuf Yılmaz",
+                        "slug":  "ylmaz-yusuf",
+                        "position":  "GK",
+                        "shirt":  78,
+                        "age":  20,
+                        "birth":  "2006-04-29",
+                        "height":  193,
+                        "marketValue":  45000
+                    },
+                    {
+                        "name":  "Deniz Dilmen",
+                        "slug":  "deniz-dilmen",
+                        "position":  "GK",
+                        "shirt":  98,
+                        "age":  21,
+                        "birth":  "2005-06-05",
+                        "height":  198,
+                        "marketValue":  1100000
+                    },
+                    {
+                        "name":  "Jerome Opoku",
+                        "slug":  "opoku-jerome",
+                        "position":  "DEF",
+                        "shirt":  3,
+                        "age":  27,
+                        "birth":  "1998-10-14",
+                        "height":  194,
+                        "marketValue":  7500000
+                    },
+                    {
+                        "name":  "Onur Bulut",
+                        "slug":  "onur-bulut",
+                        "position":  "DEF",
+                        "shirt":  6,
+                        "age":  32,
+                        "birth":  "1994-04-16",
+                        "height":  179,
+                        "marketValue":  580000
+                    },
+                    {
+                        "name":  "Hamza Güreler",
+                        "slug":  "hamza-gureler",
+                        "position":  "DEF",
+                        "shirt":  15,
+                        "age":  20,
+                        "birth":  "2006-04-10",
+                        "height":  192,
+                        "marketValue":  1700000
+                    },
+                    {
+                        "name":  "Christopher Operi",
+                        "slug":  "christopher-operi",
+                        "position":  "DEF",
+                        "shirt":  21,
+                        "age":  29,
+                        "birth":  "1997-04-29",
+                        "height":  182,
+                        "marketValue":  3700000
+                    },
+                    {
+                        "name":  "Emin Bayram",
+                        "slug":  "emin-bayram",
+                        "position":  "DEF",
+                        "shirt":  23,
+                        "age":  23,
+                        "birth":  "2003-04-02",
+                        "height":  193,
+                        "marketValue":  3900000
+                    },
+                    {
+                        "name":  "Ousseynou Ba",
+                        "slug":  "ousseynou-ba",
+                        "position":  "DEF",
+                        "shirt":  27,
+                        "age":  30,
+                        "birth":  "1995-11-11",
+                        "height":  192,
+                        "marketValue":  1300000
+                    },
+                    {
+                        "name":  "Francis Nzaba",
+                        "slug":  "francis-nzaba",
+                        "position":  "DEF",
+                        "shirt":  32,
+                        "age":  24,
+                        "birth":  "2002-07-17",
+                        "height":  178,
+                        "marketValue":  1300000
+                    },
+                    {
+                        "name":  "Michał Karbownik",
+                        "slug":  "michal-karbownik",
+                        "position":  "DEF",
+                        "shirt":  33,
+                        "age":  25,
+                        "birth":  "2001-03-13",
+                        "height":  175,
+                        "marketValue":  1700000
+                    },
+                    {
+                        "name":  "Festy Ebosele",
+                        "slug":  "festy-ebosele",
+                        "position":  "DEF",
+                        "shirt":  36,
+                        "age":  24,
+                        "birth":  "2002-08-02",
+                        "height":  180,
+                        "marketValue":  2700000
+                    },
+                    {
+                        "name":  "Efe Arda Koyuncu",
+                        "slug":  "efe-arda-koyuncu",
+                        "position":  "DEF",
+                        "shirt":  41,
+                        "age":  21,
+                        "birth":  "2005-07-08",
+                        "height":  185,
+                        "marketValue":  105000
+                    },
+                    {
+                        "name":  "Ömer Ali Şahiner",
+                        "slug":  "omer-ali-sahiner",
+                        "position":  "DEF",
+                        "shirt":  42,
+                        "age":  34,
+                        "birth":  "1992-01-02",
+                        "height":  175,
+                        "marketValue":  185000
+                    },
+                    {
+                        "name":  "Doğukan Tuzcu",
+                        "slug":  "dogukan-tuzcu",
+                        "position":  "DEF",
+                        "shirt":  94,
+                        "age":  20,
+                        "birth":  "2005-09-14",
+                        "height":  175,
+                        "marketValue":  160000
+                    },
+                    {
+                        "name":  "Onur Ergün",
+                        "slug":  "onur-ergun",
+                        "position":  "MID",
+                        "shirt":  4,
+                        "age":  33,
+                        "birth":  "1992-11-15",
+                        "height":  185,
+                        "marketValue":  145000
+                    },
+                    {
+                        "name":  "Berat Özdemir",
+                        "slug":  "berat-ayberk-ozdemir",
+                        "position":  "MID",
+                        "shirt":  5,
+                        "age":  28,
+                        "birth":  "1998-05-23",
+                        "height":  187,
+                        "marketValue":  2600000
+                    },
+                    {
+                        "name":  "Edin Višća",
+                        "slug":  "edin-visca",
+                        "position":  "MID",
+                        "shirt":  7,
+                        "age":  36,
+                        "birth":  "1990-02-17",
+                        "height":  172,
+                        "marketValue":  90000
+                    },
+                    {
+                        "name":  "Andreas Skov Olsen",
+                        "slug":  "andreas-skov-olsen",
+                        "position":  "MID",
+                        "shirt":  7,
+                        "age":  26,
+                        "birth":  "1999-12-29",
+                        "height":  187,
+                        "marketValue":  6600000
+                    },
+                    {
+                        "name":  "Yusuf Sarı",
+                        "slug":  "yusuf-sari",
+                        "position":  "MID",
+                        "shirt":  7,
+                        "age":  27,
+                        "birth":  "1998-11-20",
+                        "height":  168,
+                        "marketValue":  4300000
+                    },
+                    {
+                        "name":  "Olivier Kemen",
+                        "slug":  "olivier-kemen",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  30,
+                        "birth":  "1996-07-20",
+                        "height":  177,
+                        "marketValue":  2400000
+                    },
+                    {
+                        "name":  "Abbosbek Fayzullaev",
+                        "slug":  "abbosbek-fayzullaev",
+                        "position":  "MID",
+                        "shirt":  11,
+                        "age":  22,
+                        "birth":  "2003-10-03",
+                        "height":  167,
+                        "marketValue":  6500000
+                    },
+                    {
+                        "name":  "Ömer Faruk Beyaz",
+                        "slug":  "omer-faruk-beyaz",
+                        "position":  "MID",
+                        "shirt":  17,
+                        "age":  22,
+                        "birth":  "2003-08-29",
+                        "height":  171,
+                        "marketValue":  510000
+                    },
+                    {
+                        "name":  "Jakub Kałuziński",
+                        "slug":  "jakub-kaluzinski",
+                        "position":  "MID",
+                        "shirt":  18,
+                        "age":  23,
+                        "birth":  "2002-10-31",
+                        "height":  185,
+                        "marketValue":  2300000
+                    },
+                    {
+                        "name":  "Berkay Özcan",
+                        "slug":  "berkay-ozcan",
+                        "position":  "MID",
+                        "shirt":  19,
+                        "age":  28,
+                        "birth":  "1998-02-15",
+                        "height":  178,
+                        "marketValue":  1300000
+                    },
+                    {
+                        "name":  "Umut Güneş",
+                        "slug":  "umut-gunes",
+                        "position":  "MID",
+                        "shirt":  20,
+                        "age":  26,
+                        "birth":  "2000-03-16",
+                        "height":  177,
+                        "marketValue":  2900000
+                    },
+                    {
+                        "name":  "Matchoi Djaló",
+                        "slug":  "matchoi-djalo",
+                        "position":  "MID",
+                        "shirt":  22,
+                        "age":  23,
+                        "birth":  "2003-04-10",
+                        "height":  175,
+                        "marketValue":  470000
+                    },
+                    {
+                        "name":  "Abdoulaye Yoro",
+                        "slug":  "abdoulaye-yoro",
+                        "position":  "MID",
+                        "shirt":  80,
+                        "age":  19,
+                        "birth":  "2006-12-12",
+                        "height":  175,
+                        "marketValue":  315000
+                    },
+                    {
+                        "name":  "Davie Selke",
+                        "slug":  "davie-selke",
+                        "position":  "FW",
+                        "shirt":  9,
+                        "age":  31,
+                        "birth":  "1995-01-20",
+                        "height":  195,
+                        "marketValue":  2900000
+                    },
+                    {
+                        "name":  "Nuno Da Costa",
+                        "slug":  "nuno-da-costa",
+                        "position":  "FW",
+                        "shirt":  10,
+                        "age":  35,
+                        "birth":  "1991-02-10",
+                        "height":  184,
+                        "marketValue":  380000
+                    },
+                    {
+                        "name":  "Eldor Shomurodov",
+                        "slug":  "eldor-shomurodov",
+                        "position":  "FW",
+                        "shirt":  14,
+                        "age":  31,
+                        "birth":  "1995-06-29",
+                        "height":  190,
+                        "marketValue":  7400000
+                    },
+                    {
+                        "name":  "Berkay Aslan",
+                        "slug":  "berkay-aslan",
+                        "position":  "FW",
+                        "shirt":  45,
+                        "age":  19,
+                        "birth":  "2007-01-05",
+                        "height":  179,
+                        "marketValue":  415000
+                    },
+                    {
+                        "name":  "Ivan Brnić",
+                        "slug":  "ivan-brnic",
+                        "position":  "FW",
+                        "shirt":  77,
+                        "age":  24,
+                        "birth":  "2001-08-23",
+                        "height":  175,
+                        "marketValue":  2100000
+                    },
+                    {
+                        "name":  "Batuhan Çelik",
+                        "slug":  "batuhan-celik",
+                        "position":  "FW",
+                        "shirt":  91,
+                        "age":  21,
+                        "birth":  "2005-01-12",
+                        "height":  186,
+                        "marketValue":  980000
+                    },
+                    {
+                        "name":  "Bertuğ Yıldırım",
+                        "slug":  "bertug-ozgur-yildirim",
+                        "position":  "FW",
+                        "shirt":  91,
+                        "age":  24,
+                        "birth":  "2002-07-12",
+                        "height":  186,
+                        "marketValue":  6700000
+                    },
+                    {
+                        "name":  "Umut Bozok",
+                        "slug":  "umut-bozok",
+                        "position":  "FW",
+                        "shirt":  null,
+                        "age":  29,
+                        "birth":  "1996-09-19",
+                        "height":  178,
+                        "marketValue":  1500000
+                    }
+                ]
+}

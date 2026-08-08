@@ -1,0 +1,418 @@
+{
+    "id":  "fenerbahce",
+    "name":  "Fenerbahce",
+    "displayName":  "Fenerbahce",
+    "logo":  "./assets/logos/clubs/fenerbahce.png",
+    "players":  [
+                    {
+                        "name":  "İrfan Can Eğribayat",
+                        "slug":  "irfan-can-egribayat",
+                        "position":  "GK",
+                        "shirt":  1,
+                        "age":  28,
+                        "birth":  "1998-03-30",
+                        "height":  193,
+                        "marketValue":  1100000
+                    },
+                    {
+                        "name":  "Tarık Çetin",
+                        "slug":  "tarik-cetin",
+                        "position":  "GK",
+                        "shirt":  13,
+                        "age":  29,
+                        "birth":  "1997-01-08",
+                        "height":  193,
+                        "marketValue":  550000
+                    },
+                    {
+                        "name":  "Ederson",
+                        "slug":  "ederson",
+                        "position":  "GK",
+                        "shirt":  31,
+                        "age":  32,
+                        "birth":  "1993-08-17",
+                        "height":  188,
+                        "marketValue":  9200000
+                    },
+                    {
+                        "name":  "Mert Günok",
+                        "slug":  "mert-gunok",
+                        "position":  "GK",
+                        "shirt":  34,
+                        "age":  37,
+                        "birth":  "1989-03-01",
+                        "height":  196,
+                        "marketValue":  545000
+                    },
+                    {
+                        "name":  "Dominik Livaković",
+                        "slug":  "dominik-livakovic",
+                        "position":  "GK",
+                        "shirt":  40,
+                        "age":  31,
+                        "birth":  "1995-01-09",
+                        "height":  186,
+                        "marketValue":  4099999
+                    },
+                    {
+                        "name":  "Diego Carlos",
+                        "slug":  "diego-carlos",
+                        "position":  "DEF",
+                        "shirt":  3,
+                        "age":  33,
+                        "birth":  "1993-03-15",
+                        "height":  185,
+                        "marketValue":  5300000
+                    },
+                    {
+                        "name":  "Archie Brown",
+                        "slug":  "brown-archie",
+                        "position":  "DEF",
+                        "shirt":  3,
+                        "age":  24,
+                        "birth":  "2002-05-28",
+                        "height":  190,
+                        "marketValue":  11600000
+                    },
+                    {
+                        "name":  "Çağlar Söyüncü",
+                        "slug":  "caglar-soyuncu",
+                        "position":  "DEF",
+                        "shirt":  4,
+                        "age":  30,
+                        "birth":  "1996-05-23",
+                        "height":  187,
+                        "marketValue":  3600000
+                    },
+                    {
+                        "name":  "Yiğit Efe Demir",
+                        "slug":  "yigit-efe-demir",
+                        "position":  "DEF",
+                        "shirt":  14,
+                        "age":  22,
+                        "birth":  "2004-08-02",
+                        "height":  194,
+                        "marketValue":  6300000
+                    },
+                    {
+                        "name":  "Nathan Aké",
+                        "slug":  "nathan-ake",
+                        "position":  "DEF",
+                        "shirt":  15,
+                        "age":  31,
+                        "birth":  "1995-02-18",
+                        "height":  180,
+                        "marketValue":  10900000
+                    },
+                    {
+                        "name":  "Mert Müldür",
+                        "slug":  "mert-muldur",
+                        "position":  "DEF",
+                        "shirt":  18,
+                        "age":  27,
+                        "birth":  "1999-04-03",
+                        "height":  184,
+                        "marketValue":  7400000
+                    },
+                    {
+                        "name":  "Levent Mercan",
+                        "slug":  "levent-mercan",
+                        "position":  "DEF",
+                        "shirt":  22,
+                        "age":  25,
+                        "birth":  "2000-12-10",
+                        "height":  176,
+                        "marketValue":  4600000
+                    },
+                    {
+                        "name":  "Jayden Oosterwolde",
+                        "slug":  "jayden-oosterwolde",
+                        "position":  "DEF",
+                        "shirt":  24,
+                        "age":  25,
+                        "birth":  "2001-04-26",
+                        "height":  189,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Nélson Semedo",
+                        "slug":  "nelson-semedo",
+                        "position":  "DEF",
+                        "shirt":  27,
+                        "age":  32,
+                        "birth":  "1993-11-16",
+                        "height":  177,
+                        "marketValue":  5500000
+                    },
+                    {
+                        "name":  "Milan Škriniar",
+                        "slug":  "milan-skriniar",
+                        "position":  "DEF",
+                        "shirt":  37,
+                        "age":  31,
+                        "birth":  "1995-02-11",
+                        "height":  187,
+                        "marketValue":  11000000
+                    },
+                    {
+                        "name":  "Rodrigo Becão",
+                        "slug":  "rodrigo-becao",
+                        "position":  "DEF",
+                        "shirt":  50,
+                        "age":  30,
+                        "birth":  "1996-01-19",
+                        "height":  191,
+                        "marketValue":  2100000
+                    },
+                    {
+                        "name":  "Ognjen Mimović",
+                        "slug":  "ognjen-mimovic",
+                        "position":  "DEF",
+                        "shirt":  77,
+                        "age":  21,
+                        "birth":  "2004-08-17",
+                        "height":  180,
+                        "marketValue":  2500000
+                    },
+                    {
+                        "name":  "Omar Fayed",
+                        "slug":  "omar-fayed",
+                        "position":  "DEF",
+                        "shirt":  98,
+                        "age":  23,
+                        "birth":  "2003-07-04",
+                        "height":  189,
+                        "marketValue":  560000
+                    },
+                    {
+                        "name":  "İsmail Yüksek",
+                        "slug":  "ismail-yuksek",
+                        "position":  "MID",
+                        "shirt":  5,
+                        "age":  27,
+                        "birth":  "1999-01-26",
+                        "height":  183,
+                        "marketValue":  14000000
+                    },
+                    {
+                        "name":  "Mattéo Guendouzi",
+                        "slug":  "matteo-guendouzi",
+                        "position":  "MID",
+                        "shirt":  6,
+                        "age":  27,
+                        "birth":  "1999-04-14",
+                        "height":  185,
+                        "marketValue":  26000000
+                    },
+                    {
+                        "name":  "Fred",
+                        "slug":  "fred",
+                        "position":  "MID",
+                        "shirt":  7,
+                        "age":  33,
+                        "birth":  "1993-03-05",
+                        "height":  169,
+                        "marketValue":  4900000
+                    },
+                    {
+                        "name":  "Mert Hakan Yandaş",
+                        "slug":  "mert-hakan-yandas",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  31,
+                        "birth":  "1994-08-19",
+                        "height":  174,
+                        "marketValue":  2700000
+                    },
+                    {
+                        "name":  "Marco Asensio",
+                        "slug":  "marco-asensio",
+                        "position":  "MID",
+                        "shirt":  10,
+                        "age":  30,
+                        "birth":  "1996-01-21",
+                        "height":  182,
+                        "marketValue":  15500000
+                    },
+                    {
+                        "name":  "İrfan Can Kahveci",
+                        "slug":  "irfan-can-kahveci",
+                        "position":  "MID",
+                        "shirt":  17,
+                        "age":  31,
+                        "birth":  "1995-07-15",
+                        "height":  180,
+                        "marketValue":  3100000
+                    },
+                    {
+                        "name":  "Cengiz Ünder",
+                        "slug":  "cengiz-under",
+                        "position":  "MID",
+                        "shirt":  20,
+                        "age":  29,
+                        "birth":  "1997-07-14",
+                        "height":  173,
+                        "marketValue":  3800000
+                    },
+                    {
+                        "name":  "Anthony Musaba",
+                        "slug":  "anthony-musaba",
+                        "position":  "MID",
+                        "shirt":  20,
+                        "age":  25,
+                        "birth":  "2000-12-06",
+                        "height":  182,
+                        "marketValue":  7500000
+                    },
+                    {
+                        "name":  "Emre Demir",
+                        "slug":  "emre-demir",
+                        "position":  "MID",
+                        "shirt":  25,
+                        "age":  22,
+                        "birth":  "2004-01-15",
+                        "height":  175,
+                        "marketValue":  480000
+                    },
+                    {
+                        "name":  "Bartuğ Elmaz",
+                        "slug":  "bartug-elmaz",
+                        "position":  "MID",
+                        "shirt":  28,
+                        "age":  23,
+                        "birth":  "2003-02-19",
+                        "height":  179,
+                        "marketValue":  1500000
+                    },
+                    {
+                        "name":  "Sofyan Amrabat",
+                        "slug":  "sofyan-amrabat",
+                        "position":  "MID",
+                        "shirt":  34,
+                        "age":  29,
+                        "birth":  "1996-08-21",
+                        "height":  183,
+                        "marketValue":  9700000
+                    },
+                    {
+                        "name":  "Abdou Aziz Fall",
+                        "slug":  "abdou-fall",
+                        "position":  "MID",
+                        "shirt":  60,
+                        "age":  19,
+                        "birth":  "2007-02-20",
+                        "height":  180,
+                        "marketValue":  94000
+                    },
+                    {
+                        "name":  "Oğuz Aydın",
+                        "slug":  "oguz-aydin",
+                        "position":  "MID",
+                        "shirt":  70,
+                        "age":  25,
+                        "birth":  "2000-10-27",
+                        "height":  183,
+                        "marketValue":  6500000
+                    },
+                    {
+                        "name":  "N\u0027Golo Kanté",
+                        "slug":  "n-golo-kante",
+                        "position":  "MID",
+                        "shirt":  91,
+                        "age":  35,
+                        "birth":  "1991-03-29",
+                        "height":  169,
+                        "marketValue":  3900000
+                    },
+                    {
+                        "name":  "Talisca",
+                        "slug":  "talisca",
+                        "position":  "MID",
+                        "shirt":  94,
+                        "age":  32,
+                        "birth":  "1994-02-01",
+                        "height":  191,
+                        "marketValue":  7700000
+                    },
+                    {
+                        "name":  "Kerem Aktürkoğlu",
+                        "slug":  "kerem-akturkoglu",
+                        "position":  "FW",
+                        "shirt":  9,
+                        "age":  27,
+                        "birth":  "1998-10-21",
+                        "height":  173,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Mason Greenwood",
+                        "slug":  "mason-greenwood",
+                        "position":  "FW",
+                        "shirt":  11,
+                        "age":  24,
+                        "birth":  "2001-10-01",
+                        "height":  181,
+                        "marketValue":  53000000
+                    },
+                    {
+                        "name":  "Vedat Muriqi",
+                        "slug":  "vedat-muriqi",
+                        "position":  "FW",
+                        "shirt":  19,
+                        "age":  32,
+                        "birth":  "1994-04-24",
+                        "height":  194,
+                        "marketValue":  4400000
+                    },
+                    {
+                        "name":  "Sidiki Cherif",
+                        "slug":  "sidiki-cherif",
+                        "position":  "FW",
+                        "shirt":  26,
+                        "age":  19,
+                        "birth":  "2006-12-15",
+                        "height":  188,
+                        "marketValue":  16900000
+                    },
+                    {
+                        "name":  "Adem Yeşilyurt",
+                        "slug":  "adem-yesilyurt",
+                        "position":  "FW",
+                        "shirt":  35,
+                        "age":  19,
+                        "birth":  "2007-01-13",
+                        "height":  178,
+                        "marketValue":  540000
+                    },
+                    {
+                        "name":  "Dorgeles Nene",
+                        "slug":  "nene-dorgeles",
+                        "position":  "FW",
+                        "shirt":  45,
+                        "age":  23,
+                        "birth":  "2002-12-23",
+                        "height":  174,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Çağrı Fedai",
+                        "slug":  "fedai-cagri",
+                        "position":  "FW",
+                        "shirt":  95,
+                        "age":  20,
+                        "birth":  "2006-03-30",
+                        "height":  185,
+                        "marketValue":  135000
+                    },
+                    {
+                        "name":  "Amara Diouf",
+                        "slug":  "amara-diouf",
+                        "position":  "FW",
+                        "shirt":  null,
+                        "age":  18,
+                        "birth":  "2008-06-07",
+                        "height":  175,
+                        "marketValue":  825000
+                    }
+                ]
+}

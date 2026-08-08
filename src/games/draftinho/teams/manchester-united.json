@@ -1,0 +1,338 @@
+{
+    "id":  "manchester-united",
+    "name":  "Manchester United",
+    "displayName":  "Manchester United",
+    "logo":  "./assets/logos/clubs/manchester-united.png",
+    "players":  [
+                    {
+                        "name":  "Altay Bayındır",
+                        "slug":  "altay-bayindir",
+                        "position":  "GK",
+                        "shirt":  1,
+                        "age":  28,
+                        "birth":  "1998-04-14",
+                        "height":  198,
+                        "marketValue":  4900000
+                    },
+                    {
+                        "name":  "Karl Darlow",
+                        "slug":  "karl-darlow",
+                        "position":  "GK",
+                        "shirt":  12,
+                        "age":  35,
+                        "birth":  "1990-10-08",
+                        "height":  185,
+                        "marketValue":  210000
+                    },
+                    {
+                        "name":  "Tom Heaton",
+                        "slug":  "tom-heaton",
+                        "position":  "GK",
+                        "shirt":  22,
+                        "age":  40,
+                        "birth":  "1986-04-15",
+                        "height":  188,
+                        "marketValue":  94000
+                    },
+                    {
+                        "name":  "Senne Lammens",
+                        "slug":  "senne-lammens",
+                        "position":  "GK",
+                        "shirt":  31,
+                        "age":  24,
+                        "birth":  "2002-07-07",
+                        "height":  193,
+                        "marketValue":  38000000
+                    },
+                    {
+                        "name":  "Radek Vitek",
+                        "slug":  "vitek-radek",
+                        "position":  "GK",
+                        "shirt":  40,
+                        "age":  22,
+                        "birth":  "2003-10-24",
+                        "height":  198,
+                        "marketValue":  5400000
+                    },
+                    {
+                        "name":  "Dermot Mee",
+                        "slug":  "mee-dermot",
+                        "position":  "GK",
+                        "shirt":  45,
+                        "age":  23,
+                        "birth":  "2002-11-20",
+                        "height":  183,
+                        "marketValue":  210000
+                    },
+                    {
+                        "name":  "Diogo Dalot",
+                        "slug":  "diogo-dalot",
+                        "position":  "DEF",
+                        "shirt":  2,
+                        "age":  27,
+                        "birth":  "1999-03-18",
+                        "height":  184,
+                        "marketValue":  28000000
+                    },
+                    {
+                        "name":  "Noussair Mazraoui",
+                        "slug":  "noussair-mazraoui",
+                        "position":  "DEF",
+                        "shirt":  3,
+                        "age":  28,
+                        "birth":  "1997-11-14",
+                        "height":  183,
+                        "marketValue":  17500000
+                    },
+                    {
+                        "name":  "Matthijs de Ligt",
+                        "slug":  "matthijs-de-ligt",
+                        "position":  "DEF",
+                        "shirt":  4,
+                        "age":  26,
+                        "birth":  "1999-08-12",
+                        "height":  188,
+                        "marketValue":  32000000
+                    },
+                    {
+                        "name":  "Harry Maguire",
+                        "slug":  "harry-maguire",
+                        "position":  "DEF",
+                        "shirt":  5,
+                        "age":  33,
+                        "birth":  "1993-03-05",
+                        "height":  194,
+                        "marketValue":  8600000
+                    },
+                    {
+                        "name":  "Lisandro Martínez",
+                        "slug":  "lisandro-martinez",
+                        "position":  "DEF",
+                        "shirt":  6,
+                        "age":  28,
+                        "birth":  "1998-01-18",
+                        "height":  175,
+                        "marketValue":  48000000
+                    },
+                    {
+                        "name":  "Leny Yoro",
+                        "slug":  "leny-yoro",
+                        "position":  "DEF",
+                        "shirt":  15,
+                        "age":  20,
+                        "birth":  "2005-11-13",
+                        "height":  190,
+                        "marketValue":  46000000
+                    },
+                    {
+                        "name":  "Luke Shaw",
+                        "slug":  "luke-shaw",
+                        "position":  "DEF",
+                        "shirt":  23,
+                        "age":  31,
+                        "birth":  "1995-07-12",
+                        "height":  178,
+                        "marketValue":  7500000
+                    },
+                    {
+                        "name":  "Ayden Heaven",
+                        "slug":  "heaven-ayden",
+                        "position":  "DEF",
+                        "shirt":  26,
+                        "age":  19,
+                        "birth":  "2006-09-22",
+                        "height":  189,
+                        "marketValue":  32000000
+                    },
+                    {
+                        "name":  "Bruno Fernandes",
+                        "slug":  "bruno-fernandes",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  31,
+                        "birth":  "1994-09-08",
+                        "height":  179,
+                        "marketValue":  32000000
+                    },
+                    {
+                        "name":  "Patrick Dorgu",
+                        "slug":  "dorgu-patrick",
+                        "position":  "MID",
+                        "shirt":  13,
+                        "age":  21,
+                        "birth":  "2004-10-26",
+                        "height":  185,
+                        "marketValue":  33000000
+                    },
+                    {
+                        "name":  "Amad Diallo",
+                        "slug":  "diallo-amad",
+                        "position":  "MID",
+                        "shirt":  16,
+                        "age":  24,
+                        "birth":  "2002-07-11",
+                        "height":  173,
+                        "marketValue":  44000000
+                    },
+                    {
+                        "name":  "Andrey Santos",
+                        "slug":  "santos-andrey",
+                        "position":  "MID",
+                        "shirt":  17,
+                        "age":  22,
+                        "birth":  "2004-05-03",
+                        "height":  180,
+                        "marketValue":  39000000
+                    },
+                    {
+                        "name":  "Youri Tielemans",
+                        "slug":  "youri-tielemans",
+                        "position":  "MID",
+                        "shirt":  18,
+                        "age":  29,
+                        "birth":  "1997-05-07",
+                        "height":  177,
+                        "marketValue":  43000000
+                    },
+                    {
+                        "name":  "Manuel Ugarte",
+                        "slug":  "manuel-ugarte",
+                        "position":  "MID",
+                        "shirt":  25,
+                        "age":  25,
+                        "birth":  "2001-04-11",
+                        "height":  182,
+                        "marketValue":  24000000
+                    },
+                    {
+                        "name":  "Kobbie Mainoo",
+                        "slug":  "kobbie-mainoo",
+                        "position":  "MID",
+                        "shirt":  37,
+                        "age":  21,
+                        "birth":  "2005-04-19",
+                        "height":  184,
+                        "marketValue":  72000000
+                    },
+                    {
+                        "name":  "Jack Fletcher",
+                        "slug":  "jack-fletcher",
+                        "position":  "MID",
+                        "shirt":  38,
+                        "age":  19,
+                        "birth":  "2007-03-19",
+                        "height":  180,
+                        "marketValue":  1600000
+                    },
+                    {
+                        "name":  "Tyler Fletcher",
+                        "slug":  "tyler-fletcher",
+                        "position":  "MID",
+                        "shirt":  39,
+                        "age":  19,
+                        "birth":  "2007-03-19",
+                        "height":  184,
+                        "marketValue":  1600000
+                    },
+                    {
+                        "name":  "Harry Amass",
+                        "slug":  "amass-harry",
+                        "position":  "MID",
+                        "shirt":  41,
+                        "age":  19,
+                        "birth":  "2007-03-16",
+                        "height":  181,
+                        "marketValue":  7200000
+                    },
+                    {
+                        "name":  "Toby Collyer",
+                        "slug":  "toby-collyer",
+                        "position":  "MID",
+                        "shirt":  43,
+                        "age":  22,
+                        "birth":  "2004-01-03",
+                        "height":  180,
+                        "marketValue":  5200000
+                    },
+                    {
+                        "name":  "Shea Lacey",
+                        "slug":  "shea-lacey",
+                        "position":  "MID",
+                        "shirt":  46,
+                        "age":  19,
+                        "birth":  "2007-04-14",
+                        "height":  175,
+                        "marketValue":  5200000
+                    },
+                    {
+                        "name":  "Mason Mount",
+                        "slug":  "mason-mount",
+                        "position":  "FW",
+                        "shirt":  7,
+                        "age":  27,
+                        "birth":  "1999-01-10",
+                        "height":  181,
+                        "marketValue":  23000000
+                    },
+                    {
+                        "name":  "Marcus Rashford",
+                        "slug":  "marcus-rashford",
+                        "position":  "FW",
+                        "shirt":  10,
+                        "age":  28,
+                        "birth":  "1997-10-31",
+                        "height":  188,
+                        "marketValue":  38000000
+                    },
+                    {
+                        "name":  "Matheus Cunha",
+                        "slug":  "matheus-cunha",
+                        "position":  "FW",
+                        "shirt":  10,
+                        "age":  27,
+                        "birth":  "1999-05-27",
+                        "height":  184,
+                        "marketValue":  79000000
+                    },
+                    {
+                        "name":  "Joshua Zirkzee",
+                        "slug":  "joshua-zirkzee",
+                        "position":  "FW",
+                        "shirt":  11,
+                        "age":  25,
+                        "birth":  "2001-05-22",
+                        "height":  193,
+                        "marketValue":  21000000
+                    },
+                    {
+                        "name":  "Bryan Mbeumo",
+                        "slug":  "bryan-mbeumo",
+                        "position":  "FW",
+                        "shirt":  19,
+                        "age":  27,
+                        "birth":  "1999-08-07",
+                        "height":  173,
+                        "marketValue":  73000000
+                    },
+                    {
+                        "name":  "Benjamin Šeško",
+                        "slug":  "benjamin-sesko",
+                        "position":  "FW",
+                        "shirt":  30,
+                        "age":  23,
+                        "birth":  "2003-05-31",
+                        "height":  195,
+                        "marketValue":  78000000
+                    },
+                    {
+                        "name":  "Tynan Thompson",
+                        "slug":  "tynan-thompson",
+                        "position":  "FW",
+                        "shirt":  54,
+                        "age":  18,
+                        "birth":  "2008-04-17",
+                        "height":  187,
+                        "marketValue":  0
+                    }
+                ]
+}

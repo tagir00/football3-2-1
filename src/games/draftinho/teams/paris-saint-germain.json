@@ -1,0 +1,328 @@
+{
+    "id":  "paris-saint-germain",
+    "name":  "Paris Saint-Germain",
+    "displayName":  "Paris Saint-Germain",
+    "logo":  "./assets/logos/clubs/paris-saint-germain.png",
+    "players":  [
+                    {
+                        "name":  "Alessandro Longoni",
+                        "slug":  "alessandro-longoni",
+                        "position":  "GK",
+                        "shirt":  16,
+                        "age":  18,
+                        "birth":  "2008-01-31",
+                        "height":  192,
+                        "marketValue":  275000
+                    },
+                    {
+                        "name":  "Lucas Chevalier",
+                        "slug":  "chevalier-lucas",
+                        "position":  "GK",
+                        "shirt":  30,
+                        "age":  24,
+                        "birth":  "2001-11-06",
+                        "height":  188,
+                        "marketValue":  26000000
+                    },
+                    {
+                        "name":  "Matvey Safonov",
+                        "slug":  "matvey-safonov",
+                        "position":  "GK",
+                        "shirt":  39,
+                        "age":  27,
+                        "birth":  "1999-02-25",
+                        "height":  191,
+                        "marketValue":  32000000
+                    },
+                    {
+                        "name":  "Achraf Hakimi",
+                        "slug":  "achraf-hakimi",
+                        "position":  "DEF",
+                        "shirt":  2,
+                        "age":  27,
+                        "birth":  "1998-11-04",
+                        "height":  181,
+                        "marketValue":  82000000
+                    },
+                    {
+                        "name":  "Lucas Beraldo",
+                        "slug":  "lucas-beraldo",
+                        "position":  "DEF",
+                        "shirt":  4,
+                        "age":  22,
+                        "birth":  "2003-11-24",
+                        "height":  186,
+                        "marketValue":  20000000
+                    },
+                    {
+                        "name":  "Marquinhos",
+                        "slug":  "marquinhos",
+                        "position":  "DEF",
+                        "shirt":  5,
+                        "age":  32,
+                        "birth":  "1994-05-14",
+                        "height":  183,
+                        "marketValue":  27000000
+                    },
+                    {
+                        "name":  "Ilya Zabarnyi",
+                        "slug":  "illia-zabarnyi",
+                        "position":  "DEF",
+                        "shirt":  6,
+                        "age":  23,
+                        "birth":  "2002-09-01",
+                        "height":  189,
+                        "marketValue":  37000000
+                    },
+                    {
+                        "name":  "Lucas Hernández",
+                        "slug":  "lucas-hernandez",
+                        "position":  "DEF",
+                        "shirt":  21,
+                        "age":  30,
+                        "birth":  "1996-02-14",
+                        "height":  183,
+                        "marketValue":  18600000
+                    },
+                    {
+                        "name":  "Nuno Mendes",
+                        "slug":  "nuno-mendes",
+                        "position":  "DEF",
+                        "shirt":  25,
+                        "age":  24,
+                        "birth":  "2002-06-19",
+                        "height":  180,
+                        "marketValue":  77000000
+                    },
+                    {
+                        "name":  "Yoram Zague",
+                        "slug":  "zague-yoram",
+                        "position":  "DEF",
+                        "shirt":  42,
+                        "age":  20,
+                        "birth":  "2006-05-15",
+                        "height":  168,
+                        "marketValue":  1700000
+                    },
+                    {
+                        "name":  "Willian Pacho",
+                        "slug":  "willian-pacho",
+                        "position":  "DEF",
+                        "shirt":  51,
+                        "age":  24,
+                        "birth":  "2001-10-16",
+                        "height":  187,
+                        "marketValue":  76000000
+                    },
+                    {
+                        "name":  "Fabián Ruiz",
+                        "slug":  "fabian-ruiz",
+                        "position":  "MID",
+                        "shirt":  8,
+                        "age":  30,
+                        "birth":  "1996-04-03",
+                        "height":  189,
+                        "marketValue":  29000000
+                    },
+                    {
+                        "name":  "Maghnes Akliouche",
+                        "slug":  "maghnes-akliouche",
+                        "position":  "MID",
+                        "shirt":  11,
+                        "age":  24,
+                        "birth":  "2002-02-25",
+                        "height":  183,
+                        "marketValue":  49000000
+                    },
+                    {
+                        "name":  "Vitinha",
+                        "slug":  "vitinha",
+                        "position":  "MID",
+                        "shirt":  17,
+                        "age":  26,
+                        "birth":  "2000-02-13",
+                        "height":  172,
+                        "marketValue":  130000000
+                    },
+                    {
+                        "name":  "Renato Sanches",
+                        "slug":  "renato-sanches",
+                        "position":  "MID",
+                        "shirt":  18,
+                        "age":  28,
+                        "birth":  "1997-08-18",
+                        "height":  176,
+                        "marketValue":  2100000
+                    },
+                    {
+                        "name":  "Senny Mayulu",
+                        "slug":  "mayulu-senny",
+                        "position":  "MID",
+                        "shirt":  24,
+                        "age":  20,
+                        "birth":  "2006-05-17",
+                        "height":  183,
+                        "marketValue":  38000000
+                    },
+                    {
+                        "name":  "Dro Fernández",
+                        "slug":  "pedro-fernandez",
+                        "position":  "MID",
+                        "shirt":  27,
+                        "age":  18,
+                        "birth":  "2008-01-12",
+                        "height":  182,
+                        "marketValue":  9700000
+                    },
+                    {
+                        "name":  "Warren Zaïre-Emery",
+                        "slug":  "warren-zaire-emery",
+                        "position":  "MID",
+                        "shirt":  33,
+                        "age":  20,
+                        "birth":  "2006-03-08",
+                        "height":  178,
+                        "marketValue":  78000000
+                    },
+                    {
+                        "name":  "Younes Idder",
+                        "slug":  "younes-idder",
+                        "position":  "MID",
+                        "shirt":  46,
+                        "age":  18,
+                        "birth":  "2008-01-18",
+                        "height":  173,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Abdou Fanne Drame",
+                        "slug":  "abdou-fanne-drame",
+                        "position":  "MID",
+                        "shirt":  48,
+                        "age":  19,
+                        "birth":  "2007-04-01",
+                        "height":  174,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Paul Bourdin",
+                        "slug":  "paul-bourdin",
+                        "position":  "MID",
+                        "shirt":  53,
+                        "age":  17,
+                        "birth":  "2009-01-14",
+                        "height":  0,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Vainqueur Diyinu Nzinga",
+                        "slug":  "vainqueur-diyinu-nzinga",
+                        "position":  "MID",
+                        "shirt":  56,
+                        "age":  18,
+                        "birth":  "2007-11-26",
+                        "height":  167,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Rayan Abo El Nay",
+                        "slug":  "rayan-abo-el-nay",
+                        "position":  "MID",
+                        "shirt":  58,
+                        "age":  19,
+                        "birth":  "2007-05-13",
+                        "height":  170,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Edem Ghalleb",
+                        "slug":  "edem-ghalleb",
+                        "position":  "MID",
+                        "shirt":  63,
+                        "age":  18,
+                        "birth":  "2008-07-23",
+                        "height":  185,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "João Neves",
+                        "slug":  "joao-neves",
+                        "position":  "MID",
+                        "shirt":  87,
+                        "age":  21,
+                        "birth":  "2004-09-27",
+                        "height":  174,
+                        "marketValue":  148000000
+                    },
+                    {
+                        "name":  "Khvicha Kvaratskhelia",
+                        "slug":  "khvicha-kvaratskhelia",
+                        "position":  "FW",
+                        "shirt":  7,
+                        "age":  25,
+                        "birth":  "2001-02-12",
+                        "height":  183,
+                        "marketValue":  144000000
+                    },
+                    {
+                        "name":  "Ousmane Dembélé",
+                        "slug":  "ousmane-dembele",
+                        "position":  "FW",
+                        "shirt":  10,
+                        "age":  29,
+                        "birth":  "1997-05-15",
+                        "height":  178,
+                        "marketValue":  97000000
+                    },
+                    {
+                        "name":  "Désiré Doué",
+                        "slug":  "desire-doue",
+                        "position":  "FW",
+                        "shirt":  14,
+                        "age":  21,
+                        "birth":  "2005-06-03",
+                        "height":  181,
+                        "marketValue":  124000000
+                    },
+                    {
+                        "name":  "Bradley Barcola",
+                        "slug":  "barcola-bradley",
+                        "position":  "FW",
+                        "shirt":  29,
+                        "age":  23,
+                        "birth":  "2002-09-02",
+                        "height":  182,
+                        "marketValue":  87000000
+                    },
+                    {
+                        "name":  "Ibrahim Mbaye",
+                        "slug":  "ibrahim-mbaye",
+                        "position":  "FW",
+                        "shirt":  49,
+                        "age":  18,
+                        "birth":  "2008-01-24",
+                        "height":  175,
+                        "marketValue":  29000000
+                    },
+                    {
+                        "name":  "Adam Ayari",
+                        "slug":  "adam-ayari",
+                        "position":  "FW",
+                        "shirt":  57,
+                        "age":  18,
+                        "birth":  "2008-03-30",
+                        "height":  176,
+                        "marketValue":  0
+                    },
+                    {
+                        "name":  "Noa Bezeme",
+                        "slug":  "noa-bezeme",
+                        "position":  "FW",
+                        "shirt":  65,
+                        "age":  19,
+                        "birth":  "2007-06-28",
+                        "height":  185,
+                        "marketValue":  0
+                    }
+                ]
+}
