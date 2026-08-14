@@ -6,7 +6,7 @@ body[data-theme] .ambient {
 /* Base body background per theme replaces shell defaults */
 body[data-theme="stadium"] {
   background:
-    linear-gradient(180deg, #030b1c 0%, #050c22 45%, #06180a 100%) !important;
+    linear-gradient(180deg, #0a2f14 0%, #113d1c 45%, #0a2f14 100%) !important;
 }
 
 body[data-theme="tactic"] {
@@ -46,66 +46,82 @@ body[data-theme="tactic"] .theme-layer > .theme-tactic {
 }
 
 /* ============================================
-   STADIUM THEME (Hub)
+   PITCH VIEW THEME (Hub)
    ============================================ */
 
-.stadium-pitch {
+.pitch-mow {
   position: absolute;
-  left: 0; right: 0; bottom: 0;
-  height: 48vh;
-  background: linear-gradient(180deg, #0f3a1c 0%, #082612 60%, #05170c 100%);
-  box-shadow: inset 0 30px 60px rgba(0, 0, 0, 0.65);
-}
-
-.stadium-stripes {
-  position: absolute;
-  left: -10%; right: -10%; bottom: 0;
-  height: 48vh;
+  inset: 0;
   background: repeating-linear-gradient(
     0deg,
-    rgba(0, 0, 0, 0.22) 0 30px,
-    rgba(255, 255, 255, 0.04) 30px 60px
+    rgba(0, 0, 0, 0.16) 0 80px,
+    rgba(255, 255, 255, 0.03) 80px 160px
   );
-  transform: perspective(600px) rotateX(55deg);
-  transform-origin: bottom;
-  mask-image: linear-gradient(180deg, transparent 0%, black 35%);
-  -webkit-mask-image: linear-gradient(180deg, transparent 0%, black 35%);
-  opacity: 0.85;
+  animation: pitch-mow-slide 28s linear infinite;
 }
 
-.stadium-light {
+.pitch-vignette {
   position: absolute;
-  top: -12%;
-  width: 260px;
-  height: 70vh;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, transparent 90%);
-  filter: blur(28px);
-  transform-origin: top center;
-  animation: floodlight-sway 8s ease-in-out infinite alternate;
+  inset: 0;
+  background: radial-gradient(ellipse at center, transparent 40%, rgba(0, 0, 0, 0.35) 100%);
 }
 
-.stadium-light-1 {
-  left: 6%;
-  transform: rotate(16deg);
-  animation-delay: 0s;
-}
-
-.stadium-light-2 {
+.pitch-arc {
+  position: absolute;
   left: 50%;
-  margin-left: -130px;
-  transform: rotate(-2deg);
-  animation-delay: -2.5s;
+  top: 50%;
+  width: 520px;
+  height: 520px;
+  border: 2px dashed rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: pitch-arc-spin 40s linear infinite;
 }
 
-.stadium-light-3 {
-  right: 6%;
-  transform: rotate(-16deg);
-  animation-delay: -5s;
+.pitch-circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 340px;
+  height: 340px;
+  border: 3px solid rgba(255, 255, 255, 0.26);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    inset 0 0 80px rgba(34, 197, 94, 0.08);
 }
 
-@keyframes floodlight-sway {
-  0% { opacity: 0.55; }
-  100% { opacity: 1; }
+.pitch-halfway {
+  position: absolute;
+  left: 4vw;
+  right: 4vw;
+  top: 50%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.22);
+  transform: translateY(-50%);
+}
+
+.pitch-dot {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.75);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes pitch-mow-slide {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(160px); }
+}
+
+@keyframes pitch-arc-spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 /* ============================================
@@ -223,11 +239,12 @@ body[data-theme="tactic"] .theme-layer > .theme-tactic {
     width: 14px;
     height: 14px;
   }
-  .stadium-pitch,
-  .stadium-stripes {
-    height: 42vh;
+  .pitch-circle {
+    width: 220px;
+    height: 220px;
   }
-  .stadium-light {
-    width: 180px;
+  .pitch-arc {
+    width: 340px;
+    height: 340px;
   }
 }
