@@ -5,6 +5,7 @@
     "logo":  "./assets/logos/clubs/arsenal.png",
     "players":  [
                     {
+                        "id":  581310,
                         "name":  "David Raya",
                         "slug":  "david-raya",
                         "position":  "GK",
@@ -12,9 +13,12 @@
                         "age":  30,
                         "birth":  "1995-09-15",
                         "height":  183,
-                        "marketValue":  33000000
+                        "marketValue":  33000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  232422,
                         "name":  "Kepa Arrizabalaga",
                         "slug":  "kepa-arrizabalaga",
                         "position":  "GK",
@@ -22,9 +26,12 @@
                         "age":  31,
                         "birth":  "1994-10-03",
                         "height":  188,
-                        "marketValue":  5300000
+                        "marketValue":  5300000,
+                        "intlGoals":  0,
+                        "intlAppearances":  13
                     },
                     {
+                        "id":  906076,
                         "name":  "Illan Meslier",
                         "slug":  "illan-meslier",
                         "position":  "GK",
@@ -32,9 +39,12 @@
                         "age":  26,
                         "birth":  "2000-03-02",
                         "height":  196,
-                        "marketValue":  7500000
+                        "marketValue":  7500000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1150958,
                         "name":  "Tommy Setford",
                         "slug":  "tommy-setford",
                         "position":  "GK",
@@ -42,9 +52,12 @@
                         "age":  20,
                         "birth":  "2006-03-13",
                         "height":  185,
-                        "marketValue":  515000
+                        "marketValue":  515000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1842987,
                         "name":  "Khari Ranson",
                         "slug":  "khari-ranson",
                         "position":  "GK",
@@ -52,9 +65,12 @@
                         "age":  18,
                         "birth":  "2007-09-13",
                         "height":  183,
-                        "marketValue":  0
+                        "marketValue":  0,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  941168,
                         "name":  "William Saliba",
                         "slug":  "william-saliba",
                         "position":  "DEF",
@@ -62,9 +78,12 @@
                         "age":  25,
                         "birth":  "2001-03-24",
                         "height":  193,
-                        "marketValue":  94000000
+                        "marketValue":  94000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  38
                     },
                     {
+                        "id":  1144630,
                         "name":  "Cristhian Mosquera",
                         "slug":  "cristhian-mosquera",
                         "position":  "DEF",
@@ -72,9 +91,12 @@
                         "age":  22,
                         "birth":  "2004-06-27",
                         "height":  191,
-                        "marketValue":  38000000
+                        "marketValue":  38000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  2
                     },
                     {
+                        "id":  22420,
                         "name":  "Ben White",
                         "slug":  "ben-white",
                         "position":  "DEF",
@@ -82,9 +104,12 @@
                         "age":  28,
                         "birth":  "1997-10-08",
                         "height":  186,
-                        "marketValue":  27000000
+                        "marketValue":  27000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1002837,
                         "name":  "Piero Hincapié",
                         "slug":  "piero-hincapie",
                         "position":  "DEF",
@@ -92,9 +117,12 @@
                         "age":  24,
                         "birth":  "2002-01-09",
                         "height":  184,
-                        "marketValue":  46000000
+                        "marketValue":  46000000,
+                        "intlGoals":  3,
+                        "intlAppearances":  56
                     },
                     {
+                        "id":  869792,
                         "name":  "Gabriel Magalhães",
                         "slug":  "gabriel-magalhaes",
                         "position":  "DEF",
@@ -102,9 +130,12 @@
                         "age":  28,
                         "birth":  "1997-12-19",
                         "height":  190,
-                        "marketValue":  70000000
+                        "marketValue":  70000000,
+                        "intlGoals":  1,
+                        "intlAppearances":  22
                     },
                     {
+                        "id":  958959,
                         "name":  "Jurriën Timber",
                         "slug":  "jurrien-timber",
                         "position":  "DEF",
@@ -112,9 +143,12 @@
                         "age":  25,
                         "birth":  "2001-06-17",
                         "height":  179,
-                        "marketValue":  73000000
+                        "marketValue":  73000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  23
                     },
                     {
+                        "id":  957602,
                         "name":  "Riccardo Calafiori",
                         "slug":  "riccardo-calafiori",
                         "position":  "DEF",
@@ -122,9 +156,12 @@
                         "age":  24,
                         "birth":  "2002-05-19",
                         "height":  188,
-                        "marketValue":  53000000
+                        "marketValue":  53000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  14
                     },
                     {
+                        "id":  1424625,
                         "name":  "Brayden Clarke",
                         "slug":  "brayden-clarke",
                         "position":  "DEF",
@@ -132,9 +169,12 @@
                         "age":  19,
                         "birth":  "2007-07-03",
                         "height":  181,
-                        "marketValue":  0
+                        "marketValue":  0,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1899763,
                         "name":  "Theo Julienne",
                         "slug":  "theo-julienne",
                         "position":  "DEF",
@@ -142,9 +182,12 @@
                         "age":  18,
                         "birth":  "2008-01-11",
                         "height":  0,
-                        "marketValue":  0
+                        "marketValue":  0,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1423711,
                         "name":  "Myles Lewis-Skelly",
                         "slug":  "lewis-skelly-myles",
                         "position":  "DEF",
@@ -152,9 +195,12 @@
                         "age":  19,
                         "birth":  "2006-09-26",
                         "height":  178,
-                        "marketValue":  48000000
+                        "marketValue":  48000000,
+                        "intlGoals":  1,
+                        "intlAppearances":  6
                     },
                     {
+                        "id":  1899749,
                         "name":  "Josh Ogunnaike",
                         "slug":  "josh-ogunnaike",
                         "position":  "DEF",
@@ -162,9 +208,12 @@
                         "age":  18,
                         "birth":  "2008-04-04",
                         "height":  0,
-                        "marketValue":  0
+                        "marketValue":  0,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1912995,
                         "name":  "Marli Salmon",
                         "slug":  "marli-salmon",
                         "position":  "DEF",
@@ -172,9 +221,12 @@
                         "age":  16,
                         "birth":  "2009-08-29",
                         "height":  186,
-                        "marketValue":  4800000
+                        "marketValue":  4800000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  547410,
                         "name":  "Martin Ødegaard",
                         "slug":  "martin-degaard",
                         "position":  "MID",
@@ -182,9 +234,12 @@
                         "age":  27,
                         "birth":  "1998-12-17",
                         "height":  178,
-                        "marketValue":  77000000
+                        "marketValue":  77000000,
+                        "intlGoals":  5,
+                        "intlAppearances":  73
                     },
                     {
+                        "id":  864921,
                         "name":  "Eberechi Eze",
                         "slug":  "eberechi-eze",
                         "position":  "MID",
@@ -192,9 +247,12 @@
                         "age":  28,
                         "birth":  "1998-06-29",
                         "height":  178,
-                        "marketValue":  69000000
+                        "marketValue":  69000000,
+                        "intlGoals":  3,
+                        "intlAppearances":  22
                     },
                     {
+                        "id":  1031259,
                         "name":  "Christos Tzolis",
                         "slug":  "christos-tzolis",
                         "position":  "MID",
@@ -202,9 +260,12 @@
                         "age":  24,
                         "birth":  "2002-01-30",
                         "height":  180,
-                        "marketValue":  42000000
+                        "marketValue":  42000000,
+                        "intlGoals":  9,
+                        "intlAppearances":  34
                     },
                     {
+                        "id":  904835,
                         "name":  "Fábio Vieira",
                         "slug":  "fabio-vieira",
                         "position":  "MID",
@@ -212,9 +273,12 @@
                         "age":  26,
                         "birth":  "2000-05-30",
                         "height":  170,
-                        "marketValue":  16600000
+                        "marketValue":  16600000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1401702,
                         "name":  "Ethan Nwaneri",
                         "slug":  "ethan-nwaneri",
                         "position":  "MID",
@@ -222,9 +286,12 @@
                         "age":  19,
                         "birth":  "2007-03-21",
                         "height":  176,
-                        "marketValue":  34000000
+                        "marketValue":  34000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  592010,
                         "name":  "Mikel Merino",
                         "slug":  "mikel-merino",
                         "position":  "MID",
@@ -232,9 +299,12 @@
                         "age":  30,
                         "birth":  "1996-06-22",
                         "height":  188,
-                        "marketValue":  26000000
+                        "marketValue":  26000000,
+                        "intlGoals":  12,
+                        "intlAppearances":  51
                     },
                     {
+                        "id":  826139,
                         "name":  "Reiss Nelson",
                         "slug":  "reiss-nelson",
                         "position":  "MID",
@@ -242,9 +312,12 @@
                         "age":  26,
                         "birth":  "1999-12-10",
                         "height":  175,
-                        "marketValue":  8800000
+                        "marketValue":  8800000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  966837,
                         "name":  "Martín Zubimendi",
                         "slug":  "martin-zubimendi",
                         "position":  "MID",
@@ -252,9 +325,12 @@
                         "age":  27,
                         "birth":  "1999-02-02",
                         "height":  180,
-                        "marketValue":  77000000
+                        "marketValue":  77000000,
+                        "intlGoals":  3,
+                        "intlAppearances":  27
                     },
                     {
+                        "id":  26095,
                         "name":  "Louie Copley",
                         "slug":  "louie-copley",
                         "position":  "MID",
@@ -262,9 +338,12 @@
                         "age":  19,
                         "birth":  "2006-10-20",
                         "height":  175,
-                        "marketValue":  68000
+                        "marketValue":  68000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  856714,
                         "name":  "Declan Rice",
                         "slug":  "declan-rice",
                         "position":  "MID",
@@ -272,9 +351,12 @@
                         "age":  27,
                         "birth":  "1999-01-14",
                         "height":  188,
-                        "marketValue":  114000000
+                        "marketValue":  114000000,
+                        "intlGoals":  8,
+                        "intlAppearances":  83
                     },
                     {
+                        "id":  1899736,
                         "name":  "Andre Harriman-Annous",
                         "slug":  "andre-annous",
                         "position":  "MID",
@@ -282,9 +364,12 @@
                         "age":  18,
                         "birth":  "2007-12-27",
                         "height":  181,
-                        "marketValue":  1100000
+                        "marketValue":  1100000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1899739,
                         "name":  "Ife Ibrahim",
                         "slug":  "ife-ibrahim",
                         "position":  "MID",
@@ -292,9 +377,12 @@
                         "age":  18,
                         "birth":  "2008-01-20",
                         "height":  187,
-                        "marketValue":  0
+                        "marketValue":  0,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1917626,
                         "name":  "Max Dowman",
                         "slug":  "max-dowman",
                         "position":  "MID",
@@ -302,9 +390,12 @@
                         "age":  16,
                         "birth":  "2009-12-31",
                         "height":  183,
-                        "marketValue":  31000000
+                        "marketValue":  31000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  934235,
                         "name":  "Bukayo Saka",
                         "slug":  "bukayo-saka",
                         "position":  "FW",
@@ -312,9 +403,12 @@
                         "age":  24,
                         "birth":  "2001-09-05",
                         "height":  178,
-                        "marketValue":  115000000
+                        "marketValue":  115000000,
+                        "intlGoals":  17,
+                        "intlAppearances":  56
                     },
                     {
+                        "id":  794839,
                         "name":  "Gabriel Jesus",
                         "slug":  "gabriel-jesus",
                         "position":  "FW",
@@ -322,9 +416,12 @@
                         "age":  29,
                         "birth":  "1997-04-03",
                         "height":  175,
-                        "marketValue":  17600000
+                        "marketValue":  17600000,
+                        "intlGoals":  19,
+                        "intlAppearances":  64
                     },
                     {
+                        "id":  922573,
                         "name":  "Gabriel Martinelli",
                         "slug":  "gabriel-martinelli",
                         "position":  "FW",
@@ -332,9 +429,12 @@
                         "age":  25,
                         "birth":  "2001-06-18",
                         "height":  180,
-                        "marketValue":  42000000
+                        "marketValue":  42000000,
+                        "intlGoals":  5,
+                        "intlAppearances":  27
                     },
                     {
+                        "id":  804508,
                         "name":  "Viktor Gyökeres",
                         "slug":  "viktor-gyokeres",
                         "position":  "FW",
@@ -342,9 +442,12 @@
                         "age":  28,
                         "birth":  "1998-06-04",
                         "height":  187,
-                        "marketValue":  61000000
+                        "marketValue":  61000000,
+                        "intlGoals":  21,
+                        "intlAppearances":  37
                     },
                     {
+                        "id":  966547,
                         "name":  "Noni Madueke",
                         "slug":  "noni-madueke",
                         "position":  "FW",
@@ -352,9 +455,12 @@
                         "age":  24,
                         "birth":  "2002-03-10",
                         "height":  182,
-                        "marketValue":  54000000
+                        "marketValue":  54000000,
+                        "intlGoals":  1,
+                        "intlAppearances":  16
                     },
                     {
+                        "id":  836705,
                         "name":  "Kai Havertz",
                         "slug":  "kai-havertz",
                         "position":  "FW",
@@ -362,9 +468,12 @@
                         "age":  27,
                         "birth":  "1999-06-11",
                         "height":  193,
-                        "marketValue":  53000000
+                        "marketValue":  53000000,
+                        "intlGoals":  25,
+                        "intlAppearances":  62
                     },
                     {
+                        "id":  1469025,
                         "name":  "Demiane Agustien",
                         "slug":  "demiane-agustien",
                         "position":  "FW",
@@ -372,9 +481,12 @@
                         "age":  19,
                         "birth":  "2007-07-28",
                         "height":  183,
-                        "marketValue":  0
+                        "marketValue":  0,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1621612,
                         "name":  "Ismeal Kabia",
                         "slug":  "ismeal-kabia",
                         "position":  "FW",
@@ -382,9 +494,12 @@
                         "age":  20,
                         "birth":  "2005-12-10",
                         "height":  176,
-                        "marketValue":  97000
+                        "marketValue":  97000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1590853,
                         "name":  "Ceadach O\u0027Neill",
                         "slug":  "ceadach-oneill",
                         "position":  "FW",
@@ -392,7 +507,9 @@
                         "age":  18,
                         "birth":  "2008-04-10",
                         "height":  175,
-                        "marketValue":  0
+                        "marketValue":  0,
+                        "intlGoals":  0,
+                        "intlAppearances":  2
                     }
                 ]
 }

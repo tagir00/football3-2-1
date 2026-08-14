@@ -34,7 +34,36 @@ export function template() {
           <span>2. Oyuncu</span>
           <input class="setup-input" id="dPlayer2Input" type="text" placeholder="Örnek: Enes" maxlength="16" />
         </label>
-        <button class="primary-button" id="dGoCriterionButton" type="button">Kriter Çark Ekranına Geç</button>
+        <button class="primary-button" id="dGoCoinFlipButton" type="button">Devam</button>
+      </div>
+    </section>
+
+    <section class="mode-panel hidden" id="dCoinFlipPanel">
+      <div class="mode-panel-header">
+        <div>
+          <p class="eyebrow">Kim Başlıyor?</p>
+          <h2>Yazı-Tura</h2>
+        </div>
+        <button class="ghost-button" id="dCoinFlipBackButton" type="button">Geri Dön</button>
+      </div>
+
+      <p class="status-strip" id="dCoinFlipStatus">Butona bas, ilk başlayacak oyuncu belirlensin.</p>
+
+      <div class="coin-shell">
+        <div class="coin-versus">
+          <div class="coin-name-slot" id="dCoinName1">?</div>
+          <span class="coin-vs">VS</span>
+          <div class="coin-name-slot" id="dCoinName2">?</div>
+        </div>
+        <div class="coin-result hidden" id="dCoinResult">
+          <span class="coin-result-label">İlk seçen:</span>
+          <strong id="dCoinResultName">-</strong>
+        </div>
+      </div>
+
+      <div class="action-column">
+        <button class="primary-button hidden" id="dGoCriterionButton" type="button">Kriter Çarkına Geç</button>
+        <button class="primary-button" id="dSpinCoinButton" type="button">Yazı-Tura At</button>
       </div>
     </section>
 
@@ -146,11 +175,12 @@ export function template() {
 
         <div class="info-list">
           <p>1. İki oyuncunun adı girilir.</p>
-          <p>2. Kriter çarkı bir kere döner (örneğin En Uzun Kadro) ve oyun boyu aynı kalır.</p>
-          <p>3. Her turun başında takım çarkı döner (örneğin Chelsea).</p>
-          <p>4. Sıradaki oyuncu bir pozisyon seçip o takımın oyuncularından birini yazar.</p>
-          <p>5. Rakip de aynı takımdan bir oyuncu seçer.</p>
-          <p>6. 6 tur boyunca 6 farklı takımdan seçim yapılır. Toplamı önde olan oyunu kazanır.</p>
+          <p>2. Yazı-tura ile ilk seçen oyuncu belirlenir. Turlar arası sıra otomatik değişir.</p>
+          <p>3. Kriter çarkı bir kere döner (örneğin En Uzun Kadro) ve oyun boyu aynı kalır.</p>
+          <p>4. Her turun başında takım çarkı döner (örneğin Chelsea).</p>
+          <p>5. Sıradaki oyuncu bir pozisyon seçip o takımın oyuncularından birini yazar.</p>
+          <p>6. Rakip de aynı takımdan bir oyuncu seçer.</p>
+          <p>7. 6 tur boyunca 6 farklı takımdan seçim yapılır. Toplamı önde olan oyunu kazanır.</p>
         </div>
       </div>
     </section>

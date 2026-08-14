@@ -5,6 +5,7 @@
     "logo":  "./assets/logos/clubs/newcastle-united.png",
     "players":  [
                     {
+                        "id":  162653,
                         "name":  "Nick Pope",
                         "slug":  "nick-pope",
                         "position":  "GK",
@@ -12,9 +13,12 @@
                         "age":  34,
                         "birth":  "1992-04-19",
                         "height":  198,
-                        "marketValue":  4800000
+                        "marketValue":  4800000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  963744,
                         "name":  "Lukáš Horníček",
                         "slug":  "lukas-hornicek",
                         "position":  "GK",
@@ -22,9 +26,12 @@
                         "age":  24,
                         "birth":  "2002-07-13",
                         "height":  194,
-                        "marketValue":  16900000
+                        "marketValue":  16900000,
+                        "intlGoals":  0,
+                        "intlAppearances":  1
                     },
                     {
+                        "id":  1154665,
                         "name":  "Ewen Jaouen",
                         "slug":  "ewen-jaouen",
                         "position":  "GK",
@@ -32,9 +39,12 @@
                         "age":  20,
                         "birth":  "2005-12-29",
                         "height":  197,
-                        "marketValue":  12700000
+                        "marketValue":  12700000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  108508,
                         "name":  "Mark Gillespie",
                         "slug":  "mark-gillespie",
                         "position":  "GK",
@@ -42,9 +52,12 @@
                         "age":  34,
                         "birth":  "1992-03-27",
                         "height":  190,
-                        "marketValue":  105000
+                        "marketValue":  105000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1425207,
                         "name":  "Aidan Harris",
                         "slug":  "aidan-harris",
                         "position":  "GK",
@@ -52,9 +65,12 @@
                         "age":  19,
                         "birth":  "2006-12-16",
                         "height":  185,
-                        "marketValue":  180000
+                        "marketValue":  180000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1136730,
                         "name":  "Lewis Hall",
                         "slug":  "lewis-hall",
                         "position":  "DEF",
@@ -62,9 +78,12 @@
                         "age":  21,
                         "birth":  "2004-09-08",
                         "height":  179,
-                        "marketValue":  38000000
+                        "marketValue":  38000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  4
                     },
                     {
+                        "id":  910046,
                         "name":  "Sven Botman",
                         "slug":  "sven-botman",
                         "position":  "DEF",
@@ -72,9 +91,12 @@
                         "age":  26,
                         "birth":  "2000-01-12",
                         "height":  193,
-                        "marketValue":  33000000
+                        "marketValue":  33000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  101882,
                         "name":  "Fabian Schär",
                         "slug":  "fabian-schar",
                         "position":  "DEF",
@@ -82,9 +104,12 @@
                         "age":  34,
                         "birth":  "1991-12-20",
                         "height":  186,
-                        "marketValue":  3900000
+                        "marketValue":  3900000,
+                        "intlGoals":  8,
+                        "intlAppearances":  86
                     },
                     {
+                        "id":  1014286,
                         "name":  "Malick Thiaw",
                         "slug":  "malick-thiaw",
                         "position":  "DEF",
@@ -92,9 +117,12 @@
                         "age":  24,
                         "birth":  "2001-08-08",
                         "height":  194,
-                        "marketValue":  41000000
+                        "marketValue":  41000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  7
                     },
                     {
+                        "id":  980634,
                         "name":  "Tino Livramento",
                         "slug":  "tino-livramento",
                         "position":  "DEF",
@@ -102,9 +130,12 @@
                         "age":  23,
                         "birth":  "2002-11-12",
                         "height":  181,
-                        "marketValue":  44000000
+                        "marketValue":  44000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  6
                     },
                     {
+                        "id":  99090,
                         "name":  "Dan Burn",
                         "slug":  "dan-burn",
                         "position":  "DEF",
@@ -112,9 +143,12 @@
                         "age":  34,
                         "birth":  "1992-05-09",
                         "height":  201,
-                        "marketValue":  4099999
+                        "marketValue":  4099999,
+                        "intlGoals":  0,
+                        "intlAppearances":  11
                     },
                     {
+                        "id":  1125214,
                         "name":  "Alex Murphy",
                         "slug":  "alex-murphy",
                         "position":  "DEF",
@@ -122,9 +156,12 @@
                         "age":  22,
                         "birth":  "2004-06-25",
                         "height":  188,
-                        "marketValue":  1600000
+                        "marketValue":  1600000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1479682,
                         "name":  "Leo Shahar",
                         "slug":  "leo-shahar",
                         "position":  "DEF",
@@ -132,9 +169,12 @@
                         "age":  19,
                         "birth":  "2007-03-18",
                         "height":  179,
-                        "marketValue":  0
+                        "marketValue":  0,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  560128,
                         "name":  "Joelinton",
                         "slug":  "joelinton",
                         "position":  "MID",
@@ -142,9 +182,12 @@
                         "age":  29,
                         "birth":  "1996-08-14",
                         "height":  186,
-                        "marketValue":  27000000
+                        "marketValue":  27000000,
+                        "intlGoals":  1,
+                        "intlAppearances":  8
                     },
                     {
+                        "id":  1859920,
                         "name":  "Sean Steur",
                         "slug":  "sean-steur",
                         "position":  "MID",
@@ -152,9 +195,12 @@
                         "age":  18,
                         "birth":  "2008-01-11",
                         "height":  180,
-                        "marketValue":  6800000
+                        "marketValue":  6800000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1868591,
                         "name":  "Aladji Bamba",
                         "slug":  "aladji-bamba",
                         "position":  "MID",
@@ -162,9 +208,12 @@
                         "age":  20,
                         "birth":  "2006-07-14",
                         "height":  181,
-                        "marketValue":  16700000
+                        "marketValue":  16700000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  888550,
                         "name":  "Joe Willock",
                         "slug":  "joe-willock",
                         "position":  "MID",
@@ -172,9 +221,12 @@
                         "age":  26,
                         "birth":  "1999-08-20",
                         "height":  186,
-                        "marketValue":  14500000
+                        "marketValue":  14500000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1568123,
                         "name":  "Bazoumana Touré",
                         "slug":  "bazoumana-toure",
                         "position":  "MID",
@@ -182,9 +234,12 @@
                         "age":  20,
                         "birth":  "2006-03-02",
                         "height":  175,
-                        "marketValue":  48000000
+                        "marketValue":  48000000,
+                        "intlGoals":  2,
+                        "intlAppearances":  9
                     },
                     {
+                        "id":  866469,
                         "name":  "Bruno Guimarães",
                         "slug":  "bruno-guimaraes",
                         "position":  "MID",
@@ -192,9 +247,12 @@
                         "age":  28,
                         "birth":  "1997-11-16",
                         "height":  182,
-                        "marketValue":  72000000
+                        "marketValue":  72000000,
+                        "intlGoals":  3,
+                        "intlAppearances":  48
                     },
                     {
+                        "id":  975937,
                         "name":  "Jacob Ramsey",
                         "slug":  "jacob-ramsey",
                         "position":  "MID",
@@ -202,9 +260,12 @@
                         "age":  25,
                         "birth":  "2001-05-28",
                         "height":  180,
-                        "marketValue":  36000000
+                        "marketValue":  36000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1400650,
                         "name":  "Lewis Miley",
                         "slug":  "lewis-miley",
                         "position":  "MID",
@@ -212,9 +273,12 @@
                         "age":  20,
                         "birth":  "2006-05-01",
                         "height":  188,
-                        "marketValue":  27000000
+                        "marketValue":  27000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  805123,
                         "name":  "Yoane Wissa",
                         "slug":  "yoane-wissa",
                         "position":  "FW",
@@ -222,9 +286,12 @@
                         "age":  29,
                         "birth":  "1996-09-03",
                         "height":  176,
-                        "marketValue":  23000000
+                        "marketValue":  23000000,
+                        "intlGoals":  11,
+                        "intlAppearances":  42
                     },
                     {
+                        "id":  855647,
                         "name":  "Harvey Barnes",
                         "slug":  "harvey-barnes",
                         "position":  "FW",
@@ -232,9 +299,12 @@
                         "age":  28,
                         "birth":  "1997-12-09",
                         "height":  181,
-                        "marketValue":  35000000
+                        "marketValue":  35000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  2
                     },
                     {
+                        "id":  1122603,
                         "name":  "William Osula",
                         "slug":  "william-osula",
                         "position":  "FW",
@@ -242,9 +312,12 @@
                         "age":  23,
                         "birth":  "2003-08-04",
                         "height":  191,
-                        "marketValue":  26000000
+                        "marketValue":  26000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  2
                     },
                     {
+                        "id":  979232,
                         "name":  "Anthony Elanga",
                         "slug":  "anthony-elanga",
                         "position":  "FW",
@@ -252,9 +325,12 @@
                         "age":  24,
                         "birth":  "2002-04-27",
                         "height":  178,
-                        "marketValue":  31000000
+                        "marketValue":  31000000,
+                        "intlGoals":  8,
+                        "intlAppearances":  34
                     },
                     {
+                        "id":  372336,
                         "name":  "Jacob Murphy",
                         "slug":  "jacob-murphy",
                         "position":  "FW",
@@ -262,9 +338,12 @@
                         "age":  31,
                         "birth":  "1995-02-24",
                         "height":  176,
-                        "marketValue":  11000000
+                        "marketValue":  11000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  980623,
                         "name":  "Nick Woltemade",
                         "slug":  "nick-woltemade",
                         "position":  "FW",
@@ -272,7 +351,9 @@
                         "age":  24,
                         "birth":  "2002-02-14",
                         "height":  198,
-                        "marketValue":  59000000
+                        "marketValue":  59000000,
+                        "intlGoals":  4,
+                        "intlAppearances":  12
                     }
                 ]
 }

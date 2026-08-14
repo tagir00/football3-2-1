@@ -5,6 +5,7 @@
     "logo":  "./assets/logos/clubs/napoli.png",
     "players":  [
                     {
+                        "id":  592794,
                         "name":  "Alex Meret",
                         "slug":  "alex-meret",
                         "position":  "GK",
@@ -12,9 +13,12 @@
                         "age":  29,
                         "birth":  "1997-03-22",
                         "height":  190,
-                        "marketValue":  7200000
+                        "marketValue":  7200000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  352728,
                         "name":  "Nikita Contini",
                         "slug":  "nikita-contini",
                         "position":  "GK",
@@ -22,9 +26,12 @@
                         "age":  30,
                         "birth":  "1996-05-21",
                         "height":  190,
-                        "marketValue":  390000
+                        "marketValue":  390000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  356160,
                         "name":  "Vanja Milinković-Savić",
                         "slug":  "vanja-milinkovic-savic",
                         "position":  "GK",
@@ -32,9 +39,12 @@
                         "age":  29,
                         "birth":  "1997-02-20",
                         "height":  202,
-                        "marketValue":  18600000
+                        "marketValue":  18600000,
+                        "intlGoals":  0,
+                        "intlAppearances":  20
                     },
                     {
+                        "id":  25357,
                         "name":  "Alessandro Buongiorno",
                         "slug":  "alessandro-buongiorno",
                         "position":  "DEF",
@@ -42,9 +52,12 @@
                         "age":  27,
                         "birth":  "1999-06-06",
                         "height":  191,
-                        "marketValue":  32000000
+                        "marketValue":  32000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1068241,
                         "name":  "Nosa Edward Obaretin",
                         "slug":  "obaretin-nosa-edward",
                         "position":  "DEF",
@@ -52,9 +65,12 @@
                         "age":  23,
                         "birth":  "2003-01-26",
                         "height":  193,
-                        "marketValue":  1400000
+                        "marketValue":  1400000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  332155,
                         "name":  "Amir Rrahmani",
                         "slug":  "amir-rrahmani",
                         "position":  "DEF",
@@ -62,9 +78,12 @@
                         "age":  32,
                         "birth":  "1994-02-24",
                         "height":  190,
-                        "marketValue":  10600000
+                        "marketValue":  10600000,
+                        "intlGoals":  8,
+                        "intlAppearances":  67
                     },
                     {
+                        "id":  984623,
                         "name":  "Rafa Marín",
                         "slug":  "rafa-marin",
                         "position":  "DEF",
@@ -72,9 +91,12 @@
                         "age":  24,
                         "birth":  "2002-05-19",
                         "height":  190,
-                        "marketValue":  11600000
+                        "marketValue":  11600000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  805078,
                         "name":  "Mathías Olivera",
                         "slug":  "mathias-olivera",
                         "position":  "DEF",
@@ -82,9 +104,12 @@
                         "age":  28,
                         "birth":  "1997-10-31",
                         "height":  184,
-                        "marketValue":  14500000
+                        "marketValue":  14500000,
+                        "intlGoals":  2,
+                        "intlAppearances":  38
                     },
                     {
+                        "id":  153257,
                         "name":  "Giovanni Di Lorenzo",
                         "slug":  "giovanni-di-lorenzo",
                         "position":  "DEF",
@@ -92,9 +117,12 @@
                         "age":  33,
                         "birth":  "1993-08-04",
                         "height":  182,
-                        "marketValue":  6800000
+                        "marketValue":  6800000,
+                        "intlGoals":  5,
+                        "intlAppearances":  53
                     },
                     {
+                        "id":  898815,
                         "name":  "Sam Beukema",
                         "slug":  "sam-beukema",
                         "position":  "DEF",
@@ -102,9 +130,12 @@
                         "age":  27,
                         "birth":  "1998-11-17",
                         "height":  188,
-                        "marketValue":  24000000
+                        "marketValue":  24000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1165371,
                         "name":  "Luca Marianucci",
                         "slug":  "marianucci-luca",
                         "position":  "DEF",
@@ -112,9 +143,12 @@
                         "age":  22,
                         "birth":  "2004-07-23",
                         "height":  186,
-                        "marketValue":  7500000
+                        "marketValue":  7500000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  148899,
                         "name":  "Leonardo Spinazzola",
                         "slug":  "leonardo-spinazzola",
                         "position":  "DEF",
@@ -122,9 +156,12 @@
                         "age":  33,
                         "birth":  "1993-03-25",
                         "height":  185,
-                        "marketValue":  3400000
+                        "marketValue":  3400000,
+                        "intlGoals":  0,
+                        "intlAppearances":  27
                     },
                     {
+                        "id":  1587205,
                         "name":  "Christian Garofalo",
                         "slug":  "christian-garofalo",
                         "position":  "DEF",
@@ -132,9 +169,12 @@
                         "age":  19,
                         "birth":  "2007-01-04",
                         "height":  182,
-                        "marketValue":  260000
+                        "marketValue":  260000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  24385,
                         "name":  "Billy Gilmour",
                         "slug":  "billy-gilmour",
                         "position":  "MID",
@@ -142,9 +182,12 @@
                         "age":  25,
                         "birth":  "2001-06-11",
                         "height":  169,
-                        "marketValue":  18800000
+                        "marketValue":  18800000,
+                        "intlGoals":  1,
+                        "intlAppearances":  30
                     },
                     {
+                        "id":  879346,
                         "name":  "Scott McTominay",
                         "slug":  "scott-mctominay",
                         "position":  "MID",
@@ -152,9 +195,12 @@
                         "age":  29,
                         "birth":  "1996-12-08",
                         "height":  193,
-                        "marketValue":  38000000
+                        "marketValue":  38000000,
+                        "intlGoals":  15,
+                        "intlAppearances":  73
                     },
                     {
+                        "id":  70996,
                         "name":  "Kevin De Bruyne",
                         "slug":  "kevin-de-bruyne",
                         "position":  "MID",
@@ -162,9 +208,12 @@
                         "age":  35,
                         "birth":  "1991-06-28",
                         "height":  181,
-                        "marketValue":  8300000
+                        "marketValue":  8300000,
+                        "intlGoals":  38,
+                        "intlAppearances":  124
                     },
                     {
+                        "id":  235672,
                         "name":  "Matteo Politano",
                         "slug":  "matteo-politano",
                         "position":  "MID",
@@ -172,9 +221,12 @@
                         "age":  33,
                         "birth":  "1993-08-03",
                         "height":  171,
-                        "marketValue":  5300000
+                        "marketValue":  5300000,
+                        "intlGoals":  4,
+                        "intlAppearances":  20
                     },
                     {
+                        "id":  857671,
                         "name":  "Jens-Lys Cajuste",
                         "slug":  "jens-lys-cajuste",
                         "position":  "MID",
@@ -182,9 +234,12 @@
                         "age":  26,
                         "birth":  "1999-08-10",
                         "height":  188,
-                        "marketValue":  6600000
+                        "marketValue":  6600000,
+                        "intlGoals":  0,
+                        "intlAppearances":  25
                     },
                     {
+                        "id":  947929,
                         "name":  "Jesper Lindstrøm",
                         "slug":  "jesper-lindstrom",
                         "position":  "MID",
@@ -192,9 +247,12 @@
                         "age":  26,
                         "birth":  "2000-02-29",
                         "height":  182,
-                        "marketValue":  4300000
+                        "marketValue":  4300000,
+                        "intlGoals":  1,
+                        "intlAppearances":  18
                     },
                     {
+                        "id":  377512,
                         "name":  "Pasquale Mazzocchi",
                         "slug":  "pasquale-mazzocchi",
                         "position":  "MID",
@@ -202,9 +260,12 @@
                         "age":  31,
                         "birth":  "1995-07-27",
                         "height":  183,
-                        "marketValue":  1400000
+                        "marketValue":  1400000,
+                        "intlGoals":  0,
+                        "intlAppearances":  1
                     },
                     {
+                        "id":  24259,
                         "name":  "Stanislav Lobotka",
                         "slug":  "stanislav-lobotka",
                         "position":  "MID",
@@ -212,9 +273,12 @@
                         "age":  31,
                         "birth":  "1994-11-25",
                         "height":  170,
-                        "marketValue":  10300000
+                        "marketValue":  10300000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  996834,
                         "name":  "Gennaro Iaccarino",
                         "slug":  "gennaro-iaccarino",
                         "position":  "MID",
@@ -222,9 +286,12 @@
                         "age":  23,
                         "birth":  "2003-07-01",
                         "height":  170,
-                        "marketValue":  185000
+                        "marketValue":  185000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  869795,
                         "name":  "Michael Folorunsho",
                         "slug":  "michael-folorunsho",
                         "position":  "MID",
@@ -232,9 +299,12 @@
                         "age":  28,
                         "birth":  "1998-02-07",
                         "height":  190,
-                        "marketValue":  4600000
+                        "marketValue":  4600000,
+                        "intlGoals":  0,
+                        "intlAppearances":  2
                     },
                     {
+                        "id":  787941,
                         "name":  "Frank Anguissa",
                         "slug":  "frank-anguissa",
                         "position":  "MID",
@@ -242,9 +312,12 @@
                         "age":  30,
                         "birth":  "1995-11-16",
                         "height":  184,
-                        "marketValue":  14600000
+                        "marketValue":  14600000,
+                        "intlGoals":  5,
+                        "intlAppearances":  66
                     },
                     {
+                        "id":  1397174,
                         "name":  "Lorenzo Russo",
                         "slug":  "russo-lorenzo",
                         "position":  "MID",
@@ -252,9 +325,12 @@
                         "age":  21,
                         "birth":  "2005-04-19",
                         "height":  182,
-                        "marketValue":  53000
+                        "marketValue":  53000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  14471,
                         "name":  "David Neres",
                         "slug":  "david-neres",
                         "position":  "FW",
@@ -262,9 +338,12 @@
                         "age":  29,
                         "birth":  "1997-03-03",
                         "height":  175,
-                        "marketValue":  22000000
+                        "marketValue":  22000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  78893,
                         "name":  "Romelu Lukaku",
                         "slug":  "romelu-lukaku",
                         "position":  "FW",
@@ -272,9 +351,12 @@
                         "age":  33,
                         "birth":  "1993-05-13",
                         "height":  191,
-                        "marketValue":  5800000
+                        "marketValue":  5800000,
+                        "intlGoals":  93,
+                        "intlAppearances":  132
                     },
                     {
+                        "id":  962364,
                         "name":  "Lorenzo Lucca",
                         "slug":  "lorenzo-lucca",
                         "position":  "FW",
@@ -282,9 +364,12 @@
                         "age":  25,
                         "birth":  "2000-09-10",
                         "height":  201,
-                        "marketValue":  22000000
+                        "marketValue":  22000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  5
                     },
                     {
+                        "id":  1086417,
                         "name":  "Rasmus Højlund",
                         "slug":  "rasmus-hojlund",
                         "position":  "FW",
@@ -292,9 +377,12 @@
                         "age":  23,
                         "birth":  "2003-02-04",
                         "height":  191,
-                        "marketValue":  66000000
+                        "marketValue":  66000000,
+                        "intlGoals":  13,
+                        "intlAppearances":  35
                     },
                     {
+                        "id":  1170773,
                         "name":  "Giovane",
                         "slug":  "giovane",
                         "position":  "FW",
@@ -302,9 +390,12 @@
                         "age":  22,
                         "birth":  "2003-11-24",
                         "height":  184,
-                        "marketValue":  12600000
+                        "marketValue":  12600000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  21810,
                         "name":  "Cyril Ngonge",
                         "slug":  "cyril-ngonge",
                         "position":  "FW",
@@ -312,9 +403,12 @@
                         "age":  26,
                         "birth":  "2000-05-26",
                         "height":  179,
-                        "marketValue":  6800000
+                        "marketValue":  6800000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1069560,
                         "name":  "Antonio Vergara",
                         "slug":  "antonio-vergara",
                         "position":  "FW",
@@ -322,9 +416,12 @@
                         "age":  23,
                         "birth":  "2003-01-16",
                         "height":  182,
-                        "marketValue":  13600000
+                        "marketValue":  13600000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1122835,
                         "name":  "Alisson Santos",
                         "slug":  "alisson-santos",
                         "position":  "FW",
@@ -332,9 +429,12 @@
                         "age":  23,
                         "birth":  "2002-09-27",
                         "height":  177,
-                        "marketValue":  29000000
+                        "marketValue":  29000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  907475,
                         "name":  "Lorenzo Sgarbi",
                         "slug":  "lorenzo-sgarbi",
                         "position":  "FW",
@@ -342,9 +442,12 @@
                         "age":  25,
                         "birth":  "2001-03-24",
                         "height":  189,
-                        "marketValue":  360000
+                        "marketValue":  360000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  875136,
                         "name":  "Noa Lang",
                         "slug":  "noa-lang",
                         "position":  "FW",
@@ -352,9 +455,12 @@
                         "age":  27,
                         "birth":  "1999-06-17",
                         "height":  173,
-                        "marketValue":  24000000
+                        "marketValue":  24000000,
+                        "intlGoals":  3,
+                        "intlAppearances":  17
                     },
                     {
+                        "id":  917485,
                         "name":  "Walid Cheddira",
                         "slug":  "walid-cheddira",
                         "position":  "FW",
@@ -362,9 +468,12 @@
                         "age":  28,
                         "birth":  "1998-01-22",
                         "height":  187,
-                        "marketValue":  1900000
+                        "marketValue":  1900000,
+                        "intlGoals":  0,
+                        "intlAppearances":  6
                     },
                     {
+                        "id":  996829,
                         "name":  "Antonio Cioffi",
                         "slug":  "antonio-cioffi",
                         "position":  "FW",
@@ -372,7 +481,9 @@
                         "age":  23,
                         "birth":  "2002-12-19",
                         "height":  180,
-                        "marketValue":  190000
+                        "marketValue":  190000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     }
                 ]
 }

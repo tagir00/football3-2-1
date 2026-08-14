@@ -1,12 +1,10 @@
 const TEAM_IDS = [
   'ac-milan',
-  'ajax',
   'arsenal',
   'aston-villa',
   'atletico-madrid',
   'barcelona',
   'basaksehir',
-  'bayer-leverkusen',
   'bayern-munich',
   'benfica',
   'besiktas',
@@ -81,7 +79,7 @@ export function findPlayerInTeam(team, positionFilter, query) {
   return contains ?? null;
 }
 
-export function suggestPlayers(team, positionFilter, query, limit = 12) {
+export function suggestPlayers(team, positionFilter, query, limit = 60) {
   const normalizedQuery = normalizeName(query);
   const candidates = team.players.filter((player) => {
     if (positionFilter && player.position !== positionFilter) {

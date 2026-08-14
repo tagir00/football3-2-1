@@ -5,6 +5,7 @@
     "logo":  "./assets/logos/clubs/real-madrid.png",
     "players":  [
                     {
+                        "id":  25246,
                         "name":  "Thibaut Courtois",
                         "slug":  "thibaut-courtois",
                         "position":  "GK",
@@ -12,9 +13,12 @@
                         "age":  34,
                         "birth":  "1992-05-11",
                         "height":  200,
-                        "marketValue":  14500000
+                        "marketValue":  14500000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  857574,
                         "name":  "Andriy Lunin",
                         "slug":  "andriy-lunin",
                         "position":  "GK",
@@ -22,9 +26,12 @@
                         "age":  27,
                         "birth":  "1999-02-11",
                         "height":  191,
-                        "marketValue":  11300000
+                        "marketValue":  11300000,
+                        "intlGoals":  0,
+                        "intlAppearances":  16
                     },
                     {
+                        "id":  20976,
                         "name":  "Éder Militão",
                         "slug":  "eder-militao",
                         "position":  "DEF",
@@ -32,9 +39,12 @@
                         "age":  28,
                         "birth":  "1998-01-18",
                         "height":  186,
-                        "marketValue":  21000000
+                        "marketValue":  21000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  794939,
                         "name":  "Marc Cucurella",
                         "slug":  "marc-cucurella",
                         "position":  "DEF",
@@ -42,9 +52,12 @@
                         "age":  28,
                         "birth":  "1998-07-22",
                         "height":  175,
-                        "marketValue":  62000000
+                        "marketValue":  62000000,
+                        "intlGoals":  1,
+                        "intlAppearances":  32
                     },
                     {
+                        "id":  826215,
                         "name":  "Ibrahima Konaté",
                         "slug":  "ibrahima-konate",
                         "position":  "DEF",
@@ -52,9 +65,12 @@
                         "age":  27,
                         "birth":  "1999-05-25",
                         "height":  195,
-                        "marketValue":  46000000
+                        "marketValue":  46000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  30
                     },
                     {
+                        "id":  795064,
                         "name":  "Trent Alexander-Arnold",
                         "slug":  "trent-alexander-arnold",
                         "position":  "DEF",
@@ -62,9 +78,12 @@
                         "age":  27,
                         "birth":  "1998-10-07",
                         "height":  180,
-                        "marketValue":  62000000
+                        "marketValue":  62000000,
+                        "intlGoals":  4,
+                        "intlAppearances":  34
                     },
                     {
+                        "id":  25760,
                         "name":  "Raúl Asencio",
                         "slug":  "raul-asencio",
                         "position":  "DEF",
@@ -72,9 +91,12 @@
                         "age":  23,
                         "birth":  "2003-02-13",
                         "height":  184,
-                        "marketValue":  18100000
+                        "marketValue":  18100000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1085081,
                         "name":  "Álvaro Carreras",
                         "slug":  "alvaro-carreras",
                         "position":  "DEF",
@@ -82,9 +104,12 @@
                         "age":  23,
                         "birth":  "2003-03-23",
                         "height":  186,
-                        "marketValue":  53000000
+                        "marketValue":  53000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  142622,
                         "name":  "Antonio Rüdiger",
                         "slug":  "antonio-rudiger",
                         "position":  "DEF",
@@ -92,9 +117,12 @@
                         "age":  33,
                         "birth":  "1993-03-03",
                         "height":  191,
-                        "marketValue":  6200000
+                        "marketValue":  6200000,
+                        "intlGoals":  3,
+                        "intlAppearances":  86
                     },
                     {
+                        "id":  792073,
                         "name":  "Ferland Mendy",
                         "slug":  "ferland-mendy",
                         "position":  "DEF",
@@ -102,9 +130,12 @@
                         "age":  31,
                         "birth":  "1995-06-08",
                         "height":  178,
-                        "marketValue":  4200000
+                        "marketValue":  4200000,
+                        "intlGoals":  0,
+                        "intlAppearances":  10
                     },
                     {
+                        "id":  1176744,
                         "name":  "Dean Huijsen",
                         "slug":  "dean-huijsen",
                         "position":  "DEF",
@@ -112,9 +143,12 @@
                         "age":  21,
                         "birth":  "2005-04-14",
                         "height":  195,
-                        "marketValue":  66000000
+                        "marketValue":  66000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  7
                     },
                     {
+                        "id":  1142689,
                         "name":  "David Jiménez",
                         "slug":  "david-jimenez",
                         "position":  "DEF",
@@ -122,9 +156,12 @@
                         "age":  22,
                         "birth":  "2004-03-14",
                         "height":  175,
-                        "marketValue":  5200000
+                        "marketValue":  5200000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  991011,
                         "name":  "Jude Bellingham",
                         "slug":  "jude-bellingham",
                         "position":  "MID",
@@ -132,9 +169,12 @@
                         "age":  23,
                         "birth":  "2003-06-29",
                         "height":  188,
-                        "marketValue":  151000000
+                        "marketValue":  151000000,
+                        "intlGoals":  13,
+                        "intlAppearances":  56
                     },
                     {
+                        "id":  973887,
                         "name":  "Eduardo Camavinga",
                         "slug":  "eduardo-camavinga",
                         "position":  "MID",
@@ -142,9 +182,12 @@
                         "age":  23,
                         "birth":  "2002-11-10",
                         "height":  182,
-                        "marketValue":  48000000
+                        "marketValue":  48000000,
+                        "intlGoals":  2,
+                        "intlAppearances":  29
                     },
                     {
+                        "id":  831808,
                         "name":  "Federico Valverde",
                         "slug":  "federico-valverde",
                         "position":  "MID",
@@ -152,9 +195,12 @@
                         "age":  28,
                         "birth":  "1998-07-22",
                         "height":  181,
-                        "marketValue":  87000000
+                        "marketValue":  87000000,
+                        "intlGoals":  9,
+                        "intlAppearances":  76
                     },
                     {
+                        "id":  859025,
                         "name":  "Aurélien Tchouaméni",
                         "slug":  "aurelien-tchouameni",
                         "position":  "MID",
@@ -162,9 +208,12 @@
                         "age":  26,
                         "birth":  "2000-01-27",
                         "height":  188,
-                        "marketValue":  73000000
+                        "marketValue":  73000000,
+                        "intlGoals":  3,
+                        "intlAppearances":  50
                     },
                     {
+                        "id":  1091116,
                         "name":  "Arda Güler",
                         "slug":  "arda-guler",
                         "position":  "MID",
@@ -172,9 +221,12 @@
                         "age":  21,
                         "birth":  "2005-02-25",
                         "height":  176,
-                        "marketValue":  87000000
+                        "marketValue":  87000000,
+                        "intlGoals":  7,
+                        "intlAppearances":  33
                     },
                     {
+                        "id":  331209,
                         "name":  "Bernardo Silva",
                         "slug":  "bernardo-silva",
                         "position":  "MID",
@@ -182,9 +234,12 @@
                         "age":  31,
                         "birth":  "1994-08-10",
                         "height":  173,
-                        "marketValue":  21000000
+                        "marketValue":  21000000,
+                        "intlGoals":  14,
+                        "intlAppearances":  113
                     },
                     {
+                        "id":  835485,
                         "name":  "Brahim Díaz",
                         "slug":  "brahim-diaz",
                         "position":  "MID",
@@ -192,9 +247,12 @@
                         "age":  27,
                         "birth":  "1999-08-03",
                         "height":  170,
-                        "marketValue":  37000000
+                        "marketValue":  37000000,
+                        "intlGoals":  15,
+                        "intlAppearances":  33
                     },
                     {
+                        "id":  759520,
                         "name":  "Denzel Dumfries",
                         "slug":  "denzel-dumfries",
                         "position":  "MID",
@@ -202,9 +260,12 @@
                         "age":  30,
                         "birth":  "1996-04-18",
                         "height":  188,
-                        "marketValue":  26000000
+                        "marketValue":  26000000,
+                        "intlGoals":  12,
+                        "intlAppearances":  78
                     },
                     {
+                        "id":  1142683,
                         "name":  "Manuel Ángel Morán",
                         "slug":  "manuel-angel-moran",
                         "position":  "MID",
@@ -212,9 +273,12 @@
                         "age":  22,
                         "birth":  "2004-03-15",
                         "height":  168,
-                        "marketValue":  4600000
+                        "marketValue":  4600000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  2237795,
                         "name":  "Thiago Pitarch",
                         "slug":  "thiago-pitarch-pinar",
                         "position":  "MID",
@@ -222,9 +286,12 @@
                         "age":  19,
                         "birth":  "2007-08-03",
                         "height":  179,
-                        "marketValue":  18200000
+                        "marketValue":  18200000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  868812,
                         "name":  "Vinícius Júnior",
                         "slug":  "vinicius-junior",
                         "position":  "FW",
@@ -232,9 +299,12 @@
                         "age":  26,
                         "birth":  "2000-07-12",
                         "height":  176,
-                        "marketValue":  146000000
+                        "marketValue":  146000000,
+                        "intlGoals":  13,
+                        "intlAppearances":  54
                     },
                     {
+                        "id":  826643,
                         "name":  "Kylian Mbappé",
                         "slug":  "kylian-mbappe",
                         "position":  "FW",
@@ -242,9 +312,12 @@
                         "age":  27,
                         "birth":  "1998-12-20",
                         "height":  180,
-                        "marketValue":  212000000
+                        "marketValue":  212000000,
+                        "intlGoals":  66,
+                        "intlAppearances":  106
                     },
                     {
+                        "id":  17419,
                         "name":  "Rodrygo",
                         "slug":  "rodrygo",
                         "position":  "FW",
@@ -252,9 +325,12 @@
                         "age":  25,
                         "birth":  "2001-01-09",
                         "height":  174,
-                        "marketValue":  48000000
+                        "marketValue":  48000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  1174937,
                         "name":  "Endrick",
                         "slug":  "endrick",
                         "position":  "FW",
@@ -262,9 +338,12 @@
                         "age":  20,
                         "birth":  "2006-07-21",
                         "height":  173,
-                        "marketValue":  42000000
+                        "marketValue":  42000000,
+                        "intlGoals":  4,
+                        "intlAppearances":  21
                     },
                     {
+                        "id":  1403559,
                         "name":  "Franco Mastantuono",
                         "slug":  "franco-mastantuono",
                         "position":  "FW",
@@ -272,9 +351,12 @@
                         "age":  18,
                         "birth":  "2007-08-14",
                         "height":  177,
-                        "marketValue":  44000000
+                        "marketValue":  44000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  4
                     },
                     {
+                        "id":  1649918,
                         "name":  "Carlos Espí",
                         "slug":  "espi-carlos",
                         "position":  "FW",
@@ -282,9 +364,12 @@
                         "age":  21,
                         "birth":  "2005-07-24",
                         "height":  194,
-                        "marketValue":  22000000
+                        "marketValue":  22000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  2087085,
                         "name":  "Yan Diomande",
                         "slug":  "yan-diomande",
                         "position":  "FW",
@@ -292,7 +377,9 @@
                         "age":  19,
                         "birth":  "2006-11-14",
                         "height":  180,
-                        "marketValue":  99000000
+                        "marketValue":  99000000,
+                        "intlGoals":  3,
+                        "intlAppearances":  14
                     }
                 ]
 }

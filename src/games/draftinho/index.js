@@ -30,6 +30,7 @@ export async function mount(container) {
   const els = {
     homePanel: container.querySelector('#dHomePanel'),
     setupPanel: container.querySelector('#dSetupPanel'),
+    coinFlipPanel: container.querySelector('#dCoinFlipPanel'),
     criterionPanel: container.querySelector('#dCriterionPanel'),
     gamePanel: container.querySelector('#dGamePanel'),
     infoModal: container.querySelector('#dInfoModal'),
@@ -39,6 +40,14 @@ export async function mount(container) {
     setupBackButton: container.querySelector('#dSetupBackButton'),
     player1Input: container.querySelector('#dPlayer1Input'),
     player2Input: container.querySelector('#dPlayer2Input'),
+    goCoinFlipButton: container.querySelector('#dGoCoinFlipButton'),
+    coinFlipBackButton: container.querySelector('#dCoinFlipBackButton'),
+    coinFlipStatus: container.querySelector('#dCoinFlipStatus'),
+    coinName1: container.querySelector('#dCoinName1'),
+    coinName2: container.querySelector('#dCoinName2'),
+    coinResult: container.querySelector('#dCoinResult'),
+    coinResultName: container.querySelector('#dCoinResultName'),
+    spinCoinButton: container.querySelector('#dSpinCoinButton'),
     goCriterionButton: container.querySelector('#dGoCriterionButton'),
     criterionBackButton: container.querySelector('#dCriterionBackButton'),
     criterionTitle: container.querySelector('#dCriterionTitle'),
@@ -95,6 +104,7 @@ export async function mount(container) {
     picksThisSpin: 0,
     activePlayerIndex: 0,
     startingPlayerIndex: 0,
+    coinStartingIndex: 0,
     pendingSlot: null,
     isSpinning: false,
     isFinished: false,
@@ -121,6 +131,7 @@ export async function mount(container) {
   function showHome() {
     els.homePanel.classList.remove('hidden');
     els.setupPanel.classList.add('hidden');
+    els.coinFlipPanel.classList.add('hidden');
     els.criterionPanel.classList.add('hidden');
     els.gamePanel.classList.add('hidden');
   }
@@ -128,14 +139,34 @@ export async function mount(container) {
   function showSetup() {
     els.homePanel.classList.add('hidden');
     els.setupPanel.classList.remove('hidden');
+    els.coinFlipPanel.classList.add('hidden');
     els.criterionPanel.classList.add('hidden');
     els.gamePanel.classList.add('hidden');
     els.player1Input.focus();
   }
 
+  function showCoinFlipPanel() {
+    els.homePanel.classList.add('hidden');
+    els.setupPanel.classList.add('hidden');
+    els.coinFlipPanel.classList.remove('hidden');
+    els.criterionPanel.classList.add('hidden');
+    els.gamePanel.classList.add('hidden');
+    els.coinName1.textContent = state.players[0].name;
+    els.coinName2.textContent = state.players[1].name;
+    els.coinName1.classList.remove('highlight', 'dim');
+    els.coinName2.classList.remove('highlight', 'dim');
+    els.coinResult.classList.add('hidden');
+    els.goCriterionButton.classList.add('hidden');
+    els.spinCoinButton.classList.remove('hidden');
+    els.spinCoinButton.textContent = 'Yazı-Tura At';
+    els.spinCoinButton.disabled = false;
+    els.coinFlipStatus.textContent = 'Butona bas, ilk başlayacak oyuncu belirlensin.';
+  }
+
   function showCriterionPanel() {
     els.homePanel.classList.add('hidden');
     els.setupPanel.classList.add('hidden');
+    els.coinFlipPanel.classList.add('hidden');
     els.criterionPanel.classList.remove('hidden');
     els.gamePanel.classList.add('hidden');
     resetCriterionScreen();
@@ -155,8 +186,46 @@ export async function mount(container) {
   function showGamePanel() {
     els.homePanel.classList.add('hidden');
     els.setupPanel.classList.add('hidden');
+    els.coinFlipPanel.classList.add('hidden');
     els.criterionPanel.classList.add('hidden');
     els.gamePanel.classList.remove('hidden');
+  }
+
+  function flipCoin() {
+    if (state.isSpinning) return;
+    state.isSpinning = true;
+    els.spinCoinButton.disabled = true;
+    els.coinResult.classList.add('hidden');
+    els.coinFlipStatus.textContent = 'Yazı-tura dönüyor...';
+
+    const finalIndex = Math.random() < 0.5 ? 0 : 1;
+    let ticks = 0;
+    const maxTicks = 14 + Math.floor(Math.random() * 6);
+    const interval = window.setInterval(() => {
+      const cur = ticks % 2;
+      els.coinName1.classList.toggle('highlight', cur === 0);
+      els.coinName2.classList.toggle('highlight', cur === 1);
+      els.coinName1.classList.toggle('dim', cur !== 0);
+      els.coinName2.classList.toggle('dim', cur !== 1);
+      ticks += 1;
+      if (ticks >= maxTicks) {
+        window.clearInterval(interval);
+        els.coinName1.classList.toggle('highlight', finalIndex === 0);
+        els.coinName2.classList.toggle('highlight', finalIndex === 1);
+        els.coinName1.classList.toggle('dim', finalIndex !== 0);
+        els.coinName2.classList.toggle('dim', finalIndex !== 1);
+        state.coinStartingIndex = finalIndex;
+        els.coinResult.classList.remove('hidden');
+        els.coinResultName.textContent = state.players[finalIndex].name;
+        els.coinFlipStatus.textContent = 'Sonuç geldi. Oyun boyunca ilk seçen bu oyuncu olur (turlar arası sıra değişir).';
+        els.goCriterionButton.classList.remove('hidden');
+        els.spinCoinButton.textContent = 'Tekrar At';
+        els.spinCoinButton.classList.add('secondary');
+        els.spinCoinButton.disabled = false;
+        state.isSpinning = false;
+      }
+    }, 90);
+    timers.add(interval);
   }
 
   function toggleInfoModal(open) {
@@ -184,8 +253,8 @@ export async function mount(container) {
     state.round = 0;
     state.totalRounds = formation.length;
     state.picksThisSpin = 0;
-    state.startingPlayerIndex = 0;
-    state.activePlayerIndex = 0;
+    state.startingPlayerIndex = state.coinStartingIndex;
+    state.activePlayerIndex = state.coinStartingIndex;
     state.currentTeam = null;
     state.pendingSlot = null;
     state.usedInSpin.clear();
@@ -544,11 +613,18 @@ export async function mount(container) {
 
   bind(els.openSetupButton, 'click', showSetup);
   bind(els.setupBackButton, 'click', showHome);
-  bind(els.goCriterionButton, 'click', () => {
+  bind(els.goCoinFlipButton, 'click', () => {
     initPlayers();
+    // Reset coin state so user must flip again for a new game
+    state.coinStartingIndex = 0;
+    showCoinFlipPanel();
+  });
+  bind(els.coinFlipBackButton, 'click', showSetup);
+  bind(els.spinCoinButton, 'click', flipCoin);
+  bind(els.goCriterionButton, 'click', () => {
     showCriterionPanel();
   });
-  bind(els.criterionBackButton, 'click', showSetup);
+  bind(els.criterionBackButton, 'click', showCoinFlipPanel);
   bind(els.spinCriterionButton, 'click', spinCriterion);
   bind(els.confirmCriterionButton, 'click', confirmCriterion);
   bind(els.gameBackButton, 'click', goBackFromGame);

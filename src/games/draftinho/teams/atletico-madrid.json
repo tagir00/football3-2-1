@@ -5,6 +5,7 @@
     "logo":  "./assets/logos/clubs/atletico-madrid.png",
     "players":  [
                     {
+                        "id":  263651,
                         "name":  "Juan Musso",
                         "slug":  "juan-musso",
                         "position":  "GK",
@@ -12,9 +13,12 @@
                         "age":  32,
                         "birth":  "1994-05-06",
                         "height":  191,
-                        "marketValue":  3200000
+                        "marketValue":  3200000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  69768,
                         "name":  "Jan Oblak",
                         "slug":  "jan-oblak",
                         "position":  "GK",
@@ -22,9 +26,12 @@
                         "age":  33,
                         "birth":  "1993-01-07",
                         "height":  189,
-                        "marketValue":  16000000
+                        "marketValue":  16000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  84
                     },
                     {
+                        "id":  325355,
                         "name":  "José María Giménez",
                         "slug":  "jose-maria-gimenez",
                         "position":  "DEF",
@@ -32,9 +39,12 @@
                         "age":  31,
                         "birth":  "1995-01-20",
                         "height":  185,
-                        "marketValue":  8600000
+                        "marketValue":  8600000,
+                        "intlGoals":  8,
+                        "intlAppearances":  99
                     },
                     {
+                        "id":  965011,
                         "name":  "Matteo Ruggeri",
                         "slug":  "matteo-ruggeri",
                         "position":  "DEF",
@@ -42,9 +52,12 @@
                         "age":  24,
                         "birth":  "2002-07-11",
                         "height":  187,
-                        "marketValue":  27000000
+                        "marketValue":  27000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  353138,
                         "name":  "Marcos Llorente",
                         "slug":  "marcos-llorente",
                         "position":  "DEF",
@@ -52,9 +65,12 @@
                         "age":  31,
                         "birth":  "1995-01-30",
                         "height":  184,
-                        "marketValue":  21000000
+                        "marketValue":  21000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  27
                     },
                     {
+                        "id":  831799,
                         "name":  "Nahuel Molina",
                         "slug":  "nahuel-molina",
                         "position":  "DEF",
@@ -62,9 +78,12 @@
                         "age":  28,
                         "birth":  "1998-04-06",
                         "height":  175,
-                        "marketValue":  14600000
+                        "marketValue":  14600000,
+                        "intlGoals":  1,
+                        "intlAppearances":  65
                     },
                     {
+                        "id":  807771,
                         "name":  "Dávid Hancko",
                         "slug":  "david-hancko",
                         "position":  "DEF",
@@ -72,9 +91,12 @@
                         "age":  28,
                         "birth":  "1997-12-13",
                         "height":  188,
-                        "marketValue":  36000000
+                        "marketValue":  36000000,
+                        "intlGoals":  7,
+                        "intlAppearances":  59
                     },
                     {
+                        "id":  1094106,
                         "name":  "Marc Pubill",
                         "slug":  "marc-pubill",
                         "position":  "DEF",
@@ -82,9 +104,12 @@
                         "age":  23,
                         "birth":  "2003-06-20",
                         "height":  190,
-                        "marketValue":  33000000
+                        "marketValue":  33000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  3
                     },
                     {
+                        "id":  787751,
                         "name":  "Robin Le Normand",
                         "slug":  "robin-le-normand",
                         "position":  "DEF",
@@ -92,9 +117,12 @@
                         "age":  29,
                         "birth":  "1996-11-11",
                         "height":  187,
-                        "marketValue":  19100000
+                        "marketValue":  19100000,
+                        "intlGoals":  1,
+                        "intlAppearances":  27
                     },
                     {
+                        "id":  1391752,
                         "name":  "Rodrigo Mendoza",
                         "slug":  "rodrigo-mendoza",
                         "position":  "MID",
@@ -102,9 +130,12 @@
                         "age":  21,
                         "birth":  "2005-03-15",
                         "height":  182,
-                        "marketValue":  21000000
+                        "marketValue":  21000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  990169,
                         "name":  "Johnny Cardoso",
                         "slug":  "johnny-cardoso",
                         "position":  "MID",
@@ -112,9 +143,12 @@
                         "age":  24,
                         "birth":  "2001-09-20",
                         "height":  186,
-                        "marketValue":  18700000
+                        "marketValue":  18700000,
+                        "intlGoals":  0,
+                        "intlAppearances":  23
                     },
                     {
+                        "id":  84539,
                         "name":  "Koke",
                         "slug":  "koke",
                         "position":  "MID",
@@ -122,9 +156,12 @@
                         "age":  34,
                         "birth":  "1992-01-08",
                         "height":  177,
-                        "marketValue":  4600000
+                        "marketValue":  4600000,
+                        "intlGoals":  0,
+                        "intlAppearances":  70
                     },
                     {
+                        "id":  917087,
                         "name":  "Kang-in Lee",
                         "slug":  "kang-in-lee",
                         "position":  "MID",
@@ -132,9 +169,12 @@
                         "age":  25,
                         "birth":  "2001-02-19",
                         "height":  173,
-                        "marketValue":  30000000
+                        "marketValue":  30000000,
+                        "intlGoals":  11,
+                        "intlAppearances":  50
                     },
                     {
+                        "id":  1142588,
                         "name":  "Pablo Barrios",
                         "slug":  "pablo-barrios",
                         "position":  "MID",
@@ -142,9 +182,12 @@
                         "age":  23,
                         "birth":  "2003-06-15",
                         "height":  181,
-                        "marketValue":  60000000
+                        "marketValue":  60000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  4
                     },
                     {
+                        "id":  910031,
                         "name":  "Alex Baena",
                         "slug":  "alex-baena",
                         "position":  "MID",
@@ -152,9 +195,12 @@
                         "age":  25,
                         "birth":  "2001-07-19",
                         "height":  174,
-                        "marketValue":  43000000
+                        "marketValue":  43000000,
+                        "intlGoals":  3,
+                        "intlAppearances":  24
                     },
                     {
+                        "id":  944660,
                         "name":  "Thiago Almada",
                         "slug":  "thiago-almada",
                         "position":  "MID",
@@ -162,9 +208,12 @@
                         "age":  25,
                         "birth":  "2001-04-26",
                         "height":  171,
-                        "marketValue":  21000000
+                        "marketValue":  21000000,
+                        "intlGoals":  5,
+                        "intlAppearances":  21
                     },
                     {
+                        "id":  191182,
                         "name":  "Thomas Lemar",
                         "slug":  "thomas-lemar",
                         "position":  "MID",
@@ -172,9 +221,12 @@
                         "age":  30,
                         "birth":  "1995-11-12",
                         "height":  170,
-                        "marketValue":  1900000
+                        "marketValue":  1900000,
+                        "intlGoals":  4,
+                        "intlAppearances":  27
                     },
                     {
+                        "id":  177177,
                         "name":  "Alejandro Grimaldo",
                         "slug":  "alex-grimaldo",
                         "position":  "MID",
@@ -182,9 +234,12 @@
                         "age":  30,
                         "birth":  "1995-09-20",
                         "height":  171,
-                        "marketValue":  19400000
+                        "marketValue":  19400000,
+                        "intlGoals":  0,
+                        "intlAppearances":  14
                     },
                     {
+                        "id":  1099352,
                         "name":  "Giuliano Simeone",
                         "slug":  "giuliano-simeone",
                         "position":  "MID",
@@ -192,9 +247,12 @@
                         "age":  23,
                         "birth":  "2002-12-18",
                         "height":  173,
-                        "marketValue":  44000000
+                        "marketValue":  44000000,
+                        "intlGoals":  2,
+                        "intlAppearances":  16
                     },
                     {
+                        "id":  1119345,
                         "name":  "Obed Vargas",
                         "slug":  "obed-vargas",
                         "position":  "MID",
@@ -202,9 +260,12 @@
                         "age":  21,
                         "birth":  "2005-08-05",
                         "height":  175,
-                        "marketValue":  9300000
+                        "marketValue":  9300000,
+                        "intlGoals":  0,
+                        "intlAppearances":  9
                     },
                     {
+                        "id":  859917,
                         "name":  "Morten Hjulmand",
                         "slug":  "morten-hjulmand",
                         "position":  "MID",
@@ -212,9 +273,12 @@
                         "age":  27,
                         "birth":  "1999-06-25",
                         "height":  185,
-                        "marketValue":  48000000
+                        "marketValue":  48000000,
+                        "intlGoals":  1,
+                        "intlAppearances":  27
                     },
                     {
+                        "id":  309078,
                         "name":  "Alexander Sørloth",
                         "slug":  "alexander-srloth",
                         "position":  "FW",
@@ -222,9 +286,12 @@
                         "age":  30,
                         "birth":  "1995-12-05",
                         "height":  195,
-                        "marketValue":  18600000
+                        "marketValue":  18600000,
+                        "intlGoals":  26,
+                        "intlAppearances":  77
                     },
                     {
+                        "id":  1131581,
                         "name":  "Carlos Martín",
                         "slug":  "carlos-martin",
                         "position":  "FW",
@@ -232,9 +299,12 @@
                         "age":  24,
                         "birth":  "2002-04-22",
                         "height":  182,
-                        "marketValue":  1500000
+                        "marketValue":  1500000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0
                     },
                     {
+                        "id":  944656,
                         "name":  "Julián Alvarez",
                         "slug":  "julian-alvarez",
                         "position":  "FW",
@@ -242,9 +312,12 @@
                         "age":  26,
                         "birth":  "2000-01-31",
                         "height":  170,
-                        "marketValue":  116000000
+                        "marketValue":  116000000,
+                        "intlGoals":  15,
+                        "intlAppearances":  59
                     },
                     {
+                        "id":  824200,
                         "name":  "Ademola Lookman",
                         "slug":  "ademola-lookman",
                         "position":  "FW",
@@ -252,7 +325,9 @@
                         "age":  28,
                         "birth":  "1997-10-20",
                         "height":  174,
-                        "marketValue":  44000000
+                        "marketValue":  44000000,
+                        "intlGoals":  11,
+                        "intlAppearances":  43
                     }
                 ]
 }

@@ -49,6 +49,22 @@ export const criteria = [
     higherIsBetter: false,
     format: 'money',
   },
+  {
+    id: 'intlGoalsMost',
+    title: 'Milli Takımda En Çok Gol',
+    subtitle: 'Milli takım formasıyla en çok gol atmış oyunculardan kadro kur.',
+    field: 'intlGoals',
+    unit: 'gol',
+    higherIsBetter: true,
+  },
+  {
+    id: 'intlAppearancesMost',
+    title: 'Milli Takımda En Çok Maç',
+    subtitle: 'Milli takım formasıyla en çok maça çıkmış oyunculardan kadro kur.',
+    field: 'intlAppearances',
+    unit: 'maç',
+    higherIsBetter: true,
+  },
 ];
 
 export function getFormation(criterion) {
