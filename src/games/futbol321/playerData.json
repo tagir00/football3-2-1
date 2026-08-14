@@ -178,14 +178,14 @@
     "name": "Jordan Henderson",
     "birthYear": 1990,
     "tier": "high",
-    "countries": ["United Kingdom"],
+    "countries": ["England"],
     "clubs": ["Sunderland", "Liverpool", "Ajax"]
   },
   {
     "name": "Jermain Defoe",
     "birthYear": 1982,
     "tier": "high",
-    "countries": ["United Kingdom"],
+    "countries": ["England"],
     "clubs": ["West Ham United", "Tottenham Hotspur", "Sunderland"]
   },
   {
@@ -199,7 +199,7 @@
     "name": "Jordan Pickford",
     "birthYear": 1994,
     "tier": "high",
-    "countries": ["United Kingdom"],
+    "countries": ["England"],
     "clubs": ["Sunderland", "Everton"]
   },
   {
@@ -395,7 +395,7 @@
     "name": "Dominic Solanke",
     "birthYear": 1997,
     "tier": "high",
-    "countries": ["United Kingdom"],
+    "countries": ["England"],
     "clubs": ["Chelsea", "Liverpool", "Bournemouth", "Tottenham Hotspur"]
   },
   {
@@ -773,7 +773,7 @@
     "name": "James Milner",
     "birthYear": 1986,
     "tier": "high",
-    "countries": ["United Kingdom"],
+    "countries": ["England"],
     "clubs": ["Newcastle United", "Aston Villa", "Manchester City", "Liverpool", "Brighton & Hove Albion"]
   },
   {
@@ -787,28 +787,28 @@
     "name": "Andros Townsend",
     "birthYear": 1991,
     "tier": "solid",
-    "countries": ["United Kingdom"],
+    "countries": ["England"],
     "clubs": ["Tottenham Hotspur", "Newcastle United", "Crystal Palace", "Everton"]
   },
   {
     "name": "Joe Hart",
     "birthYear": 1987,
     "tier": "high",
-    "countries": ["United Kingdom"],
+    "countries": ["England"],
     "clubs": ["Manchester City", "West Ham United", "Burnley", "Tottenham Hotspur"]
   },
   {
     "name": "Craig Bellamy",
     "birthYear": 1979,
     "tier": "high",
-    "countries": ["United Kingdom"],
+    "countries": ["England"],
     "clubs": ["Newcastle United", "Liverpool", "West Ham United", "Manchester City"]
   },
   {
     "name": "Ollie Watkins",
     "birthYear": 1995,
     "tier": "high",
-    "countries": ["United Kingdom"],
+    "countries": ["England"],
     "clubs": ["Brentford", "Aston Villa"]
   },
   {
@@ -906,7 +906,7 @@
     "name": "Kalvin Phillips",
     "birthYear": 1995,
     "tier": "high",
-    "countries": ["United Kingdom"],
+    "countries": ["England"],
     "clubs": ["Leeds United", "Manchester City"]
   },
   {
@@ -920,14 +920,14 @@
     "name": "Rio Ferdinand",
     "birthYear": 1978,
     "tier": "elite",
-    "countries": ["United Kingdom"],
+    "countries": ["England"],
     "clubs": ["West Ham United", "Leeds United", "Manchester United"]
   },
   {
     "name": "Morgan Gibbs-White",
     "birthYear": 2000,
     "tier": "high",
-    "countries": ["United Kingdom"],
+    "countries": ["England"],
     "clubs": ["Wolverhampton Wanderers", "Nottingham Forest"]
   },
   {
@@ -941,7 +941,7 @@
     "name": "Jonjo Shelvey",
     "birthYear": 1992,
     "tier": "solid",
-    "countries": ["United Kingdom"],
+    "countries": ["England"],
     "clubs": ["Liverpool", "Newcastle United", "Nottingham Forest", "Rizespor"]
   },
   {

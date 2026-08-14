@@ -138,7 +138,7 @@ const europeCountries = [
   ['Switzerland', 'ch'],
   ['Turkey', 'tr'],
   ['Ukraine', 'ua'],
-  ['United Kingdom', 'gb'],
+  ['England', 'gb-eng'],
 ];
 
 const africaCountries = [
@@ -304,7 +304,7 @@ const countryDisplayNameMap = new Map([
   ['Switzerland', 'Isvicre'],
   ['Turkey', 'Turkiye'],
   ['Ukraine', 'Ukrayna'],
-  ['United Kingdom', 'Birlesik Krallik'],
+  ['England', 'Ingiltere'],
   ['Algeria', 'Cezayir'],
   ['Cameroon', 'Kamerun'],
   ['Egypt', 'Misir'],

@@ -16,38 +16,27 @@ export function template() {
       </button>
     </section>
 
-    <section class="mode-panel hidden" id="dSetupPanel">
+    <section class="mode-panel hidden" id="dCoinFlipPanel">
       <div class="mode-panel-header">
         <div>
-          <p class="eyebrow">Oyuncular</p>
-          <h2>İki oyuncu adı</h2>
+          <p class="eyebrow">Oyuncular · Kim Başlıyor?</p>
+          <h2>İsim Gir & Yazı-Tura</h2>
         </div>
-        <button class="ghost-button" id="dSetupBackButton" type="button">Geri Dön</button>
+        <button class="ghost-button" id="dCoinFlipBackButton" type="button">Geri Dön</button>
       </div>
 
       <div class="setup-form">
         <label class="setup-label">
           <span>1. Oyuncu</span>
-          <input class="setup-input" id="dPlayer1Input" type="text" placeholder="Örnek: Hikmet" maxlength="16" />
+          <input class="setup-input" id="dPlayer1Input" type="text" placeholder="Mehmet" maxlength="16" />
         </label>
         <label class="setup-label">
           <span>2. Oyuncu</span>
-          <input class="setup-input" id="dPlayer2Input" type="text" placeholder="Örnek: Enes" maxlength="16" />
+          <input class="setup-input" id="dPlayer2Input" type="text" placeholder="Beraat" maxlength="16" />
         </label>
-        <button class="primary-button" id="dGoCoinFlipButton" type="button">Devam</button>
-      </div>
-    </section>
-
-    <section class="mode-panel hidden" id="dCoinFlipPanel">
-      <div class="mode-panel-header">
-        <div>
-          <p class="eyebrow">Kim Başlıyor?</p>
-          <h2>Yazı-Tura</h2>
-        </div>
-        <button class="ghost-button" id="dCoinFlipBackButton" type="button">Geri Dön</button>
       </div>
 
-      <p class="status-strip" id="dCoinFlipStatus">Butona bas, ilk başlayacak oyuncu belirlensin.</p>
+      <p class="status-strip" id="dCoinFlipStatus">İsimleri gir, sonra Yazı-Tura'ya bas.</p>
 
       <div class="coin-shell">
         <div class="coin-versus">

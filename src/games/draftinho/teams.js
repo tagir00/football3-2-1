@@ -1,4 +1,4 @@
-const TEAM_IDS = [
+const CLUB_IDS = [
   'ac-milan',
   'arsenal',
   'aston-villa',
@@ -26,22 +26,69 @@ const TEAM_IDS = [
   'trabzonspor',
 ];
 
-let teamsPromise = null;
+const NATIONAL_IDS = [
+  'turkiye',
+  'almanya',
+  'isvec',
+  'ingiltere',
+  'ispanya',
+  'fas',
+  'fransa',
+  'hollanda',
+  'hirvatistan',
+  'belcika',
+  'portekiz',
+  'arjantin',
+  'brezilya',
+  'kolombiya',
+  'italya',
+];
 
-export function loadTeams() {
-  if (!teamsPromise) {
-    teamsPromise = Promise.all(
-      TEAM_IDS.map(async (id) => {
+let clubsPromise = null;
+let nationalsPromise = null;
+
+export function loadClubs() {
+  if (!clubsPromise) {
+    clubsPromise = Promise.all(
+      CLUB_IDS.map(async (id) => {
         const url = new URL(`./teams/${id}.json`, import.meta.url);
         const response = await fetch(url);
         if (!response.ok) {
-          throw new Error(`Team veri yuklenemedi: ${id}`);
+          throw new Error(`Kulup veri yuklenemedi: ${id}`);
         }
         return response.json();
       }),
     );
   }
-  return teamsPromise;
+  return clubsPromise;
+}
+
+export function loadNationals() {
+  if (!nationalsPromise) {
+    nationalsPromise = Promise.all(
+      NATIONAL_IDS.map(async (id) => {
+        const url = new URL(`./national-teams/${id}.json`, import.meta.url);
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`Milli takim veri yuklenemedi: ${id}`);
+        }
+        return response.json();
+      }),
+    );
+  }
+  return nationalsPromise;
+}
+
+export async function loadTeams() {
+  const [clubs, nationals] = await Promise.all([loadClubs(), loadNationals()]);
+  return [...clubs, ...nationals];
+}
+
+export function pickTeamPool(clubs, nationals, criterion) {
+  if (criterion && (criterion.id === 'intlGoalsMost' || criterion.id === 'intlAppearancesMost')) {
+    return nationals;
+  }
+  return clubs;
 }
 
 export function normalizeName(name) {

@@ -1,6 +1,13 @@
 import { template } from './template.js';
 import { criteria, getFormation, formatValue, formatTotal } from './criteria.js';
-import { loadTeams, findPlayerInTeam, suggestPlayers, normalizeName } from './teams.js';
+import {
+  loadClubs,
+  loadNationals,
+  pickTeamPool,
+  findPlayerInTeam,
+  suggestPlayers,
+  normalizeName,
+} from './teams.js';
 
 const STYLE_HREF = new URL('./game.css', import.meta.url).href;
 
@@ -25,11 +32,10 @@ export async function mount(container) {
   ensureStylesheet();
   container.innerHTML = template();
 
-  const teams = await loadTeams();
+  const [clubs, nationals] = await Promise.all([loadClubs(), loadNationals()]);
 
   const els = {
     homePanel: container.querySelector('#dHomePanel'),
-    setupPanel: container.querySelector('#dSetupPanel'),
     coinFlipPanel: container.querySelector('#dCoinFlipPanel'),
     criterionPanel: container.querySelector('#dCriterionPanel'),
     gamePanel: container.querySelector('#dGamePanel'),
@@ -37,10 +43,8 @@ export async function mount(container) {
     infoButton: container.querySelector('#dInfoButton'),
     closeInfoButton: container.querySelector('#dCloseInfoButton'),
     openSetupButton: container.querySelector('#dOpenSetupButton'),
-    setupBackButton: container.querySelector('#dSetupBackButton'),
     player1Input: container.querySelector('#dPlayer1Input'),
     player2Input: container.querySelector('#dPlayer2Input'),
-    goCoinFlipButton: container.querySelector('#dGoCoinFlipButton'),
     coinFlipBackButton: container.querySelector('#dCoinFlipBackButton'),
     coinFlipStatus: container.querySelector('#dCoinFlipStatus'),
     coinName1: container.querySelector('#dCoinName1'),
@@ -130,42 +134,45 @@ export async function mount(container) {
 
   function showHome() {
     els.homePanel.classList.remove('hidden');
-    els.setupPanel.classList.add('hidden');
     els.coinFlipPanel.classList.add('hidden');
     els.criterionPanel.classList.add('hidden');
     els.gamePanel.classList.add('hidden');
-  }
-
-  function showSetup() {
-    els.homePanel.classList.add('hidden');
-    els.setupPanel.classList.remove('hidden');
-    els.coinFlipPanel.classList.add('hidden');
-    els.criterionPanel.classList.add('hidden');
-    els.gamePanel.classList.add('hidden');
-    els.player1Input.focus();
   }
 
   function showCoinFlipPanel() {
     els.homePanel.classList.add('hidden');
-    els.setupPanel.classList.add('hidden');
     els.coinFlipPanel.classList.remove('hidden');
     els.criterionPanel.classList.add('hidden');
     els.gamePanel.classList.add('hidden');
-    els.coinName1.textContent = state.players[0].name;
-    els.coinName2.textContent = state.players[1].name;
+    // Prefill previously entered names on repeat visits
+    if (state.players[0].name && state.players[0].name !== 'Oyuncu 1') {
+      els.player1Input.value = state.players[0].name;
+    }
+    if (state.players[1].name && state.players[1].name !== 'Oyuncu 2') {
+      els.player2Input.value = state.players[1].name;
+    }
+    updateCoinNamesFromInputs();
     els.coinName1.classList.remove('highlight', 'dim');
     els.coinName2.classList.remove('highlight', 'dim');
     els.coinResult.classList.add('hidden');
     els.goCriterionButton.classList.add('hidden');
     els.spinCoinButton.classList.remove('hidden');
+    els.spinCoinButton.classList.remove('secondary');
     els.spinCoinButton.textContent = 'Yazı-Tura At';
     els.spinCoinButton.disabled = false;
-    els.coinFlipStatus.textContent = 'Butona bas, ilk başlayacak oyuncu belirlensin.';
+    els.coinFlipStatus.textContent = "İsimleri gir, sonra Yazı-Tura'ya bas.";
+    els.player1Input.focus();
+  }
+
+  function updateCoinNamesFromInputs() {
+    const p1 = els.player1Input.value.trim() || els.player1Input.placeholder || 'Oyuncu 1';
+    const p2 = els.player2Input.value.trim() || els.player2Input.placeholder || 'Oyuncu 2';
+    els.coinName1.textContent = p1;
+    els.coinName2.textContent = p2;
   }
 
   function showCriterionPanel() {
     els.homePanel.classList.add('hidden');
-    els.setupPanel.classList.add('hidden');
     els.coinFlipPanel.classList.add('hidden');
     els.criterionPanel.classList.remove('hidden');
     els.gamePanel.classList.add('hidden');
@@ -185,7 +192,6 @@ export async function mount(container) {
 
   function showGamePanel() {
     els.homePanel.classList.add('hidden');
-    els.setupPanel.classList.add('hidden');
     els.coinFlipPanel.classList.add('hidden');
     els.criterionPanel.classList.add('hidden');
     els.gamePanel.classList.remove('hidden');
@@ -193,6 +199,9 @@ export async function mount(container) {
 
   function flipCoin() {
     if (state.isSpinning) return;
+    // Commit current input values to state before spinning
+    initPlayers();
+    updateCoinNamesFromInputs();
     state.isSpinning = true;
     els.spinCoinButton.disabled = true;
     els.coinResult.classList.add('hidden');
@@ -235,8 +244,8 @@ export async function mount(container) {
   }
 
   function initPlayers() {
-    const p1 = els.player1Input.value.trim() || 'Oyuncu 1';
-    const p2 = els.player2Input.value.trim() || 'Oyuncu 2';
+    const p1 = els.player1Input.value.trim() || els.player1Input.placeholder || 'Oyuncu 1';
+    const p2 = els.player2Input.value.trim() || els.player2Input.placeholder || 'Oyuncu 2';
     state.players[0].name = p1;
     state.players[1].name = p2;
     els.scoreName1.textContent = p1;
@@ -365,15 +374,18 @@ export async function mount(container) {
     els.roundResult.classList.add('hidden');
     els.gameStatus.textContent = 'Takım çarkı dönüyor...';
 
+    // Choose the team pool based on the active criterion
+    const teamPool = pickTeamPool(clubs, nationals, state.criterion);
+
     // Pick a team not used yet in this game (each team appears once)
-    const available = teams.filter((t) => !state.usedTeamIds.has(t.id));
-    const pool = available.length > 0 ? available : teams;
+    const available = teamPool.filter((t) => !state.usedTeamIds.has(t.id));
+    const pool = available.length > 0 ? available : teamPool;
     const finalTeam = pick(pool);
 
     let ticks = 0;
     const maxTicks = 16 + Math.floor(Math.random() * 6);
     const interval = window.setInterval(() => {
-      const tempTeam = teams[ticks % teams.length];
+      const tempTeam = teamPool[ticks % teamPool.length];
       els.teamTitle.textContent = tempTeam.displayName;
       els.teamSub.textContent = `Kriter: ${state.criterion.title}`;
       els.teamSpinShell.classList.add('spinning');
@@ -611,16 +623,15 @@ export async function mount(container) {
     els.gameStatus.textContent = 'Pozisyon seçmeye devam et.';
   }
 
-  bind(els.openSetupButton, 'click', showSetup);
-  bind(els.setupBackButton, 'click', showHome);
-  bind(els.goCoinFlipButton, 'click', () => {
-    initPlayers();
+  bind(els.openSetupButton, 'click', () => {
     // Reset coin state so user must flip again for a new game
     state.coinStartingIndex = 0;
     showCoinFlipPanel();
   });
-  bind(els.coinFlipBackButton, 'click', showSetup);
+  bind(els.coinFlipBackButton, 'click', showHome);
   bind(els.spinCoinButton, 'click', flipCoin);
+  bind(els.player1Input, 'input', updateCoinNamesFromInputs);
+  bind(els.player2Input, 'input', updateCoinNamesFromInputs);
   bind(els.goCriterionButton, 'click', () => {
     showCriterionPanel();
   });
@@ -630,7 +641,9 @@ export async function mount(container) {
   bind(els.gameBackButton, 'click', goBackFromGame);
   bind(els.spinTeamButton, 'click', spinTeam);
   bind(els.nextRoundButton, 'click', () => {
-    showCriterionPanel();
+    // Reset coin state so player order can be re-rolled
+    state.coinStartingIndex = 0;
+    showCoinFlipPanel();
   });
   bind(els.confirmPickButton, 'click', confirmPick);
   bind(els.cancelPickButton, 'click', cancelPick);

@@ -432,6 +432,7 @@ export async function mount(container) {
     nextCountryClubOrientation: 'country-left',
     lastCountryClubOrientation: 'country-left',
     currentPair: null,
+    usedEntityNames: new Set(),
   };
 
   const boundListeners = [];
@@ -535,24 +536,23 @@ export async function mount(container) {
     }, 520);
   }
 
-  function previousEntityNames() {
-    if (!state.currentPair) {
-      return new Set();
-    }
-    return new Set([state.currentPair.left?.name, state.currentPair.right?.name].filter(Boolean));
-  }
-
   function generateClubClubPair() {
     if (clubClubConnections.length === 0) {
       return null;
     }
 
-    const excluded = previousEntityNames();
-    const fresh = clubClubConnections.filter(
-      (c) => !excluded.has(c.clubs[0]) && !excluded.has(c.clubs[1]),
+    // Prefer connections where BOTH clubs are unused this session.
+    // When that pool is empty, reset the used-set so play can continue.
+    let pool = clubClubConnections.filter(
+      (c) => !state.usedEntityNames.has(c.clubs[0]) && !state.usedEntityNames.has(c.clubs[1]),
     );
-    const pool = fresh.length > 0 ? fresh : clubClubConnections;
+    if (pool.length === 0) {
+      state.usedEntityNames.clear();
+      pool = clubClubConnections;
+    }
     const connection = pickRandomEntry(pool);
+    state.usedEntityNames.add(connection.clubs[0]);
+    state.usedEntityNames.add(connection.clubs[1]);
     return {
       left: clubsByName.get(connection.clubs[0]),
       right: clubsByName.get(connection.clubs[1]),
@@ -565,12 +565,16 @@ export async function mount(container) {
       return null;
     }
 
-    const excluded = previousEntityNames();
-    const fresh = countryClubConnections.filter(
-      (c) => !excluded.has(c.country) && !excluded.has(c.club),
+    let pool = countryClubConnections.filter(
+      (c) => !state.usedEntityNames.has(c.country) && !state.usedEntityNames.has(c.club),
     );
-    const pool = fresh.length > 0 ? fresh : countryClubConnections;
+    if (pool.length === 0) {
+      state.usedEntityNames.clear();
+      pool = countryClubConnections;
+    }
     const connection = pickRandomEntry(pool);
+    state.usedEntityNames.add(connection.country);
+    state.usedEntityNames.add(connection.club);
     const country = countriesByName.get(connection.country);
     const club = clubsByName.get(connection.club);
 
@@ -597,6 +601,7 @@ export async function mount(container) {
     state.currentPair = null;
     state.nextCountryClubOrientation = 'country-left';
     state.lastCountryClubOrientation = 'country-left';
+    state.usedEntityNames.clear();
 
     els.modePanel.classList.add('hidden');
     els.gamePanel.classList.remove('hidden');
