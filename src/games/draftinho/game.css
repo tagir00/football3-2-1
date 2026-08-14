@@ -119,6 +119,21 @@
   background: rgba(255, 255, 255, 0.12);
 }
 
+.primary-button:disabled,
+.primary-button.is-disabled {
+  cursor: not-allowed;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.35);
+  box-shadow: none;
+  transform: none;
+}
+
+.primary-button:disabled:hover,
+.primary-button.is-disabled:hover {
+  transform: none;
+  background: rgba(255, 255, 255, 0.06);
+}
+
 .coin-shell {
   display: grid;
   gap: 1rem;

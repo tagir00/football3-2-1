@@ -159,16 +159,30 @@ export async function mount(container) {
     els.spinCoinButton.classList.remove('hidden');
     els.spinCoinButton.classList.remove('secondary');
     els.spinCoinButton.textContent = 'Yazı-Tura At';
-    els.spinCoinButton.disabled = false;
     els.coinFlipStatus.textContent = "İsimleri gir, sonra Yazı-Tura'ya bas.";
+    updateFlipButtonState();
     els.player1Input.focus();
   }
 
   function updateCoinNamesFromInputs() {
-    const p1 = els.player1Input.value.trim() || els.player1Input.placeholder || 'Oyuncu 1';
-    const p2 = els.player2Input.value.trim() || els.player2Input.placeholder || 'Oyuncu 2';
-    els.coinName1.textContent = p1;
-    els.coinName2.textContent = p2;
+    const p1 = els.player1Input.value.trim();
+    const p2 = els.player2Input.value.trim();
+    els.coinName1.textContent = p1 || '?';
+    els.coinName2.textContent = p2 || '?';
+    updateFlipButtonState();
+  }
+
+  function updateFlipButtonState() {
+    if (state.isSpinning) return;
+    const bothFilled =
+      els.player1Input.value.trim().length > 0 && els.player2Input.value.trim().length > 0;
+    els.spinCoinButton.disabled = !bothFilled;
+    els.spinCoinButton.classList.toggle('is-disabled', !bothFilled);
+    if (!bothFilled) {
+      els.coinFlipStatus.textContent = 'İki oyuncunun da adını yaz, sonra yazı-turayı at.';
+    } else if (state.coinStartingIndex === 0 && els.coinResult.classList.contains('hidden')) {
+      els.coinFlipStatus.textContent = "İsimler tamam. Şimdi Yazı-Tura'yı at.";
+    }
   }
 
   function showCriterionPanel() {
@@ -199,6 +213,13 @@ export async function mount(container) {
 
   function flipCoin() {
     if (state.isSpinning) return;
+    const p1raw = els.player1Input.value.trim();
+    const p2raw = els.player2Input.value.trim();
+    if (!p1raw || !p2raw) {
+      els.coinFlipStatus.textContent = 'İki oyuncunun da adını girmen gerek.';
+      (p1raw ? els.player2Input : els.player1Input).focus();
+      return;
+    }
     // Commit current input values to state before spinning
     initPlayers();
     updateCoinNamesFromInputs();
@@ -244,8 +265,8 @@ export async function mount(container) {
   }
 
   function initPlayers() {
-    const p1 = els.player1Input.value.trim() || els.player1Input.placeholder || 'Oyuncu 1';
-    const p2 = els.player2Input.value.trim() || els.player2Input.placeholder || 'Oyuncu 2';
+    const p1 = els.player1Input.value.trim() || 'Oyuncu 1';
+    const p2 = els.player2Input.value.trim() || 'Oyuncu 2';
     state.players[0].name = p1;
     state.players[1].name = p2;
     els.scoreName1.textContent = p1;
