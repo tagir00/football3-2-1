@@ -13,12 +13,32 @@
     <link rel="apple-touch-icon" href="./assets/icons/icon.svg" />
     <title>Oyun Kutusu</title>
     <link rel="stylesheet" href="./src/shell.css" />
+    <link rel="stylesheet" href="./src/themes.css" />
   </head>
-  <body>
+  <body data-theme="stadium">
     <div class="app-shell">
       <div class="ambient ambient-a"></div>
       <div class="ambient ambient-b"></div>
       <div class="ambient ambient-c"></div>
+
+      <div class="theme-layer" aria-hidden="true">
+        <div class="theme-stadium">
+          <div class="stadium-pitch"></div>
+          <div class="stadium-stripes"></div>
+          <div class="stadium-light stadium-light-1"></div>
+          <div class="stadium-light stadium-light-2"></div>
+          <div class="stadium-light stadium-light-3"></div>
+        </div>
+        <div class="theme-tactic">
+          <div class="tactic-frame"></div>
+          <div class="tactic-midline"></div>
+          <div class="tactic-midcircle"></div>
+          <div class="tactic-dot tactic-dot-green tactic-dot-1"></div>
+          <div class="tactic-dot tactic-dot-cyan tactic-dot-2"></div>
+          <div class="tactic-dot tactic-dot-cyan tactic-dot-3"></div>
+          <div class="tactic-dot tactic-dot-green tactic-dot-4"></div>
+        </div>
+      </div>
 
       <header class="topbar">
         <a class="topbar-brand" href="#/">Oyun Kutusu</a>

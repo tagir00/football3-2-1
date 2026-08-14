@@ -1,0 +1,233 @@
+/* Hide the default ambient orbs when a theme is active */
+body[data-theme] .ambient {
+  display: none;
+}
+
+/* Base body background per theme replaces shell defaults */
+body[data-theme="stadium"] {
+  background:
+    linear-gradient(180deg, #030b1c 0%, #050c22 45%, #06180a 100%) !important;
+}
+
+body[data-theme="tactic"] {
+  background:
+    radial-gradient(ellipse at 50% 40%, #0d3a1d 0%, #072a15 55%, #04160b 100%) !important;
+}
+
+/* Theme layer: full-screen fixed backdrop that stays behind app content */
+.theme-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.theme-layer > .theme-stadium,
+.theme-layer > .theme-tactic {
+  position: absolute;
+  inset: 0;
+  display: none;
+}
+
+body[data-theme="stadium"] .theme-layer > .theme-stadium {
+  display: block;
+}
+
+body[data-theme="tactic"] .theme-layer > .theme-tactic {
+  display: block;
+}
+
+/* Make sure app content sits on top of the theme layer */
+.app-shell > .topbar,
+.app-shell > .app {
+  position: relative;
+  z-index: 1;
+}
+
+/* ============================================
+   STADIUM THEME (Hub)
+   ============================================ */
+
+.stadium-pitch {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 48vh;
+  background: linear-gradient(180deg, #0f3a1c 0%, #082612 60%, #05170c 100%);
+  box-shadow: inset 0 30px 60px rgba(0, 0, 0, 0.65);
+}
+
+.stadium-stripes {
+  position: absolute;
+  left: -10%; right: -10%; bottom: 0;
+  height: 48vh;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.22) 0 30px,
+    rgba(255, 255, 255, 0.04) 30px 60px
+  );
+  transform: perspective(600px) rotateX(55deg);
+  transform-origin: bottom;
+  mask-image: linear-gradient(180deg, transparent 0%, black 35%);
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, black 35%);
+  opacity: 0.85;
+}
+
+.stadium-light {
+  position: absolute;
+  top: -12%;
+  width: 260px;
+  height: 70vh;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.24) 0%, transparent 90%);
+  filter: blur(28px);
+  transform-origin: top center;
+  animation: floodlight-sway 8s ease-in-out infinite alternate;
+}
+
+.stadium-light-1 {
+  left: 6%;
+  transform: rotate(16deg);
+  animation-delay: 0s;
+}
+
+.stadium-light-2 {
+  left: 50%;
+  margin-left: -130px;
+  transform: rotate(-2deg);
+  animation-delay: -2.5s;
+}
+
+.stadium-light-3 {
+  right: 6%;
+  transform: rotate(-16deg);
+  animation-delay: -5s;
+}
+
+@keyframes floodlight-sway {
+  0% { opacity: 0.55; }
+  100% { opacity: 1; }
+}
+
+/* ============================================
+   TACTIC BOARD THEME (Games)
+   ============================================ */
+
+.tactic-frame {
+  position: absolute;
+  inset: 3.5vh 4vw;
+  border: 2px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  box-shadow:
+    inset 0 0 120px rgba(34, 197, 94, 0.06),
+    inset 0 0 0 8px rgba(255, 255, 255, 0.03);
+}
+
+.tactic-midline {
+  position: absolute;
+  left: 4vw;
+  right: 4vw;
+  top: 50%;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-1px);
+}
+
+.tactic-midcircle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 220px;
+  height: 220px;
+  border: 2px solid rgba(255, 255, 255, 0.14);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.06) 0%, transparent 65%);
+}
+
+.tactic-midcircle::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.35);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+}
+
+.tactic-dot {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  animation: tactic-pulse 3.4s ease-in-out infinite alternate;
+}
+
+.tactic-dot-green {
+  background: radial-gradient(circle, #ecfdf5 0%, #22c55e 80%);
+  box-shadow:
+    0 0 14px rgba(34, 197, 94, 0.55),
+    0 0 0 2px rgba(0, 0, 0, 0.35);
+}
+
+.tactic-dot-cyan {
+  background: radial-gradient(circle, #dbeafe 0%, #38bdf8 80%);
+  box-shadow:
+    0 0 14px rgba(56, 189, 248, 0.55),
+    0 0 0 2px rgba(0, 0, 0, 0.35);
+}
+
+.tactic-dot-1 {
+  top: 8vh;
+  left: 6vw;
+  animation-delay: 0s;
+}
+
+.tactic-dot-2 {
+  top: 10vh;
+  right: 7vw;
+  animation-delay: -1.2s;
+}
+
+.tactic-dot-3 {
+  bottom: 9vh;
+  left: 8vw;
+  animation-delay: -2.4s;
+}
+
+.tactic-dot-4 {
+  bottom: 12vh;
+  right: 6vw;
+  animation-delay: -0.6s;
+}
+
+@keyframes tactic-pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.25);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 720px) {
+  .tactic-midcircle {
+    width: 150px;
+    height: 150px;
+  }
+  .tactic-dot {
+    width: 14px;
+    height: 14px;
+  }
+  .stadium-pitch,
+  .stadium-stripes {
+    height: 42vh;
+  }
+  .stadium-light {
+    width: 180px;
+  }
+}

@@ -31,6 +31,10 @@ function renderHub() {
   `;
 }
 
+function setTheme(name) {
+  document.body.dataset.theme = name;
+}
+
 function showHub() {
   if (activeGame) {
     activeGame.module.unmount?.();
@@ -40,6 +44,7 @@ function showHub() {
   gameRoot.classList.add('hidden');
   gameRoot.innerHTML = '';
   hubRoot.classList.remove('hidden');
+  setTheme('stadium');
 }
 
 async function showGame(id) {
@@ -61,6 +66,7 @@ async function showGame(id) {
 
   hubRoot.classList.add('hidden');
   gameRoot.classList.remove('hidden');
+  setTheme('tactic');
 
   const module = await game.load();
   activeGame = { id, module };
