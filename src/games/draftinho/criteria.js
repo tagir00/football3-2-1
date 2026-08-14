@@ -52,10 +52,11 @@ export const criteria = [
   {
     id: 'intlGoalsMost',
     title: 'Milli Takımda En Çok Gol',
-    subtitle: 'Milli takım formasıyla en çok gol atmış oyunculardan kadro kur.',
+    subtitle: 'Milli takım formasıyla en çok gol atmış oyunculardan kadro kur (kaleci yok).',
     field: 'intlGoals',
     unit: 'gol',
     higherIsBetter: true,
+    excludePosition: 'GK',
   },
   {
     id: 'intlAppearancesMost',
@@ -68,6 +69,16 @@ export const criteria = [
 ];
 
 export function getFormation(criterion) {
+  if (criterion && criterion.excludePosition === 'GK') {
+    return [
+      { id: 'DEF-1', position: 'DEF', label: 'DEF' },
+      { id: 'DEF-2', position: 'DEF', label: 'DEF' },
+      { id: 'MID-1', position: 'MID', label: 'ORT' },
+      { id: 'MID-2', position: 'MID', label: 'ORT' },
+      { id: 'FW-1', position: 'FW', label: 'SNT' },
+      { id: 'FW-2', position: 'FW', label: 'SNT' },
+    ];
+  }
   return [
     { id: 'GK-1', position: 'GK', label: 'KLC' },
     { id: 'DEF-1', position: 'DEF', label: 'DEF' },
