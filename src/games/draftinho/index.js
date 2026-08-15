@@ -301,7 +301,10 @@ export async function mount(container) {
     els.criterionStatus.textContent = 'Çark dönüyor...';
     els.confirmCriterionButton.classList.add('hidden');
 
-    const finalCriterion = pick(criteria);
+    const pool = state.criterion
+      ? criteria.filter((c) => c.id !== state.criterion.id)
+      : criteria;
+    const finalCriterion = pick(pool);
     let ticks = 0;
     const maxTicks = 18 + Math.floor(Math.random() * 6);
     const interval = window.setInterval(() => {

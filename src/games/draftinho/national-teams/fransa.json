@@ -15,7 +15,10 @@
                         "height":  190,
                         "marketValue":  22000000,
                         "intlGoals":  0,
-                        "intlAppearances":  48
+                        "intlAppearances":  48,
+                        "assists":  3,
+                        "yellowCards":  16,
+                        "redCards":  2
                     },
                     {
                         "id":  164055,
@@ -28,7 +31,10 @@
                         "height":  186,
                         "marketValue":  6500000,
                         "intlGoals":  0,
-                        "intlAppearances":  4
+                        "intlAppearances":  4,
+                        "assists":  0,
+                        "yellowCards":  18,
+                        "redCards":  0
                     },
                     {
                         "id":  1387161,
@@ -41,7 +47,10 @@
                         "height":  193,
                         "marketValue":  31000000,
                         "intlGoals":  0,
-                        "intlAppearances":  0
+                        "intlAppearances":  0,
+                        "assists":  1,
+                        "yellowCards":  2,
+                        "redCards":  0
                     },
                     {
                         "id":  798583,
@@ -54,7 +63,10 @@
                         "height":  185,
                         "marketValue":  69000000,
                         "intlGoals":  2,
-                        "intlAppearances":  46
+                        "intlAppearances":  46,
+                        "assists":  17,
+                        "yellowCards":  73,
+                        "redCards":  5
                     },
                     {
                         "id":  941168,
@@ -67,7 +79,10 @@
                         "height":  193,
                         "marketValue":  94000000,
                         "intlGoals":  0,
-                        "intlAppearances":  38
+                        "intlAppearances":  38,
+                        "assists":  3,
+                        "yellowCards":  25,
+                        "redCards":  1
                     },
                     {
                         "id":  826215,
@@ -80,7 +95,10 @@
                         "height":  195,
                         "marketValue":  46000000,
                         "intlGoals":  0,
-                        "intlAppearances":  30
+                        "intlAppearances":  30,
+                        "assists":  5,
+                        "yellowCards":  51,
+                        "redCards":  1
                     },
                     {
                         "id":  879674,
@@ -93,7 +111,10 @@
                         "height":  192,
                         "marketValue":  54000000,
                         "intlGoals":  0,
-                        "intlAppearances":  7
+                        "intlAppearances":  7,
+                        "assists":  7,
+                        "yellowCards":  33,
+                        "redCards":  7
                     },
                     {
                         "id":  96538,
@@ -106,7 +127,10 @@
                         "height":  178,
                         "marketValue":  5500000,
                         "intlGoals":  0,
-                        "intlAppearances":  64
+                        "intlAppearances":  64,
+                        "assists":  56,
+                        "yellowCards":  67,
+                        "redCards":  3
                     },
                     {
                         "id":  788027,
@@ -119,7 +143,10 @@
                         "height":  184,
                         "marketValue":  21000000,
                         "intlGoals":  2,
-                        "intlAppearances":  49
+                        "intlAppearances":  49,
+                        "assists":  59,
+                        "yellowCards":  90,
+                        "redCards":  9
                     },
                     {
                         "id":  352370,
@@ -132,7 +159,10 @@
                         "height":  183,
                         "marketValue":  18600000,
                         "intlGoals":  0,
-                        "intlAppearances":  42
+                        "intlAppearances":  42,
+                        "assists":  17,
+                        "yellowCards":  59,
+                        "redCards":  3
                     },
                     {
                         "id":  827212,
@@ -145,7 +175,10 @@
                         "height":  180,
                         "marketValue":  64000000,
                         "intlGoals":  0,
-                        "intlAppearances":  56
+                        "intlAppearances":  56,
+                        "assists":  26,
+                        "yellowCards":  43,
+                        "redCards":  3
                     },
                     {
                         "id":  996958,
@@ -158,7 +191,10 @@
                         "height":  179,
                         "marketValue":  36000000,
                         "intlGoals":  0,
-                        "intlAppearances":  16
+                        "intlAppearances":  16,
+                        "assists":  24,
+                        "yellowCards":  24,
+                        "redCards":  3
                     },
                     {
                         "id":  979128,
@@ -171,7 +207,10 @@
                         "height":  176,
                         "marketValue":  98000000,
                         "intlGoals":  2,
-                        "intlAppearances":  14
+                        "intlAppearances":  14,
+                        "assists":  54,
+                        "yellowCards":  11,
+                        "redCards":  1
                     },
                     {
                         "id":  1130939,
@@ -184,7 +223,10 @@
                         "height":  183,
                         "marketValue":  49000000,
                         "intlGoals":  1,
-                        "intlAppearances":  10
+                        "intlAppearances":  10,
+                        "assists":  26,
+                        "yellowCards":  15,
+                        "redCards":  0
                     },
                     {
                         "id":  250737,
@@ -197,7 +239,10 @@
                         "height":  191,
                         "marketValue":  17300000,
                         "intlGoals":  7,
-                        "intlAppearances":  66
+                        "intlAppearances":  66,
+                        "assists":  44,
+                        "yellowCards":  75,
+                        "redCards":  4
                     },
                     {
                         "id":  859025,
@@ -210,7 +255,10 @@
                         "height":  188,
                         "marketValue":  73000000,
                         "intlGoals":  3,
-                        "intlAppearances":  50
+                        "intlAppearances":  50,
+                        "assists":  15,
+                        "yellowCards":  66,
+                        "redCards":  2
                     },
                     {
                         "id":  974087,
@@ -223,7 +271,10 @@
                         "height":  186,
                         "marketValue":  47000000,
                         "intlGoals":  0,
-                        "intlAppearances":  19
+                        "intlAppearances":  19,
+                        "assists":  11,
+                        "yellowCards":  42,
+                        "redCards":  2
                     },
                     {
                         "id":  978838,
@@ -236,7 +287,10 @@
                         "height":  184,
                         "marketValue":  164000000,
                         "intlGoals":  7,
-                        "intlAppearances":  25
+                        "intlAppearances":  25,
+                        "assists":  80,
+                        "yellowCards":  22,
+                        "redCards":  0
                     },
                     {
                         "id":  1142672,
@@ -249,7 +303,10 @@
                         "height":  178,
                         "marketValue":  78000000,
                         "intlGoals":  1,
-                        "intlAppearances":  13
+                        "intlAppearances":  13,
+                        "assists":  13,
+                        "yellowCards":  14,
+                        "redCards":  0
                     },
                     {
                         "id":  234148,
@@ -262,7 +319,10 @@
                         "height":  169,
                         "marketValue":  3900000,
                         "intlGoals":  2,
-                        "intlAppearances":  69
+                        "intlAppearances":  69,
+                        "assists":  29,
+                        "yellowCards":  50,
+                        "redCards":  1
                     },
                     {
                         "id":  791702,
@@ -275,7 +335,10 @@
                         "height":  192,
                         "marketValue":  52000000,
                         "intlGoals":  3,
-                        "intlAppearances":  35
+                        "intlAppearances":  35,
+                        "assists":  64,
+                        "yellowCards":  27,
+                        "redCards":  3
                     },
                     {
                         "id":  826643,
@@ -288,7 +351,10 @@
                         "height":  180,
                         "marketValue":  212000000,
                         "intlGoals":  66,
-                        "intlAppearances":  106
+                        "intlAppearances":  106,
+                        "assists":  123,
+                        "yellowCards":  53,
+                        "redCards":  2
                     },
                     {
                         "id":  818244,
@@ -301,7 +367,10 @@
                         "height":  178,
                         "marketValue":  97000000,
                         "intlGoals":  13,
-                        "intlAppearances":  67
+                        "intlAppearances":  67,
+                        "assists":  107,
+                        "yellowCards":  39,
+                        "redCards":  2
                     },
                     {
                         "id":  1154605,
@@ -314,7 +383,10 @@
                         "height":  181,
                         "marketValue":  124000000,
                         "intlGoals":  3,
-                        "intlAppearances":  15
+                        "intlAppearances":  15,
+                        "assists":  28,
+                        "yellowCards":  14,
+                        "redCards":  0
                     },
                     {
                         "id":  848276,
@@ -327,7 +399,10 @@
                         "height":  192,
                         "marketValue":  29000000,
                         "intlGoals":  2,
-                        "intlAppearances":  7
+                        "intlAppearances":  7,
+                        "assists":  20,
+                        "yellowCards":  22,
+                        "redCards":  1
                     },
                     {
                         "id":  996952,
@@ -340,7 +415,10 @@
                         "height":  182,
                         "marketValue":  87000000,
                         "intlGoals":  6,
-                        "intlAppearances":  28
+                        "intlAppearances":  28,
+                        "assists":  44,
+                        "yellowCards":  13,
+                        "redCards":  1
                     }
                 ]
 }

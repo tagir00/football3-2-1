@@ -66,6 +66,31 @@ export const criteria = [
     unit: 'maç',
     higherIsBetter: true,
   },
+  {
+    id: 'assistsMost',
+    title: 'En Çok Asist',
+    subtitle: 'Kariyerinde en çok asist yapan oyunculardan kadro kur (kaleci yok).',
+    field: 'assists',
+    unit: 'asist',
+    higherIsBetter: true,
+    excludePosition: 'GK',
+  },
+  {
+    id: 'yellowCardsMost',
+    title: 'En Çok Sarı Kart',
+    subtitle: 'Kariyerinde en çok sarı kart gören oyunculardan 6 kişilik kadro kur.',
+    field: 'yellowCards',
+    unit: 'sarı',
+    higherIsBetter: true,
+  },
+  {
+    id: 'redCardsMost',
+    title: 'En Çok Kırmızı Kart',
+    subtitle: 'Kariyerinde en çok kırmızı kart gören oyunculardan 6 kişilik kadro kur.',
+    field: 'redCards',
+    unit: 'kırmızı',
+    higherIsBetter: true,
+  },
 ];
 
 export function getFormation(criterion) {
