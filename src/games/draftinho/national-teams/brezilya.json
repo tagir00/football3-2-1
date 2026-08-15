@@ -18,7 +18,8 @@
                         "intlAppearances":  83,
                         "assists":  4,
                         "yellowCards":  6,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  243529,
@@ -34,7 +35,8 @@
                         "intlAppearances":  11,
                         "assists":  1,
                         "yellowCards":  5,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  254491,
@@ -50,7 +52,8 @@
                         "intlAppearances":  32,
                         "assists":  9,
                         "yellowCards":  52,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  885197,
@@ -66,7 +69,8 @@
                         "intlAppearances":  8,
                         "assists":  14,
                         "yellowCards":  41,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  243583,
@@ -82,7 +86,8 @@
                         "intlAppearances":  12,
                         "assists":  39,
                         "yellowCards":  29,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  888949,
@@ -98,7 +103,8 @@
                         "intlAppearances":  8,
                         "assists":  6,
                         "yellowCards":  49,
-                        "redCards":  4
+                        "redCards":  4,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  358548,
@@ -114,7 +120,8 @@
                         "intlAppearances":  2,
                         "assists":  0,
                         "yellowCards":  0,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  155995,
@@ -130,7 +137,8 @@
                         "intlAppearances":  110,
                         "assists":  13,
                         "yellowCards":  40,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  869792,
@@ -146,7 +154,8 @@
                         "intlAppearances":  22,
                         "assists":  9,
                         "yellowCards":  40,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "B"
                     },
                     {
                         "id":  124992,
@@ -162,7 +171,8 @@
                         "intlAppearances":  68,
                         "assists":  0,
                         "yellowCards":  0,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  ""
                     },
                     {
                         "id":  84854,
@@ -178,7 +188,8 @@
                         "intlAppearances":  43,
                         "assists":  45,
                         "yellowCards":  99,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  122951,
@@ -194,7 +205,8 @@
                         "intlAppearances":  91,
                         "assists":  44,
                         "yellowCards":  146,
-                        "redCards":  6
+                        "redCards":  6,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  243585,
@@ -210,7 +222,8 @@
                         "intlAppearances":  36,
                         "assists":  33,
                         "yellowCards":  106,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  1064039,
@@ -226,7 +239,8 @@
                         "intlAppearances":  6,
                         "assists":  0,
                         "yellowCards":  0,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  ""
                     },
                     {
                         "id":  1035995,
@@ -242,7 +256,8 @@
                         "intlAppearances":  16,
                         "assists":  17,
                         "yellowCards":  15,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  831005,
@@ -258,7 +273,8 @@
                         "intlAppearances":  41,
                         "assists":  92,
                         "yellowCards":  63,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  946888,
@@ -274,7 +290,8 @@
                         "intlAppearances":  5,
                         "assists":  7,
                         "yellowCards":  33,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  839981,
@@ -290,7 +307,8 @@
                         "intlAppearances":  61,
                         "assists":  32,
                         "yellowCards":  58,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  1464966,
@@ -306,7 +324,8 @@
                         "intlAppearances":  6,
                         "assists":  3,
                         "yellowCards":  5,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  866469,
@@ -322,7 +341,8 @@
                         "intlAppearances":  48,
                         "assists":  40,
                         "yellowCards":  51,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  868812,
@@ -338,7 +358,8 @@
                         "intlAppearances":  54,
                         "assists":  112,
                         "yellowCards":  72,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  1174937,
@@ -354,7 +375,8 @@
                         "intlAppearances":  21,
                         "assists":  9,
                         "yellowCards":  8,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  1016907,
@@ -370,7 +392,8 @@
                         "intlAppearances":  5,
                         "assists":  8,
                         "yellowCards":  21,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  886363,
@@ -386,7 +409,8 @@
                         "intlAppearances":  28,
                         "assists":  40,
                         "yellowCards":  39,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  124712,
@@ -402,7 +426,8 @@
                         "intlAppearances":  130,
                         "assists":  160,
                         "yellowCards":  100,
-                        "redCards":  7
+                        "redCards":  7,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  922573,
@@ -418,7 +443,8 @@
                         "intlAppearances":  27,
                         "assists":  35,
                         "yellowCards":  20,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Brazil"
                     }
                 ]
 }

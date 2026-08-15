@@ -18,7 +18,8 @@
                         "intlAppearances":  3,
                         "assists":  0,
                         "yellowCards":  0,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  ""
                     },
                     {
                         "id":  360938,
@@ -34,7 +35,8 @@
                         "intlAppearances":  96,
                         "assists":  3,
                         "yellowCards":  17,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  141967,
@@ -49,7 +51,8 @@
                         "intlAppearances":  52,
                         "assists":  0,
                         "yellowCards":  5,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  814594,
@@ -65,7 +68,8 @@
                         "intlAppearances":  102,
                         "assists":  71,
                         "yellowCards":  50,
-                        "redCards":  4
+                        "redCards":  4,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  1143667,
@@ -81,7 +85,8 @@
                         "intlAppearances":  5,
                         "assists":  2,
                         "yellowCards":  10,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  847030,
@@ -97,7 +102,8 @@
                         "intlAppearances":  51,
                         "assists":  22,
                         "yellowCards":  28,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  919484,
@@ -113,7 +119,8 @@
                         "intlAppearances":  18,
                         "assists":  0,
                         "yellowCards":  0,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  825719,
@@ -129,7 +136,8 @@
                         "intlAppearances":  9,
                         "assists":  7,
                         "yellowCards":  52,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  961684,
@@ -145,7 +153,8 @@
                         "intlAppearances":  13,
                         "assists":  9,
                         "yellowCards":  6,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  1064218,
@@ -161,7 +170,8 @@
                         "intlAppearances":  10,
                         "assists":  2,
                         "yellowCards":  4,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  1134470,
@@ -177,7 +187,8 @@
                         "intlAppearances":  4,
                         "assists":  9,
                         "yellowCards":  17,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  847714,
@@ -192,7 +203,8 @@
                         "intlAppearances":  18,
                         "assists":  3,
                         "yellowCards":  35,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  1392829,
@@ -208,7 +220,8 @@
                         "intlAppearances":  3,
                         "assists":  5,
                         "yellowCards":  2,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  1142675,
@@ -224,7 +237,8 @@
                         "intlAppearances":  10,
                         "assists":  7,
                         "yellowCards":  1,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  1128530,
@@ -240,7 +254,8 @@
                         "intlAppearances":  22,
                         "assists":  6,
                         "yellowCards":  12,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  1126569,
@@ -256,7 +271,8 @@
                         "intlAppearances":  43,
                         "assists":  24,
                         "yellowCards":  24,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  991421,
@@ -272,7 +288,8 @@
                         "intlAppearances":  55,
                         "assists":  11,
                         "yellowCards":  19,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  835485,
@@ -288,7 +305,8 @@
                         "intlAppearances":  33,
                         "assists":  44,
                         "yellowCards":  19,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  1605921,
@@ -304,7 +322,8 @@
                         "intlAppearances":  9,
                         "assists":  3,
                         "yellowCards":  7,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  1564180,
@@ -320,7 +339,8 @@
                         "intlAppearances":  8,
                         "assists":  4,
                         "yellowCards":  15,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  1063767,
@@ -336,7 +356,8 @@
                         "intlAppearances":  35,
                         "assists":  30,
                         "yellowCards":  10,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  359272,
@@ -352,7 +373,8 @@
                         "intlAppearances":  78,
                         "assists":  18,
                         "yellowCards":  84,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  1638338,
@@ -368,7 +390,8 @@
                         "intlAppearances":  7,
                         "assists":  2,
                         "yellowCards":  0,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  919793,
@@ -384,7 +407,8 @@
                         "intlAppearances":  72,
                         "assists":  15,
                         "yellowCards":  13,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  953995,
@@ -400,7 +424,8 @@
                         "intlAppearances":  43,
                         "assists":  0,
                         "yellowCards":  0,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  1898148,
@@ -416,7 +441,8 @@
                         "intlAppearances":  4,
                         "assists":  3,
                         "yellowCards":  1,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     }
                 ]
 }

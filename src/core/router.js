@@ -11,18 +11,16 @@ function parseRoute() {
 
 function renderHub() {
   hubRoot.innerHTML = `
-    <section class="panel">
-      <p class="eyebrow">Oyun Kutusu</p>
-      <h1>Bir oyun sec</h1>
-      <p class="panel-copy">Asagidan bir mini oyun sec ve baslat.</p>
+    <section class="app-title">
+      <h1>Pro Football Player</h1>
     </section>
     <div class="hub-grid">
       ${games
         .map(
           (game) => `
             <a class="hub-card ${game.accent ?? ''}" href="#/${game.id}">
+              <img class="hub-card-cover" src="${game.cover}" alt="${game.title}" loading="lazy" />
               <span class="hub-card-title">${game.title}</span>
-              <span class="hub-card-description">${game.description}</span>
             </a>
           `,
         )

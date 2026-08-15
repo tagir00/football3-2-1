@@ -18,7 +18,8 @@
                         "intlAppearances":  3,
                         "assists":  0,
                         "yellowCards":  0,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  70988,
@@ -34,7 +35,8 @@
                         "intlAppearances":  115,
                         "assists":  3,
                         "yellowCards":  20,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  1149148,
@@ -50,7 +52,8 @@
                         "intlAppearances":  0,
                         "assists":  0,
                         "yellowCards":  5,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  965778,
@@ -66,7 +69,8 @@
                         "intlAppearances":  36,
                         "assists":  2,
                         "yellowCards":  39,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  1119487,
@@ -82,7 +86,8 @@
                         "intlAppearances":  8,
                         "assists":  2,
                         "yellowCards":  23,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  1001828,
@@ -98,7 +103,8 @@
                         "intlAppearances":  8,
                         "assists":  4,
                         "yellowCards":  19,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  1126512,
@@ -114,7 +120,8 @@
                         "intlAppearances":  26,
                         "assists":  8,
                         "yellowCards":  21,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  128587,
@@ -130,7 +137,8 @@
                         "intlAppearances":  83,
                         "assists":  46,
                         "yellowCards":  66,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  329417,
@@ -146,7 +154,8 @@
                         "intlAppearances":  69,
                         "assists":  25,
                         "yellowCards":  35,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  997152,
@@ -162,7 +171,8 @@
                         "intlAppearances":  25,
                         "assists":  28,
                         "yellowCards":  18,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  248331,
@@ -178,7 +188,8 @@
                         "intlAppearances":  15,
                         "assists":  13,
                         "yellowCards":  47,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  1395881,
@@ -194,7 +205,8 @@
                         "intlAppearances":  6,
                         "assists":  9,
                         "yellowCards":  7,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  1142233,
@@ -210,7 +222,8 @@
                         "intlAppearances":  4,
                         "assists":  17,
                         "yellowCards":  14,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  823631,
@@ -226,7 +239,8 @@
                         "intlAppearances":  34,
                         "assists":  42,
                         "yellowCards":  34,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  934386,
@@ -242,7 +256,8 @@
                         "intlAppearances":  48,
                         "assists":  50,
                         "yellowCards":  12,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  70996,
@@ -258,7 +273,8 @@
                         "intlAppearances":  124,
                         "assists":  221,
                         "yellowCards":  54,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  331737,
@@ -274,7 +290,8 @@
                         "intlAppearances":  90,
                         "assists":  71,
                         "yellowCards":  58,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  118085,
@@ -290,7 +307,8 @@
                         "intlAppearances":  40,
                         "assists":  104,
                         "yellowCards":  57,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  923973,
@@ -306,7 +324,8 @@
                         "intlAppearances":  33,
                         "assists":  4,
                         "yellowCards":  25,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  889378,
@@ -322,7 +341,8 @@
                         "intlAppearances":  19,
                         "assists":  32,
                         "yellowCards":  41,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  901891,
@@ -338,7 +358,8 @@
                         "intlAppearances":  28,
                         "assists":  35,
                         "yellowCards":  45,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  35612,
@@ -353,7 +374,8 @@
                         "intlAppearances":  140,
                         "assists":  25,
                         "yellowCards":  62,
-                        "redCards":  4
+                        "redCards":  4,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  1149144,
@@ -369,7 +391,8 @@
                         "intlAppearances":  5,
                         "assists":  11,
                         "yellowCards":  12,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  78893,
@@ -385,7 +408,8 @@
                         "intlAppearances":  132,
                         "assists":  87,
                         "yellowCards":  49,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  960441,
@@ -401,7 +425,8 @@
                         "intlAppearances":  35,
                         "assists":  47,
                         "yellowCards":  15,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  135666,
@@ -417,7 +442,8 @@
                         "intlAppearances":  57,
                         "assists":  64,
                         "yellowCards":  19,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Belgium"
                     }
                 ]
 }

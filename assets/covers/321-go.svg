@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="3-2-1 GO">
+  <defs>
+    <linearGradient id="c1bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1224"/>
+      <stop offset="1" stop-color="#132444"/>
+    </linearGradient>
+    <linearGradient id="c1warm" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fdba74"/>
+      <stop offset="1" stop-color="#f97316"/>
+    </linearGradient>
+    <radialGradient id="c1spot" cx="0.7" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="rgba(249,115,22,0.35)"/>
+      <stop offset="1" stop-color="rgba(249,115,22,0)"/>
+    </radialGradient>
+    <linearGradient id="c1sheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.15"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#c1bg)"/>
+  <rect width="400" height="300" fill="url(#c1spot)"/>
+
+  <!-- pitch lines subtle -->
+  <g stroke="#38bdf8" stroke-opacity="0.08" fill="none" stroke-width="1">
+    <line x1="0" y1="230" x2="400" y2="230"/>
+    <line x1="0" y1="70"  x2="400" y2="70"/>
+  </g>
+
+  <!-- Countdown numbers -->
+  <g font-family="'Segoe UI', 'Trebuchet MS', sans-serif" font-weight="900">
+    <text x="60"  y="205" font-size="180" fill="url(#c1warm)">3</text>
+    <text x="150" y="195" font-size="140" fill="#f8fafc" opacity="0.6">2</text>
+    <text x="225" y="185" font-size="105" fill="#f8fafc" opacity="0.35">1</text>
+  </g>
+
+  <!-- GO! pill -->
+  <g>
+    <rect x="278" y="220" rx="22" ry="22" width="104" height="46" fill="#22c55e"/>
+    <rect x="278" y="220" rx="22" ry="22" width="104" height="20" fill="url(#c1sheen)" opacity="0.4"/>
+    <text x="330" y="252" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="24" fill="#041a0b" text-anchor="middle">GO!</text>
+  </g>
+
+  <!-- Whistle-ish arc + football -->
+  <g transform="translate(325 78)">
+    <circle r="30" fill="#f8fafc"/>
+    <circle r="30" fill="none" stroke="#0a1224" stroke-width="2" opacity="0.6"/>
+    <polygon points="0,-16 15,-5 9,13 -9,13 -15,-5" fill="#0a1224"/>
+    <g stroke="#0a1224" stroke-width="1.8" fill="none" opacity="0.7">
+      <line x1="0" y1="-16" x2="0" y2="-30"/>
+      <line x1="15" y1="-5" x2="27" y2="-13"/>
+      <line x1="-15" y1="-5" x2="-27" y2="-13"/>
+      <line x1="9" y1="13" x2="16" y2="26"/>
+      <line x1="-9" y1="13" x2="-16" y2="26"/>
+    </g>
+  </g>
+</svg>

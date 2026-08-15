@@ -18,7 +18,8 @@
                         "intlAppearances":  44,
                         "assists":  2,
                         "yellowCards":  14,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  1424337,
@@ -34,7 +35,8 @@
                         "intlAppearances":  0,
                         "assists":  0,
                         "yellowCards":  0,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Netherlands"
                     },
                     {
                         "id":  843250,
@@ -50,7 +52,8 @@
                         "intlAppearances":  12,
                         "assists":  0,
                         "yellowCards":  2,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Indonesia"
                     },
                     {
                         "id":  970860,
@@ -66,7 +69,8 @@
                         "intlAppearances":  0,
                         "assists":  6,
                         "yellowCards":  16,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  1120315,
@@ -82,7 +86,8 @@
                         "intlAppearances":  1,
                         "assists":  19,
                         "yellowCards":  16,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Denmark"
                     },
                     {
                         "id":  790989,
@@ -98,7 +103,8 @@
                         "intlAppearances":  42,
                         "assists":  4,
                         "yellowCards":  25,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Japan"
                     },
                     {
                         "id":  1000228,
@@ -114,7 +120,8 @@
                         "intlAppearances":  0,
                         "assists":  6,
                         "yellowCards":  13,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Netherlands"
                     },
                     {
                         "id":  845170,
@@ -130,7 +137,8 @@
                         "intlAppearances":  5,
                         "assists":  40,
                         "yellowCards":  14,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  1064177,
@@ -146,7 +154,8 @@
                         "intlAppearances":  0,
                         "assists":  2,
                         "yellowCards":  16,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Türkiye"
                     },
                     {
                         "id":  836673,
@@ -162,7 +171,8 @@
                         "intlAppearances":  11,
                         "assists":  35,
                         "yellowCards":  38,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Netherlands"
                     },
                     {
                         "id":  44864,
@@ -178,7 +188,8 @@
                         "intlAppearances":  108,
                         "assists":  29,
                         "yellowCards":  52,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Netherlands"
                     },
                     {
                         "id":  1586649,
@@ -194,7 +205,8 @@
                         "intlAppearances":  0,
                         "assists":  0,
                         "yellowCards":  3,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Netherlands"
                     },
                     {
                         "id":  1470010,
@@ -210,7 +222,8 @@
                         "intlAppearances":  0,
                         "assists":  2,
                         "yellowCards":  6,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Netherlands"
                     },
                     {
                         "id":  954836,
@@ -226,7 +239,8 @@
                         "intlAppearances":  37,
                         "assists":  0,
                         "yellowCards":  10,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Croatia"
                     },
                     {
                         "id":  1563462,
@@ -242,7 +256,8 @@
                         "intlAppearances":  1,
                         "assists":  3,
                         "yellowCards":  4,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "DR Congo"
                     },
                     {
                         "id":  1597274,
@@ -258,7 +273,8 @@
                         "intlAppearances":  0,
                         "assists":  0,
                         "yellowCards":  1,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  996940,
@@ -274,7 +290,8 @@
                         "intlAppearances":  0,
                         "assists":  9,
                         "yellowCards":  14,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Netherlands"
                     },
                     {
                         "id":  97410,
@@ -290,7 +307,8 @@
                         "intlAppearances":  41,
                         "assists":  70,
                         "yellowCards":  57,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Netherlands"
                     },
                     {
                         "id":  1155158,
@@ -306,7 +324,8 @@
                         "intlAppearances":  29,
                         "assists":  15,
                         "yellowCards":  5,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Israel"
                     },
                     {
                         "id":  1403090,
@@ -322,7 +341,8 @@
                         "intlAppearances":  1,
                         "assists":  9,
                         "yellowCards":  4,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Morocco"
                     },
                     {
                         "id":  1047227,
@@ -338,7 +358,8 @@
                         "intlAppearances":  0,
                         "assists":  5,
                         "yellowCards":  6,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  795761,
@@ -354,7 +375,8 @@
                         "intlAppearances":  56,
                         "assists":  34,
                         "yellowCards":  15,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Denmark"
                     },
                     {
                         "id":  22974,
@@ -370,7 +392,8 @@
                         "intlAppearances":  0,
                         "assists":  10,
                         "yellowCards":  8,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "N"
                     },
                     {
                         "id":  1149146,
@@ -386,7 +409,8 @@
                         "intlAppearances":  2,
                         "assists":  24,
                         "yellowCards":  5,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Belgium"
                     },
                     {
                         "id":  1403073,
@@ -402,7 +426,8 @@
                         "intlAppearances":  0,
                         "assists":  3,
                         "yellowCards":  0,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Netherlands"
                     },
                     {
                         "id":  100386,
@@ -418,7 +443,8 @@
                         "intlAppearances":  46,
                         "assists":  128,
                         "yellowCards":  63,
-                        "redCards":  4
+                        "redCards":  4,
+                        "nationality":  "Netherlands"
                     },
                     {
                         "id":  1022376,
@@ -434,7 +460,8 @@
                         "intlAppearances":  0,
                         "assists":  1,
                         "yellowCards":  0,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Netherlands"
                     },
                     {
                         "id":  987734,
@@ -450,7 +477,8 @@
                         "intlAppearances":  10,
                         "assists":  12,
                         "yellowCards":  6,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Nigeria"
                     },
                     {
                         "id":  226978,
@@ -466,7 +494,9 @@
                         "intlAppearances":  48,
                         "assists":  122,
                         "yellowCards":  10,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     }
-                ]
+                ],
+    "league":  "Eredivisie"
 }

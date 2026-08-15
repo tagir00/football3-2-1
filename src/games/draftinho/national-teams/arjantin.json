@@ -18,7 +18,8 @@
                         "intlAppearances":  8,
                         "assists":  0,
                         "yellowCards":  33,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  263651,
@@ -34,7 +35,8 @@
                         "intlAppearances":  4,
                         "assists":  0,
                         "yellowCards":  15,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  158263,
@@ -50,7 +52,8 @@
                         "intlAppearances":  67,
                         "assists":  1,
                         "yellowCards":  28,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  158243,
@@ -66,7 +69,8 @@
                         "intlAppearances":  83,
                         "assists":  35,
                         "yellowCards":  70,
-                        "redCards":  7
+                        "redCards":  7,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  830659,
@@ -82,7 +86,8 @@
                         "intlAppearances":  5,
                         "assists":  18,
                         "yellowCards":  51,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  859999,
@@ -98,7 +103,8 @@
                         "intlAppearances":  35,
                         "assists":  10,
                         "yellowCards":  43,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  831799,
@@ -114,7 +120,8 @@
                         "intlAppearances":  65,
                         "assists":  28,
                         "yellowCards":  27,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  829932,
@@ -130,7 +137,8 @@
                         "intlAppearances":  58,
                         "assists":  18,
                         "yellowCards":  89,
-                        "redCards":  9
+                        "redCards":  9,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  822933,
@@ -146,7 +154,8 @@
                         "intlAppearances":  45,
                         "assists":  13,
                         "yellowCards":  37,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  74915,
@@ -162,7 +171,8 @@
                         "intlAppearances":  139,
                         "assists":  23,
                         "yellowCards":  130,
-                        "redCards":  7
+                        "redCards":  7,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  860307,
@@ -178,7 +188,8 @@
                         "intlAppearances":  14,
                         "assists":  12,
                         "yellowCards":  68,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  255389,
@@ -194,7 +205,8 @@
                         "intlAppearances":  84,
                         "assists":  41,
                         "yellowCards":  107,
-                        "redCards":  5
+                        "redCards":  5,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  249399,
@@ -210,7 +222,8 @@
                         "intlAppearances":  94,
                         "assists":  76,
                         "yellowCards":  80,
-                        "redCards":  6
+                        "redCards":  6,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  974505,
@@ -226,7 +239,8 @@
                         "intlAppearances":  49,
                         "assists":  36,
                         "yellowCards":  42,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  895324,
@@ -242,7 +256,8 @@
                         "intlAppearances":  54,
                         "assists":  27,
                         "yellowCards":  44,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  1171451,
@@ -258,7 +273,8 @@
                         "intlAppearances":  11,
                         "assists":  18,
                         "yellowCards":  12,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  901325,
@@ -274,7 +290,8 @@
                         "intlAppearances":  58,
                         "assists":  31,
                         "yellowCards":  28,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "A"
                     },
                     {
                         "id":  944660,
@@ -290,7 +307,8 @@
                         "intlAppearances":  21,
                         "assists":  7,
                         "yellowCards":  7,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  798835,
@@ -306,7 +324,8 @@
                         "intlAppearances":  68,
                         "assists":  33,
                         "yellowCards":  47,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  1099352,
@@ -322,7 +341,8 @@
                         "intlAppearances":  16,
                         "assists":  19,
                         "yellowCards":  13,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  822600,
@@ -338,7 +358,8 @@
                         "intlAppearances":  41,
                         "assists":  17,
                         "yellowCards":  28,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  1127057,
@@ -354,7 +375,8 @@
                         "intlAppearances":  5,
                         "assists":  8,
                         "yellowCards":  11,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  823984,
@@ -370,7 +392,8 @@
                         "intlAppearances":  84,
                         "assists":  58,
                         "yellowCards":  58,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  12994,
@@ -386,7 +409,8 @@
                         "intlAppearances":  207,
                         "assists":  253,
                         "yellowCards":  54,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  944656,
@@ -402,7 +426,8 @@
                         "intlAppearances":  59,
                         "assists":  36,
                         "yellowCards":  14,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Argentina"
                     },
                     {
                         "id":  1094179,
@@ -418,7 +443,8 @@
                         "intlAppearances":  7,
                         "assists":  5,
                         "yellowCards":  7,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Argentina"
                     }
                 ]
 }

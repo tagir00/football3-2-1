@@ -24,14 +24,14 @@ function ensureStylesheet() {
 const modes = [
   {
     id: 'club-club',
-    title: 'Kulup - Kulup',
-    subtitle: 'Iki farkli kulup gelir. Oyuncular ortak ismi en hizli sekilde soyler.',
+    title: 'Kulüp - Kulüp',
+    subtitle: 'İki farklı kulüp gelir. Oyuncular ortak ismi en hızlı şekilde söyler.',
     accent: 'mode-club',
   },
   {
     id: 'country-club',
-    title: 'Ulke - Kulup',
-    subtitle: 'Bir tarafta ulke, bir tarafta kulup olur. Oyuncu bulunamazsa ayni taraflar korunur.',
+    title: 'Ülke - Kulüp',
+    subtitle: 'Bir tarafta ülke, bir tarafta kulüp olur. Oyuncu bulunamazsa aynı taraflar korunur.',
     accent: 'mode-country',
   },
 ];
@@ -328,12 +328,12 @@ function createCardMarkup(entry) {
     ? `<img class="badge-image" src="${countryFlagUrl(entry.code)}" alt="${visibleName} bayragi" loading="lazy" />`
     : `<div class="badge-stack" data-club-badge data-club-name="${entry.name}"></div>`;
 
-  const meta = isCountry ? 'Milli takim havuzu' : entry.leagueDisplayName ?? entry.league;
+  const meta = isCountry ? 'Milli takım havuzu' : entry.leagueDisplayName ?? entry.league;
 
   return `
     <div class="entity-card ${isCountry ? 'country-card' : 'club-card'}">
       <div class="badge-shell">${media}</div>
-      <p class="entity-type">${isCountry ? 'Ulke' : 'Kulup'}</p>
+      <p class="entity-type">${isCountry ? 'Ülke' : 'Kulüp'}</p>
       <h3>${visibleName}</h3>
       <p class="entity-meta">${meta}</p>
     </div>
@@ -507,19 +507,19 @@ export async function mount(container) {
     }
 
     if (state.mode !== 'country-club') {
-      els.orientationHint.textContent = 'Iki kulup gelecek';
+      els.orientationHint.textContent = 'İki kulüp gelecek';
       return;
     }
 
     if (state.round === 0) {
-      els.orientationHint.textContent = 'Ilk tur: ulke solda';
+      els.orientationHint.textContent = 'İlk tur: ülke solda';
       return;
     }
 
     els.orientationHint.textContent =
       state.lastCountryClubOrientation === 'country-left'
-        ? 'Bu tur: ulke solda · sonraki Baslatta sagda'
-        : 'Bu tur: ulke sagda · sonraki Baslatta solda';
+        ? 'Bu tur: ülke solda · sonraki Başlatta sağda'
+        : 'Bu tur: ülke sağda · sonraki Başlatta solda';
   }
 
   function renderPair(pair) {
@@ -594,7 +594,7 @@ export async function mount(container) {
   function updateRoundUI() {
     const activeMode = modes.find((mode) => mode.id === state.mode);
     els.modeLabel.textContent = activeMode.title;
-    els.roundTitle.textContent = state.round === 0 ? 'Yeni Tur' : 'Eslesme Hazir';
+    els.roundTitle.textContent = state.round === 0 ? 'Yeni Tur' : 'Eşleşme Hazır';
     els.roundBadge.textContent = `Tur ${state.round}`;
     container.dataset.mode = activeMode.id;
     els.retryButton.classList.toggle('hidden', state.mode !== 'country-club');
@@ -611,25 +611,34 @@ export async function mount(container) {
 
     els.modePanel.classList.add('hidden');
     els.gamePanel.classList.remove('hidden');
-    els.leftCard.innerHTML = `
-      <div class="slot-placeholder">
-        <span class="placeholder-icon">3</span>
-        <p>Baslat'a bas ve eslesmeyi getir.</p>
-      </div>
+
+    const badgePlaceholder = `
+      <svg class="placeholder-media" viewBox="0 0 100 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M50 4 L92 20 V56 C92 82 73 100 50 106 C27 100 8 82 8 56 V20 Z"
+              fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+        <text x="50" y="72" text-anchor="middle" font-family="'Segoe UI', sans-serif"
+              font-weight="900" font-size="52" fill="currentColor">?</text>
+      </svg>
     `;
-    els.rightCard.innerHTML = `
-      <div class="slot-placeholder">
-        <span class="placeholder-icon">2</span>
-        <p>${modeId === 'country-club' ? 'Ulke ve kulup sirayla gelecek.' : 'Ikinci kulup burada gorunecek.'}</p>
-      </div>
+    const flagPlaceholder = `
+      <svg class="placeholder-media" viewBox="0 0 120 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <line x1="14" y1="6" x2="14" y2="96" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+        <path d="M14 12 L106 12 L92 34 L106 58 L14 58 Z"
+              fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+        <text x="58" y="46" text-anchor="middle" font-family="'Segoe UI', sans-serif"
+              font-weight="900" font-size="30" fill="currentColor">?</text>
+      </svg>
     `;
 
+    const slots = modeId === 'country-club'
+      ? { left: flagPlaceholder, right: badgePlaceholder }
+      : { left: badgePlaceholder, right: badgePlaceholder };
+
+    els.leftCard.innerHTML = `<div class="slot-placeholder">${slots.left}</div>`;
+    els.rightCard.innerHTML = `<div class="slot-placeholder">${slots.right}</div>`;
+
     updateRoundUI();
-    setStatus(
-      modeId === 'country-club'
-        ? 'Baslat yeni turu acsin. Oyuncu Bulamadik ayni taraf dizilimini koruyarak yeni eslesme getirir.'
-        : 'Baslat her seferinde yeni iki kulup getirir.',
-    );
+    setStatus('');
   }
 
   async function runCountdown() {
@@ -655,7 +664,7 @@ export async function mount(container) {
       return;
     }
 
-    setStatus('3-2-1 basladi. Hazir olun.');
+    setStatus('');
     await runCountdown();
 
     let pair;
@@ -670,7 +679,7 @@ export async function mount(container) {
     }
 
     if (!pair) {
-      setStatus('Gecerli oyuncu baglantisi bulunamadi. Veri havuzunu genisletmek gerekiyor.');
+      setStatus('Geçerli oyuncu bağlantısı bulunamadı. Veri havuzunu genişletmek gerekiyor.');
       return;
     }
 
@@ -678,7 +687,7 @@ export async function mount(container) {
     state.currentPair = pair;
     renderPair(pair);
     updateRoundUI();
-    setStatus('Eslesme geldi. Oyuncular ismi soyler, yeni tur icin tekrar Baslat kullanilir.');
+    setStatus('');
   }
 
   async function rerollCountryClub() {
@@ -686,17 +695,17 @@ export async function mount(container) {
       return;
     }
 
-    setStatus('Oyuncu bulunamadi. Yeni eslesme icin 3-2-1 basliyor.');
+    setStatus('');
     await runCountdown();
     state.currentPair = generateCountryClubPair(state.lastCountryClubOrientation);
 
     if (!state.currentPair) {
-      setStatus('Gecerli oyuncu baglantisi bulunamadi. Veri havuzunu genisletmek gerekiyor.');
+      setStatus('Geçerli oyuncu bağlantısı bulunamadı. Veri havuzunu genişletmek gerekiyor.');
       return;
     }
 
     renderPair(state.currentPair);
-    setStatus('Ayni taraf diziliminde yeni ulke-kulup geldi.');
+    setStatus('');
   }
 
   function goBack() {

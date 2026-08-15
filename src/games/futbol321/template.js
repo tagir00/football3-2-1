@@ -2,29 +2,34 @@ export function template() {
   return `
     <section class="hero-panel" id="homePanel">
       <div class="home-header-row">
-        <p class="eyebrow">Mobil Futbol Partisi</p>
+        <a class="home-button" href="#/" aria-label="Ana Sayfa" title="Ana Sayfa">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 11.5 12 4l9 7.5"/>
+            <path d="M5 10.5V20h4.5v-5.5h5V20H19V10.5"/>
+          </svg>
+        </a>
         <button class="icon-button" id="infoButton" type="button" aria-label="Bilgilendirme">
           ?
         </button>
       </div>
 
       <div class="home-copy-block">
-        <h1>Futbol 3-2-1</h1>
-        <p class="hero-copy">Hos geldiniz. Hazirsan oyunu baslat ve modu sec.</p>
+        <h1>3-2-1 GO!</h1>
+        <p class="hero-copy">Hoş geldiniz. Hazırsan oyunu başlat ve modu seç.</p>
       </div>
 
       <button class="primary-button home-start-button" id="openModesButton" type="button">
-        Oyunu Baslat
+        Oyunu Başlat
       </button>
     </section>
 
     <section class="mode-panel hidden" id="modePanel">
       <div class="mode-panel-header">
         <div>
-          <p class="eyebrow">Mod Secimi</p>
-          <h2>Hangi modda oynayacaksiniz?</h2>
+          <p class="eyebrow">Mod Seçimi</p>
+          <h2>Hangi modda oynayacaksınız?</h2>
         </div>
-        <button class="ghost-button" id="modeBackButton" type="button">Geri Don</button>
+        <button class="ghost-button" id="modeBackButton" type="button">Geri Dön</button>
       </div>
 
       <div class="mode-grid" id="modeGrid"></div>
@@ -32,20 +37,17 @@ export function template() {
 
     <section class="game-panel hidden" id="gamePanel">
       <header class="game-header">
-        <button class="ghost-button" id="backButton" type="button">Modlara Don</button>
+        <button class="ghost-button" id="backButton" type="button">Modlara Dön</button>
         <div>
           <p class="eyebrow" id="modeLabel"></p>
           <h2 id="roundTitle">Yeni Tur</h2>
         </div>
         <div class="header-side">
           <div class="round-badge" id="roundBadge">Tur 0</div>
-          <div class="mini-note" id="orientationHint">Sayac hazir</div>
         </div>
       </header>
 
-      <div class="status-strip" id="statusStrip">
-        Baslat'a bas, 3-2-1 sayaci baslasin.
-      </div>
+      <div class="status-strip" id="statusStrip"></div>
 
       <section class="board" id="board">
         <div class="countdown-layer hidden" id="countdownLayer" aria-live="polite">
@@ -56,22 +58,22 @@ export function template() {
         <article class="slot-card slot-left" id="leftCard">
           <div class="slot-placeholder">
             <span class="placeholder-icon">3</span>
-            <p>Baslat'a bas ve ilk eslesmeyi getir.</p>
+            <p>Başlat'a bas ve ilk eşleşmeyi getir.</p>
           </div>
         </article>
 
         <article class="slot-card slot-right" id="rightCard">
           <div class="slot-placeholder">
             <span class="placeholder-icon">2</span>
-            <p>Burada ikinci takim ya da ulke gorunecek.</p>
+            <p>Burada ikinci takım ya da ülke görünecek.</p>
           </div>
         </article>
       </section>
 
       <div class="action-row">
-        <button class="primary-button" id="startButton" type="button">Baslat</button>
+        <button class="primary-button" id="startButton" type="button">Başlat</button>
         <button class="danger-button hidden" id="retryButton" type="button">
-          Oyuncu Bulamadik
+          Oyuncu Bulamadık
         </button>
       </div>
     </section>
@@ -81,7 +83,7 @@ export function template() {
         <div class="info-header">
           <div>
             <p class="eyebrow">Bilgilendirme</p>
-            <h2>Oyun Kurallari</h2>
+            <h2>Oyun Kuralları</h2>
           </div>
           <button class="icon-button" id="closeInfoButton" type="button" aria-label="Kapat">
             x
@@ -89,11 +91,11 @@ export function template() {
         </div>
 
         <div class="info-list">
-          <p>1. Oyuncular ekrandaki ulke veya kulup eslesmesine gore ortak oyuncu ismi soyler.</p>
-          <p>2. Uygulama sadece 3-2-1 sayaci ve random eslesme getirir.</p>
+          <p>1. Oyuncular ekrandaki ülke veya kulüp eşleşmesine göre ortak oyuncu ismi söyler.</p>
+          <p>2. Uygulama sadece 3-2-1 sayacı ve random eşleşme getirir.</p>
           <p>3. Puan takibini oyuncular kendileri yapar.</p>
-          <p>4. Ulke-Kulup modunda Oyuncu Bulamadik ayni sag-sol duzenini korur.</p>
-          <p>5. Baslat yeni turu acarken ulke-kulup modunda taraflari degistirir.</p>
+          <p>4. Ülke-Kulüp modunda Oyuncu Bulamadık aynı sağ-sol düzenini korur.</p>
+          <p>5. Başlat yeni turu açarken ülke-kulüp modunda tarafları değiştirir.</p>
         </div>
       </div>
     </section>

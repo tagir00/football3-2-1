@@ -2,12 +2,17 @@ export function template() {
   return `
     <section class="hero-panel" id="dHomePanel">
       <div class="home-header-row">
-        <p class="eyebrow">Kadro Kurma Düellosu</p>
+        <a class="home-button" href="#/" aria-label="Ana Sayfa" title="Ana Sayfa">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 11.5 12 4l9 7.5"/>
+            <path d="M5 10.5V20h4.5v-5.5h5V20H19V10.5"/>
+          </svg>
+        </a>
         <button class="icon-button" id="dInfoButton" type="button" aria-label="Bilgilendirme">?</button>
       </div>
 
       <div class="home-copy-block">
-        <h1>Draftinho</h1>
+        <h1>Draft6</h1>
         <p class="hero-copy">İki oyuncu, aynı kritere göre farklı takımlardan 6 kişilik kadro kurar. Toplamı önde olan oyunu kazanır.</p>
       </div>
 
@@ -94,7 +99,7 @@ export function template() {
         </div>
       </header>
 
-      <div class="status-strip" id="dGameStatus">Yeni tur için takım çarkını çevir.</div>
+      <div class="status-strip" id="dGameStatus"></div>
 
       <div class="team-spin-shell hidden" id="dTeamSpinShell">
         <div class="wheel-display">

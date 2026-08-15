@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Ben Kimim">
+  <defs>
+    <linearGradient id="c3bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a1b12"/>
+      <stop offset="1" stop-color="#0d2a1c"/>
+    </linearGradient>
+    <radialGradient id="c3spot" cx="0.5" cy="0.4" r="0.55">
+      <stop offset="0" stop-color="rgba(34,197,94,0.35)"/>
+      <stop offset="1" stop-color="rgba(34,197,94,0)"/>
+    </radialGradient>
+    <linearGradient id="c3green" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#86efac"/>
+      <stop offset="1" stop-color="#16a34a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#c3bg)"/>
+  <rect width="400" height="300" fill="url(#c3spot)"/>
+
+  <!-- Footballer silhouette (behind the ?), running to the right -->
+  <g fill="rgba(255,255,255,0.08)" transform="translate(60 90)">
+    <!-- head -->
+    <circle cx="45" cy="22" r="16"/>
+    <!-- torso -->
+    <path d="M25 40 L70 40 L78 90 L60 100 L52 82 L38 92 L20 96 Z"/>
+    <!-- back leg -->
+    <path d="M50 82 L75 130 L92 128 L70 82 Z"/>
+    <!-- front leg (kicking) -->
+    <path d="M42 88 L38 140 L58 148 L58 92 Z"/>
+    <!-- back arm -->
+    <path d="M28 46 L8 78 L18 88 L38 60 Z"/>
+    <!-- front arm -->
+    <path d="M62 46 L92 62 L96 74 L64 66 Z"/>
+    <!-- ball -->
+    <circle cx="115" cy="146" r="14" fill="rgba(255,255,255,0.16)"/>
+  </g>
+
+  <!-- Giant ? -->
+  <g transform="translate(200 175)">
+    <text x="0" y="0" font-family="'Segoe UI', 'Trebuchet MS', sans-serif" font-weight="900" font-size="240" fill="url(#c3green)" text-anchor="middle" dominant-baseline="middle">?</text>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="200" y="272" font-family="'Segoe UI', sans-serif" font-weight="800" font-size="22" letter-spacing="6" fill="#f8fafc" text-anchor="middle">BEN KİMİM?</text>
+</svg>

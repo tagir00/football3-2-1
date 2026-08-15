@@ -18,7 +18,8 @@
                         "intlAppearances":  11,
                         "assists":  0,
                         "yellowCards":  0,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  125787,
@@ -34,7 +35,8 @@
                         "intlAppearances":  47,
                         "assists":  0,
                         "yellowCards":  1,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  33596,
@@ -49,7 +51,8 @@
                         "intlAppearances":  131,
                         "assists":  1,
                         "yellowCards":  14,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  158583,
@@ -65,7 +68,8 @@
                         "intlAppearances":  69,
                         "assists":  26,
                         "yellowCards":  43,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  931705,
@@ -81,7 +85,8 @@
                         "intlAppearances":  5,
                         "assists":  3,
                         "yellowCards":  10,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  566102,
@@ -97,7 +102,8 @@
                         "intlAppearances":  84,
                         "assists":  7,
                         "yellowCards":  52,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  344847,
@@ -113,7 +119,8 @@
                         "intlAppearances":  49,
                         "assists":  20,
                         "yellowCards":  36,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  818481,
@@ -129,7 +136,8 @@
                         "intlAppearances":  42,
                         "assists":  6,
                         "yellowCards":  43,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  360396,
@@ -145,7 +153,8 @@
                         "intlAppearances":  55,
                         "assists":  4,
                         "yellowCards":  31,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  822110,
@@ -160,7 +169,8 @@
                         "intlAppearances":  16,
                         "assists":  10,
                         "yellowCards":  24,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  870360,
@@ -176,7 +186,8 @@
                         "intlAppearances":  51,
                         "assists":  35,
                         "yellowCards":  53,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  877299,
@@ -192,7 +203,8 @@
                         "intlAppearances":  13,
                         "assists":  4,
                         "yellowCards":  4,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  355796,
@@ -208,7 +220,8 @@
                         "intlAppearances":  70,
                         "assists":  15,
                         "yellowCards":  86,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  221162,
@@ -224,7 +237,8 @@
                         "intlAppearances":  53,
                         "assists":  16,
                         "yellowCards":  3,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  1160386,
@@ -240,7 +254,8 @@
                         "intlAppearances":  9,
                         "assists":  6,
                         "yellowCards":  8,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  844096,
@@ -256,7 +271,8 @@
                         "intlAppearances":  43,
                         "assists":  6,
                         "yellowCards":  7,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  883537,
@@ -272,7 +288,8 @@
                         "intlAppearances":  79,
                         "assists":  59,
                         "yellowCards":  27,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  590392,
@@ -288,7 +305,8 @@
                         "intlAppearances":  21,
                         "assists":  28,
                         "yellowCards":  40,
-                        "redCards":  4
+                        "redCards":  4,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  1174889,
@@ -304,7 +322,8 @@
                         "intlAppearances":  11,
                         "assists":  0,
                         "yellowCards":  1,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  1015292,
@@ -320,7 +339,8 @@
                         "intlAppearances":  37,
                         "assists":  10,
                         "yellowCards":  20,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  1066915,
@@ -336,7 +356,8 @@
                         "intlAppearances":  27,
                         "assists":  5,
                         "yellowCards":  7,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  980580,
@@ -352,7 +373,8 @@
                         "intlAppearances":  10,
                         "assists":  0,
                         "yellowCards":  6,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  107414,
@@ -367,7 +389,8 @@
                         "intlAppearances":  131,
                         "assists":  103,
                         "yellowCards":  33,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  887055,
@@ -383,7 +406,8 @@
                         "intlAppearances":  11,
                         "assists":  14,
                         "yellowCards":  25,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  281253,
@@ -399,7 +423,8 @@
                         "intlAppearances":  24,
                         "assists":  56,
                         "yellowCards":  65,
-                        "redCards":  6
+                        "redCards":  6,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  914213,
@@ -415,7 +440,8 @@
                         "intlAppearances":  17,
                         "assists":  21,
                         "yellowCards":  34,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "C"
                     }
                 ]
 }

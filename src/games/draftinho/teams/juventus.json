@@ -18,7 +18,8 @@
                         "intlAppearances":  2,
                         "assists":  0,
                         "yellowCards":  13,
-                        "redCards":  4
+                        "redCards":  4,
+                        "nationality":  "Italy"
                     },
                     {
                         "id":  844609,
@@ -34,7 +35,8 @@
                         "intlAppearances":  0,
                         "assists":  1,
                         "yellowCards":  2,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Italy"
                     },
                     {
                         "id":  46420,
@@ -50,7 +52,8 @@
                         "intlAppearances":  0,
                         "assists":  0,
                         "yellowCards":  1,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Italy"
                     },
                     {
                         "id":  893008,
@@ -66,7 +69,8 @@
                         "intlAppearances":  63,
                         "assists":  24,
                         "yellowCards":  54,
-                        "redCards":  4
+                        "redCards":  4,
+                        "nationality":  "Türkiye"
                     },
                     {
                         "id":  885197,
@@ -82,7 +86,8 @@
                         "intlAppearances":  8,
                         "assists":  14,
                         "yellowCards":  41,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  1128063,
@@ -98,7 +103,8 @@
                         "intlAppearances":  8,
                         "assists":  2,
                         "yellowCards":  22,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Italy"
                     },
                     {
                         "id":  865167,
@@ -114,7 +120,8 @@
                         "intlAppearances":  0,
                         "assists":  8,
                         "yellowCards":  17,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "England"
                     },
                     {
                         "id":  965330,
@@ -130,7 +137,8 @@
                         "intlAppearances":  3,
                         "assists":  12,
                         "yellowCards":  19,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "France"
                     },
                     {
                         "id":  139273,
@@ -146,7 +154,8 @@
                         "intlAppearances":  7,
                         "assists":  2,
                         "yellowCards":  28,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Italy"
                     },
                     {
                         "id":  988037,
@@ -162,7 +171,8 @@
                         "intlAppearances":  3,
                         "assists":  2,
                         "yellowCards":  15,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Colombia"
                     },
                     {
                         "id":  363860,
@@ -178,7 +188,8 @@
                         "intlAppearances":  36,
                         "assists":  29,
                         "yellowCards":  90,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Italy"
                     },
                     {
                         "id":  803033,
@@ -194,7 +205,8 @@
                         "intlAppearances":  32,
                         "assists":  36,
                         "yellowCards":  50,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Netherlands"
                     },
                     {
                         "id":  901325,
@@ -210,7 +222,8 @@
                         "intlAppearances":  58,
                         "assists":  31,
                         "yellowCards":  28,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "A"
                     },
                     {
                         "id":  904832,
@@ -226,7 +239,8 @@
                         "intlAppearances":  4,
                         "assists":  25,
                         "yellowCards":  31,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "France"
                     },
                     {
                         "id":  1010223,
@@ -242,7 +256,8 @@
                         "intlAppearances":  1,
                         "assists":  11,
                         "yellowCards":  12,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Italy"
                     },
                     {
                         "id":  881931,
@@ -258,7 +273,8 @@
                         "intlAppearances":  71,
                         "assists":  37,
                         "yellowCards":  50,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "United States"
                     },
                     {
                         "id":  867887,
@@ -274,7 +290,8 @@
                         "intlAppearances":  18,
                         "assists":  27,
                         "yellowCards":  65,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  917048,
@@ -290,7 +307,8 @@
                         "intlAppearances":  19,
                         "assists":  24,
                         "yellowCards":  27,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Italy"
                     },
                     {
                         "id":  1425366,
@@ -306,7 +324,8 @@
                         "intlAppearances":  14,
                         "assists":  4,
                         "yellowCards":  4,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Bosnia-Herzegovina"
                     },
                     {
                         "id":  794927,
@@ -322,7 +341,8 @@
                         "intlAppearances":  22,
                         "assists":  11,
                         "yellowCards":  22,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Brazil"
                     },
                     {
                         "id":  979222,
@@ -338,7 +358,8 @@
                         "intlAppearances":  21,
                         "assists":  22,
                         "yellowCards":  31,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Portugal"
                     },
                     {
                         "id":  1149011,
@@ -354,7 +375,8 @@
                         "intlAppearances":  31,
                         "assists":  21,
                         "yellowCards":  10,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Türkiye"
                     },
                     {
                         "id":  887766,
@@ -370,7 +392,8 @@
                         "intlAppearances":  46,
                         "assists":  18,
                         "yellowCards":  13,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Kosovo"
                     },
                     {
                         "id":  367056,
@@ -386,7 +409,8 @@
                         "intlAppearances":  24,
                         "assists":  29,
                         "yellowCards":  2,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Cote d\u0027Ivoire"
                     },
                     {
                         "id":  161325,
@@ -402,7 +426,8 @@
                         "intlAppearances":  73,
                         "assists":  34,
                         "yellowCards":  37,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Poland"
                     },
                     {
                         "id":  25395,
@@ -418,7 +443,8 @@
                         "intlAppearances":  0,
                         "assists":  1,
                         "yellowCards":  4,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Italy"
                     },
                     {
                         "id":  871706,
@@ -434,7 +460,8 @@
                         "intlAppearances":  32,
                         "assists":  47,
                         "yellowCards":  20,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "France"
                     },
                     {
                         "id":  935564,
@@ -450,7 +477,9 @@
                         "intlAppearances":  82,
                         "assists":  45,
                         "yellowCards":  27,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Canada"
                     }
-                ]
+                ],
+    "league":  "Serie A"
 }

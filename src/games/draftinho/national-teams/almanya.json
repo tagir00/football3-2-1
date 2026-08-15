@@ -18,7 +18,8 @@
                         "intlAppearances":  3,
                         "assists":  3,
                         "yellowCards":  5,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  8959,
@@ -34,7 +35,8 @@
                         "intlAppearances":  128,
                         "assists":  2,
                         "yellowCards":  15,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  40244,
@@ -50,7 +52,8 @@
                         "intlAppearances":  13,
                         "assists":  3,
                         "yellowCards":  13,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  799046,
@@ -66,7 +69,8 @@
                         "intlAppearances":  15,
                         "assists":  12,
                         "yellowCards":  41,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  227672,
@@ -82,7 +86,8 @@
                         "intlAppearances":  51,
                         "assists":  18,
                         "yellowCards":  60,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  940871,
@@ -98,7 +103,8 @@
                         "intlAppearances":  29,
                         "assists":  20,
                         "yellowCards":  41,
-                        "redCards":  4
+                        "redCards":  4,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  1159759,
@@ -114,7 +120,8 @@
                         "intlAppearances":  8,
                         "assists":  14,
                         "yellowCards":  7,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  1014286,
@@ -130,7 +137,8 @@
                         "intlAppearances":  7,
                         "assists":  4,
                         "yellowCards":  32,
-                        "redCards":  3
+                        "redCards":  3,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  142622,
@@ -146,7 +154,8 @@
                         "intlAppearances":  86,
                         "assists":  13,
                         "yellowCards":  75,
-                        "redCards":  5
+                        "redCards":  5,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  856076,
@@ -162,7 +171,8 @@
                         "intlAppearances":  39,
                         "assists":  45,
                         "yellowCards":  34,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  901882,
@@ -178,7 +188,8 @@
                         "intlAppearances":  9,
                         "assists":  30,
                         "yellowCards":  19,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  259117,
@@ -194,7 +205,8 @@
                         "intlAppearances":  114,
                         "assists":  131,
                         "yellowCards":  68,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  1019322,
@@ -210,7 +222,8 @@
                         "intlAppearances":  45,
                         "assists":  74,
                         "yellowCards":  27,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  907463,
@@ -226,7 +239,8 @@
                         "intlAppearances":  12,
                         "assists":  16,
                         "yellowCards":  17,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  1010231,
@@ -242,7 +256,8 @@
                         "intlAppearances":  46,
                         "assists":  47,
                         "yellowCards":  14,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  293519,
@@ -258,7 +273,8 @@
                         "intlAppearances":  80,
                         "assists":  113,
                         "yellowCards":  36,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  327755,
@@ -274,7 +290,8 @@
                         "intlAppearances":  13,
                         "assists":  47,
                         "yellowCards":  51,
-                        "redCards":  4
+                        "redCards":  4,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  48480,
@@ -290,7 +307,8 @@
                         "intlAppearances":  19,
                         "assists":  83,
                         "yellowCards":  52,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  990201,
@@ -306,7 +324,8 @@
                         "intlAppearances":  6,
                         "assists":  27,
                         "yellowCards":  17,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  1418623,
@@ -322,7 +341,8 @@
                         "intlAppearances":  1,
                         "assists":  4,
                         "yellowCards":  0,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  1142251,
@@ -338,7 +358,8 @@
                         "intlAppearances":  15,
                         "assists":  5,
                         "yellowCards":  13,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  184661,
@@ -353,7 +374,8 @@
                         "intlAppearances":  73,
                         "assists":  72,
                         "yellowCards":  47,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  980628,
@@ -369,7 +391,8 @@
                         "intlAppearances":  10,
                         "assists":  21,
                         "yellowCards":  11,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  794298,
@@ -385,7 +408,8 @@
                         "intlAppearances":  13,
                         "assists":  41,
                         "yellowCards":  27,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  980623,
@@ -401,7 +425,8 @@
                         "intlAppearances":  12,
                         "assists":  9,
                         "yellowCards":  7,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Germany"
                     },
                     {
                         "id":  836705,
@@ -417,7 +442,8 @@
                         "intlAppearances":  62,
                         "assists":  61,
                         "yellowCards":  48,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Germany"
                     }
                 ]
 }

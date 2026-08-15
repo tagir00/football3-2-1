@@ -1,17 +1,24 @@
 export const games = [
   {
     id: 'futbol321',
-    title: 'Futbol 3-2-1',
-    description: 'Iki kisilik kulup-kulup ve ulke-kulup futbol oyunu.',
+    title: '3-2-1 GO!',
+    cover: './assets/covers/321-go.svg',
     accent: 'game-futbol321',
     load: () => import('../games/futbol321/index.js'),
   },
   {
     id: 'draftinho',
-    title: 'Draftinho',
-    description: 'Kriter ve takim carki ile 6 kisilik kadro kurma duellosu.',
+    title: 'Draft6',
+    cover: './assets/covers/draft6.svg',
     accent: 'game-draftinho',
     load: () => import('../games/draftinho/index.js'),
+  },
+  {
+    id: 'who-are-ya',
+    title: 'Ben Kimim?',
+    cover: './assets/covers/ben-kimim.svg',
+    accent: 'game-who-are-ya',
+    load: () => import('../games/who-are-ya/index.js'),
   },
 ];
 

@@ -339,14 +339,14 @@ export async function mount(container) {
     els.gameCriterionLabel.textContent = state.criterion.title;
     els.gameTitle.textContent = 'Yeni Tur';
     els.roundBadge.textContent = `Tur 0/${state.totalRounds}`;
-    els.gameStatus.textContent = 'Takım çarkını çevir ve tur başlasın.';
+    els.gameStatus.textContent = '';
     els.spinTeamButton.classList.remove('hidden');
     els.spinTeamButton.textContent = 'Takım Çarkını Çevir';
     els.nextRoundButton.classList.add('hidden');
     els.pickPanel.classList.add('hidden');
     els.roundResult.classList.add('hidden');
     els.teamSpinShell.classList.add('hidden');
-    els.turnHint.textContent = 'Önce takım çarkı';
+    els.turnHint.textContent = '';
     showGamePanel();
   }
 
@@ -396,7 +396,7 @@ export async function mount(container) {
     els.spinTeamButton.disabled = true;
     els.teamSpinShell.classList.remove('hidden');
     els.roundResult.classList.add('hidden');
-    els.gameStatus.textContent = 'Takım çarkı dönüyor...';
+    els.gameStatus.textContent = '';
 
     // Choose the team pool based on the active criterion
     const teamPool = pickTeamPool(clubs, nationals, state.criterion);
@@ -439,7 +439,7 @@ export async function mount(container) {
     state.activePlayerIndex = state.startingPlayerIndex;
     els.roundBadge.textContent = `Tur ${state.round}/${state.totalRounds}`;
     els.gameTitle.textContent = `${state.currentTeam.displayName} · ${state.criterion.title}`;
-    els.gameStatus.textContent = 'İki oyuncu sıra ile bu takımdan birer oyuncu seçer.';
+    els.gameStatus.textContent = '';
     updateScoreboard();
     renderFormations();
     openPickPanel();
@@ -586,8 +586,8 @@ export async function mount(container) {
       // Show spin button for next round
       els.spinTeamButton.classList.remove('hidden');
       els.spinTeamButton.textContent = `Tur ${state.round + 1}: Takım Çarkını Çevir`;
-      els.gameStatus.textContent = `Tur ${state.round}/${state.totalRounds} tamam. Yeni takım için çarkı çevir.`;
-      els.turnHint.textContent = `Sonraki turda ilk: ${state.players[state.startingPlayerIndex].name}`;
+      els.gameStatus.textContent = '';
+      els.turnHint.textContent = '';
       return;
     }
     // Switch to the other player for their pick in the same spin
@@ -630,8 +630,8 @@ export async function mount(container) {
     resetPlayersForCriterion();
     els.roundBadge.textContent = `Tur 0/${state.totalRounds}`;
     els.gameTitle.textContent = 'Yeni Tur';
-    els.gameStatus.textContent = 'Takım çarkını çevir ve tur başlasın.';
-    els.turnHint.textContent = 'Önce takım çarkı';
+    els.gameStatus.textContent = '';
+    els.turnHint.textContent = '';
   }
 
   function goBackFromGame() {
@@ -644,7 +644,7 @@ export async function mount(container) {
     els.playerInputWrap.classList.add('hidden');
     els.playerNameInput.value = '';
     els.pickTitle.textContent = 'Pozisyon seç';
-    els.gameStatus.textContent = 'Pozisyon seçmeye devam et.';
+    els.gameStatus.textContent = '';
   }
 
   bind(els.openSetupButton, 'click', () => {

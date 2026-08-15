@@ -1,11 +1,10 @@
 .hero-panel,
 .mode-panel,
 .game-panel {
-  backdrop-filter: blur(22px);
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 2rem;
-  box-shadow: var(--shadow);
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .hero-panel {

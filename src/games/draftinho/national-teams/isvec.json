@@ -18,7 +18,8 @@
                         "intlAppearances":  5,
                         "assists":  1,
                         "yellowCards":  2,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  561430,
@@ -34,7 +35,8 @@
                         "intlAppearances":  12,
                         "assists":  0,
                         "yellowCards":  0,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  22596,
@@ -50,7 +52,8 @@
                         "intlAppearances":  23,
                         "assists":  1,
                         "yellowCards":  14,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  360718,
@@ -66,7 +69,8 @@
                         "intlAppearances":  19,
                         "assists":  7,
                         "yellowCards":  24,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  834308,
@@ -82,7 +86,8 @@
                         "intlAppearances":  28,
                         "assists":  9,
                         "yellowCards":  20,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  143334,
@@ -98,7 +103,8 @@
                         "intlAppearances":  80,
                         "assists":  10,
                         "yellowCards":  32,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  1157713,
@@ -114,7 +120,8 @@
                         "intlAppearances":  32,
                         "assists":  3,
                         "yellowCards":  37,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  542038,
@@ -130,7 +137,8 @@
                         "intlAppearances":  2,
                         "assists":  8,
                         "yellowCards":  12,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  965263,
@@ -146,7 +154,8 @@
                         "intlAppearances":  15,
                         "assists":  3,
                         "yellowCards":  17,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  875360,
@@ -162,7 +171,8 @@
                         "intlAppearances":  13,
                         "assists":  2,
                         "yellowCards":  7,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  227894,
@@ -178,7 +188,8 @@
                         "intlAppearances":  27,
                         "assists":  5,
                         "yellowCards":  23,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  980916,
@@ -194,7 +205,8 @@
                         "intlAppearances":  14,
                         "assists":  3,
                         "yellowCards":  4,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  319847,
@@ -210,7 +222,8 @@
                         "intlAppearances":  34,
                         "assists":  8,
                         "yellowCards":  11,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  1099794,
@@ -226,7 +239,8 @@
                         "intlAppearances":  3,
                         "assists":  10,
                         "yellowCards":  5,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  1391251,
@@ -242,7 +256,8 @@
                         "intlAppearances":  14,
                         "assists":  9,
                         "yellowCards":  9,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  1383695,
@@ -258,7 +273,8 @@
                         "intlAppearances":  5,
                         "assists":  6,
                         "yellowCards":  4,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  1022820,
@@ -274,7 +290,8 @@
                         "intlAppearances":  4,
                         "assists":  5,
                         "yellowCards":  3,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "S"
                     },
                     {
                         "id":  1173223,
@@ -290,7 +307,8 @@
                         "intlAppearances":  10,
                         "assists":  18,
                         "yellowCards":  4,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  1021272,
@@ -306,7 +324,8 @@
                         "intlAppearances":  16,
                         "assists":  20,
                         "yellowCards":  13,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  1036269,
@@ -322,7 +341,8 @@
                         "intlAppearances":  25,
                         "assists":  5,
                         "yellowCards":  6,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  796987,
@@ -338,7 +358,8 @@
                         "intlAppearances":  42,
                         "assists":  21,
                         "yellowCards":  42,
-                        "redCards":  2
+                        "redCards":  2,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  918517,
@@ -354,7 +375,8 @@
                         "intlAppearances":  15,
                         "assists":  19,
                         "yellowCards":  12,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  823941,
@@ -370,7 +392,8 @@
                         "intlAppearances":  62,
                         "assists":  29,
                         "yellowCards":  22,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  804508,
@@ -386,7 +409,8 @@
                         "intlAppearances":  37,
                         "assists":  31,
                         "yellowCards":  14,
-                        "redCards":  1
+                        "redCards":  1,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  979232,
@@ -402,7 +426,8 @@
                         "intlAppearances":  34,
                         "assists":  26,
                         "yellowCards":  3,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     },
                     {
                         "id":  572286,
@@ -418,7 +443,8 @@
                         "intlAppearances":  11,
                         "assists":  15,
                         "yellowCards":  22,
-                        "redCards":  0
+                        "redCards":  0,
+                        "nationality":  "Sweden"
                     }
                 ]
 }
