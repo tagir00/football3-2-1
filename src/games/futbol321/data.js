@@ -170,6 +170,25 @@ const southAmericaCountries = [
   ['Uruguay', 'uy'],
 ];
 
+const clubHomeCountryMap = new Map([
+  ...premierLeague.map((team) => [team, 'England']),
+  ...laLiga.map((team) => [team, 'Spain']),
+  ...bundesliga.map((team) => [team, 'Germany']),
+  ...serieA.map((team) => [team, 'Italy']),
+  ...ligue1.map((team) => [team, 'France']),
+  ...superLig.map((team) => [team, 'Turkey']),
+  ['Ajax', 'Netherlands'],
+  ['PSV Eindhoven', 'Netherlands'],
+  ['Benfica', 'Portugal'],
+  ['Sporting CP', 'Portugal'],
+  ['Flamengo', 'Brazil'],
+  ['Santos', 'Brazil'],
+]);
+
+export function getClubHomeCountry(clubName) {
+  return clubHomeCountryMap.get(clubName) ?? null;
+}
+
 const clubLeagueMap = new Map([
   ...premierLeague.map((team) => [team, 'Premier League']),
   ...laLiga.map((team) => [team, 'LaLiga']),

@@ -1,4 +1,4 @@
-import { clubs, countries } from './data.js';
+import { clubs, countries, getClubHomeCountry } from './data.js';
 import {
   loadPlayerPool,
   getEligiblePlayers,
@@ -572,7 +572,13 @@ export async function mount(container) {
       state.usedEntityNames.clear();
       pool = countryClubConnections;
     }
-    const connection = pickRandomEntry(pool);
+    // Country + a club whose home country is that same country feels
+    // redundant (Portekiz + Benfica), so give ourselves one retry to land
+    // on a cross-country pair before accepting whatever comes up.
+    let connection = pickRandomEntry(pool);
+    if (getClubHomeCountry(connection.club) === connection.country) {
+      connection = pickRandomEntry(pool);
+    }
     state.usedEntityNames.add(connection.country);
     state.usedEntityNames.add(connection.club);
     const country = countriesByName.get(connection.country);
