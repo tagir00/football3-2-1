@@ -906,6 +906,23 @@
                         "weight":  72,
                         "apiFootballId":  217,
                         "trophies":  17
+                    },
+                    {
+                        "id":  9300010,
+                        "name":  "Pep Chavarría",
+                        "slug":  "pep-chavarria",
+                        "position":  "DEF",
+                        "shirt":  29,
+                        "age":  27,
+                        "birth":  "1998-04-29",
+                        "height":  181,
+                        "marketValue":  19000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0,
+                        "assists":  17,
+                        "yellowCards":  18,
+                        "redCards":  0,
+                        "nationality":  "Spain"
                     }
                 ],
     "league":  "Premier League"

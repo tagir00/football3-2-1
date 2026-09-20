@@ -509,27 +509,6 @@
                         "trophies":  0
                     },
                     {
-                        "id":  19514,
-                        "name":  "Toni Fernández",
-                        "slug":  "toni-fernandez",
-                        "position":  "MID",
-                        "shirt":  30,
-                        "age":  18,
-                        "birth":  "2008-07-15",
-                        "height":  175,
-                        "marketValue":  3100000,
-                        "intlGoals":  0,
-                        "intlAppearances":  0,
-                        "assists":  0,
-                        "yellowCards":  0,
-                        "redCards":  0,
-                        "nationality":  "Spain",
-                        "clubApps":  2,
-                        "weight":  73,
-                        "apiFootballId":  445973,
-                        "trophies":  0
-                    },
-                    {
                         "id":  1506988,
                         "name":  "Jesse Bisiwu",
                         "slug":  "jesse-bisiwu",
