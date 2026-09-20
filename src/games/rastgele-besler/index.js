@@ -2,8 +2,9 @@ import { template } from './template.js';
 import { clubs as ALL_CLUBS } from '../futbol321/data.js';
 
 const STYLE_HREF = new URL('./game.css', import.meta.url).href;
-const PLAYER_DATA_URL = new URL('../futbol321/playerData.json', import.meta.url);
+const PLAYER_DATA_URL = new URL('./playerPool.json', import.meta.url);
 const TOTAL_ROUNDS = 5;
+const MAX_SUGGESTIONS = 10;
 
 function ensureStylesheet() {
   if (document.querySelector('link[data-game-style="rastgele-besler"]')) return;
@@ -86,6 +87,7 @@ function loadPlayerPool() {
         normalized: normalizeName(p.name),
         clubs: p.clubs || [],
         clubsNormalized: (p.clubs || []).map((c) => c.toLowerCase()),
+        apps: p.apps ?? 0,
       })),
     );
   return playerPoolPromise;
@@ -132,6 +134,7 @@ export async function mount(container) {
     turnLabel: container.querySelector('#rTurnLabel'),
     guessInput: container.querySelector('#rGuessInput'),
     guessButton: container.querySelector('#rGuessButton'),
+    suggestions: container.querySelector('#rSuggestions'),
     gameStatus: container.querySelector('#rGameStatus'),
     roundDone: container.querySelector('#rRoundDone'),
     roundDoneEyebrow: container.querySelector('#rRoundDoneEyebrow'),
@@ -400,6 +403,7 @@ export async function mount(container) {
     els.guessInput.value = '';
     els.guessInput.disabled = false;
     els.guessButton.disabled = false;
+    els.suggestions.innerHTML = '';
     els.gameStatus.textContent = '';
     els.guessInput.focus();
   }
@@ -415,6 +419,46 @@ export async function mount(container) {
     if (starts) return starts;
     // Includes
     return playerPool.find((p) => p.normalized.includes(q)) ?? null;
+  }
+
+  function renderSuggestions(query) {
+    if (!els.suggestions) return;
+    const q = normalizeName(query);
+    if (!q) {
+      els.suggestions.innerHTML = '';
+      return;
+    }
+    const currentSet = new Set(state.currentClubs.map((c) => c.name.toLowerCase()));
+    const matches = playerPool
+      .filter((p) => p.normalized.includes(q))
+      .map((p) => {
+        const hits = p.clubsNormalized.filter((c) => currentSet.has(c)).length;
+        return { p, hits };
+      })
+      .sort((a, b) => {
+        // Prefer players whose careers match the current 5 clubs, then by fame (apps)
+        if (b.hits !== a.hits) return b.hits - a.hits;
+        return (b.p.apps ?? 0) - (a.p.apps ?? 0);
+      })
+      .slice(0, MAX_SUGGESTIONS);
+
+    els.suggestions.innerHTML = matches
+      .map(({ p, hits }) => {
+        const used = state.usedPlayerIds.has(p.id);
+        return `<span class="rb-suggestion${used ? ' used' : ''}" data-id="${p.id}" title="${p.clubs.join(', ')}">${p.name}${hits > 0 ? ` · ${hits}` : ''}</span>`;
+      })
+      .join('');
+
+    els.suggestions.querySelectorAll('[data-id]').forEach((chip) => {
+      chip.addEventListener('click', () => {
+        if (chip.classList.contains('used')) return;
+        const id = Number(chip.dataset.id);
+        const player = playerPool.find((x) => x.id === id);
+        if (!player) return;
+        els.guessInput.value = player.name;
+        submitGuess();
+      });
+    });
   }
 
   function scoreForCurrentClubs(player) {
@@ -456,6 +500,7 @@ export async function mount(container) {
     renderPicks();
     renderScoreboard();
     els.guessInput.value = '';
+    els.suggestions.innerHTML = '';
     els.gameStatus.textContent = `${activePlayer.name}: ${found.name} = ${count} puan.`;
 
     if (state.picksThisRound >= 2) {
@@ -536,6 +581,7 @@ export async function mount(container) {
   bind(els.goToGameButton, 'click', goToGame);
   bind(els.spinButton, 'click', spinClubs);
   bind(els.guessButton, 'click', submitGuess);
+  bind(els.guessInput, 'input', (e) => renderSuggestions(e.target.value));
   bind(els.guessInput, 'keydown', (e) => {
     if (e.key === 'Enter') { e.preventDefault(); submitGuess(); }
   });

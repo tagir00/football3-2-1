@@ -357,6 +357,32 @@
   font-size: 0.85rem;
 }
 
+.rb-suggestions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  max-height: 6.5rem;
+  overflow-y: auto;
+}
+.rb-suggestions:empty { display: none; }
+
+.rb-suggestion {
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(56, 189, 248, 0.12);
+  color: var(--accent-cool);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  font-size: 0.78rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.rb-suggestion:hover { background: rgba(56, 189, 248, 0.25); }
+.rb-suggestion.used {
+  opacity: 0.35;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+
 .rb-round-done {
   padding: 0.85rem;
   border-radius: 1rem;

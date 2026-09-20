@@ -115,6 +115,7 @@ export function template() {
           <input class="setup-input" id="rGuessInput" type="text" placeholder="Futbolcu ismi" autocomplete="off" />
           <button class="primary-button" id="rGuessButton" type="button">Onayla</button>
         </div>
+        <div class="rb-suggestions" id="rSuggestions"></div>
         <div class="rb-status" id="rGameStatus"></div>
       </div>
 
