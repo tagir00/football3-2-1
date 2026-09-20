@@ -89,27 +89,6 @@
                         "trophies":  0
                     },
                     {
-                        "id":  190419,
-                        "name":  "Dominik Livaković",
-                        "slug":  "dominik-livakovic",
-                        "position":  "GK",
-                        "shirt":  40,
-                        "age":  31,
-                        "birth":  "1995-01-09",
-                        "height":  186,
-                        "marketValue":  4099999,
-                        "intlGoals":  0,
-                        "intlAppearances":  79,
-                        "assists":  1,
-                        "yellowCards":  3,
-                        "redCards":  0,
-                        "nationality":  "Croatia",
-                        "clubApps":  77,
-                        "weight":  79,
-                        "apiFootballId":  1305,
-                        "trophies":  0
-                    },
-                    {
                         "id":  1009738,
                         "name":  "Archie Brown",
                         "slug":  "brown-archie",

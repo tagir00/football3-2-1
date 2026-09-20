@@ -759,6 +759,40 @@
                         "weight":  80,
                         "apiFootballId":  26275,
                         "trophies":  0
+                    },
+                    {
+                        "id":  9300005,
+                        "name":  "Fabio Miretti",
+                        "slug":  "fabio-miretti",
+                        "position":  "MID",
+                        "shirt":  21,
+                        "age":  22,
+                        "birth":  "2003-08-03",
+                        "height":  185,
+                        "marketValue":  12000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  1,
+                        "assists":  5,
+                        "yellowCards":  15,
+                        "redCards":  0,
+                        "nationality":  "Italy"
+                    },
+                    {
+                        "id":  9300006,
+                        "name":  "Emmanuel Poku",
+                        "slug":  "emmanuel-poku",
+                        "position":  "FW",
+                        "shirt":  17,
+                        "age":  21,
+                        "birth":  "2004-05-01",
+                        "height":  180,
+                        "marketValue":  6000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0,
+                        "assists":  3,
+                        "yellowCards":  3,
+                        "redCards":  0,
+                        "nationality":  "Ghana"
                     }
                 ],
     "league":  "Super Lig"

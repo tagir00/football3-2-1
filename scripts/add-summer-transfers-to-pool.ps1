@@ -7,7 +7,8 @@ $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
 $transferScripts = @(
   (Join-Path $root 'scripts\apply-summer-2026-transfers.ps1'),
-  (Join-Path $root 'scripts\apply-late-window-2026.ps1')
+  (Join-Path $root 'scripts\apply-late-window-2026.ps1'),
+  (Join-Path $root 'scripts\apply-october-refresh.ps1')
 )
 $augPath = Join-Path $root 'src\games\rastgele-besler\careerAugmentations.json'
 $utf8 = [System.Text.UTF8Encoding]::new($false)

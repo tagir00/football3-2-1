@@ -717,6 +717,40 @@
                         "weight":  82,
                         "apiFootballId":  44,
                         "trophies":  28
+                    },
+                    {
+                        "id":  9300001,
+                        "name":  "João Cancelo",
+                        "slug":  "joao-cancelo",
+                        "position":  "DEF",
+                        "shirt":  2,
+                        "age":  32,
+                        "birth":  "1994-05-27",
+                        "height":  182,
+                        "marketValue":  15000000,
+                        "intlGoals":  1,
+                        "intlAppearances":  61,
+                        "assists":  39,
+                        "yellowCards":  40,
+                        "redCards":  2,
+                        "nationality":  "Portugal"
+                    },
+                    {
+                        "id":  9300002,
+                        "name":  "Dominik Livaković",
+                        "slug":  "dominik-livakovic",
+                        "position":  "GK",
+                        "shirt":  25,
+                        "age":  31,
+                        "birth":  "1995-01-09",
+                        "height":  186,
+                        "marketValue":  6000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  79,
+                        "assists":  1,
+                        "yellowCards":  3,
+                        "redCards":  0,
+                        "nationality":  "Croatia"
                     }
                 ],
     "league":  "LaLiga"

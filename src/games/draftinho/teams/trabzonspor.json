@@ -717,6 +717,40 @@
                         "weight":  71,
                         "apiFootballId":  306,
                         "trophies":  0
+                    },
+                    {
+                        "id":  9300003,
+                        "name":  "Fabinho",
+                        "slug":  "fabinho-trabzon",
+                        "position":  "MID",
+                        "shirt":  6,
+                        "age":  32,
+                        "birth":  "1993-10-23",
+                        "height":  188,
+                        "marketValue":  8000000,
+                        "intlGoals":  1,
+                        "intlAppearances":  32,
+                        "assists":  17,
+                        "yellowCards":  57,
+                        "redCards":  2,
+                        "nationality":  "Brazil"
+                    },
+                    {
+                        "id":  9300004,
+                        "name":  "Franculino Djú",
+                        "slug":  "franculino-dju",
+                        "position":  "FW",
+                        "shirt":  9,
+                        "age":  21,
+                        "birth":  "2004-06-15",
+                        "height":  185,
+                        "marketValue":  18000000,
+                        "intlGoals":  1,
+                        "intlAppearances":  10,
+                        "assists":  5,
+                        "yellowCards":  7,
+                        "redCards":  0,
+                        "nationality":  "Guinea-Bissau"
                     }
                 ],
     "league":  "Super Lig"

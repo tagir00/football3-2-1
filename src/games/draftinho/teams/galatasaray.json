@@ -738,6 +738,23 @@
                         "weight":  81,
                         "apiFootballId":  22236,
                         "trophies":  13
+                    },
+                    {
+                        "id":  9300007,
+                        "name":  "El Chadaille Bitshiabu",
+                        "slug":  "el-chadaille-bitshiabu",
+                        "position":  "DEF",
+                        "shirt":  3,
+                        "age":  20,
+                        "birth":  "2005-05-16",
+                        "height":  196,
+                        "marketValue":  25000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0,
+                        "assists":  1,
+                        "yellowCards":  6,
+                        "redCards":  0,
+                        "nationality":  "France"
                     }
                 ],
     "league":  "Super Lig"
