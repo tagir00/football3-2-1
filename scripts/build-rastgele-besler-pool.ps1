@@ -131,46 +131,61 @@ try {
 } finally { $sr.Dispose() }
 Write-Host "Matched $($clubIdToOur.Count) club_ids to our 79 canonical clubs"
 
-# 2) Stream appearances.csv → per player_id: name + Set<canonical club>
+# 2) Stream appearances.csv → per player_id: name, tracked clubs set, and BOTH
+#    tracked-apps and totalApps so we can still tell if a player is famous
+#    even when only one of their clubs is in our 79 (e.g., Harvey Barnes at
+#    Newcastle only; his Leicester years boost his career total).
 Write-Host 'Streaming appearances.csv ...'
-$players = @{}  # player_id -> @{ name = ...; clubs = Set; apps = int }
+$players = @{}  # player_id -> @{ name; clubs Set; totalApps; trackedApps }
 $sr = [System.IO.File]::OpenText($appsCsv)
 $total = 0
 try {
   $null = $sr.ReadLine()
   while (($line = $sr.ReadLine()) -ne $null) {
     $total++
-    # columns 0..6: appearance_id, game_id, player_id, player_club_id, cur_club_id, date, player_name
     $parts = $line.Split(',', 8)
     if ($parts.Length -lt 7) { continue }
     $pid_ = 0
     if (-not [int]::TryParse($parts[2], [ref]$pid_)) { continue }
     $cid = 0
     if (-not [int]::TryParse($parts[3], [ref]$cid)) { continue }
-    if (-not $clubIdToOur.ContainsKey($cid)) { continue }
-    $canonClub = $clubIdToOur[$cid]
     $name = $parts[6]
 
     if (-not $players.ContainsKey($pid_)) {
-      $players[$pid_] = @{ name = $name; clubs = [System.Collections.Generic.HashSet[string]]::new(); apps = 0 }
+      $players[$pid_] = @{
+        name = $name
+        clubs = [System.Collections.Generic.HashSet[string]]::new()
+        totalApps = 0
+        trackedApps = 0
+      }
     }
-    [void]$players[$pid_].clubs.Add($canonClub)
-    $players[$pid_].apps += 1
-
-    if ($total % 300000 -eq 0) { Write-Host "  ...scanned $total rows, tracking $($players.Count) players" }
+    $players[$pid_].totalApps += 1
+    if ($clubIdToOur.ContainsKey($cid)) {
+      [void]$players[$pid_].clubs.Add($clubIdToOur[$cid])
+      $players[$pid_].trackedApps += 1
+    }
+    if ($total % 300000 -eq 0) { Write-Host "  ...scanned $total rows, $($players.Count) players so far" }
   }
 } finally { $sr.Dispose() }
-Write-Host "Scanned $total rows. Distinct players who touched at least one of our clubs: $($players.Count)"
+Write-Host "Scanned $total rows. Distinct players: $($players.Count)"
 
-# 3) Filter: >=2 distinct our-clubs and >=50 total appearances
+# 3) Filter — keep any player who touched >=1 of our clubs AND has a career
+#    footprint big enough to be recognizable:
+#      - >=2 tracked clubs: >=50 tracked apps OR >=100 total apps
+#      - Exactly 1 tracked : >=100 tracked apps OR >=200 total apps
 $out = @()
 foreach ($p in $players.Values) {
-  if ($p.clubs.Count -lt 2) { continue }
-  if ($p.apps -lt 50) { continue }
+  $numTracked = $p.clubs.Count
+  if ($numTracked -lt 1) { continue }
+  if ($numTracked -ge 2) {
+    if ($p.trackedApps -lt 50 -and $p.totalApps -lt 100) { continue }
+  } else {
+    if ($p.trackedApps -lt 100 -and $p.totalApps -lt 200) { continue }
+  }
   $sortedClubs = @($p.clubs) | Sort-Object
-  $out += [ordered]@{ name = $p.name; clubs = $sortedClubs; apps = $p.apps }
+  $out += [ordered]@{ name = $p.name; clubs = $sortedClubs; apps = $p.totalApps }
 }
-Write-Host "Pool after filter (>=2 our clubs, >=50 apps): $($out.Count)"
+Write-Host "Pool after filter: $($out.Count)"
 
 # Sort by apps descending so the frontend keeps the strongest names on top
 $out = $out | Sort-Object -Property { -$_.apps }
@@ -181,7 +196,7 @@ Write-Host "Wrote $outPath ($((Get-Item $outPath).Length) bytes)"
 
 # Quick sanity checks
 $hits = @{}
-foreach ($needle in @('Emre Can','Toni Kroos','Marcelo','Piqué','Casemiro','Mario Gotze','Reus','Bale')) {
+foreach ($needle in @('Emre Can','Toni Kroos','Marcelo','Piqué','Casemiro','Mario Gotze','Reus','Bale','Harvey Barnes','Kai Havertz','Jamal Musiala')) {
   $found = $out | Where-Object { $_.name -like "*$needle*" } | Select-Object -First 3
   if ($found) { $hits[$needle] = ($found | ForEach-Object { "$($_.name) => [$($_.clubs -join ', ')] ($($_.apps) apps)" }) }
 }

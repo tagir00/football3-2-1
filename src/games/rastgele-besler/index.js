@@ -41,36 +41,33 @@ function pickN(arr, n) {
   return shuffle(arr).slice(0, n);
 }
 
-// Weighted sample without replacement (Efraimidis-Spirakis style).
-// Each item is picked with probability proportional to its weight.
-function weightedSample(items, weights, n) {
-  const keyed = items.map((it, i) => ({
-    it,
-    key: Math.pow(Math.random(), 1 / Math.max(weights[i], 0.0001)),
-  }));
-  keyed.sort((a, b) => b.key - a.key);
-  return keyed.slice(0, n).map((x) => x.it);
-}
+// Curated "big-name" club pool for the 5-club draw. Only these clubs appear
+// on the wheel — obscure clubs (Nottingham Forest, Gaziantep FK, Sassuolo,
+// Real Sociedad, etc.) produced 5-club combinations where players couldn't
+// even find one 2-hit crossings pick. Every club here has enough presence in
+// the 2000+ player pool that two of them together typically share several
+// footballers.
+const BIG_CLUB_NAMES = new Set([
+  // Premier League big 8
+  'Arsenal','Aston Villa','Chelsea','Liverpool','Manchester City',
+  'Manchester United','Newcastle United','Tottenham Hotspur',
+  // LaLiga
+  'Atletico Madrid','Barcelona','Real Madrid','Sevilla','Valencia','Villarreal',
+  // Serie A
+  'AC Milan','Inter Milan','Juventus','Napoli','Roma','Lazio','Fiorentina',
+  // Bundesliga
+  'Bayer Leverkusen','Bayern Munich','Borussia Dortmund','Eintracht Frankfurt',
+  'RB Leipzig',
+  // Ligue 1
+  'Lyon','Marseille','Monaco','Paris Saint-Germain',
+  // Süper Lig big 4
+  'Besiktas','Fenerbahce','Galatasaray','Trabzonspor',
+  // Extras with strong crossings
+  'Ajax','Benfica','Sporting CP','PSV Eindhoven',
+]);
 
-// Assign each club a difficulty weight based on how often its players show
-// up in playerData.json (crossings density). The medium-difficulty pool
-// heavily favours well-known clubs so the average pick lands around 2 hits.
-function buildClubWeights(clubList, playerPool) {
-  const count = new Map();
-  for (const c of clubList) count.set(c.name, 0);
-  for (const p of playerPool) {
-    for (const c of p.clubs) {
-      if (count.has(c)) count.set(c, count.get(c) + 1);
-    }
-  }
-  return clubList.map((c) => {
-    const n = count.get(c.name) ?? 0;
-    if (n >= 14) return 6;       // elite (Real, Barça, Fener, Chelsea, ...)
-    if (n >= 7)  return 3;       // big (City, Ajax, Spurs, PSG, Trabzon, ...)
-    if (n >= 4)  return 1;       // mid (Napoli, Roma, Sporting, Sevilla, ...)
-    if (n >= 2)  return 0.15;    // small — rare cameo
-    return 0;                    // zero-crossing → skip
-  });
+function buildBigClubList(allClubs) {
+  return allClubs.filter((c) => BIG_CLUB_NAMES.has(c.name));
 }
 
 let cleanup = null;
@@ -81,14 +78,19 @@ function loadPlayerPool() {
   playerPoolPromise = fetch(PLAYER_DATA_URL)
     .then((r) => r.json())
     .then((rows) =>
-      rows.map((p, idx) => ({
-        id: idx,
-        name: p.name,
-        normalized: normalizeName(p.name),
-        clubs: p.clubs || [],
-        clubsNormalized: (p.clubs || []).map((c) => c.toLowerCase()),
-        apps: p.apps ?? 0,
-      })),
+      rows.map((p, idx) => {
+        // PowerShell's ConvertTo-Json emits single-element arrays as bare
+        // strings, so normalize `clubs` to always be an array here.
+        const clubs = Array.isArray(p.clubs) ? p.clubs : (p.clubs ? [p.clubs] : []);
+        return {
+          id: idx,
+          name: p.name,
+          normalized: normalizeName(p.name),
+          clubs,
+          clubsNormalized: clubs.map((c) => c.toLowerCase()),
+          apps: p.apps ?? 0,
+        };
+      }),
     );
   return playerPoolPromise;
 }
@@ -97,7 +99,7 @@ export async function mount(container) {
   ensureStylesheet();
   container.innerHTML = template();
   const playerPool = await loadPlayerPool();
-  const clubWeights = buildClubWeights(ALL_CLUBS, playerPool);
+  const drawClubs = buildBigClubList(ALL_CLUBS);
 
   const els = {
     homePanel: container.querySelector('#rHomePanel'),
@@ -358,7 +360,7 @@ export async function mount(container) {
     els.roundDone.classList.add('hidden');
     els.turnPanel.classList.add('hidden');
 
-    const finalClubs = weightedSample(ALL_CLUBS, clubWeights, 5);
+    const finalClubs = pickN(drawClubs, 5);
     clubSlots.forEach((slot) => slot.classList.add('spinning'));
 
     // Each slot cycles at its own pace, then locks in sequence
@@ -372,7 +374,7 @@ export async function mount(container) {
     const interval = window.setInterval(() => {
       slotStates.forEach((s, idx) => {
         if (s.tick >= s.stopAt) return; // already landed
-        const temp = ALL_CLUBS[Math.floor(Math.random() * ALL_CLUBS.length)];
+        const temp = drawClubs[Math.floor(Math.random() * drawClubs.length)];
         setSlotClub(clubSlots[idx], temp);
         s.tick++;
         if (s.tick >= s.stopAt) {
@@ -541,9 +543,11 @@ export async function mount(container) {
     els.roundEyebrow.textContent = `TUR ${state.round} / ${TOTAL_ROUNDS}`;
     resetClubs();
     els.roundDone.classList.add('hidden');
-    els.spinButton.classList.remove('hidden');
-    els.spinButton.disabled = false;
     els.gameStatus.textContent = '';
+    // Fold the "Takımları Getir" click into the "Sonraki Tur" click so users
+    // don't have to press two buttons back-to-back.
+    els.spinButton.classList.add('hidden');
+    spinClubs();
   }
 
   function finishGame() {
