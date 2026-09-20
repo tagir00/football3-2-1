@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Rastgele Beşler">
+  <defs>
+    <linearGradient id="rbBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1a0f2e"/>
+      <stop offset="1" stop-color="#0f1a2e"/>
+    </linearGradient>
+    <linearGradient id="rbPurple" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c084fc"/>
+      <stop offset="1" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="rbGreen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#86efac"/>
+      <stop offset="1" stop-color="#16a34a"/>
+    </linearGradient>
+    <radialGradient id="rbSpot" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="rgba(192,132,252,0.3)"/>
+      <stop offset="1" stop-color="rgba(124,58,237,0)"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="400" height="300" fill="url(#rbBg)"/>
+  <rect width="400" height="300" fill="url(#rbSpot)"/>
+
+  <!-- pitch lines subtle -->
+  <g stroke="#38bdf8" stroke-opacity="0.06" fill="none" stroke-width="1">
+    <line x1="0" y1="235" x2="400" y2="235"/>
+    <line x1="0" y1="65"  x2="400" y2="65"/>
+  </g>
+
+  <!-- 5 club slot cards -->
+  <g transform="translate(30 90)">
+    <g fill="rgba(255,255,255,0.08)" stroke="rgba(148,163,184,0.35)" stroke-width="1.2">
+      <rect x="0"   y="0"  width="60" height="80" rx="10"/>
+      <rect x="70"  y="0"  width="60" height="80" rx="10"/>
+      <rect x="140" y="0"  width="60" height="80" rx="10"/>
+      <rect x="210" y="0"  width="60" height="80" rx="10"/>
+      <rect x="280" y="0"  width="60" height="80" rx="10"/>
+    </g>
+    <!-- Placeholder logos -->
+    <g fill="rgba(192,132,252,0.75)">
+      <circle cx="30"  cy="34" r="15"/>
+      <circle cx="100" cy="34" r="15"/>
+      <circle cx="170" cy="34" r="15"/>
+      <circle cx="240" cy="34" r="15"/>
+      <circle cx="310" cy="34" r="15"/>
+    </g>
+    <g fill="rgba(255,255,255,0.65)" font-family="'Segoe UI', sans-serif" font-weight="800" font-size="9" text-anchor="middle">
+      <text x="30"  y="70">FC</text>
+      <text x="100" y="70">FC</text>
+      <text x="170" y="70">FC</text>
+      <text x="240" y="70">FC</text>
+      <text x="310" y="70">FC</text>
+    </g>
+  </g>
+
+  <!-- big "5" mark -->
+  <g transform="translate(300 220)">
+    <text x="0" y="0" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="90" fill="url(#rbGreen)" text-anchor="middle" dominant-baseline="middle">5</text>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="200" y="42" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="26" letter-spacing="1.5" fill="url(#rbPurple)" text-anchor="middle">RASTGELE</text>
+  <text x="60"  y="245" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="32" letter-spacing="1" fill="#f1f5f9">BEŞLER</text>
+</svg>

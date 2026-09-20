@@ -1,0 +1,564 @@
+import { template } from './template.js';
+import { clubs as ALL_CLUBS } from '../futbol321/data.js';
+
+const STYLE_HREF = new URL('./game.css', import.meta.url).href;
+const PLAYER_DATA_URL = new URL('../futbol321/playerData.json', import.meta.url);
+const TOTAL_ROUNDS = 5;
+
+function ensureStylesheet() {
+  if (document.querySelector('link[data-game-style="rastgele-besler"]')) return;
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = STYLE_HREF;
+  link.dataset.gameStyle = 'rastgele-besler';
+  document.head.append(link);
+}
+
+function normalizeName(name) {
+  return String(name ?? '')
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, ' ')
+    .trim();
+}
+
+function pick(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function shuffle(arr) {
+  const out = arr.slice();
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
+function pickN(arr, n) {
+  return shuffle(arr).slice(0, n);
+}
+
+// Weighted sample without replacement (Efraimidis-Spirakis style).
+// Each item is picked with probability proportional to its weight.
+function weightedSample(items, weights, n) {
+  const keyed = items.map((it, i) => ({
+    it,
+    key: Math.pow(Math.random(), 1 / Math.max(weights[i], 0.0001)),
+  }));
+  keyed.sort((a, b) => b.key - a.key);
+  return keyed.slice(0, n).map((x) => x.it);
+}
+
+// Assign each club a difficulty weight based on how often its players show
+// up in playerData.json (crossings density). The medium-difficulty pool
+// heavily favours well-known clubs so the average pick lands around 2 hits.
+function buildClubWeights(clubList, playerPool) {
+  const count = new Map();
+  for (const c of clubList) count.set(c.name, 0);
+  for (const p of playerPool) {
+    for (const c of p.clubs) {
+      if (count.has(c)) count.set(c, count.get(c) + 1);
+    }
+  }
+  return clubList.map((c) => {
+    const n = count.get(c.name) ?? 0;
+    if (n >= 14) return 6;       // elite (Real, Barça, Fener, Chelsea, ...)
+    if (n >= 7)  return 3;       // big (City, Ajax, Spurs, PSG, Trabzon, ...)
+    if (n >= 4)  return 1;       // mid (Napoli, Roma, Sporting, Sevilla, ...)
+    if (n >= 2)  return 0.15;    // small — rare cameo
+    return 0;                    // zero-crossing → skip
+  });
+}
+
+let cleanup = null;
+let playerPoolPromise = null;
+
+function loadPlayerPool() {
+  if (playerPoolPromise) return playerPoolPromise;
+  playerPoolPromise = fetch(PLAYER_DATA_URL)
+    .then((r) => r.json())
+    .then((rows) =>
+      rows.map((p, idx) => ({
+        id: idx,
+        name: p.name,
+        normalized: normalizeName(p.name),
+        clubs: p.clubs || [],
+        clubsNormalized: (p.clubs || []).map((c) => c.toLowerCase()),
+      })),
+    );
+  return playerPoolPromise;
+}
+
+export async function mount(container) {
+  ensureStylesheet();
+  container.innerHTML = template();
+  const playerPool = await loadPlayerPool();
+  const clubWeights = buildClubWeights(ALL_CLUBS, playerPool);
+
+  const els = {
+    homePanel: container.querySelector('#rHomePanel'),
+    setupPanel: container.querySelector('#rSetupPanel'),
+    gamePanel: container.querySelector('#rGamePanel'),
+    infoModal: container.querySelector('#rInfoModal'),
+    infoButton: container.querySelector('#rInfoButton'),
+    closeInfoButton: container.querySelector('#rCloseInfoButton'),
+    startButton: container.querySelector('#rStartButton'),
+    setupBackButton: container.querySelector('#rSetupBackButton'),
+    player1Input: container.querySelector('#rPlayer1Input'),
+    player2Input: container.querySelector('#rPlayer2Input'),
+    setupStatus: container.querySelector('#rSetupStatus'),
+    coinSideA: container.querySelector('#rCoinSideA'),
+    coinSideB: container.querySelector('#rCoinSideB'),
+    coinResult: container.querySelector('#rCoinResult'),
+    coinWinnerLabel: container.querySelector('#rCoinWinnerLabel'),
+    spinCoinButton: container.querySelector('#rSpinCoinButton'),
+    goToGameButton: container.querySelector('#rGoToGameButton'),
+    gameBackButton: container.querySelector('#rGameBackButton'),
+    roundEyebrow: container.querySelector('#rRoundEyebrow'),
+    clubsStrip: container.querySelector('#rClubsStrip'),
+    spinButton: container.querySelector('#rSpinButton'),
+    board: container.querySelector('#rBoard'),
+    picksA: container.querySelector('#rPicksA'),
+    picksB: container.querySelector('#rPicksB'),
+    nameA: container.querySelector('#rNameA'),
+    nameB: container.querySelector('#rNameB'),
+    totalNameA: container.querySelector('#rTotalNameA'),
+    totalNameB: container.querySelector('#rTotalNameB'),
+    totalA: container.querySelector('#rTotalA'),
+    totalB: container.querySelector('#rTotalB'),
+    turnPanel: container.querySelector('#rTurnPanel'),
+    turnLabel: container.querySelector('#rTurnLabel'),
+    guessInput: container.querySelector('#rGuessInput'),
+    guessButton: container.querySelector('#rGuessButton'),
+    gameStatus: container.querySelector('#rGameStatus'),
+    roundDone: container.querySelector('#rRoundDone'),
+    roundDoneEyebrow: container.querySelector('#rRoundDoneEyebrow'),
+    roundSummary: container.querySelector('#rRoundSummary'),
+    nextRoundButton: container.querySelector('#rNextRoundButton'),
+    result: container.querySelector('#rResult'),
+    resultEyebrow: container.querySelector('#rResultEyebrow'),
+    resultTitle: container.querySelector('#rResultTitle'),
+    resultSub: container.querySelector('#rResultSub'),
+    playAgainButton: container.querySelector('#rPlayAgainButton'),
+  };
+  const clubSlots = Array.from(container.querySelectorAll('.rb-club-slot'));
+
+  const state = {
+    players: [
+      { name: 'Oyuncu 1', total: 0, picks: [] },
+      { name: 'Oyuncu 2', total: 0, picks: [] },
+    ],
+    startingPlayerIndex: 0,
+    activePlayerIndex: 0,
+    currentClubs: [],
+    round: 0, // 1-based when active
+    picksThisRound: 0,
+    isSpinning: false,
+    isFinished: false,
+    usedPlayerIds: new Set(),
+  };
+
+  const listeners = [];
+  function bind(el, ev, fn) {
+    el.addEventListener(ev, fn);
+    listeners.push(() => el.removeEventListener(ev, fn));
+  }
+
+  function resetState() {
+    state.players[0].total = 0; state.players[0].picks = [];
+    state.players[1].total = 0; state.players[1].picks = [];
+    state.startingPlayerIndex = 0;
+    state.activePlayerIndex = 0;
+    state.currentClubs = [];
+    state.round = 0;
+    state.picksThisRound = 0;
+    state.isSpinning = false;
+    state.isFinished = false;
+    state.usedPlayerIds = new Set();
+  }
+
+  function showHome() {
+    els.homePanel.classList.remove('hidden');
+    els.setupPanel.classList.add('hidden');
+    els.gamePanel.classList.add('hidden');
+  }
+
+  function showSetup() {
+    els.homePanel.classList.add('hidden');
+    els.setupPanel.classList.remove('hidden');
+    els.gamePanel.classList.add('hidden');
+    resetSetup();
+  }
+
+  function resetSetup() {
+    els.player1Input.value = '';
+    els.player2Input.value = '';
+    els.setupStatus.textContent = 'İki oyuncunun da adını yaz, sonra yazı-turayı at.';
+    els.coinResult.classList.add('hidden');
+    els.coinSideA.classList.remove('winner', 'spinning');
+    els.coinSideB.classList.remove('winner', 'spinning');
+    els.coinSideA.querySelector('.coin-name').textContent = '1';
+    els.coinSideB.querySelector('.coin-name').textContent = '2';
+    els.goToGameButton.classList.add('hidden');
+    els.spinCoinButton.disabled = false;
+    els.spinCoinButton.textContent = 'Yazı-Tura At';
+    els.spinCoinButton.classList.add('primary-button');
+    els.spinCoinButton.classList.remove('ghost-button');
+  }
+
+  function updateSetupStatusOnType() {
+    const a = els.player1Input.value.trim();
+    const b = els.player2Input.value.trim();
+    if (a && b) {
+      els.setupStatus.textContent = "İsimler tamam. Şimdi Yazı-Tura'yı at.";
+    } else {
+      els.setupStatus.textContent = 'İki oyuncunun da adını yaz, sonra yazı-turayı at.';
+    }
+    if (!els.coinResult.classList.contains('hidden')) {
+      const winner = state.players[state.startingPlayerIndex];
+      els.coinSideA.querySelector('.coin-name').textContent = a || '1';
+      els.coinSideB.querySelector('.coin-name').textContent = b || '2';
+      const label = state.startingPlayerIndex === 0 ? (a || '1') : (b || '2');
+      els.coinWinnerLabel.textContent = label;
+    }
+  }
+
+  function flipCoin() {
+    const a = els.player1Input.value.trim();
+    const b = els.player2Input.value.trim();
+    if (!a || !b) {
+      els.setupStatus.textContent = 'İki oyuncunun da adını girmen gerek.';
+      return;
+    }
+    state.players[0].name = a;
+    state.players[1].name = b;
+    els.coinSideA.querySelector('.coin-name').textContent = a;
+    els.coinSideB.querySelector('.coin-name').textContent = b;
+    els.coinResult.classList.add('hidden');
+    els.coinSideA.classList.remove('winner');
+    els.coinSideB.classList.remove('winner');
+    els.coinSideA.classList.add('spinning');
+    els.coinSideB.classList.add('spinning');
+    els.spinCoinButton.disabled = true;
+    els.setupStatus.textContent = 'Yazı-tura dönüyor...';
+
+    const totalTicks = 14 + Math.floor(Math.random() * 6);
+    let ticks = 0;
+    const interval = window.setInterval(() => {
+      ticks++;
+      const cur = ticks % 2;
+      els.coinSideA.classList.toggle('winner', cur === 0);
+      els.coinSideB.classList.toggle('winner', cur === 1);
+      if (ticks >= totalTicks) {
+        window.clearInterval(interval);
+        const winner = Math.random() < 0.5 ? 0 : 1;
+        state.startingPlayerIndex = winner;
+        state.activePlayerIndex = winner;
+        els.coinSideA.classList.remove('spinning');
+        els.coinSideB.classList.remove('spinning');
+        els.coinSideA.classList.toggle('winner', winner === 0);
+        els.coinSideB.classList.toggle('winner', winner === 1);
+        els.coinWinnerLabel.textContent = state.players[winner].name;
+        els.coinResult.classList.remove('hidden');
+        els.setupStatus.textContent = 'Sonuç geldi. Oyuna geçebilirsin.';
+        els.spinCoinButton.disabled = false;
+        els.spinCoinButton.textContent = 'Tekrar At';
+        els.spinCoinButton.classList.remove('primary-button');
+        els.spinCoinButton.classList.add('ghost-button');
+        els.goToGameButton.classList.remove('hidden');
+      }
+    }, 90);
+  }
+
+  function goToGame() {
+    els.homePanel.classList.add('hidden');
+    els.setupPanel.classList.add('hidden');
+    els.gamePanel.classList.remove('hidden');
+    startGame();
+  }
+
+  function startGame() {
+    resetState();
+    // Restore player names + coin flip winner
+    state.players[0].name = els.player1Input.value.trim() || 'Oyuncu 1';
+    state.players[1].name = els.player2Input.value.trim() || 'Oyuncu 2';
+    // startingPlayerIndex already set by coin flip
+    renderNames();
+    renderPicks();
+    renderScoreboard();
+    resetClubs();
+    els.result.classList.add('hidden');
+    els.roundDone.classList.add('hidden');
+    els.turnPanel.classList.add('hidden');
+    els.spinButton.classList.remove('hidden');
+    els.spinButton.disabled = false;
+    state.round = 1;
+    els.roundEyebrow.textContent = `TUR ${state.round} / ${TOTAL_ROUNDS}`;
+    els.gameStatus.textContent = '';
+    els.spinButton.textContent = 'Takımları Getir';
+  }
+
+  function renderNames() {
+    els.nameA.textContent = state.players[0].name;
+    els.nameB.textContent = state.players[1].name;
+    els.totalNameA.textContent = state.players[0].name;
+    els.totalNameB.textContent = state.players[1].name;
+  }
+
+  function renderScoreboard() {
+    els.totalA.textContent = state.players[0].total;
+    els.totalB.textContent = state.players[1].total;
+  }
+
+  function renderPicks() {
+    for (const [playerIdx, listEl] of [[0, els.picksA], [1, els.picksB]]) {
+      const list = listEl;
+      const items = list.querySelectorAll('.rb-pick');
+      const picks = state.players[playerIdx].picks;
+      items.forEach((li, i) => {
+        const p = picks[i];
+        if (!p) {
+          li.className = 'rb-pick empty';
+          li.textContent = '';
+        } else {
+          li.className = 'rb-pick';
+          if (p.roundWinner) li.classList.add('winner-round');
+          li.innerHTML = `<span class="rb-pick-name">${p.name}</span><span class="rb-pick-score">${p.score}</span>`;
+        }
+      });
+    }
+  }
+
+  function resetClubs() {
+    clubSlots.forEach((slot) => {
+      slot.classList.remove('spinning', 'landed');
+      slot.querySelector('.rb-club-logo').style.backgroundImage = '';
+      slot.querySelector('.rb-club-name').textContent = '-';
+    });
+    state.currentClubs = [];
+  }
+
+  function setSlotClub(slotEl, club) {
+    const logoEl = slotEl.querySelector('.rb-club-logo');
+    const nameEl = slotEl.querySelector('.rb-club-name');
+    logoEl.style.backgroundImage = `url(${club.localLogoPath})`;
+    nameEl.textContent = club.displayName;
+  }
+
+  function spinClubs() {
+    if (state.isSpinning) return;
+    if (state.round > TOTAL_ROUNDS) return;
+    state.isSpinning = true;
+    els.spinButton.disabled = true;
+    els.roundDone.classList.add('hidden');
+    els.turnPanel.classList.add('hidden');
+
+    const finalClubs = weightedSample(ALL_CLUBS, clubWeights, 5);
+    clubSlots.forEach((slot) => slot.classList.add('spinning'));
+
+    // Each slot cycles at its own pace, then locks in sequence
+    const slotStates = clubSlots.map(() => ({ tick: 0, stopAt: 0 }));
+    const baseDuration = 18;
+    slotStates.forEach((s, idx) => {
+      s.stopAt = baseDuration + idx * 4 + Math.floor(Math.random() * 3);
+    });
+
+    let done = 0;
+    const interval = window.setInterval(() => {
+      slotStates.forEach((s, idx) => {
+        if (s.tick >= s.stopAt) return; // already landed
+        const temp = ALL_CLUBS[Math.floor(Math.random() * ALL_CLUBS.length)];
+        setSlotClub(clubSlots[idx], temp);
+        s.tick++;
+        if (s.tick >= s.stopAt) {
+          setSlotClub(clubSlots[idx], finalClubs[idx]);
+          clubSlots[idx].classList.remove('spinning');
+          clubSlots[idx].classList.add('landed');
+          window.setTimeout(() => clubSlots[idx].classList.remove('landed'), 520);
+          done++;
+        }
+      });
+      if (done >= clubSlots.length) {
+        window.clearInterval(interval);
+        state.currentClubs = finalClubs;
+        state.isSpinning = false;
+        els.spinButton.classList.add('hidden');
+        beginRoundPicks();
+      }
+    }, 55);
+  }
+
+  function beginRoundPicks() {
+    // Starting player of this round: alternates each round
+    const starter = (state.startingPlayerIndex + (state.round - 1)) % 2;
+    state.activePlayerIndex = starter;
+    state.picksThisRound = 0;
+    els.turnPanel.classList.remove('hidden');
+    els.turnLabel.textContent = state.players[state.activePlayerIndex].name;
+    els.guessInput.value = '';
+    els.guessInput.disabled = false;
+    els.guessButton.disabled = false;
+    els.gameStatus.textContent = '';
+    els.guessInput.focus();
+  }
+
+  function findPlayerByName(query) {
+    const q = normalizeName(query);
+    if (!q) return null;
+    // Exact
+    const exact = playerPool.find((p) => p.normalized === q);
+    if (exact) return exact;
+    // Starts with
+    const starts = playerPool.find((p) => p.normalized.startsWith(q));
+    if (starts) return starts;
+    // Includes
+    return playerPool.find((p) => p.normalized.includes(q)) ?? null;
+  }
+
+  function scoreForCurrentClubs(player) {
+    const currentSet = new Set(state.currentClubs.map((c) => c.name.toLowerCase()));
+    let matched = 0;
+    const matches = [];
+    for (const c of player.clubsNormalized) {
+      if (currentSet.has(c)) {
+        matched++;
+        matches.push(c);
+      }
+    }
+    return { count: matched, matches };
+  }
+
+  function submitGuess() {
+    if (state.picksThisRound >= 2) return;
+    const raw = els.guessInput.value.trim();
+    if (!raw) {
+      els.gameStatus.textContent = 'Bir futbolcu adı yaz.';
+      return;
+    }
+    const found = findPlayerByName(raw);
+    if (!found) {
+      els.gameStatus.textContent = `"${raw}" havuzda bulunamadı, tekrar dene.`;
+      return;
+    }
+    if (state.usedPlayerIds.has(found.id)) {
+      els.gameStatus.textContent = `${found.name} bu oyunda zaten seçildi. Başka biri.`;
+      return;
+    }
+    const { count } = scoreForCurrentClubs(found);
+    state.usedPlayerIds.add(found.id);
+    const activePlayer = state.players[state.activePlayerIndex];
+    const pick = { name: found.name, score: count, round: state.round };
+    activePlayer.picks.push(pick);
+    activePlayer.total += count;
+    state.picksThisRound += 1;
+    renderPicks();
+    renderScoreboard();
+    els.guessInput.value = '';
+    els.gameStatus.textContent = `${activePlayer.name}: ${found.name} = ${count} puan.`;
+
+    if (state.picksThisRound >= 2) {
+      finishRound();
+    } else {
+      state.activePlayerIndex = state.activePlayerIndex === 0 ? 1 : 0;
+      els.turnLabel.textContent = state.players[state.activePlayerIndex].name;
+      els.guessInput.focus();
+    }
+  }
+
+  function finishRound() {
+    els.turnPanel.classList.add('hidden');
+    // Determine round winner (last pick of each) and mark it
+    const idx = state.round - 1;
+    const p0Pick = state.players[0].picks[idx];
+    const p1Pick = state.players[1].picks[idx];
+    if (p0Pick && p1Pick) {
+      if (p0Pick.score > p1Pick.score) p0Pick.roundWinner = true;
+      else if (p1Pick.score > p0Pick.score) p1Pick.roundWinner = true;
+    }
+    renderPicks();
+
+    if (state.round >= TOTAL_ROUNDS) {
+      finishGame();
+      return;
+    }
+
+    els.roundDone.classList.remove('hidden');
+    els.roundDoneEyebrow.textContent = `Tur ${state.round} Bitti`;
+    const [p0, p1] = state.players;
+    els.roundSummary.textContent = `${p0.name} bu tur ${p0Pick?.score ?? 0} · ${p1.name} bu tur ${p1Pick?.score ?? 0}. Toplam ${p0.total} — ${p1.total}.`;
+    els.nextRoundButton.textContent = `Tur ${state.round + 1}: Takımları Getir`;
+  }
+
+  function nextRound() {
+    state.round += 1;
+    els.roundEyebrow.textContent = `TUR ${state.round} / ${TOTAL_ROUNDS}`;
+    resetClubs();
+    els.roundDone.classList.add('hidden');
+    els.spinButton.classList.remove('hidden');
+    els.spinButton.disabled = false;
+    els.gameStatus.textContent = '';
+  }
+
+  function finishGame() {
+    state.isFinished = true;
+    els.turnPanel.classList.add('hidden');
+    els.roundDone.classList.add('hidden');
+    els.spinButton.classList.add('hidden');
+    const [p0, p1] = state.players;
+    els.result.classList.remove('hidden');
+    els.result.classList.remove('win', 'tie');
+    if (p0.total === p1.total) {
+      els.result.classList.add('tie');
+      els.resultEyebrow.textContent = 'Berabere';
+      els.resultTitle.textContent = `${p0.total} — ${p1.total}`;
+      els.resultSub.textContent = `İki oyuncu da ${p0.total} puanla bitirdi. İstersen yeniden oyna.`;
+    } else {
+      els.result.classList.add('win');
+      const winner = p0.total > p1.total ? p0 : p1;
+      const loser  = p0.total > p1.total ? p1 : p0;
+      els.resultEyebrow.textContent = 'Kazanan';
+      els.resultTitle.textContent = winner.name;
+      els.resultSub.textContent = `${winner.name} ${winner.total} · ${loser.name} ${loser.total}`;
+    }
+    els.playAgainButton.textContent = 'Yeni Oyun';
+  }
+
+  function goHome() {
+    showHome();
+  }
+
+  bind(els.startButton, 'click', showSetup);
+  bind(els.setupBackButton, 'click', goHome);
+  bind(els.gameBackButton, 'click', goHome);
+  bind(els.spinCoinButton, 'click', flipCoin);
+  bind(els.goToGameButton, 'click', goToGame);
+  bind(els.spinButton, 'click', spinClubs);
+  bind(els.guessButton, 'click', submitGuess);
+  bind(els.guessInput, 'keydown', (e) => {
+    if (e.key === 'Enter') { e.preventDefault(); submitGuess(); }
+  });
+  bind(els.player1Input, 'input', updateSetupStatusOnType);
+  bind(els.player2Input, 'input', updateSetupStatusOnType);
+  bind(els.nextRoundButton, 'click', () => { nextRound(); });
+  bind(els.playAgainButton, 'click', () => { showSetup(); });
+  bind(els.infoButton, 'click', () => {
+    els.infoModal.classList.remove('hidden');
+    els.infoModal.setAttribute('aria-hidden', 'false');
+  });
+  bind(els.closeInfoButton, 'click', () => {
+    els.infoModal.classList.add('hidden');
+    els.infoModal.setAttribute('aria-hidden', 'true');
+  });
+
+  cleanup = () => {
+    listeners.forEach((fn) => fn());
+    listeners.length = 0;
+  };
+}
+
+export function unmount() {
+  cleanup?.();
+  cleanup = null;
+}

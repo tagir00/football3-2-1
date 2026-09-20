@@ -33,11 +33,11 @@ export function template() {
       <div class="setup-form">
         <label class="setup-label">
           <span>1. Oyuncu</span>
-          <input class="setup-input" id="dPlayer1Input" type="text" placeholder="Mehmet" maxlength="16" />
+          <input class="setup-input" id="dPlayer1Input" type="text" placeholder="Beraat" maxlength="16" />
         </label>
         <label class="setup-label">
           <span>2. Oyuncu</span>
-          <input class="setup-input" id="dPlayer2Input" type="text" placeholder="Beraat" maxlength="16" />
+          <input class="setup-input" id="dPlayer2Input" type="text" placeholder="Mehmet" maxlength="16" />
         </label>
       </div>
 

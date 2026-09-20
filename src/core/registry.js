@@ -20,6 +20,13 @@ export const games = [
     accent: 'game-who-are-ya',
     load: () => import('../games/who-are-ya/index.js'),
   },
+  {
+    id: 'rastgele-besler',
+    title: 'Rastgele Beşler',
+    cover: './assets/covers/rastgele-besler.svg',
+    accent: 'game-rastgele-besler',
+    load: () => import('../games/rastgele-besler/index.js'),
+  },
 ];
 
 export function getGame(id) {
