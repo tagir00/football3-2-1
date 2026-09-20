@@ -19,7 +19,11 @@
                         "assists":  3,
                         "yellowCards":  5,
                         "redCards":  0,
-                        "nationality":  "Netherlands"
+                        "nationality":  "Netherlands",
+                        "clubApps":  205,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  96832,
@@ -36,7 +40,11 @@
                         "assists":  2,
                         "yellowCards":  9,
                         "redCards":  0,
-                        "nationality":  "Germany"
+                        "nationality":  "Germany",
+                        "clubApps":  199,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  142471,
@@ -53,7 +61,11 @@
                         "assists":  0,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  "Germany"
+                        "nationality":  "Germany",
+                        "clubApps":  9,
+                        "weight":  84,
+                        "apiFootballId":  25168,
+                        "trophies":  0
                     },
                     {
                         "id":  1003339,
@@ -70,7 +82,11 @@
                         "assists":  3,
                         "yellowCards":  13,
                         "redCards":  0,
-                        "nationality":  "England"
+                        "nationality":  "England",
+                        "clubApps":  97,
+                        "weight":  84,
+                        "apiFootballId":  158698,
+                        "trophies":  13
                     },
                     {
                         "id":  1006489,
@@ -87,7 +103,11 @@
                         "assists":  4,
                         "yellowCards":  43,
                         "redCards":  5,
-                        "nationality":  "France"
+                        "nationality":  "France",
+                        "clubApps":  175,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  168903,
@@ -104,7 +124,11 @@
                         "assists":  20,
                         "yellowCards":  66,
                         "redCards":  5,
-                        "nationality":  "Germany"
+                        "nationality":  "Germany",
+                        "clubApps":  265,
+                        "weight":  83,
+                        "apiFootballId":  24903,
+                        "trophies":  0
                     },
                     {
                         "id":  883262,
@@ -121,7 +145,11 @@
                         "assists":  10,
                         "yellowCards":  54,
                         "redCards":  1,
-                        "nationality":  "Burkina Faso"
+                        "nationality":  "Burkina Faso",
+                        "clubApps":  304,
+                        "weight":  85,
+                        "apiFootballId":  41150,
+                        "trophies":  0
                     },
                     {
                         "id":  1138778,
@@ -138,7 +166,11 @@
                         "assists":  3,
                         "yellowCards":  5,
                         "redCards":  0,
-                        "nationality":  "Germany"
+                        "nationality":  "Germany",
+                        "clubApps":  59,
+                        "weight":  76,
+                        "apiFootballId":  280091,
+                        "trophies":  0
                     },
                     {
                         "id":  1937795,
@@ -155,7 +187,11 @@
                         "assists":  0,
                         "yellowCards":  2,
                         "redCards":  0,
-                        "nationality":  "France"
+                        "nationality":  "France",
+                        "clubApps":  10,
+                        "weight":  75,
+                        "apiFootballId":  491103,
+                        "trophies":  0
                     },
                     {
                         "id":  1173172,
@@ -172,7 +208,11 @@
                         "assists":  2,
                         "yellowCards":  7,
                         "redCards":  1,
-                        "nationality":  "France"
+                        "nationality":  "France",
+                        "clubApps":  71,
+                        "weight":  73,
+                        "apiFootballId":  343316,
+                        "trophies":  0
                     },
                     {
                         "id":  1003012,
@@ -189,7 +229,11 @@
                         "assists":  4,
                         "yellowCards":  7,
                         "redCards":  1,
-                        "nationality":  "A"
+                        "nationality":  "A",
+                        "clubApps":  87,
+                        "weight":  76,
+                        "apiFootballId":  5996,
+                        "trophies":  23
                     },
                     {
                         "id":  975798,
@@ -206,7 +250,11 @@
                         "assists":  26,
                         "yellowCards":  19,
                         "redCards":  0,
-                        "nationality":  "United States"
+                        "nationality":  "United States",
+                        "clubApps":  165,
+                        "weight":  71,
+                        "apiFootballId":  162037,
+                        "trophies":  0
                     },
                     {
                         "id":  1174761,
@@ -223,7 +271,11 @@
                         "assists":  6,
                         "yellowCards":  4,
                         "redCards":  0,
-                        "nationality":  "Brazil"
+                        "nationality":  "Brazil",
+                        "clubApps":  64,
+                        "weight":  73,
+                        "apiFootballId":  150,
+                        "trophies":  0
                     },
                     {
                         "id":  1402920,
@@ -240,7 +292,11 @@
                         "assists":  1,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  "Germany"
+                        "nationality":  "Germany",
+                        "clubApps":  2,
+                        "weight":  75,
+                        "apiFootballId":  389035,
+                        "trophies":  0
                     },
                     {
                         "id":  1100321,
@@ -257,7 +313,11 @@
                         "assists":  4,
                         "yellowCards":  6,
                         "redCards":  0,
-                        "nationality":  "Belgium"
+                        "nationality":  "Belgium",
+                        "clubApps":  68,
+                        "weight":  75,
+                        "apiFootballId":  298006,
+                        "trophies":  0
                     },
                     {
                         "id":  255239,
@@ -274,7 +334,11 @@
                         "assists":  83,
                         "yellowCards":  57,
                         "redCards":  2,
-                        "nationality":  "Spain"
+                        "nationality":  "Spain",
+                        "clubApps":  459,
+                        "weight":  70,
+                        "apiFootballId":  757,
+                        "trophies":  0
                     },
                     {
                         "id":  1961762,
@@ -291,7 +355,11 @@
                         "assists":  0,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  ""
+                        "nationality":  "",
+                        "clubApps":  0,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  796047,
@@ -308,7 +376,11 @@
                         "assists":  35,
                         "yellowCards":  27,
                         "redCards":  1,
-                        "nationality":  "Spain"
+                        "nationality":  "Spain",
+                        "clubApps":  260,
+                        "weight":  68,
+                        "apiFootballId":  47516,
+                        "trophies":  0
                     },
                     {
                         "id":  822600,
@@ -325,7 +397,11 @@
                         "assists":  17,
                         "yellowCards":  28,
                         "redCards":  0,
-                        "nationality":  "Argentina"
+                        "nationality":  "Argentina",
+                        "clubApps":  185,
+                        "weight":  80,
+                        "apiFootballId":  311360,
+                        "trophies":  0
                     },
                     {
                         "id":  1568522,
@@ -342,7 +418,11 @@
                         "assists":  0,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  "Germany"
+                        "nationality":  "Germany",
+                        "clubApps":  16,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  1489216,
@@ -359,7 +439,11 @@
                         "assists":  0,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  "Germany"
+                        "nationality":  "Germany",
+                        "clubApps":  15,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  142390,
@@ -376,7 +460,11 @@
                         "assists":  83,
                         "yellowCards":  19,
                         "redCards":  0,
-                        "nationality":  "Germany"
+                        "nationality":  "Germany",
+                        "clubApps":  1,
+                        "weight":  73,
+                        "apiFootballId":  25635,
+                        "trophies":  0
                     },
                     {
                         "id":  846445,
@@ -393,7 +481,11 @@
                         "assists":  33,
                         "yellowCards":  13,
                         "redCards":  3,
-                        "nationality":  "France"
+                        "nationality":  "France",
+                        "clubApps":  272,
+                        "weight":  71,
+                        "apiFootballId":  663,
+                        "trophies":  0
                     },
                     {
                         "id":  280609,
@@ -410,7 +502,11 @@
                         "assists":  28,
                         "yellowCards":  24,
                         "redCards":  0,
-                        "nationality":  "Czech Republic"
+                        "nationality":  "Czech Republic",
+                        "clubApps":  333,
+                        "weight":  87,
+                        "apiFootballId":  794,
+                        "trophies":  0
                     },
                     {
                         "id":  25426,
@@ -427,7 +523,11 @@
                         "assists":  8,
                         "yellowCards":  4,
                         "redCards":  1,
-                        "nationality":  "Morocco"
+                        "nationality":  "Morocco",
+                        "clubApps":  100,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  1215906,
@@ -444,7 +544,11 @@
                         "assists":  10,
                         "yellowCards":  4,
                         "redCards":  0,
-                        "nationality":  "Portugal"
+                        "nationality":  "Portugal",
+                        "clubApps":  42,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  2207346,
@@ -461,7 +565,11 @@
                         "assists":  0,
                         "yellowCards":  1,
                         "redCards":  0,
-                        "nationality":  "Serbia"
+                        "nationality":  "Serbia",
+                        "clubApps":  18,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  1119502,
@@ -478,7 +586,11 @@
                         "assists":  23,
                         "yellowCards":  7,
                         "redCards":  0,
-                        "nationality":  "Netherlands"
+                        "nationality":  "Netherlands",
+                        "clubApps":  120,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  978521,
@@ -495,7 +607,11 @@
                         "assists":  25,
                         "yellowCards":  10,
                         "redCards":  0,
-                        "nationality":  "N"
+                        "nationality":  "N",
+                        "clubApps":  117,
+                        "weight":  91,
+                        "apiFootballId":  39071,
+                        "trophies":  0
                     },
                     {
                         "id":  920379,
@@ -512,7 +628,11 @@
                         "assists":  20,
                         "yellowCards":  11,
                         "redCards":  0,
-                        "nationality":  "Nigeria"
+                        "nationality":  "Nigeria",
+                        "clubApps":  143,
+                        "weight":  70,
+                        "apiFootballId":  231029,
+                        "trophies":  0
                     },
                     {
                         "id":  1407524,
@@ -529,7 +649,11 @@
                         "assists":  7,
                         "yellowCards":  4,
                         "redCards":  0,
-                        "nationality":  "Algeria"
+                        "nationality":  "Algeria",
+                        "clubApps":  49,
+                        "weight":  70,
+                        "apiFootballId":  380587,
+                        "trophies":  0
                     },
                     {
                         "id":  2029648,
@@ -546,7 +670,11 @@
                         "assists":  9,
                         "yellowCards":  5,
                         "redCards":  0,
-                        "nationality":  "Cameroon"
+                        "nationality":  "Cameroon",
+                        "clubApps":  44,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  2111739,
@@ -563,7 +691,116 @@
                         "assists":  0,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  ""
+                        "nationality":  "",
+                        "clubApps":  0,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
+                    },
+                    {
+                        "id":  9000160,
+                        "name":  "Facundo Medina",
+                        "slug":  "facundo-medina",
+                        "position":  "DEF",
+                        "shirt":  null,
+                        "age":  26,
+                        "birth":  "1999-05-28",
+                        "height":  185,
+                        "marketValue":  30000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  4,
+                        "assists":  3,
+                        "yellowCards":  32,
+                        "redCards":  3,
+                        "nationality":  "Argentina",
+                        "clubApps":  179,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
+                    },
+                    {
+                        "id":  9000161,
+                        "name":  "Miguel Gutiérrez",
+                        "slug":  "miguel-gutierrez-napoli",
+                        "position":  "DEF",
+                        "shirt":  null,
+                        "age":  24,
+                        "birth":  "2001-07-27",
+                        "height":  179,
+                        "marketValue":  22000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0,
+                        "assists":  8,
+                        "yellowCards":  10,
+                        "redCards":  0,
+                        "nationality":  "Spain",
+                        "clubApps":  158,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
+                    },
+                    {
+                        "id":  9000162,
+                        "name":  "Guéla Doué",
+                        "slug":  "guela-doue",
+                        "position":  "DEF",
+                        "shirt":  null,
+                        "age":  23,
+                        "birth":  "2002-11-17",
+                        "height":  179,
+                        "marketValue":  20000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  4,
+                        "assists":  4,
+                        "yellowCards":  8,
+                        "redCards":  0,
+                        "nationality":  "Ivory Coast",
+                        "clubApps":  94,
+                        "weight":  79,
+                        "apiFootballId":  343027,
+                        "trophies":  12
+                    },
+                    {
+                        "id":  9000161,
+                        "name":  "Miguel Gutiérrez",
+                        "slug":  "miguel-gutierrez-napoli",
+                        "position":  "DEF",
+                        "shirt":  null,
+                        "age":  24,
+                        "birth":  "2001-07-27",
+                        "height":  179,
+                        "marketValue":  22000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0,
+                        "assists":  8,
+                        "yellowCards":  10,
+                        "redCards":  0,
+                        "nationality":  "Spain",
+                        "clubApps":  158,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
+                    },
+                    {
+                        "id":  9000162,
+                        "name":  "Guéla Doué",
+                        "slug":  "guela-doue",
+                        "position":  "DEF",
+                        "shirt":  null,
+                        "age":  23,
+                        "birth":  "2002-11-17",
+                        "height":  179,
+                        "marketValue":  20000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  4,
+                        "assists":  4,
+                        "yellowCards":  8,
+                        "redCards":  0,
+                        "nationality":  "Ivory Coast",
+                        "clubApps":  94,
+                        "weight":  79,
+                        "apiFootballId":  343027,
+                        "trophies":  12
                     }
                 ],
     "league":  "Bundesliga"

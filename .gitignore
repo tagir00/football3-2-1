@@ -3,3 +3,8 @@ videos/
 player-ids.txt
 theme-preview*.html
 data/
+
+# API keys
+.env
+.api-keys/
+api-football.key

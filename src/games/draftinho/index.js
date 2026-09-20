@@ -557,7 +557,12 @@ export async function mount(container) {
       els.gameStatus.textContent = `${player.name} bu turda zaten seçildi. Başka bir oyuncu seç.`;
       return;
     }
-    const value = Number(player[state.criterion.field] ?? 0);
+    const rawFieldValue = player[state.criterion.field];
+    if (state.criterion.requiresValue && (rawFieldValue == null || rawFieldValue === 0)) {
+      els.gameStatus.textContent = `${player.name} için ${state.criterion.title.toLowerCase()} bilgisi yok, başka oyuncu seç.`;
+      return;
+    }
+    const value = Number(rawFieldValue ?? 0);
     state.pendingSlot.filled = player;
     state.pendingSlot.value = value;
     state.usedInSpin.add(normalizeName(player.name));

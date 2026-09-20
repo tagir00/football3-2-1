@@ -17,11 +17,11 @@
   <rect width="400" height="300" fill="url(#c2bg)"/>
   <rect width="400" height="300" fill="url(#c2spot)"/>
 
-  <!-- Big 6 -->
-  <text x="30" y="230" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="240" fill="url(#c2cool)">6</text>
+  <!-- Big 6 on the left -->
+  <text x="40" y="215" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="210" fill="url(#c2cool)">6</text>
 
   <!-- Player slot pips: 3 columns x 2 rows on the right -->
-  <g transform="translate(215 60)">
+  <g transform="translate(215 55)">
     <g fill="rgba(255,255,255,0.14)" stroke="rgba(255,255,255,0.35)" stroke-width="1">
       <rect x="0"   y="0"   width="50" height="60" rx="8"/>
       <rect x="60"  y="0"   width="50" height="60" rx="8"/>
@@ -30,7 +30,6 @@
       <rect x="60"  y="72"  width="50" height="60" rx="8"/>
       <rect x="120" y="72"  width="50" height="60" rx="8"/>
     </g>
-    <!-- head + jersey silhouettes -->
     <g fill="rgba(125,211,252,0.75)">
       <circle cx="25"  cy="18" r="6"/>
       <circle cx="85"  cy="18" r="6"/>
@@ -49,6 +48,6 @@
     </g>
   </g>
 
-  <!-- DRAFT wordmark -->
-  <text x="215" y="245" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="34" letter-spacing="4" fill="#f8fafc">DRAFT</text>
+  <!-- DRAFT wordmark centered under the pips -->
+  <text x="300" y="235" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="32" letter-spacing="3" fill="#f8fafc" text-anchor="middle">DRAFT</text>
 </svg>

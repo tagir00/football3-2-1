@@ -15,6 +15,23 @@ const TEAM_IDS = [
 
 const MIN_MARKET_VALUE = 15_000_000;
 
+// Youth / reserve filter: for age ≤ 21, we require either "star" evidence
+// (marketValue ≥ 30M€ or ≥ 5 senior international caps) OR a plausible
+// first-team shirt (< 40) combined with a non-marginal profile. This lets
+// Yamal, Endrick, Alajbegović, Rico Lewis etc. through, but drops academy
+// squad-fillers wearing shirt 40+.
+function passesYouthFilter(p) {
+  if (p.age > 21) return true;
+  const shirt = p.shirt ?? 99;
+  const caps = p.intlAppearances ?? 0;
+  const mv = p.marketValue ?? 0;
+  const isStar = mv >= 30_000_000 || caps >= 5;
+  if (isStar) return true;
+  if (shirt >= 40) return false;
+  const marginal = mv < 25_000_000 && caps < 3;
+  return !marginal;
+}
+
 let poolPromise = null;
 
 export function loadFamousPool() {
@@ -37,6 +54,7 @@ export function loadFamousPool() {
         // players whose citizenship value contained a comma.
         if (!p.nationality || p.nationality.length <= 2) continue;
         if ((p.marketValue ?? 0) < MIN_MARKET_VALUE) continue;
+        if (!passesYouthFilter(p)) continue;
         out.push({
           id: p.id,
           name: p.name,

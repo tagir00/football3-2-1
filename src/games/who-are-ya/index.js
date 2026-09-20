@@ -162,12 +162,14 @@ export async function mount(container) {
     row.className = 'wy-guess-row';
     row.innerHTML = `
       <div class="wy-name-cell" title="${guess.name}">${guess.name}</div>
-      <div class="wy-tile ${feedback.nationality}">${labelForCategory(guess, 'nationality')}</div>
-      <div class="wy-tile ${feedback.league}">${labelForCategory(guess, 'league')}</div>
-      <div class="wy-tile ${feedback.team}">${labelForCategory(guess, 'team')}</div>
-      <div class="wy-tile ${feedback.position}">${labelForCategory(guess, 'position')}</div>
-      <div class="wy-tile ${feedback.age.kind}">${feedback.age.text}</div>
-      <div class="wy-tile ${feedback.shirt.kind}">${feedback.shirt.text}</div>
+      <div class="wy-tile-row">
+        <div class="wy-tile ${feedback.nationality}">${labelForCategory(guess, 'nationality')}</div>
+        <div class="wy-tile ${feedback.league}">${labelForCategory(guess, 'league')}</div>
+        <div class="wy-tile ${feedback.team}">${labelForCategory(guess, 'team')}</div>
+        <div class="wy-tile ${feedback.position}">${labelForCategory(guess, 'position')}</div>
+        <div class="wy-tile ${feedback.age.kind}">${feedback.age.text}</div>
+        <div class="wy-tile ${feedback.shirt.kind}">${feedback.shirt.text}</div>
+      </div>
     `;
     els.guessList.append(row);
   }

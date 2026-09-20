@@ -91,6 +91,31 @@ export const criteria = [
     unit: 'kırmızı',
     higherIsBetter: true,
   },
+  {
+    id: 'clubAppsMost',
+    title: 'En Çok Kulüp Maçı',
+    subtitle: 'Kulüp kariyerinde en çok resmi maça çıkmış oyunculardan 6 kişilik kadro kur.',
+    field: 'clubApps',
+    unit: 'maç',
+    higherIsBetter: true,
+  },
+  {
+    id: 'weightLightest',
+    title: 'En Hafif Kadro',
+    subtitle: 'En hafif oyunculardan 6 kişilik kadro kur (verisi olmayan seçilemez).',
+    field: 'weight',
+    unit: 'kg',
+    higherIsBetter: false,
+    requiresValue: true,
+  },
+  {
+    id: 'trophiesMost',
+    title: 'En Çok Kupa Kazanmış',
+    subtitle: 'Kariyerlerinde en çok kupa kazanmış oyunculardan 6 kişilik kadro kur (Süper Lig sayılmaz, sadece kupalar).',
+    field: 'trophies',
+    unit: 'kupa',
+    higherIsBetter: true,
+  },
 ];
 
 export function getFormation(criterion) {

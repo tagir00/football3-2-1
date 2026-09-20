@@ -19,7 +19,11 @@
                         "assists":  0,
                         "yellowCards":  8,
                         "redCards":  1,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  249,
+                        "weight":  86,
+                        "apiFootballId":  49835,
+                        "trophies":  0
                     },
                     {
                         "id":  827418,
@@ -36,7 +40,11 @@
                         "assists":  3,
                         "yellowCards":  12,
                         "redCards":  0,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  122,
+                        "weight":  80,
+                        "apiFootballId":  50218,
+                        "trophies":  0
                     },
                     {
                         "id":  1549522,
@@ -53,7 +61,11 @@
                         "assists":  0,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  0,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  1804803,
@@ -70,7 +82,11 @@
                         "assists":  0,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  6,
+                        "weight":  85,
+                        "apiFootballId":  469724,
+                        "trophies":  0
                     },
                     {
                         "id":  1065508,
@@ -87,7 +103,11 @@
                         "assists":  0,
                         "yellowCards":  1,
                         "redCards":  0,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  6,
+                        "weight":  84,
+                        "apiFootballId":  278162,
+                        "trophies":  0
                     },
                     {
                         "id":  920514,
@@ -104,7 +124,11 @@
                         "assists":  10,
                         "yellowCards":  39,
                         "redCards":  6,
-                        "nationality":  "Ghana"
+                        "nationality":  "Ghana",
+                        "clubApps":  151,
+                        "weight":  79,
+                        "apiFootballId":  137223,
+                        "trophies":  0
                     },
                     {
                         "id":  142494,
@@ -121,7 +145,11 @@
                         "assists":  21,
                         "yellowCards":  17,
                         "redCards":  1,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  208,
+                        "weight":  80,
+                        "apiFootballId":  26275,
+                        "trophies":  0
                     },
                     {
                         "id":  1562294,
@@ -138,7 +166,11 @@
                         "assists":  0,
                         "yellowCards":  6,
                         "redCards":  0,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  42,
+                        "weight":  84,
+                        "apiFootballId":  443739,
+                        "trophies":  0
                     },
                     {
                         "id":  858977,
@@ -155,7 +187,11 @@
                         "assists":  16,
                         "yellowCards":  15,
                         "redCards":  2,
-                        "nationality":  "Cote d\u0027Ivoire"
+                        "nationality":  "Cote d\u0027Ivoire",
+                        "clubApps":  94,
+                        "weight":  73,
+                        "apiFootballId":  20836,
+                        "trophies":  0
                     },
                     {
                         "id":  997153,
@@ -172,7 +208,11 @@
                         "assists":  5,
                         "yellowCards":  18,
                         "redCards":  4,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  96,
+                        "weight":  80,
+                        "apiFootballId":  162513,
+                        "trophies":  0
                     },
                     {
                         "id":  889430,
@@ -189,7 +229,11 @@
                         "assists":  3,
                         "yellowCards":  58,
                         "redCards":  8,
-                        "nationality":  "Senegal"
+                        "nationality":  "Senegal",
+                        "clubApps":  160,
+                        "weight":  84,
+                        "apiFootballId":  20968,
+                        "trophies":  0
                     },
                     {
                         "id":  1158797,
@@ -206,7 +250,11 @@
                         "assists":  0,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  "Congo"
+                        "nationality":  "Congo",
+                        "clubApps":  2,
+                        "weight":  73,
+                        "apiFootballId":  333879,
+                        "trophies":  0
                     },
                     {
                         "id":  910043,
@@ -223,7 +271,11 @@
                         "assists":  4,
                         "yellowCards":  1,
                         "redCards":  0,
-                        "nationality":  "P"
+                        "nationality":  "P",
+                        "clubApps":  13,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  983059,
@@ -240,7 +292,11 @@
                         "assists":  3,
                         "yellowCards":  13,
                         "redCards":  3,
-                        "nationality":  "Ireland"
+                        "nationality":  "Ireland",
+                        "clubApps":  74,
+                        "weight":  75,
+                        "apiFootballId":  161638,
+                        "trophies":  0
                     },
                     {
                         "id":  1148991,
@@ -257,7 +313,11 @@
                         "assists":  0,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  1,
+                        "weight":  null,
+                        "apiFootballId":  339884,
+                        "trophies":  0
                     },
                     {
                         "id":  103912,
@@ -274,7 +334,11 @@
                         "assists":  30,
                         "yellowCards":  60,
                         "redCards":  5,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  381,
+                        "weight":  70,
+                        "apiFootballId":  50018,
+                        "trophies":  0
                     },
                     {
                         "id":  2010048,
@@ -291,7 +355,11 @@
                         "assists":  0,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  ""
+                        "nationality":  "",
+                        "clubApps":  0,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  893009,
@@ -308,7 +376,11 @@
                         "assists":  2,
                         "yellowCards":  26,
                         "redCards":  0,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  117,
+                        "weight":  79,
+                        "apiFootballId":  62114,
+                        "trophies":  0
                     },
                     {
                         "id":  876857,
@@ -325,7 +397,11 @@
                         "assists":  5,
                         "yellowCards":  26,
                         "redCards":  1,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  189,
+                        "weight":  84,
+                        "apiFootballId":  61820,
+                        "trophies":  0
                     },
                     {
                         "id":  11337,
@@ -342,7 +418,11 @@
                         "assists":  122,
                         "yellowCards":  26,
                         "redCards":  2,
-                        "nationality":  "Bosnia-Herzegovina"
+                        "nationality":  "Bosnia-Herzegovina",
+                        "clubApps":  419,
+                        "weight":  63,
+                        "apiFootballId":  49860,
+                        "trophies":  0
                     },
                     {
                         "id":  888537,
@@ -359,7 +439,11 @@
                         "assists":  38,
                         "yellowCards":  19,
                         "redCards":  0,
-                        "nationality":  "Denmark"
+                        "nationality":  "Denmark",
+                        "clubApps":  237,
+                        "weight":  89,
+                        "apiFootballId":  766,
+                        "trophies":  0
                     },
                     {
                         "id":  896364,
@@ -376,7 +460,11 @@
                         "assists":  34,
                         "yellowCards":  18,
                         "redCards":  1,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  194,
+                        "weight":  55,
+                        "apiFootballId":  1921,
+                        "trophies":  0
                     },
                     {
                         "id":  280447,
@@ -393,7 +481,11 @@
                         "assists":  23,
                         "yellowCards":  24,
                         "redCards":  0,
-                        "nationality":  "Cameroon"
+                        "nationality":  "Cameroon",
+                        "clubApps":  152,
+                        "weight":  76,
+                        "apiFootballId":  85205,
+                        "trophies":  0
                     },
                     {
                         "id":  1118429,
@@ -410,7 +502,11 @@
                         "assists":  27,
                         "yellowCards":  13,
                         "redCards":  0,
-                        "nationality":  "Uzbekistan"
+                        "nationality":  "Uzbekistan",
+                        "clubApps":  97,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  1022881,
@@ -427,7 +523,11 @@
                         "assists":  0,
                         "yellowCards":  7,
                         "redCards":  0,
-                        "nationality":  "T"
+                        "nationality":  "T",
+                        "clubApps":  59,
+                        "weight":  65,
+                        "apiFootballId":  207236,
+                        "trophies":  0
                     },
                     {
                         "id":  1019026,
@@ -444,7 +544,11 @@
                         "assists":  11,
                         "yellowCards":  13,
                         "redCards":  0,
-                        "nationality":  "P"
+                        "nationality":  "P",
+                        "clubApps":  0,
+                        "weight":  64,
+                        "apiFootballId":  197784,
+                        "trophies":  0
                     },
                     {
                         "id":  806964,
@@ -461,7 +565,11 @@
                         "assists":  18,
                         "yellowCards":  10,
                         "redCards":  0,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  261,
+                        "weight":  79,
+                        "apiFootballId":  24885,
+                        "trophies":  0
                     },
                     {
                         "id":  876782,
@@ -478,7 +586,11 @@
                         "assists":  6,
                         "yellowCards":  11,
                         "redCards":  2,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  159,
+                        "weight":  74,
+                        "apiFootballId":  128968,
+                        "trophies":  0
                     },
                     {
                         "id":  989599,
@@ -495,7 +607,11 @@
                         "assists":  2,
                         "yellowCards":  21,
                         "redCards":  1,
-                        "nationality":  "Portugal"
+                        "nationality":  "Portugal",
+                        "clubApps":  69,
+                        "weight":  68,
+                        "apiFootballId":  129794,
+                        "trophies":  0
                     },
                     {
                         "id":  2042194,
@@ -512,7 +628,11 @@
                         "assists":  0,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  "Cote d\u0027Ivoire"
+                        "nationality":  "Cote d\u0027Ivoire",
+                        "clubApps":  112,
+                        "weight":  68,
+                        "apiFootballId":  508266,
+                        "trophies":  0
                     },
                     {
                         "id":  187437,
@@ -529,7 +649,11 @@
                         "assists":  25,
                         "yellowCards":  42,
                         "redCards":  1,
-                        "nationality":  "Germany"
+                        "nationality":  "Germany",
+                        "clubApps":  288,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  209374,
@@ -546,7 +670,11 @@
                         "assists":  26,
                         "yellowCards":  30,
                         "redCards":  3,
-                        "nationality":  "Cape Verde"
+                        "nationality":  "Cape Verde",
+                        "clubApps":  230,
+                        "weight":  75,
+                        "apiFootballId":  195512,
+                        "trophies":  0
                     },
                     {
                         "id":  791355,
@@ -563,7 +691,11 @@
                         "assists":  35,
                         "yellowCards":  16,
                         "redCards":  0,
-                        "nationality":  "Uzbekistan"
+                        "nationality":  "Uzbekistan",
+                        "clubApps":  281,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  1584878,
@@ -580,7 +712,11 @@
                         "assists":  0,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  22,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  916182,
@@ -597,7 +733,11 @@
                         "assists":  7,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  "Croatia"
+                        "nationality":  "Croatia",
+                        "clubApps":  59,
+                        "weight":  68,
+                        "apiFootballId":  14602,
+                        "trophies":  0
                     },
                     {
                         "id":  1148977,
@@ -614,7 +754,11 @@
                         "assists":  0,
                         "yellowCards":  0,
                         "redCards":  0,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  4,
+                        "weight":  null,
+                        "apiFootballId":  null,
+                        "trophies":  0
                     },
                     {
                         "id":  1382235,
@@ -631,7 +775,11 @@
                         "assists":  9,
                         "yellowCards":  17,
                         "redCards":  0,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  120,
+                        "weight":  66,
+                        "apiFootballId":  15884,
+                        "trophies":  0
                     },
                     {
                         "id":  869839,
@@ -648,7 +796,11 @@
                         "assists":  25,
                         "yellowCards":  16,
                         "redCards":  0,
-                        "nationality":  "Türkiye"
+                        "nationality":  "Türkiye",
+                        "clubApps":  164,
+                        "weight":  70,
+                        "apiFootballId":  21447,
+                        "trophies":  0
                     }
                 ],
     "league":  "Super Lig"

@@ -42,7 +42,6 @@ export function template() {
       <div class="suggestions" id="wSuggestions"></div>
 
       <div class="wy-grid-head">
-        <span>Oyuncu</span>
         <span>Milliyet</span>
         <span>Lig</span>
         <span>Takım</span>
