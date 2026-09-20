@@ -103,6 +103,13 @@ $manualAliases = @{
   'Brighton & Hove Albion' = @('brighton','brighton hove albion','brighton and hove albion','albion brighton')
   'Wolverhampton Wanderers' = @('wolves','wolverhampton','wolverhampton fc')
   'Paris Saint-Germain'= @('paris sg','paris saintgermain','psg','paris s g')
+  'Marseille'          = @('olympique marseille','olympique de marseille','om marseille')
+  'Lyon'               = @('olympique lyonnais','olympique lyon','ol lyon')
+  'Nice'               = @('ogc nice','ogc nice cote azur','ogcn')
+  'Monaco'             = @('as monaco','associazione sportiva monaco','asm monaco')
+  'Rennes'             = @('stade rennais','stade rennais fc','rennes fc')
+  'Lille'              = @('losc lille','lille losc','lille olympique')
+  'Toulouse'           = @('toulouse fc','tfc toulouse')
 }
 foreach ($canon in $manualAliases.Keys) {
   foreach ($alias in $manualAliases[$canon]) {
@@ -188,23 +195,36 @@ foreach ($p in $players.Values) {
 }
 Write-Host "Pool after filter: $($out.Count)"
 
-# 4) Merge career augmentations (pre-2012 clubs added by hand for legends whose
-#    early career is missing from the TM CSV). We only ADD clubs — never
-#    remove — and only if the augmented club is in our tracked list.
+# 4) Merge manual patches: `add` = extra clubs to merge in, `override` =
+#    replace the whole clubs list. Only clubs in our tracked list survive.
 if (Test-Path $augmentPath) {
   $augRaw = Get-Content -LiteralPath $augmentPath -Raw -Encoding UTF8 | ConvertFrom-Json
-  $augMap = @{}
-  foreach ($prop in $augRaw.PSObject.Properties) {
-    if ($prop.Name.StartsWith('_')) { continue }
-    $augMap[$prop.Name] = @($prop.Value)
+  $addMap = @{}
+  $overrideMap = @{}
+  if ($augRaw.PSObject.Properties.Match('add').Count -gt 0) {
+    foreach ($prop in $augRaw.add.PSObject.Properties) {
+      $addMap[$prop.Name] = @($prop.Value)
+    }
+  }
+  if ($augRaw.PSObject.Properties.Match('override').Count -gt 0) {
+    foreach ($prop in $augRaw.override.PSObject.Properties) {
+      $overrideMap[$prop.Name] = @($prop.Value)
+    }
   }
   $trackedSet = [System.Collections.Generic.HashSet[string]]::new()
   foreach ($c in $OUR_CLUBS) { [void]$trackedSet.Add($c) }
   $augmentedCount = 0
+  $overriddenCount = 0
   $addedClubs = 0
   foreach ($p in $out) {
-    if ($augMap.ContainsKey($p.name)) {
-      $extra = $augMap[$p.name] | Where-Object { $trackedSet.Contains($_) }
+    if ($overrideMap.ContainsKey($p.name)) {
+      $clean = $overrideMap[$p.name] | Where-Object { $trackedSet.Contains($_) } | Sort-Object -Unique
+      $p.clubs = @($clean)
+      $overriddenCount++
+      continue
+    }
+    if ($addMap.ContainsKey($p.name)) {
+      $extra = $addMap[$p.name] | Where-Object { $trackedSet.Contains($_) }
       if (-not $extra) { continue }
       $current = [System.Collections.Generic.HashSet[string]]::new()
       foreach ($c in $p.clubs) { [void]$current.Add($c) }
@@ -217,7 +237,7 @@ if (Test-Path $augmentPath) {
       }
     }
   }
-  Write-Host "Applied augmentations to $augmentedCount players (+$addedClubs club entries)"
+  Write-Host "Applied add to $augmentedCount players (+$addedClubs clubs), override to $overriddenCount players"
 } else {
   Write-Host "No augmentation file at $augmentPath — skipping."
 }
@@ -231,7 +251,7 @@ Write-Host "Wrote $outPath ($((Get-Item $outPath).Length) bytes)"
 
 # Quick sanity checks
 $hits = @{}
-foreach ($needle in @('Emre Can','Toni Kroos','Marcelo','Piqué','Casemiro','Mario Gotze','Reus','Bale','Harvey Barnes','Kai Havertz','Jamal Musiala')) {
+foreach ($needle in @('Emre Can','Toni Kroos','Marcelo','Piqué','Casemiro','Mario Gotze','Reus','Bale','Harvey Barnes','Kai Havertz','Jamal Musiala','Greenwood','Zlatan','Cristiano')) {
   $found = $out | Where-Object { $_.name -like "*$needle*" } | Select-Object -First 3
   if ($found) { $hits[$needle] = ($found | ForEach-Object { "$($_.name) => [$($_.clubs -join ', ')] ($($_.apps) apps)" }) }
 }
