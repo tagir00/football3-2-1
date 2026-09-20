@@ -1,63 +1,497 @@
 {
-  "_note": "Manual patches for Rastgele Beşler's playerPool.json. `add` merges extra clubs into a player's list (useful for pre-2012 careers Transfermarkt is missing). `override` REPLACES the clubs list entirely (useful when TM has wrong club rows, or when a very recent transfer isn't in our CSV yet). Only clubs in our tracked list (src/games/futbol321/data.js) actually score; unknown names are silently dropped.",
-
-  "add": {
-    "Cristiano Ronaldo": ["Sporting CP"],
-    "Zlatan Ibrahimović": ["Ajax", "Juventus", "Inter Milan", "Barcelona"],
-    "Andrea Pirlo": ["Inter Milan"],
-    "Ronaldinho": ["Paris Saint-Germain", "Barcelona", "AC Milan", "Flamengo"],
-    "Kaká": ["AC Milan", "Real Madrid"],
-    "Xavi": ["Barcelona"],
-    "Andrés Iniesta": ["Barcelona"],
-    "Carles Puyol": ["Barcelona"],
-    "Iker Casillas": ["Real Madrid", "Benfica"],
-    "Arjen Robben": ["Chelsea", "Real Madrid", "Bayern Munich", "PSV Eindhoven"],
-    "Franck Ribéry": ["Marseille", "Bayern Munich", "Fiorentina"],
-    "Xabi Alonso": ["Real Madrid", "Bayern Munich", "Liverpool", "Real Sociedad"],
-    "Mesut Özil": ["Werder Bremen", "Real Madrid", "Arsenal", "Fenerbahce", "Basaksehir"],
-    "Neymar": ["Barcelona", "Paris Saint-Germain", "Santos"],
-    "Luis Suárez": ["Ajax", "Liverpool", "Barcelona", "Atletico Madrid"],
-    "Lionel Messi": ["Barcelona", "Paris Saint-Germain"],
-    "Wayne Rooney": ["Everton", "Manchester United"],
-    "David Beckham": ["Manchester United", "Real Madrid", "Paris Saint-Germain", "AC Milan"],
-    "Thierry Henry": ["Monaco", "Juventus", "Arsenal", "Barcelona"],
-    "Ronaldo Nazário": ["PSV Eindhoven", "Barcelona", "Inter Milan", "Real Madrid", "AC Milan"],
-    "Luka Modrić": ["Tottenham Hotspur", "Real Madrid", "AC Milan"],
-    "Toni Kroos": ["Bayer Leverkusen", "Bayern Munich", "Real Madrid"],
-    "Sergio Ramos": ["Sevilla", "Real Madrid", "Paris Saint-Germain"],
-    "Gerard Piqué": ["Manchester United", "Barcelona"],
-    "Marcelo": ["Real Madrid"],
-    "Karim Benzema": ["Lyon", "Real Madrid"],
-    "Robert Lewandowski": ["Borussia Dortmund", "Bayern Munich", "Barcelona"],
-    "Mario Götze": ["Borussia Dortmund", "Bayern Munich", "PSV Eindhoven", "Eintracht Frankfurt"],
-    "Marco Reus": ["Borussia Monchengladbach", "Borussia Dortmund"],
-    "Sami Khedira": ["Stuttgart", "Real Madrid", "Juventus"],
-    "Mario Mandžukić": ["Wolfsburg", "Bayern Munich", "Atletico Madrid", "Juventus", "AC Milan"],
-    "David Silva": ["Valencia", "Manchester City", "Real Sociedad"],
-    "Sergio Agüero": ["Atletico Madrid", "Manchester City", "Barcelona"],
-    "Fernando Torres": ["Atletico Madrid", "Liverpool", "Chelsea", "AC Milan"],
-    "Cesc Fàbregas": ["Arsenal", "Barcelona", "Chelsea", "Monaco", "Como"],
-    "Diego Costa": ["Atletico Madrid", "Chelsea"],
-    "Gareth Bale": ["Tottenham Hotspur", "Real Madrid"],
-    "Álvaro Morata": ["Real Madrid", "Juventus", "Chelsea", "Atletico Madrid", "AC Milan", "Galatasaray"],
-    "Isco": ["Valencia", "Real Madrid", "Sevilla", "Real Betis"],
-    "Marco Verratti": ["Paris Saint-Germain"],
-    "Radja Nainggolan": ["Roma", "Inter Milan"],
-    "Kevin De Bruyne": ["Chelsea", "Werder Bremen", "Wolfsburg", "Manchester City"],
-    "Nemanja Matić": ["Chelsea", "Benfica", "Manchester United", "Roma", "Rennes"],
-    "Willian": ["Chelsea", "Arsenal", "Fulham"],
-    "Ángel Di María": ["Benfica", "Real Madrid", "Manchester United", "Paris Saint-Germain", "Juventus"],
-    "Edinson Cavani": ["Napoli", "Paris Saint-Germain", "Manchester United", "Valencia"],
-    "Radamel Falcao": ["Porto", "Atletico Madrid", "Monaco", "Manchester United", "Chelsea", "Galatasaray"],
-    "Douglas Costa": ["Bayern Munich", "Juventus", "Fiorentina"],
-    "Emre Can": ["Bayer Leverkusen", "Bayern Munich", "Liverpool", "Juventus", "Borussia Dortmund"],
-    "Diego Godín": ["Villarreal", "Atletico Madrid", "Inter Milan"],
-    "Alexis Sánchez": ["Barcelona", "Arsenal", "Manchester United", "Inter Milan", "Marseille", "Udinese"],
-    "Yaya Touré": ["Barcelona", "Manchester City"],
-    "Willy Caballero": ["Manchester City", "Chelsea"]
-  },
-
-  "override": {
-    "Mason Greenwood": ["Manchester United", "Marseille", "Fenerbahce"]
-  }
+    "_note":  "Manual patches for Rastgele Beşler\u0027s playerPool.json. `add` merges extra clubs into a player\u0027s list (useful for pre-2012 careers Transfermarkt is missing). `override` REPLACES the clubs list entirely (useful when TM has wrong club rows, or when a very recent transfer isn\u0027t in our CSV yet). Only clubs in our tracked list (src/games/futbol321/data.js) actually score; unknown names are silently dropped.",
+    "add":  {
+                "Cristiano Ronaldo":  [
+                                          "Sporting CP"
+                                      ],
+                "Zlatan Ibrahimović":  [
+                                           "Ajax",
+                                           "Juventus",
+                                           "Inter Milan",
+                                           "Barcelona"
+                                       ],
+                "Andrea Pirlo":  [
+                                     "Inter Milan"
+                                 ],
+                "Ronaldinho":  [
+                                   "Paris Saint-Germain",
+                                   "Barcelona",
+                                   "AC Milan",
+                                   "Flamengo"
+                               ],
+                "Kaká":  [
+                             "AC Milan",
+                             "Real Madrid"
+                         ],
+                "Xavi":  [
+                             "Barcelona"
+                         ],
+                "Andrés Iniesta":  [
+                                       "Barcelona"
+                                   ],
+                "Carles Puyol":  [
+                                     "Barcelona"
+                                 ],
+                "Iker Casillas":  [
+                                      "Real Madrid",
+                                      "Benfica"
+                                  ],
+                "Arjen Robben":  [
+                                     "Chelsea",
+                                     "Real Madrid",
+                                     "Bayern Munich",
+                                     "PSV Eindhoven"
+                                 ],
+                "Franck Ribéry":  [
+                                      "Marseille",
+                                      "Bayern Munich",
+                                      "Fiorentina"
+                                  ],
+                "Xabi Alonso":  [
+                                    "Real Madrid",
+                                    "Bayern Munich",
+                                    "Liverpool",
+                                    "Real Sociedad"
+                                ],
+                "Mesut Özil":  [
+                                   "Werder Bremen",
+                                   "Real Madrid",
+                                   "Arsenal",
+                                   "Fenerbahce",
+                                   "Basaksehir"
+                               ],
+                "Neymar":  [
+                               "Barcelona",
+                               "Paris Saint-Germain",
+                               "Santos"
+                           ],
+                "Luis Suárez":  [
+                                    "Ajax",
+                                    "Liverpool",
+                                    "Barcelona",
+                                    "Atletico Madrid"
+                                ],
+                "Lionel Messi":  [
+                                     "Barcelona",
+                                     "Paris Saint-Germain"
+                                 ],
+                "Wayne Rooney":  [
+                                     "Everton",
+                                     "Manchester United"
+                                 ],
+                "David Beckham":  [
+                                      "Manchester United",
+                                      "Real Madrid",
+                                      "Paris Saint-Germain",
+                                      "AC Milan"
+                                  ],
+                "Thierry Henry":  [
+                                      "Monaco",
+                                      "Juventus",
+                                      "Arsenal",
+                                      "Barcelona"
+                                  ],
+                "Ronaldo Nazário":  [
+                                        "PSV Eindhoven",
+                                        "Barcelona",
+                                        "Inter Milan",
+                                        "Real Madrid",
+                                        "AC Milan"
+                                    ],
+                "Luka Modrić":  [
+                                    "Tottenham Hotspur",
+                                    "Real Madrid",
+                                    "AC Milan"
+                                ],
+                "Toni Kroos":  [
+                                   "Bayer Leverkusen",
+                                   "Bayern Munich",
+                                   "Real Madrid"
+                               ],
+                "Sergio Ramos":  [
+                                     "Sevilla",
+                                     "Real Madrid",
+                                     "Paris Saint-Germain"
+                                 ],
+                "Gerard Piqué":  [
+                                     "Manchester United",
+                                     "Barcelona"
+                                 ],
+                "Marcelo":  [
+                                "Real Madrid"
+                            ],
+                "Karim Benzema":  [
+                                      "Lyon",
+                                      "Real Madrid"
+                                  ],
+                "Robert Lewandowski":  [
+                                           "Borussia Dortmund",
+                                           "Bayern Munich",
+                                           "Barcelona"
+                                       ],
+                "Mario Götze":  [
+                                    "Borussia Dortmund",
+                                    "Bayern Munich",
+                                    "PSV Eindhoven",
+                                    "Eintracht Frankfurt"
+                                ],
+                "Marco Reus":  [
+                                   "Borussia Monchengladbach",
+                                   "Borussia Dortmund"
+                               ],
+                "Sami Khedira":  [
+                                     "Stuttgart",
+                                     "Real Madrid",
+                                     "Juventus"
+                                 ],
+                "Mario Mandžukić":  [
+                                        "Wolfsburg",
+                                        "Bayern Munich",
+                                        "Atletico Madrid",
+                                        "Juventus",
+                                        "AC Milan"
+                                    ],
+                "David Silva":  [
+                                    "Valencia",
+                                    "Manchester City",
+                                    "Real Sociedad"
+                                ],
+                "Sergio Agüero":  [
+                                      "Atletico Madrid",
+                                      "Manchester City",
+                                      "Barcelona"
+                                  ],
+                "Fernando Torres":  [
+                                        "Atletico Madrid",
+                                        "Liverpool",
+                                        "Chelsea",
+                                        "AC Milan"
+                                    ],
+                "Cesc Fàbregas":  [
+                                      "Arsenal",
+                                      "Barcelona",
+                                      "Chelsea",
+                                      "Monaco",
+                                      "Como"
+                                  ],
+                "Diego Costa":  [
+                                    "Atletico Madrid",
+                                    "Chelsea"
+                                ],
+                "Gareth Bale":  [
+                                    "Tottenham Hotspur",
+                                    "Real Madrid"
+                                ],
+                "Álvaro Morata":  [
+                                      "Real Madrid",
+                                      "Juventus",
+                                      "Chelsea",
+                                      "Atletico Madrid",
+                                      "AC Milan",
+                                      "Galatasaray"
+                                  ],
+                "Isco":  [
+                             "Valencia",
+                             "Real Madrid",
+                             "Sevilla",
+                             "Real Betis"
+                         ],
+                "Marco Verratti":  [
+                                       "Paris Saint-Germain"
+                                   ],
+                "Radja Nainggolan":  [
+                                         "Roma",
+                                         "Inter Milan"
+                                     ],
+                "Kevin De Bruyne":  [
+                                        "Chelsea",
+                                        "Werder Bremen",
+                                        "Wolfsburg",
+                                        "Manchester City"
+                                    ],
+                "Nemanja Matić":  [
+                                      "Chelsea",
+                                      "Benfica",
+                                      "Manchester United",
+                                      "Roma",
+                                      "Rennes"
+                                  ],
+                "Willian":  [
+                                "Chelsea",
+                                "Arsenal",
+                                "Fulham"
+                            ],
+                "Ángel Di María":  [
+                                       "Benfica",
+                                       "Real Madrid",
+                                       "Manchester United",
+                                       "Paris Saint-Germain",
+                                       "Juventus"
+                                   ],
+                "Edinson Cavani":  [
+                                       "Napoli",
+                                       "Paris Saint-Germain",
+                                       "Manchester United",
+                                       "Valencia"
+                                   ],
+                "Radamel Falcao":  [
+                                       "Porto",
+                                       "Atletico Madrid",
+                                       "Monaco",
+                                       "Manchester United",
+                                       "Chelsea",
+                                       "Galatasaray"
+                                   ],
+                "Douglas Costa":  [
+                                      "Bayern Munich",
+                                      "Juventus",
+                                      "Fiorentina"
+                                  ],
+                "Emre Can":  [
+                                 "Bayer Leverkusen",
+                                 "Bayern Munich",
+                                 "Liverpool",
+                                 "Juventus",
+                                 "Borussia Dortmund"
+                             ],
+                "Diego Godín":  [
+                                    "Villarreal",
+                                    "Atletico Madrid",
+                                    "Inter Milan"
+                                ],
+                "Alexis Sánchez":  [
+                                       "Barcelona",
+                                       "Arsenal",
+                                       "Manchester United",
+                                       "Inter Milan",
+                                       "Marseille",
+                                       "Udinese"
+                                   ],
+                "Yaya Touré":  [
+                                   "Barcelona",
+                                   "Manchester City"
+                               ],
+                "Willy Caballero":  [
+                                        "Manchester City",
+                                        "Chelsea"
+                                    ],
+                "Rasmus Højlund":  [
+                                       "Manchester United",
+                                       "Napoli"
+                                   ],
+                "Giannis Konstantelias":  "Borussia Dortmund",
+                "Karl Darlow":  "Manchester United",
+                "Marc Cucurella":  [
+                                       "Chelsea",
+                                       "Real Madrid"
+                                   ],
+                "Víctor Muñoz":  "Liverpool",
+                "Morgan Rogers":  [
+                                      "Aston Villa",
+                                      "Chelsea"
+                                  ],
+                "Piero Hincapié":  [
+                                       "Arsenal",
+                                       "Bayer Leverkusen"
+                                   ],
+                "Filip Kostić":  "AC Milan",
+                "Nick Woltemade":  "Juventus",
+                "Gerónimo Rulli":  "Manchester City",
+                "Jonathan David":  [
+                                       "Atletico Madrid",
+                                       "Juventus"
+                                   ],
+                "Karim Adeyemi":  [
+                                      "Barcelona",
+                                      "Borussia Dortmund"
+                                  ],
+                "Gonçalo Ramos":  [
+                                      "AC Milan",
+                                      "Paris Saint-Germain"
+                                  ],
+                "Dušan Vlahović":  [
+                                       "Besiktas",
+                                       "Juventus"
+                                   ],
+                "Denzel Dumfries":  [
+                                        "Inter Milan",
+                                        "Real Madrid"
+                                    ],
+                "Gabriel Jesus":  [
+                                      "Arsenal",
+                                      "Barcelona"
+                                  ],
+                "Cristian Romero":  [
+                                        "Atletico Madrid",
+                                        "Tottenham Hotspur"
+                                    ],
+                "Aleksandar Stanković":  "Inter Milan",
+                "Djed Spence":  [
+                                    "Inter Milan",
+                                    "Tottenham Hotspur"
+                                ],
+                "Carlos Baleba":  "Manchester United",
+                "Ezri Konsa":  [
+                                   "Arsenal",
+                                   "Aston Villa"
+                               ],
+                "Alexander Nübel":  [
+                                        "Bayern Munich",
+                                        "Besiktas"
+                                    ],
+                "André Onana":  [
+                                    "Manchester United",
+                                    "Trabzonspor"
+                                ],
+                "Salih Özcan":  [
+                                    "Besiktas",
+                                    "Borussia Dortmund"
+                                ],
+                "Benoît Badiashile":  "Napoli",
+                "Konstantinos Karetsas":  "Borussia Dortmund",
+                "Bazoumana Touré":  "Newcastle United",
+                "Jan Paul van Hecke":  "Tottenham Hotspur",
+                "Miguel Gutiérrez":  "Bayer Leverkusen",
+                "Ayyoub Bouaddi":  "Manchester City",
+                "John Stones":  [
+                                    "Inter Milan",
+                                    "Manchester City"
+                                ],
+                "Iliman Ndiaye":  "Manchester City",
+                "Guéla Doué":  "Bayer Leverkusen",
+                "Kassoum Ouattara":  "Besiktas",
+                "Elliot Anderson":  "Manchester City",
+                "Sandro Tonali":  [
+                                      "Newcastle United",
+                                      "Tottenham Hotspur"
+                                  ],
+                "Leandro Trossard":  [
+                                         "Arsenal",
+                                         "Besiktas"
+                                     ],
+                "Joey Veerman":  "Borussia Dortmund",
+                "Mohamed Salah":  [
+                                      "Liverpool",
+                                      "Trabzonspor"
+                                  ],
+                "Emin Bayram":  "Basaksehir",
+                "Marco Palestra":  "Chelsea",
+                "Martin Dúbravka":  "Tottenham Hotspur",
+                "Curtis Jones":  [
+                                     "Inter Milan",
+                                     "Liverpool"
+                                 ],
+                "Bernardo Silva":  [
+                                       "Manchester City",
+                                       "Real Madrid"
+                                   ],
+                "Danny Welbeck":  "Chelsea",
+                "Alejandro Grimaldo":  [
+                                           "Atletico Madrid",
+                                           "Bayer Leverkusen"
+                                       ],
+                "Illan Meslier":  "Arsenal",
+                "Leon Goretzka":  [
+                                      "Aston Villa",
+                                      "Bayern Munich"
+                                  ],
+                "Bradley Barcola":  [
+                                        "Liverpool",
+                                        "Paris Saint-Germain"
+                                    ],
+                "Johan Manzambi":  "Aston Villa",
+                "Youri Tielemans":  [
+                                        "Aston Villa",
+                                        "Manchester United"
+                                    ],
+                "Lucca Brughmans":  "Liverpool",
+                "Ivan Provedel":  "Inter Milan",
+                "Mario Gila":  "AC Milan",
+                "Facundo Medina":  "Bayer Leverkusen",
+                "Sean Steur":  "Newcastle United",
+                "Christos Tzolis":  "Arsenal",
+                "Alejandro Garnacho":  "Aston Villa",
+                "Andrew Robertson":  [
+                                         "Liverpool",
+                                         "Tottenham Hotspur"
+                                     ],
+                "Anthony Gordon":  [
+                                       "Barcelona",
+                                       "Newcastle United"
+                                   ],
+                "Pape Matar Sarr":  "Juventus",
+                "Ronald Araújo":  [
+                                      "Barcelona",
+                                      "Liverpool"
+                                  ],
+                "Bruno Guimarães":  [
+                                        "Arsenal",
+                                        "Newcastle United"
+                                    ],
+                "Enzo Fernández":  [
+                                       "Chelsea",
+                                       "Manchester City"
+                                   ],
+                "Andrey Santos":  [
+                                      "Chelsea",
+                                      "Manchester United"
+                                  ],
+                "Jordan Henderson":  "Chelsea",
+                "Guglielmo Vicario":  [
+                                          "Juventus",
+                                          "Tottenham Hotspur"
+                                      ],
+                "Lucas Digne":  [
+                                    "Aston Villa",
+                                    "Paris Saint-Germain"
+                                ],
+                "Ismael Saibari":  "Bayern Munich",
+                "Romelu Lukaku":  [
+                                      "Fenerbahce",
+                                      "Napoli"
+                                  ],
+                "Rodri":  [
+                              "Barcelona",
+                              "Manchester City"
+                          ],
+                "Nico González":  [
+                                      "Manchester City",
+                                      "Newcastle United"
+                                  ],
+                "Kolo Muani":  [
+                                   "Juventus",
+                                   "Paris Saint-Germain"
+                               ],
+                "Marcos Senesi":  "Tottenham Hotspur",
+                "Emiliano Martínez":  [
+                                          "Aston Villa",
+                                          "Chelsea"
+                                      ],
+                "Nathaniel Brown":  "Bayern Munich",
+                "Manuel Akanji":  [
+                                      "Inter Milan",
+                                      "Manchester City"
+                                  ],
+                "Nicolas Jackson":  [
+                                        "Aston Villa",
+                                        "Chelsea"
+                                    ],
+                "İlhan Fakılı":  "Besiktas",
+                "Rafael Leão":  [
+                                    "AC Milan",
+                                    "Galatasaray"
+                                ],
+                "João Gomes":  "Aston Villa",
+                "Nathan Aké":  [
+                                   "Fenerbahce",
+                                   "Manchester City"
+                               ]
+            },
+    "override":  {
+                     "Mason Greenwood":  [
+                                             "Manchester United",
+                                             "Marseille",
+                                             "Fenerbahce"
+                                         ]
+                 }
 }
