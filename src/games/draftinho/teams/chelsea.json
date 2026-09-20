@@ -83,7 +83,7 @@
                         "yellowCards":  1,
                         "redCards":  0,
                         "nationality":  "England",
-                        "clubApps":  2,
+                        "clubApps":  55,
                         "weight":  null,
                         "apiFootballId":  null,
                         "trophies":  0
@@ -314,7 +314,7 @@
                         "yellowCards":  28,
                         "redCards":  3,
                         "nationality":  "England",
-                        "clubApps":  1,
+                        "clubApps":  217,
                         "weight":  82,
                         "apiFootballId":  19545,
                         "trophies":  28
@@ -461,7 +461,7 @@
                         "yellowCards":  0,
                         "redCards":  0,
                         "nationality":  "",
-                        "clubApps":  2,
+                        "clubApps":  146,
                         "weight":  null,
                         "apiFootballId":  null,
                         "trophies":  0
@@ -860,7 +860,7 @@
                         "yellowCards":  15,
                         "redCards":  2,
                         "nationality":  "Brazil",
-                        "clubApps":  5,
+                        "clubApps":  297,
                         "weight":  70,
                         "apiFootballId":  10329,
                         "trophies":  2
@@ -944,7 +944,7 @@
                         "yellowCards":  28,
                         "redCards":  1,
                         "nationality":  "Argentina",
-                        "clubApps":  65,
+                        "clubApps":  285,
                         "weight":  72,
                         "apiFootballId":  217,
                         "trophies":  17

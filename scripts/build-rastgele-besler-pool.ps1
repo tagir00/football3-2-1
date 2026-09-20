@@ -15,6 +15,7 @@ $root = Split-Path -Parent $PSScriptRoot
 $appsCsv = Join-Path $root 'data\csv\archive\appearances.csv'
 $clubsCsv = Join-Path $root 'data\csv\archive\clubs.csv'
 $outPath = Join-Path $root 'src\games\rastgele-besler\playerPool.json'
+$augmentPath = Join-Path $root 'src\games\rastgele-besler\careerAugmentations.json'
 $utf8 = [System.Text.UTF8Encoding]::new($false)
 
 # The 79 clubs from src/games/futbol321/data.js (kept in sync manually — small
@@ -187,10 +188,44 @@ foreach ($p in $players.Values) {
 }
 Write-Host "Pool after filter: $($out.Count)"
 
+# 4) Merge career augmentations (pre-2012 clubs added by hand for legends whose
+#    early career is missing from the TM CSV). We only ADD clubs — never
+#    remove — and only if the augmented club is in our tracked list.
+if (Test-Path $augmentPath) {
+  $augRaw = Get-Content -LiteralPath $augmentPath -Raw -Encoding UTF8 | ConvertFrom-Json
+  $augMap = @{}
+  foreach ($prop in $augRaw.PSObject.Properties) {
+    if ($prop.Name.StartsWith('_')) { continue }
+    $augMap[$prop.Name] = @($prop.Value)
+  }
+  $trackedSet = [System.Collections.Generic.HashSet[string]]::new()
+  foreach ($c in $OUR_CLUBS) { [void]$trackedSet.Add($c) }
+  $augmentedCount = 0
+  $addedClubs = 0
+  foreach ($p in $out) {
+    if ($augMap.ContainsKey($p.name)) {
+      $extra = $augMap[$p.name] | Where-Object { $trackedSet.Contains($_) }
+      if (-not $extra) { continue }
+      $current = [System.Collections.Generic.HashSet[string]]::new()
+      foreach ($c in $p.clubs) { [void]$current.Add($c) }
+      $before = $current.Count
+      foreach ($c in $extra) { [void]$current.Add($c) }
+      if ($current.Count -gt $before) {
+        $p.clubs = @($current) | Sort-Object
+        $augmentedCount++
+        $addedClubs += ($current.Count - $before)
+      }
+    }
+  }
+  Write-Host "Applied augmentations to $augmentedCount players (+$addedClubs club entries)"
+} else {
+  Write-Host "No augmentation file at $augmentPath — skipping."
+}
+
 # Sort by apps descending so the frontend keeps the strongest names on top
 $out = $out | Sort-Object -Property { -$_.apps }
 
-# 4) Emit compact JSON
+# 5) Emit compact JSON
 [System.IO.File]::WriteAllText($outPath, (ConvertTo-Json $out -Depth 4 -Compress), $utf8)
 Write-Host "Wrote $outPath ($((Get-Item $outPath).Length) bytes)"
 

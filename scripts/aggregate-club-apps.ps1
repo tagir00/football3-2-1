@@ -1,4 +1,4 @@
-# Aggregates career club appearances from Transfermarkt appearances.csv
+﻿# Aggregates career club appearances from Transfermarkt appearances.csv
 # by NAME match (our JSON ids don't align with the CSV's TM ids).
 # Then patches team JSONs with a `clubApps` field.
 #
@@ -68,7 +68,10 @@ foreach ($f in Get-ChildItem $teamsDir -Filter '*.json') {
     $apps = 0
     $tmId = $null
     if ($byName.ContainsKey($n)) {
-      $best = $byName[$n] | Sort-Object -Property count -Descending | Select-Object -First 1
+      # NOTE: hashtable has a built-in .Count (# of keys) that shadows our
+      # 'count' key when Sort-Object -Property count is used. Use a script
+      # block so PowerShell reads the dictionary entry instead.
+      $best = $byName[$n] | Sort-Object -Property {[int]$_.count} -Descending | Select-Object -First 1
       $apps = [int]$best.count
       $tmId = $best.tmId
       $matched++
@@ -82,7 +85,7 @@ foreach ($f in Get-ChildItem $teamsDir -Filter '*.json') {
         }
       }
       if ($candidates.Count -gt 0) {
-        $best = $candidates | ForEach-Object { $_ } | Sort-Object -Property count -Descending | Select-Object -First 1
+        $best = $candidates | Sort-Object -Property {[int]$_.count} -Descending | Select-Object -First 1
         $apps = [int]$best.count
         $tmId = $best.tmId
         $matched++

@@ -209,7 +209,7 @@
                         "yellowCards":  55,
                         "redCards":  2,
                         "nationality":  "S",
-                        "clubApps":  42,
+                        "clubApps":  471,
                         "weight":  64,
                         "apiFootballId":  289,
                         "trophies":  0
@@ -230,7 +230,7 @@
                         "yellowCards":  58,
                         "redCards":  0,
                         "nationality":  "Wales",
-                        "clubApps":  50,
+                        "clubApps":  417,
                         "weight":  75,
                         "apiFootballId":  509,
                         "trophies":  0
@@ -293,7 +293,7 @@
                         "yellowCards":  5,
                         "redCards":  0,
                         "nationality":  "Brazil",
-                        "clubApps":  4,
+                        "clubApps":  212,
                         "weight":  92,
                         "apiFootballId":  195100,
                         "trophies":  0
@@ -695,27 +695,6 @@
                         "clubApps":  58,
                         "weight":  70,
                         "apiFootballId":  305736,
-                        "trophies":  0
-                    },
-                    {
-                        "id":  9000072,
-                        "name":  "Martin Dúbravka",
-                        "slug":  "martin-dubravka",
-                        "position":  "GK",
-                        "shirt":  null,
-                        "age":  37,
-                        "birth":  "1989-01-15",
-                        "height":  191,
-                        "marketValue":  2000000,
-                        "intlGoals":  0,
-                        "intlAppearances":  51,
-                        "assists":  0,
-                        "yellowCards":  5,
-                        "redCards":  0,
-                        "nationality":  "Slovakia",
-                        "clubApps":  294,
-                        "weight":  83,
-                        "apiFootballId":  18886,
                         "trophies":  0
                     }
                 ],
