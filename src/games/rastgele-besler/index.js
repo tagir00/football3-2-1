@@ -41,6 +41,25 @@ function pickN(arr, n) {
   return shuffle(arr).slice(0, n);
 }
 
+// Pick n items with a soft cap on how many overlap with an exclusion set.
+// Falls back to unconstrained pick if the pool is too small to satisfy the cap.
+function pickNWithOverlapCap(arr, n, excludeNames, maxOverlap = 1) {
+  const excluded = new Set(excludeNames);
+  const shuffled = shuffle(arr);
+  const picked = [];
+  let overlapUsed = 0;
+  for (const c of shuffled) {
+    if (picked.length >= n) break;
+    if (excluded.has(c.name)) {
+      if (overlapUsed >= maxOverlap) continue;
+      overlapUsed++;
+    }
+    picked.push(c);
+  }
+  if (picked.length < n) return shuffled.slice(0, n); // safety fallback
+  return picked;
+}
+
 // Curated "big-name" club pool for the 5-club draw. Only these clubs appear
 // on the wheel — obscure clubs (Nottingham Forest, Gaziantep FK, Sassuolo,
 // Real Sociedad, etc.) produced 5-club combinations where players couldn't
@@ -158,6 +177,7 @@ export async function mount(container) {
     startingPlayerIndex: 0,
     activePlayerIndex: 0,
     currentClubs: [],
+    previousRoundClubs: [], // used to cap overlap between consecutive rounds
     round: 0, // 1-based when active
     picksThisRound: 0,
     isSpinning: false,
@@ -177,6 +197,7 @@ export async function mount(container) {
     state.startingPlayerIndex = 0;
     state.activePlayerIndex = 0;
     state.currentClubs = [];
+    state.previousRoundClubs = [];
     state.round = 0;
     state.picksThisRound = 0;
     state.isSpinning = false;
@@ -360,7 +381,8 @@ export async function mount(container) {
     els.roundDone.classList.add('hidden');
     els.turnPanel.classList.add('hidden');
 
-    const finalClubs = pickN(drawClubs, 5);
+    const previousNames = state.previousRoundClubs.map((c) => c.name);
+    const finalClubs = pickNWithOverlapCap(drawClubs, 5, previousNames, 1);
     clubSlots.forEach((slot) => slot.classList.add('spinning'));
 
     // Each slot cycles at its own pace, then locks in sequence
@@ -387,6 +409,7 @@ export async function mount(container) {
       });
       if (done >= clubSlots.length) {
         window.clearInterval(interval);
+        state.previousRoundClubs = finalClubs.slice();
         state.currentClubs = finalClubs;
         state.isSpinning = false;
         els.spinButton.classList.add('hidden');
