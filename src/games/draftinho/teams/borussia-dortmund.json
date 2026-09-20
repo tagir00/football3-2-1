@@ -633,6 +633,27 @@
                         "weight":  null,
                         "apiFootballId":  null,
                         "trophies":  0
+                    },
+                    {
+                        "id":  1401702,
+                        "name":  "Ethan Nwaneri",
+                        "slug":  "ethan-nwaneri",
+                        "position":  "MID",
+                        "shirt":  22,
+                        "age":  19,
+                        "birth":  "2007-03-21",
+                        "height":  176,
+                        "marketValue":  34000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0,
+                        "assists":  3,
+                        "yellowCards":  3,
+                        "redCards":  0,
+                        "nationality":  "England",
+                        "clubApps":  56,
+                        "weight":  70,
+                        "apiFootballId":  313236,
+                        "trophies":  0
                     }
                 ],
     "league":  "Bundesliga"

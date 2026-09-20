@@ -5,7 +5,10 @@
 
 $ErrorActionPreference = 'Stop'
 $root = Split-Path -Parent $PSScriptRoot
-$transferScript = Join-Path $root 'scripts\apply-summer-2026-transfers.ps1'
+$transferScripts = @(
+  (Join-Path $root 'scripts\apply-summer-2026-transfers.ps1'),
+  (Join-Path $root 'scripts\apply-late-window-2026.ps1')
+)
 $augPath = Join-Path $root 'src\games\rastgele-besler\careerAugmentations.json'
 $utf8 = [System.Text.UTF8Encoding]::new($false)
 
@@ -37,15 +40,14 @@ $slugToName = @{
   'trabzonspor'         = 'Trabzonspor'
 }
 
-# Parse both intraPoolMoves and newSignings blocks
-$content = Get-Content -LiteralPath $transferScript -Raw -Encoding UTF8
-# Regex matches lines like: @{ name = 'X'; from = 'y'; to = 'z' }
-$intra = [regex]::Matches($content, "@\{\s*name\s*=\s*'([^']+)';\s*from\s*=\s*'([^']+)';\s*to\s*=\s*'([^']+)'\s*\}")
-# newSignings look like: @{ team = 'x'; player = [ordered]@{ ... name='X' ... } }
-$newSig = [regex]::Matches($content, "@\{\s*team\s*=\s*'([^']+)';\s*player\s*=\s*\[ordered\]@\{[^}]*?name\s*=\s*'([^']+)'")
-
+# Parse all transfer scripts and merge results
 $playerAddClubs = @{}
-foreach ($m in $intra) {
+foreach ($transferScript in $transferScripts) {
+  if (-not (Test-Path $transferScript)) { continue }
+  $content = Get-Content -LiteralPath $transferScript -Raw -Encoding UTF8
+  $intra = [regex]::Matches($content, "@\{\s*name\s*=\s*'([^']+)';\s*from\s*=\s*'([^']+)';\s*to\s*=\s*'([^']+)'\s*\}")
+  $newSig = [regex]::Matches($content, "@\{\s*team\s*=\s*'([^']+)';\s*player\s*=\s*\[ordered\]@\{[^}]*?name\s*=\s*'([^']+)'")
+  foreach ($m in $intra) {
   $name = $m.Groups[1].Value
   $toSlug = $m.Groups[3].Value
   if (-not $slugToName.ContainsKey($toSlug)) { continue }
@@ -61,13 +63,14 @@ foreach ($m in $intra) {
     if ($playerAddClubs[$name] -notcontains $fromName) { $playerAddClubs[$name] += $fromName }
   }
 }
-foreach ($m in $newSig) {
-  $toSlug = $m.Groups[1].Value
-  $name = $m.Groups[2].Value
-  if (-not $slugToName.ContainsKey($toSlug)) { continue }
-  $toName = $slugToName[$toSlug]
-  if (-not $playerAddClubs.ContainsKey($name)) { $playerAddClubs[$name] = @() }
-  if ($playerAddClubs[$name] -notcontains $toName) { $playerAddClubs[$name] += $toName }
+  foreach ($m in $newSig) {
+    $toSlug = $m.Groups[1].Value
+    $name = $m.Groups[2].Value
+    if (-not $slugToName.ContainsKey($toSlug)) { continue }
+    $toName = $slugToName[$toSlug]
+    if (-not $playerAddClubs.ContainsKey($name)) { $playerAddClubs[$name] = @() }
+    if ($playerAddClubs[$name] -notcontains $toName) { $playerAddClubs[$name] += $toName }
+  }
 }
 Write-Host "Parsed $($playerAddClubs.Count) players from summer 2026 transfers"
 

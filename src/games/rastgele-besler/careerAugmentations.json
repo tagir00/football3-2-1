@@ -485,7 +485,25 @@
                 "Nathan Aké":  [
                                    "Fenerbahce",
                                    "Manchester City"
-                               ]
+                               ],
+                "Ibrahim Mbaye":  [
+                                      "Aston Villa",
+                                      "Paris Saint-Germain"
+                                  ],
+                "Ethan Nwaneri":  [
+                                      "Arsenal",
+                                      "Borussia Dortmund"
+                                  ],
+                "Taylor Harwood-Bellis":  "Aston Villa",
+                "Matias Fernandez-Pardo":  "Newcastle United",
+                "Mykhaylo Mudryk":  [
+                                        "Chelsea",
+                                        "Tottenham Hotspur"
+                                    ],
+                "Tosin Adarabioyo":  [
+                                         "Chelsea",
+                                         "Tottenham Hotspur"
+                                     ]
             },
     "override":  {
                      "Mason Greenwood":  [

@@ -110,27 +110,6 @@
                         "trophies":  0
                     },
                     {
-                        "id":  604232,
-                        "name":  "Diego Carlos",
-                        "slug":  "diego-carlos",
-                        "position":  "DEF",
-                        "shirt":  3,
-                        "age":  33,
-                        "birth":  "1993-03-15",
-                        "height":  185,
-                        "marketValue":  5300000,
-                        "intlGoals":  0,
-                        "intlAppearances":  0,
-                        "assists":  5,
-                        "yellowCards":  81,
-                        "redCards":  6,
-                        "nationality":  "Brazil",
-                        "clubApps":  349,
-                        "weight":  79,
-                        "apiFootballId":  21090,
-                        "trophies":  0
-                    },
-                    {
                         "id":  1009738,
                         "name":  "Archie Brown",
                         "slug":  "brown-archie",
