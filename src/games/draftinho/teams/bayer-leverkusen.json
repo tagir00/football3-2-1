@@ -233,7 +233,7 @@
                         "clubApps":  304,
                         "weight":  85,
                         "apiFootballId":  41150,
-                        "trophies":  0
+                        "trophies":  6
                     },
                     {
                         "id":  2111739,
@@ -754,7 +754,8 @@
                         "assists":  41,
                         "yellowCards":  15,
                         "redCards":  0,
-                        "nationality":  "France"
+                        "nationality":  "France",
+                        "trophies":  0
                     }
                 ],
     "league":  "Bundesliga"

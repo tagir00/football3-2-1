@@ -170,7 +170,7 @@
                         "clubApps":  181,
                         "weight":  75,
                         "apiFootballId":  95,
-                        "trophies":  0
+                        "trophies":  8
                     },
                     {
                         "id":  879674,
@@ -254,7 +254,7 @@
                         "clubApps":  62,
                         "weight":  70,
                         "apiFootballId":  237129,
-                        "trophies":  0
+                        "trophies":  6
                     },
                     {
                         "id":  1153079,
@@ -338,7 +338,7 @@
                         "clubApps":  189,
                         "weight":  67,
                         "apiFootballId":  161907,
-                        "trophies":  0
+                        "trophies":  10
                     },
                     {
                         "id":  923894,
@@ -922,7 +922,8 @@
                         "assists":  17,
                         "yellowCards":  18,
                         "redCards":  0,
-                        "nationality":  "Spain"
+                        "nationality":  "Spain",
+                        "trophies":  0
                     }
                 ],
     "league":  "Premier League"

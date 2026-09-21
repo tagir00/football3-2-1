@@ -233,7 +233,7 @@
                         "clubApps":  85,
                         "weight":  88,
                         "apiFootballId":  45826,
-                        "trophies":  0
+                        "trophies":  8
                     },
                     {
                         "id":  965828,
@@ -632,7 +632,7 @@
                         "clubApps":  402,
                         "weight":  73,
                         "apiFootballId":  17,
-                        "trophies":  0
+                        "trophies":  20
                     },
                     {
                         "id":  769333,
@@ -817,7 +817,8 @@
                         "assists":  6,
                         "yellowCards":  6,
                         "redCards":  0,
-                        "nationality":  "Portugal"
+                        "nationality":  "Portugal",
+                        "trophies":  0
                     }
                 ],
     "league":  "Serie A"

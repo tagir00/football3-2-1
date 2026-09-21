@@ -401,7 +401,7 @@
                         "clubApps":  276,
                         "weight":  88,
                         "apiFootballId":  30415,
-                        "trophies":  0
+                        "trophies":  4
                     },
                     {
                         "id":  1392102,
@@ -653,7 +653,7 @@
                         "clubApps":  114,
                         "weight":  93,
                         "apiFootballId":  526,
-                        "trophies":  0
+                        "trophies":  17
                     },
                     {
                         "id":  910086,
@@ -775,7 +775,8 @@
                         "assists":  5,
                         "yellowCards":  15,
                         "redCards":  0,
-                        "nationality":  "Italy"
+                        "nationality":  "Italy",
+                        "trophies":  0
                     },
                     {
                         "id":  9300006,
@@ -792,7 +793,8 @@
                         "assists":  3,
                         "yellowCards":  3,
                         "redCards":  0,
-                        "nationality":  "Ghana"
+                        "nationality":  "Ghana",
+                        "trophies":  0
                     }
                 ],
     "league":  "Super Lig"

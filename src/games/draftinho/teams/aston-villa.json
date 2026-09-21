@@ -275,7 +275,7 @@
                         "clubApps":  268,
                         "weight":  68,
                         "apiFootballId":  1904,
-                        "trophies":  0
+                        "trophies":  2
                     },
                     {
                         "id":  783126,
@@ -338,7 +338,7 @@
                         "clubApps":  183,
                         "weight":  93,
                         "apiFootballId":  526,
-                        "trophies":  0
+                        "trophies":  17
                     },
                     {
                         "id":  1089388,
@@ -632,7 +632,7 @@
                         "clubApps":  150,
                         "weight":  78,
                         "apiFootballId":  283058,
-                        "trophies":  0
+                        "trophies":  8
                     },
                     {
                         "id":  9000302,
@@ -691,7 +691,8 @@
                         "assists":  1,
                         "yellowCards":  8,
                         "redCards":  0,
-                        "nationality":  "England"
+                        "nationality":  "England",
+                        "trophies":  0
                     },
                     {
                         "id":  965011,
@@ -729,7 +730,8 @@
                         "assists":  0,
                         "yellowCards":  2,
                         "redCards":  0,
-                        "nationality":  "Japan"
+                        "nationality":  "Japan",
+                        "trophies":  0
                     },
                     {
                         "id":  9400006,
@@ -746,7 +748,8 @@
                         "assists":  17,
                         "yellowCards":  25,
                         "redCards":  1,
-                        "nationality":  "England"
+                        "nationality":  "England",
+                        "trophies":  0
                     }
                 ],
     "league":  "Premier League"

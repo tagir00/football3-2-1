@@ -548,7 +548,7 @@
                         "clubApps":  186,
                         "weight":  80,
                         "apiFootballId":  63274,
-                        "trophies":  0
+                        "trophies":  8
                     },
                     {
                         "id":  2119726,
@@ -754,7 +754,8 @@
                         "assists":  1,
                         "yellowCards":  6,
                         "redCards":  0,
-                        "nationality":  "France"
+                        "nationality":  "France",
+                        "trophies":  0
                     }
                 ],
     "league":  "Super Lig"

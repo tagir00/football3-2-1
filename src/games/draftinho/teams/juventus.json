@@ -107,7 +107,7 @@
                         "clubApps":  232,
                         "weight":  80,
                         "apiFootballId":  30497,
-                        "trophies":  0
+                        "trophies":  2
                     },
                     {
                         "id":  1128063,
@@ -170,7 +170,7 @@
                         "clubApps":  204,
                         "weight":  69,
                         "apiFootballId":  162188,
-                        "trophies":  0
+                        "trophies":  5
                     },
                     {
                         "id":  139273,
@@ -317,7 +317,7 @@
                         "clubApps":  344,
                         "weight":  84,
                         "apiFootballId":  415,
-                        "trophies":  0
+                        "trophies":  9
                     },
                     {
                         "id":  867887,
@@ -611,7 +611,7 @@
                         "clubApps":  194,
                         "weight":  70,
                         "apiFootballId":  237129,
-                        "trophies":  0
+                        "trophies":  6
                     },
                     {
                         "id":  9400003,
@@ -628,7 +628,8 @@
                         "assists":  2,
                         "yellowCards":  18,
                         "redCards":  0,
-                        "nationality":  "Colombia"
+                        "nationality":  "Colombia",
+                        "trophies":  0
                     },
                     {
                         "id":  9400004,
@@ -645,7 +646,8 @@
                         "assists":  0,
                         "yellowCards":  5,
                         "redCards":  0,
-                        "nationality":  "Poland"
+                        "nationality":  "Poland",
+                        "trophies":  0
                     }
                 ],
     "league":  "Serie A"

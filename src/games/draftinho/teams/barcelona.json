@@ -212,7 +212,7 @@
                         "clubApps":  93,
                         "weight":  82,
                         "apiFootballId":  181701,
-                        "trophies":  0
+                        "trophies":  8
                     },
                     {
                         "id":  20053,
@@ -275,7 +275,7 @@
                         "clubApps":  225,
                         "weight":  77,
                         "apiFootballId":  619,
-                        "trophies":  0
+                        "trophies":  35
                     },
                     {
                         "id":  997035,
@@ -317,7 +317,7 @@
                         "clubApps":  167,
                         "weight":  69,
                         "apiFootballId":  296667,
-                        "trophies":  0
+                        "trophies":  17
                     },
                     {
                         "id":  1544613,
@@ -485,7 +485,7 @@
                         "clubApps":  341,
                         "weight":  75,
                         "apiFootballId":  538,
-                        "trophies":  0
+                        "trophies":  20
                     },
                     {
                         "id":  1526618,
@@ -590,7 +590,7 @@
                         "clubApps":  146,
                         "weight":  75,
                         "apiFootballId":  7334,
-                        "trophies":  0
+                        "trophies":  9
                     },
                     {
                         "id":  1162107,
@@ -691,7 +691,8 @@
                         "assists":  39,
                         "yellowCards":  40,
                         "redCards":  2,
-                        "nationality":  "Portugal"
+                        "nationality":  "Portugal",
+                        "trophies":  0
                     },
                     {
                         "id":  9300002,
@@ -708,7 +709,8 @@
                         "assists":  1,
                         "yellowCards":  3,
                         "redCards":  0,
-                        "nationality":  "Croatia"
+                        "nationality":  "Croatia",
+                        "trophies":  0
                     }
                 ],
     "league":  "LaLiga"

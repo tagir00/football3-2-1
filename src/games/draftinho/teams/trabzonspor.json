@@ -44,7 +44,7 @@
                         "clubApps":  386,
                         "weight":  93,
                         "apiFootballId":  526,
-                        "trophies":  0
+                        "trophies":  17
                     },
                     {
                         "id":  1417078,
@@ -733,7 +733,8 @@
                         "assists":  17,
                         "yellowCards":  57,
                         "redCards":  2,
-                        "nationality":  "Brazil"
+                        "nationality":  "Brazil",
+                        "trophies":  0
                     },
                     {
                         "id":  9300004,
@@ -750,7 +751,8 @@
                         "assists":  5,
                         "yellowCards":  7,
                         "redCards":  0,
-                        "nationality":  "Guinea-Bissau"
+                        "nationality":  "Guinea-Bissau",
+                        "trophies":  0
                     }
                 ],
     "league":  "Super Lig"

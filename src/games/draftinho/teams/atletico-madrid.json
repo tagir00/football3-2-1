@@ -128,7 +128,7 @@
                         "clubApps":  196,
                         "weight":  82,
                         "apiFootballId":  30399,
-                        "trophies":  0
+                        "trophies":  10
                     },
                     {
                         "id":  1094106,
@@ -254,7 +254,7 @@
                         "clubApps":  255,
                         "weight":  66,
                         "apiFootballId":  927,
-                        "trophies":  0
+                        "trophies":  17
                     },
                     {
                         "id":  1142588,
@@ -296,7 +296,7 @@
                         "clubApps":  188,
                         "weight":  70,
                         "apiFootballId":  182219,
-                        "trophies":  0
+                        "trophies":  6
                     },
                     {
                         "id":  944660,
@@ -548,7 +548,7 @@
                         "clubApps":  327,
                         "weight":  81,
                         "apiFootballId":  8489,
-                        "trophies":  0
+                        "trophies":  4
                     }
                 ],
     "league":  "LaLiga"
