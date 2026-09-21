@@ -755,27 +755,6 @@
                         "yellowCards":  6,
                         "redCards":  0,
                         "nationality":  "France"
-                    },
-                    {
-                        "id":  318967,
-                        "name":  "Renato Sanches",
-                        "slug":  "renato-sanches",
-                        "position":  "MID",
-                        "shirt":  18,
-                        "age":  28,
-                        "birth":  "1997-08-18",
-                        "height":  176,
-                        "marketValue":  2100000,
-                        "intlGoals":  3,
-                        "intlAppearances":  32,
-                        "assists":  14,
-                        "yellowCards":  42,
-                        "redCards":  3,
-                        "nationality":  "Portugal",
-                        "clubApps":  262,
-                        "weight":  70,
-                        "apiFootballId":  513,
-                        "trophies":  0
                     }
                 ],
     "league":  "Super Lig"

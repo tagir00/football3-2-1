@@ -14,7 +14,10 @@ $intraMoves = @(
   @{ name = 'Aaron Wan-Bissaka'; from = 'manchester-united'; to = 'aston-villa' }
   @{ name = 'Matteo Ruggeri';   from = 'atletico-madrid';    to = 'aston-villa' }
   @{ name = 'Ferran Torres';    from = 'barcelona';          to = 'paris-saint-germain' }
-  @{ name = 'Renato Sanches';   from = 'paris-saint-germain'; to = 'galatasaray' }
+  # Renato Sanches: initially routed PSG → Galatasaray on the Round 2 diff,
+  # but the user confirmed he's actually a free agent right now. Left out of
+  # the moves list so re-running this script doesn't re-add him at Gala; his
+  # PSG entry has already been removed by the first run.
 )
 
 # Removals — players AF confirmed are no longer at the club we had them at
