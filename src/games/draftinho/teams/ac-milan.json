@@ -425,27 +425,6 @@
                         "trophies":  0
                     },
                     {
-                        "id":  945062,
-                        "name":  "Youssouf Fofana",
-                        "slug":  "youssouf-fofana",
-                        "position":  "MID",
-                        "shirt":  19,
-                        "age":  27,
-                        "birth":  "1999-01-10",
-                        "height":  185,
-                        "marketValue":  25000000,
-                        "intlGoals":  3,
-                        "intlAppearances":  25,
-                        "assists":  29,
-                        "yellowCards":  35,
-                        "redCards":  4,
-                        "nationality":  "France",
-                        "clubApps":  283,
-                        "weight":  75,
-                        "apiFootballId":  22254,
-                        "trophies":  0
-                    },
-                    {
                         "id":  1622149,
                         "name":  "Christian Comotto",
                         "slug":  "christian-comotto",
@@ -822,6 +801,23 @@
                         "weight":  81,
                         "apiFootballId":  1821,
                         "trophies":  0
+                    },
+                    {
+                        "id":  9400002,
+                        "name":  "Diego Moreira",
+                        "slug":  "diego-moreira",
+                        "position":  "FW",
+                        "shirt":  22,
+                        "age":  22,
+                        "birth":  "2004-08-06",
+                        "height":  180,
+                        "marketValue":  15000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  0,
+                        "assists":  6,
+                        "yellowCards":  6,
+                        "redCards":  0,
+                        "nationality":  "Portugal"
                     }
                 ],
     "league":  "Serie A"

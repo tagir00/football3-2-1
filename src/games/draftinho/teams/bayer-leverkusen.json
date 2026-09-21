@@ -47,27 +47,6 @@
                         "trophies":  0
                     },
                     {
-                        "id":  1119502,
-                        "name":  "Ernest Poku",
-                        "slug":  "ernest-poku",
-                        "position":  "FW",
-                        "shirt":  19,
-                        "age":  22,
-                        "birth":  "2004-01-28",
-                        "height":  172,
-                        "marketValue":  24000000,
-                        "intlGoals":  0,
-                        "intlAppearances":  0,
-                        "assists":  23,
-                        "yellowCards":  7,
-                        "redCards":  0,
-                        "nationality":  "Netherlands",
-                        "clubApps":  120,
-                        "weight":  null,
-                        "apiFootballId":  null,
-                        "trophies":  0
-                    },
-                    {
                         "id":  2029648,
                         "name":  "Christian Kofane",
                         "slug":  "christian-kofane",
@@ -759,6 +738,23 @@
                         "weight":  83,
                         "apiFootballId":  24903,
                         "trophies":  0
+                    },
+                    {
+                        "id":  9400005,
+                        "name":  "Moussa Diaby",
+                        "slug":  "moussa-diaby-return",
+                        "position":  "FW",
+                        "shirt":  19,
+                        "age":  26,
+                        "birth":  "1999-07-07",
+                        "height":  170,
+                        "marketValue":  30000000,
+                        "intlGoals":  2,
+                        "intlAppearances":  15,
+                        "assists":  41,
+                        "yellowCards":  15,
+                        "redCards":  0,
+                        "nationality":  "France"
                     }
                 ],
     "league":  "Bundesliga"

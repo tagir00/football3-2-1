@@ -299,27 +299,6 @@
                         "trophies":  27
                     },
                     {
-                        "id":  318967,
-                        "name":  "Renato Sanches",
-                        "slug":  "renato-sanches",
-                        "position":  "MID",
-                        "shirt":  18,
-                        "age":  28,
-                        "birth":  "1997-08-18",
-                        "height":  176,
-                        "marketValue":  2100000,
-                        "intlGoals":  3,
-                        "intlAppearances":  32,
-                        "assists":  14,
-                        "yellowCards":  42,
-                        "redCards":  3,
-                        "nationality":  "Portugal",
-                        "clubApps":  262,
-                        "weight":  70,
-                        "apiFootballId":  513,
-                        "trophies":  0
-                    },
-                    {
                         "id":  1473491,
                         "name":  "Senny Mayulu",
                         "slug":  "mayulu-senny",
@@ -654,6 +633,27 @@
                         "weight":  74,
                         "apiFootballId":  2724,
                         "trophies":  0
+                    },
+                    {
+                        "id":  855833,
+                        "name":  "Ferran Torres",
+                        "slug":  "ferran-torres",
+                        "position":  "FW",
+                        "shirt":  7,
+                        "age":  26,
+                        "birth":  "2000-02-29",
+                        "height":  183,
+                        "marketValue":  59000000,
+                        "intlGoals":  25,
+                        "intlAppearances":  65,
+                        "assists":  38,
+                        "yellowCards":  31,
+                        "redCards":  2,
+                        "nationality":  "Spain",
+                        "clubApps":  346,
+                        "weight":  80,
+                        "apiFootballId":  931,
+                        "trophies":  25
                     }
                 ],
     "league":  "Ligue 1"

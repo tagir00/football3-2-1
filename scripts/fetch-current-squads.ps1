@@ -26,21 +26,20 @@ $targets = [ordered]@{
   'besiktas'            = 549
   'trabzonspor'         = 998
   'chelsea'             = 49
-  # tomorrow batch (uncomment when running the second day)
-  # 'manchester-united'   = 33
-  # 'arsenal'             = 42
-  # 'tottenham-hotspur'   = 47
-  # 'newcastle-united'    = 34
-  # 'aston-villa'         = 66
-  # 'ac-milan'            = 489
-  # 'inter-milan'         = 505
-  # 'juventus'            = 496
-  # 'napoli'              = 492
-  # 'borussia-dortmund'   = 165
-  # 'bayer-leverkusen'    = 168
-  # 'atletico-madrid'     = 530
-  # 'paris-saint-germain' = 85
-  # 'basaksehir'          = 564
+  'manchester-united'   = 33
+  'arsenal'             = 42
+  'tottenham-hotspur'   = 47
+  'newcastle-united'    = 34
+  'aston-villa'         = 66
+  'ac-milan'            = 489
+  'inter-milan'         = 505
+  'juventus'            = 496
+  'napoli'              = 492
+  'borussia-dortmund'   = 165
+  'bayer-leverkusen'    = 168
+  'atletico-madrid'     = 530
+  'paris-saint-germain' = 85
+  'basaksehir'          = 564
 }
 
 # Load prior progress

@@ -299,27 +299,6 @@
                         "trophies":  0
                     },
                     {
-                        "id":  1010223,
-                        "name":  "Fabio Miretti",
-                        "slug":  "fabio-miretti",
-                        "position":  "MID",
-                        "shirt":  21,
-                        "age":  23,
-                        "birth":  "2003-08-03",
-                        "height":  179,
-                        "marketValue":  14600000,
-                        "intlGoals":  0,
-                        "intlAppearances":  1,
-                        "assists":  11,
-                        "yellowCards":  12,
-                        "redCards":  0,
-                        "nationality":  "Italy",
-                        "clubApps":  125,
-                        "weight":  75,
-                        "apiFootballId":  181808,
-                        "trophies":  0
-                    },
-                    {
                         "id":  881931,
                         "name":  "Weston McKennie",
                         "slug":  "weston-mckennie",
@@ -633,6 +612,40 @@
                         "weight":  70,
                         "apiFootballId":  237129,
                         "trophies":  0
+                    },
+                    {
+                        "id":  9400003,
+                        "name":  "Jhon Lucumí",
+                        "slug":  "jhon-lucumi",
+                        "position":  "DEF",
+                        "shirt":  26,
+                        "age":  27,
+                        "birth":  "1998-06-24",
+                        "height":  185,
+                        "marketValue":  28000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  27,
+                        "assists":  2,
+                        "yellowCards":  18,
+                        "redCards":  0,
+                        "nationality":  "Colombia"
+                    },
+                    {
+                        "id":  9400004,
+                        "name":  "Kamil Grabara",
+                        "slug":  "kamil-grabara",
+                        "position":  "GK",
+                        "shirt":  1,
+                        "age":  26,
+                        "birth":  "1999-01-08",
+                        "height":  195,
+                        "marketValue":  10000000,
+                        "intlGoals":  0,
+                        "intlAppearances":  2,
+                        "assists":  0,
+                        "yellowCards":  5,
+                        "redCards":  0,
+                        "nationality":  "Poland"
                     }
                 ],
     "league":  "Serie A"

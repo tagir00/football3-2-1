@@ -511,7 +511,40 @@
                 "El Chadaille Bitshiabu":  "Galatasaray",
                 "Fabio Miretti":  "Besiktas",
                 "Emmanuel Poku":  "Besiktas",
-                "Pep Chavarría":  "Chelsea"
+                "Pep Chavarría":  "Chelsea",
+                "Moussa Diaby":  "Bayer Leverkusen",
+                "Ferran Torres":  [
+                                      "Barcelona",
+                                      "Paris Saint-Germain"
+                                  ],
+                "Diego Moreira":  "AC Milan",
+                "Zion Suzuki":  "Aston Villa",
+                "Renato Sanches":  [
+                                       "Galatasaray",
+                                       "Paris Saint-Germain"
+                                   ],
+                "Omar Marmoush":  [
+                                      "Manchester City",
+                                      "Tottenham Hotspur"
+                                  ],
+                "Sávio":  [
+                              "Manchester City",
+                              "Tottenham Hotspur"
+                          ],
+                "Jhon Lucumí":  "Juventus",
+                "Kamil Grabara":  "Juventus",
+                "Matteo Ruggeri":  [
+                                       "Aston Villa",
+                                       "Atletico Madrid"
+                                   ],
+                "Aaron Wan-Bissaka":  [
+                                          "Aston Villa",
+                                          "Manchester United"
+                                      ],
+                "Savinho":  [
+                                "Manchester City",
+                                "Tottenham Hotspur"
+                            ]
             },
     "override":  {
                      "Mason Greenwood":  [

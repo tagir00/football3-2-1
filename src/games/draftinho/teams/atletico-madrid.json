@@ -68,27 +68,6 @@
                         "trophies":  0
                     },
                     {
-                        "id":  965011,
-                        "name":  "Matteo Ruggeri",
-                        "slug":  "matteo-ruggeri",
-                        "position":  "DEF",
-                        "shirt":  3,
-                        "age":  24,
-                        "birth":  "2002-07-11",
-                        "height":  187,
-                        "marketValue":  27000000,
-                        "intlGoals":  0,
-                        "intlAppearances":  0,
-                        "assists":  19,
-                        "yellowCards":  17,
-                        "redCards":  0,
-                        "nationality":  "Italy",
-                        "clubApps":  171,
-                        "weight":  69,
-                        "apiFootballId":  162012,
-                        "trophies":  0
-                    },
-                    {
                         "id":  353138,
                         "name":  "Marcos Llorente",
                         "slug":  "marcos-llorente",
