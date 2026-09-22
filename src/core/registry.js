@@ -27,6 +27,13 @@ export const games = [
     accent: 'game-rastgele-besler',
     load: () => import('../games/rastgele-besler/index.js'),
   },
+  {
+    id: 'hedefi-tuttur',
+    title: 'Hedefi Tuttur',
+    cover: './assets/covers/hedefi-tuttur.svg',
+    accent: 'game-hedefi-tuttur',
+    load: () => import('../games/hedefi-tuttur/index.js'),
+  },
 ];
 
 export function getGame(id) {
