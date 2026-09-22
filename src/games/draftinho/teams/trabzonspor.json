@@ -84,7 +84,7 @@
                         "redCards":  0,
                         "nationality":  "Türkiye",
                         "clubApps":  179,
-                        "weight":  null,
+                        "weight":  81,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -147,7 +147,7 @@
                         "redCards":  0,
                         "nationality":  "Türkiye",
                         "clubApps":  1,
-                        "weight":  null,
+                        "weight":  76,
                         "apiFootballId":  394188,
                         "trophies":  0
                     },
@@ -170,7 +170,7 @@
                         "clubApps":  444,
                         "weight":  81,
                         "apiFootballId":  39,
-                        "trophies":  0
+                        "trophies":  14
                     },
                     {
                         "id":  1513625,
@@ -189,7 +189,7 @@
                         "redCards":  2,
                         "nationality":  "Cape Verde",
                         "clubApps":  88,
-                        "weight":  null,
+                        "weight":  72,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -210,7 +210,7 @@
                         "redCards":  3,
                         "nationality":  "Nigeria",
                         "clubApps":  19,
-                        "weight":  null,
+                        "weight":  78,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -231,7 +231,7 @@
                         "redCards":  0,
                         "nationality":  "Türkiye",
                         "clubApps":  117,
-                        "weight":  null,
+                        "weight":  78,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -273,7 +273,7 @@
                         "redCards":  0,
                         "nationality":  "Cape Verde",
                         "clubApps":  28,
-                        "weight":  null,
+                        "weight":  78,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -378,7 +378,7 @@
                         "redCards":  1,
                         "nationality":  "Morocco",
                         "clubApps":  42,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -399,7 +399,7 @@
                         "redCards":  0,
                         "nationality":  "Türkiye",
                         "clubApps":  51,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -462,7 +462,7 @@
                         "redCards":  3,
                         "nationality":  "Ukraine",
                         "clubApps":  389,
-                        "weight":  null,
+                        "weight":  79,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -525,7 +525,7 @@
                         "redCards":  0,
                         "nationality":  "Türkiye",
                         "clubApps":  82,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -546,7 +546,7 @@
                         "redCards":  0,
                         "nationality":  "Türkiye",
                         "clubApps":  101,
-                        "weight":  null,
+                        "weight":  71,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -567,7 +567,7 @@
                         "redCards":  0,
                         "nationality":  "Portugal",
                         "clubApps":  33,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -588,7 +588,7 @@
                         "redCards":  0,
                         "nationality":  "Belgium",
                         "clubApps":  7,
-                        "weight":  null,
+                        "weight":  70,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -630,7 +630,7 @@
                         "redCards":  1,
                         "nationality":  "Nigeria",
                         "clubApps":  354,
-                        "weight":  null,
+                        "weight":  82,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -693,7 +693,7 @@
                         "redCards":  0,
                         "nationality":  "",
                         "clubApps":  158,
-                        "weight":  null,
+                        "weight":  70,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -716,7 +716,7 @@
                         "clubApps":  578,
                         "weight":  71,
                         "apiFootballId":  306,
-                        "trophies":  0
+                        "trophies":  22
                     },
                     {
                         "id":  9300003,
@@ -734,7 +734,9 @@
                         "yellowCards":  57,
                         "redCards":  2,
                         "nationality":  "Brazil",
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubApps":  624,
+                        "weight":  73
                     },
                     {
                         "id":  9300004,
@@ -744,7 +746,7 @@
                         "shirt":  9,
                         "age":  21,
                         "birth":  "2004-06-15",
-                        "height":  185,
+                        "height":  186,
                         "marketValue":  18000000,
                         "intlGoals":  1,
                         "intlAppearances":  10,
@@ -752,7 +754,9 @@
                         "yellowCards":  7,
                         "redCards":  0,
                         "nationality":  "Guinea-Bissau",
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubApps":  83,
+                        "weight":  75
                     }
                 ],
     "league":  "Super Lig"

@@ -21,7 +21,7 @@
                         "redCards":  0,
                         "nationality":  "Italy",
                         "clubApps":  222,
-                        "weight":  null,
+                        "weight":  82,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -189,7 +189,7 @@
                         "redCards":  0,
                         "nationality":  "France",
                         "clubApps":  100,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -233,7 +233,7 @@
                         "clubApps":  198,
                         "weight":  74,
                         "apiFootballId":  31173,
-                        "trophies":  0
+                        "trophies":  8
                     },
                     {
                         "id":  138605,
@@ -275,7 +275,7 @@
                         "clubApps":  178,
                         "weight":  78,
                         "apiFootballId":  10238,
-                        "trophies":  0
+                        "trophies":  7
                     },
                     {
                         "id":  823984,
@@ -378,7 +378,7 @@
                         "redCards":  0,
                         "nationality":  "Brazil",
                         "clubApps":  144,
-                        "weight":  null,
+                        "weight":  78,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -399,7 +399,7 @@
                         "redCards":  0,
                         "nationality":  "Cote d\u0027Ivoire",
                         "clubApps":  88,
-                        "weight":  null,
+                        "weight":  75,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -420,7 +420,7 @@
                         "redCards":  0,
                         "nationality":  "France",
                         "clubApps":  6,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },

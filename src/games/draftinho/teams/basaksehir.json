@@ -62,8 +62,8 @@
                         "yellowCards":  0,
                         "redCards":  0,
                         "nationality":  "Türkiye",
-                        "clubApps":  0,
-                        "weight":  null,
+                        "clubApps":  6,
+                        "weight":  81,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -273,7 +273,7 @@
                         "redCards":  0,
                         "nationality":  "P",
                         "clubApps":  13,
-                        "weight":  null,
+                        "weight":  78,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -315,7 +315,7 @@
                         "redCards":  0,
                         "nationality":  "Türkiye",
                         "clubApps":  1,
-                        "weight":  null,
+                        "weight":  78,
                         "apiFootballId":  339884,
                         "trophies":  0
                     },
@@ -356,8 +356,8 @@
                         "yellowCards":  0,
                         "redCards":  0,
                         "nationality":  "",
-                        "clubApps":  0,
-                        "weight":  null,
+                        "clubApps":  8,
+                        "weight":  76,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -504,7 +504,7 @@
                         "redCards":  0,
                         "nationality":  "Uzbekistan",
                         "clubApps":  97,
-                        "weight":  null,
+                        "weight":  55,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -537,7 +537,7 @@
                         "shirt":  18,
                         "age":  23,
                         "birth":  "2002-10-31",
-                        "height":  185,
+                        "height":  184,
                         "marketValue":  2300000,
                         "intlGoals":  0,
                         "intlAppearances":  1,
@@ -545,7 +545,7 @@
                         "yellowCards":  13,
                         "redCards":  0,
                         "nationality":  "P",
-                        "clubApps":  0,
+                        "clubApps":  169,
                         "weight":  64,
                         "apiFootballId":  197784,
                         "trophies":  0
@@ -651,7 +651,7 @@
                         "redCards":  1,
                         "nationality":  "Germany",
                         "clubApps":  288,
-                        "weight":  null,
+                        "weight":  85,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -693,7 +693,7 @@
                         "redCards":  0,
                         "nationality":  "Uzbekistan",
                         "clubApps":  281,
-                        "weight":  null,
+                        "weight":  78,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -714,7 +714,7 @@
                         "redCards":  0,
                         "nationality":  "Türkiye",
                         "clubApps":  22,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -756,7 +756,7 @@
                         "redCards":  0,
                         "nationality":  "Türkiye",
                         "clubApps":  4,
-                        "weight":  null,
+                        "weight":  75,
                         "apiFootballId":  null,
                         "trophies":  0
                     },

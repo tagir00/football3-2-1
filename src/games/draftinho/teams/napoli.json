@@ -65,7 +65,7 @@
                         "clubApps":  202,
                         "weight":  81,
                         "apiFootballId":  39,
-                        "trophies":  0
+                        "trophies":  14
                     },
                     {
                         "id":  25357,
@@ -104,8 +104,8 @@
                         "yellowCards":  0,
                         "redCards":  0,
                         "nationality":  "",
-                        "clubApps":  0,
-                        "weight":  null,
+                        "clubApps":  14,
+                        "weight":  78,
                         "apiFootballId":  336688,
                         "trophies":  0
                     },
@@ -212,7 +212,7 @@
                         "clubApps":  174,
                         "weight":  77,
                         "apiFootballId":  37604,
-                        "trophies":  0
+                        "trophies":  2
                     },
                     {
                         "id":  1165371,
@@ -272,8 +272,8 @@
                         "yellowCards":  0,
                         "redCards":  0,
                         "nationality":  "Italy",
-                        "clubApps":  0,
-                        "weight":  null,
+                        "clubApps":  6,
+                        "weight":  76,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -296,7 +296,7 @@
                         "clubApps":  152,
                         "weight":  60,
                         "apiFootballId":  130423,
-                        "trophies":  0
+                        "trophies":  10
                     },
                     {
                         "id":  879346,
@@ -461,8 +461,8 @@
                         "yellowCards":  0,
                         "redCards":  0,
                         "nationality":  "Italy",
-                        "clubApps":  0,
-                        "weight":  null,
+                        "clubApps":  14,
+                        "weight":  73,
                         "apiFootballId":  363375,
                         "trophies":  0
                     },
@@ -525,7 +525,7 @@
                         "redCards":  0,
                         "nationality":  "Italy",
                         "clubApps":  34,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -548,7 +548,7 @@
                         "clubApps":  313,
                         "weight":  66,
                         "apiFootballId":  552,
-                        "trophies":  0
+                        "trophies":  22
                     },
                     {
                         "id":  962364,
@@ -567,7 +567,7 @@
                         "redCards":  1,
                         "nationality":  "Italy",
                         "clubApps":  123,
-                        "weight":  null,
+                        "weight":  80,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -609,7 +609,7 @@
                         "redCards":  0,
                         "nationality":  "Brazil",
                         "clubApps":  36,
-                        "weight":  null,
+                        "weight":  76,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -651,7 +651,7 @@
                         "redCards":  0,
                         "nationality":  "Italy",
                         "clubApps":  19,
-                        "weight":  null,
+                        "weight":  75,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -674,7 +674,7 @@
                         "clubApps":  43,
                         "weight":  64,
                         "apiFootballId":  905,
-                        "trophies":  0
+                        "trophies":  15
                     },
                     {
                         "id":  907475,
@@ -692,7 +692,7 @@
                         "yellowCards":  0,
                         "redCards":  0,
                         "nationality":  "",
-                        "clubApps":  0,
+                        "clubApps":  18,
                         "weight":  82,
                         "apiFootballId":  162092,
                         "trophies":  0
@@ -714,7 +714,7 @@
                         "redCards":  3,
                         "nationality":  "Netherlands",
                         "clubApps":  231,
-                        "weight":  null,
+                        "weight":  74,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -756,7 +756,7 @@
                         "redCards":  0,
                         "nationality":  "Italy",
                         "clubApps":  1,
-                        "weight":  null,
+                        "weight":  75,
                         "apiFootballId":  161852,
                         "trophies":  0
                     },

@@ -86,7 +86,7 @@
                         "clubApps":  225,
                         "weight":  85,
                         "apiFootballId":  25287,
-                        "trophies":  0
+                        "trophies":  2
                     },
                     {
                         "id":  830659,
@@ -105,7 +105,7 @@
                         "redCards":  1,
                         "nationality":  "Argentina",
                         "clubApps":  229,
-                        "weight":  null,
+                        "weight":  78,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -126,7 +126,7 @@
                         "redCards":  1,
                         "nationality":  "Netherlands",
                         "clubApps":  164,
-                        "weight":  null,
+                        "weight":  79,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -149,7 +149,7 @@
                         "clubApps":  170,
                         "weight":  73,
                         "apiFootballId":  204039,
-                        "trophies":  0
+                        "trophies":  4
                     },
                     {
                         "id":  913654,
@@ -189,7 +189,7 @@
                         "redCards":  0,
                         "nationality":  "Japan",
                         "clubApps":  8,
-                        "weight":  null,
+                        "weight":  78,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -338,7 +338,7 @@
                         "clubApps":  275,
                         "weight":  73,
                         "apiFootballId":  18784,
-                        "trophies":  0
+                        "trophies":  8
                     },
                     {
                         "id":  1142335,
@@ -432,7 +432,7 @@
                         "shirt":  18,
                         "age":  20,
                         "birth":  "2006-04-16",
-                        "height":  176,
+                        "height":  172,
                         "marketValue":  3300000,
                         "intlGoals":  0,
                         "intlAppearances":  2,
@@ -440,8 +440,8 @@
                         "yellowCards":  0,
                         "redCards":  0,
                         "nationality":  "K",
-                        "clubApps":  0,
-                        "weight":  null,
+                        "clubApps":  72,
+                        "weight":  71,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -462,7 +462,7 @@
                         "redCards":  2,
                         "nationality":  "Ghana",
                         "clubApps":  235,
-                        "weight":  null,
+                        "weight":  77,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -527,7 +527,7 @@
                         "clubApps":  326,
                         "weight":  72,
                         "apiFootballId":  863,
-                        "trophies":  0
+                        "trophies":  21
                     },
                     {
                         "id":  840217,
@@ -548,7 +548,7 @@
                         "clubApps":  314,
                         "weight":  83,
                         "apiFootballId":  2413,
-                        "trophies":  0
+                        "trophies":  10
                     },
                     {
                         "id":  1048888,
@@ -569,7 +569,7 @@
                         "clubApps":  147,
                         "weight":  77,
                         "apiFootballId":  270510,
-                        "trophies":  0
+                        "trophies":  8
                     },
                     {
                         "id":  361420,
@@ -632,7 +632,7 @@
                         "clubApps":  118,
                         "weight":  76,
                         "apiFootballId":  336564,
-                        "trophies":  0
+                        "trophies":  2
                     },
                     {
                         "id":  998772,
@@ -674,7 +674,7 @@
                         "clubApps":  58,
                         "weight":  70,
                         "apiFootballId":  305736,
-                        "trophies":  0
+                        "trophies":  2
                     },
                     {
                         "id":  352668,
@@ -756,7 +756,7 @@
                         "redCards":  0,
                         "nationality":  "Brazil",
                         "clubApps":  131,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     }

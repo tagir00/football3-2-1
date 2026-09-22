@@ -63,7 +63,7 @@
                         "redCards":  0,
                         "nationality":  "England",
                         "clubApps":  18,
-                        "weight":  null,
+                        "weight":  71,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -168,7 +168,7 @@
                         "redCards":  1,
                         "nationality":  "France",
                         "clubApps":  37,
-                        "weight":  null,
+                        "weight":  79,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -231,7 +231,7 @@
                         "redCards":  1,
                         "nationality":  "Brazil",
                         "clubApps":  398,
-                        "weight":  null,
+                        "weight":  88,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -294,7 +294,7 @@
                         "redCards":  0,
                         "nationality":  "England",
                         "clubApps":  30,
-                        "weight":  null,
+                        "weight":  70,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -401,7 +401,7 @@
                         "clubApps":  149,
                         "weight":  64,
                         "apiFootballId":  19035,
-                        "trophies":  0
+                        "trophies":  19
                     },
                     {
                         "id":  17538,
@@ -441,7 +441,7 @@
                         "redCards":  1,
                         "nationality":  "Italy",
                         "clubApps":  18,
-                        "weight":  null,
+                        "weight":  76,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -462,7 +462,7 @@
                         "redCards":  0,
                         "nationality":  "Belgium",
                         "clubApps":  10,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -548,7 +548,7 @@
                         "clubApps":  69,
                         "weight":  64,
                         "apiFootballId":  180317,
-                        "trophies":  0
+                        "trophies":  11
                     },
                     {
                         "id":  20594,
@@ -567,7 +567,7 @@
                         "redCards":  2,
                         "nationality":  "France",
                         "clubApps":  166,
-                        "weight":  null,
+                        "weight":  76,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -653,7 +653,7 @@
                         "clubApps":  154,
                         "weight":  90,
                         "apiFootballId":  24760,
-                        "trophies":  0
+                        "trophies":  2
                     }
                 ],
     "league":  "Premier League"

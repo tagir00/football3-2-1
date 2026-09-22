@@ -65,7 +65,7 @@
                         "clubApps":  235,
                         "weight":  78,
                         "apiFootballId":  372,
-                        "trophies":  0
+                        "trophies":  23
                     },
                     {
                         "id":  794939,
@@ -168,7 +168,7 @@
                         "redCards":  1,
                         "nationality":  "Spain",
                         "clubApps":  118,
-                        "weight":  null,
+                        "weight":  75,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -380,7 +380,7 @@
                         "clubApps":  574,
                         "weight":  65,
                         "apiFootballId":  636,
-                        "trophies":  0
+                        "trophies":  38
                     },
                     {
                         "id":  835485,
@@ -422,7 +422,7 @@
                         "clubApps":  404,
                         "weight":  80,
                         "apiFootballId":  226,
-                        "trophies":  0
+                        "trophies":  13
                     },
                     {
                         "id":  1142683,
@@ -441,7 +441,7 @@
                         "redCards":  0,
                         "nationality":  "S",
                         "clubApps":  62,
-                        "weight":  null,
+                        "weight":  63,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -462,7 +462,7 @@
                         "redCards":  0,
                         "nationality":  "Spain",
                         "clubApps":  16,
-                        "weight":  null,
+                        "weight":  71,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -567,7 +567,7 @@
                         "redCards":  1,
                         "nationality":  "Argentina",
                         "clubApps":  38,
-                        "weight":  null,
+                        "weight":  74,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -588,7 +588,7 @@
                         "redCards":  0,
                         "nationality":  "Spain",
                         "clubApps":  27,
-                        "weight":  null,
+                        "weight":  75,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -609,7 +609,7 @@
                         "redCards":  0,
                         "nationality":  "Cote d\u0027Ivoire",
                         "clubApps":  54,
-                        "weight":  null,
+                        "weight":  76,
                         "apiFootballId":  null,
                         "trophies":  0
                     }

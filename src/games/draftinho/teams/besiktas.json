@@ -21,7 +21,7 @@
                         "redCards":  0,
                         "nationality":  "Korea, South",
                         "clubApps":  114,
-                        "weight":  null,
+                        "weight":  87,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -210,7 +210,7 @@
                         "redCards":  0,
                         "nationality":  "Benin",
                         "clubApps":  31,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -294,7 +294,7 @@
                         "redCards":  3,
                         "nationality":  "Nigeria",
                         "clubApps":  340,
-                        "weight":  null,
+                        "weight":  78,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -315,7 +315,7 @@
                         "redCards":  0,
                         "nationality":  "Türkiye",
                         "clubApps":  49,
-                        "weight":  null,
+                        "weight":  83,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -357,7 +357,7 @@
                         "redCards":  0,
                         "nationality":  "Türkiye",
                         "clubApps":  63,
-                        "weight":  null,
+                        "weight":  81,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -441,7 +441,7 @@
                         "redCards":  0,
                         "nationality":  "Türkiye",
                         "clubApps":  117,
-                        "weight":  null,
+                        "weight":  78,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -462,7 +462,7 @@
                         "redCards":  0,
                         "nationality":  "France",
                         "clubApps":  3,
-                        "weight":  null,
+                        "weight":  71,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -483,7 +483,7 @@
                         "redCards":  6,
                         "nationality":  "Cote d\u0027Ivoire",
                         "clubApps":  182,
-                        "weight":  null,
+                        "weight":  85,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -504,7 +504,7 @@
                         "redCards":  0,
                         "nationality":  "T",
                         "clubApps":  259,
-                        "weight":  null,
+                        "weight":  75,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -525,7 +525,7 @@
                         "redCards":  3,
                         "nationality":  "Türkiye",
                         "clubApps":  290,
-                        "weight":  null,
+                        "weight":  69,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -630,7 +630,7 @@
                         "redCards":  0,
                         "nationality":  "France",
                         "clubApps":  50,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -695,7 +695,7 @@
                         "clubApps":  404,
                         "weight":  61,
                         "apiFootballId":  1946,
-                        "trophies":  0
+                        "trophies":  14
                     },
                     {
                         "id":  795421,
@@ -735,7 +735,7 @@
                         "redCards":  0,
                         "nationality":  "Türkiye",
                         "clubApps":  51,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -768,7 +768,7 @@
                         "shirt":  21,
                         "age":  22,
                         "birth":  "2003-08-03",
-                        "height":  185,
+                        "height":  180,
                         "marketValue":  12000000,
                         "intlGoals":  0,
                         "intlAppearances":  1,
@@ -776,17 +776,19 @@
                         "yellowCards":  15,
                         "redCards":  0,
                         "nationality":  "Italy",
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubApps":  138,
+                        "weight":  73
                     },
                     {
                         "id":  9300006,
-                        "name":  "Emmanuel Poku",
+                        "name":  "Ernest Poku",
                         "slug":  "emmanuel-poku",
                         "position":  "FW",
                         "shirt":  17,
                         "age":  21,
                         "birth":  "2004-05-01",
-                        "height":  180,
+                        "height":  172,
                         "marketValue":  6000000,
                         "intlGoals":  0,
                         "intlAppearances":  0,
@@ -794,7 +796,9 @@
                         "yellowCards":  3,
                         "redCards":  0,
                         "nationality":  "Ghana",
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubApps":  175,
+                        "weight":  75
                     }
                 ],
     "league":  "Super Lig"

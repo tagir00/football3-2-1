@@ -84,7 +84,7 @@
                         "redCards":  4,
                         "nationality":  "Türkiye",
                         "clubApps":  288,
-                        "weight":  null,
+                        "weight":  72,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -233,7 +233,7 @@
                         "clubApps":  392,
                         "weight":  75,
                         "apiFootballId":  30533,
-                        "trophies":  0
+                        "trophies":  6
                     },
                     {
                         "id":  803033,
@@ -275,7 +275,7 @@
                         "clubApps":  297,
                         "weight":  72,
                         "apiFootballId":  396475,
-                        "trophies":  0
+                        "trophies":  16
                     },
                     {
                         "id":  904832,
@@ -338,7 +338,7 @@
                         "clubApps":  289,
                         "weight":  66,
                         "apiFootballId":  47522,
-                        "trophies":  0
+                        "trophies":  6
                     },
                     {
                         "id":  917048,
@@ -359,7 +359,7 @@
                         "clubApps":  194,
                         "weight":  77,
                         "apiFootballId":  127011,
-                        "trophies":  0
+                        "trophies":  4
                     },
                     {
                         "id":  1425366,
@@ -422,7 +422,7 @@
                         "clubApps":  194,
                         "weight":  64,
                         "apiFootballId":  161585,
-                        "trophies":  0
+                        "trophies":  9
                     },
                     {
                         "id":  1149011,
@@ -483,7 +483,7 @@
                         "redCards":  0,
                         "nationality":  "Cote d\u0027Ivoire",
                         "clubApps":  296,
-                        "weight":  null,
+                        "weight":  68,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -525,7 +525,7 @@
                         "redCards":  0,
                         "nationality":  "Italy",
                         "clubApps":  57,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -588,7 +588,7 @@
                         "redCards":  0,
                         "nationality":  "Germany",
                         "clubApps":  132,
-                        "weight":  null,
+                        "weight":  88,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -621,7 +621,7 @@
                         "shirt":  26,
                         "age":  27,
                         "birth":  "1998-06-24",
-                        "height":  185,
+                        "height":  187,
                         "marketValue":  28000000,
                         "intlGoals":  0,
                         "intlAppearances":  27,
@@ -629,7 +629,9 @@
                         "yellowCards":  18,
                         "redCards":  0,
                         "nationality":  "Colombia",
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubApps":  256,
+                        "weight":  78
                     },
                     {
                         "id":  9400004,
@@ -647,7 +649,9 @@
                         "yellowCards":  5,
                         "redCards":  0,
                         "nationality":  "Poland",
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubApps":  274,
+                        "weight":  83
                     }
                 ],
     "league":  "Serie A"

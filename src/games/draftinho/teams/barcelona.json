@@ -126,7 +126,7 @@
                         "redCards":  0,
                         "nationality":  "Spain",
                         "clubApps":  1,
-                        "weight":  null,
+                        "weight":  82,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -147,7 +147,7 @@
                         "redCards":  2,
                         "nationality":  "Spain",
                         "clubApps":  131,
-                        "weight":  null,
+                        "weight":  76,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -168,7 +168,7 @@
                         "redCards":  0,
                         "nationality":  "Spain",
                         "clubApps":  6,
-                        "weight":  null,
+                        "weight":  76,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -231,7 +231,7 @@
                         "redCards":  0,
                         "nationality":  "Spain",
                         "clubApps":  4,
-                        "weight":  null,
+                        "weight":  76,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -335,8 +335,8 @@
                         "yellowCards":  0,
                         "redCards":  0,
                         "nationality":  "",
-                        "clubApps":  0,
-                        "weight":  null,
+                        "clubApps":  8,
+                        "weight":  71,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -506,7 +506,7 @@
                         "clubApps":  36,
                         "weight":  87,
                         "apiFootballId":  433396,
-                        "trophies":  0
+                        "trophies":  8
                     },
                     {
                         "id":  1506988,
@@ -524,8 +524,8 @@
                         "yellowCards":  0,
                         "redCards":  0,
                         "nationality":  "",
-                        "clubApps":  0,
-                        "weight":  null,
+                        "clubApps":  4,
+                        "weight":  68,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -546,7 +546,7 @@
                         "redCards":  0,
                         "nationality":  "S",
                         "clubApps":  112,
-                        "weight":  null,
+                        "weight":  71,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -609,7 +609,7 @@
                         "redCards":  0,
                         "nationality":  "Sweden",
                         "clubApps":  68,
-                        "weight":  null,
+                        "weight":  70,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -630,7 +630,7 @@
                         "redCards":  0,
                         "nationality":  "",
                         "clubApps":  304,
-                        "weight":  null,
+                        "weight":  70,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -692,7 +692,9 @@
                         "yellowCards":  40,
                         "redCards":  2,
                         "nationality":  "Portugal",
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubApps":  497,
+                        "weight":  78
                     },
                     {
                         "id":  9300002,
@@ -702,7 +704,7 @@
                         "shirt":  25,
                         "age":  31,
                         "birth":  "1995-01-09",
-                        "height":  186,
+                        "height":  188,
                         "marketValue":  6000000,
                         "intlGoals":  0,
                         "intlAppearances":  79,
@@ -710,7 +712,9 @@
                         "yellowCards":  3,
                         "redCards":  0,
                         "nationality":  "Croatia",
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubApps":  494,
+                        "weight":  83
                     }
                 ],
     "league":  "LaLiga"

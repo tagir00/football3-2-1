@@ -65,7 +65,7 @@
                         "clubApps":  32,
                         "weight":  83,
                         "apiFootballId":  203376,
-                        "trophies":  0
+                        "trophies":  6
                     },
                     {
                         "id":  798583,
@@ -104,10 +104,10 @@
                         "yellowCards":  24,
                         "redCards":  2,
                         "nationality":  "K",
-                        "clubApps":  0,
+                        "clubApps":  275,
                         "weight":  88,
                         "apiFootballId":  2897,
-                        "trophies":  0
+                        "trophies":  13
                     },
                     {
                         "id":  227672,
@@ -128,7 +128,7 @@
                         "clubApps":  476,
                         "weight":  94,
                         "apiFootballId":  972,
-                        "trophies":  0
+                        "trophies":  9
                     },
                     {
                         "id":  1159759,
@@ -147,7 +147,7 @@
                         "redCards":  0,
                         "nationality":  "Germany",
                         "clubApps":  77,
-                        "weight":  null,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -191,7 +191,7 @@
                         "clubApps":  128,
                         "weight":  84,
                         "apiFootballId":  32893,
-                        "trophies":  0
+                        "trophies":  4
                     },
                     {
                         "id":  980418,
@@ -251,7 +251,7 @@
                         "yellowCards":  0,
                         "redCards":  0,
                         "nationality":  "Germany",
-                        "clubApps":  0,
+                        "clubApps":  12,
                         "weight":  79,
                         "apiFootballId":  330612,
                         "trophies":  0
@@ -317,7 +317,7 @@
                         "clubApps":  391,
                         "weight":  77,
                         "apiFootballId":  510,
-                        "trophies":  0
+                        "trophies":  34
                     },
                     {
                         "id":  1129935,
@@ -441,7 +441,7 @@
                         "redCards":  0,
                         "nationality":  "Peru",
                         "clubApps":  9,
-                        "weight":  null,
+                        "weight":  71,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -462,7 +462,7 @@
                         "redCards":  0,
                         "nationality":  "Morocco",
                         "clubApps":  152,
-                        "weight":  null,
+                        "weight":  83,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -483,7 +483,7 @@
                         "redCards":  0,
                         "nationality":  "Germany",
                         "clubApps":  39,
-                        "weight":  null,
+                        "weight":  67,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -587,8 +587,8 @@
                         "yellowCards":  0,
                         "redCards":  0,
                         "nationality":  "",
-                        "clubApps":  0,
-                        "weight":  null,
+                        "clubApps":  6,
+                        "weight":  73,
                         "apiFootballId":  null,
                         "trophies":  0
                     },
@@ -609,7 +609,7 @@
                         "redCards":  0,
                         "nationality":  "Brazil",
                         "clubApps":  2,
-                        "weight":  null,
+                        "weight":  70,
                         "apiFootballId":  null,
                         "trophies":  0
                     }
