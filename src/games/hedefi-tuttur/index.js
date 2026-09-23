@@ -9,6 +9,13 @@ const PICKS_PER_PLAYER = 5;
 // yeterli.
 // Her kategorinin sabit bir hedefi var (kullanıcının belirlediği), setup'ta
 // seçim yok — çark rastgele kategori seçer ve o kategorinin hedefiyle oynanır.
+const PLAYER_ENTITY = {
+  hint: 'Futbolcunu söyle.',
+  slot: '+ Futbolcu',
+  placeholder: 'Futbolcu ara...',
+  progress: 'Futbolcu',
+};
+
 const CATEGORIES = [
   {
     id: 'serieA',
@@ -94,12 +101,63 @@ const CATEGORIES = [
     short: 'ŞAMPİYONLAR LİGİ GOLÜ',
     field: 'uclGoals',
     target: 300,
-    entity: {
-      hint: 'Futbolcunu söyle.',
-      slot: '+ Futbolcu',
-      placeholder: 'Futbolcu ara...',
-      progress: 'Futbolcu',
-    },
+    entity: PLAYER_ENTITY,
+  },
+  {
+    id: 'turkeyGoals',
+    label: 'Türk Milli Takım Golü',
+    short: 'A MİLLİ TAKIM GOLÜ',
+    field: 'turkeyGoals',
+    target: 80,
+    entity: PLAYER_ENTITY,
+  },
+  {
+    id: 'careerTrophies',
+    label: 'Kariyer Kupası',
+    short: 'KARİYER KUPASI',
+    field: 'careerTrophies',
+    target: 100,
+    entity: PLAYER_ENTITY,
+  },
+  {
+    id: 'premierLeagueApps',
+    label: 'Premier League Maçı',
+    short: 'PREMIER LEAGUE MAÇI',
+    field: 'premierLeagueApps',
+    target: 750,
+    entity: PLAYER_ENTITY,
+  },
+  {
+    id: 'worldCupGoals',
+    label: 'Dünya Kupası Golü',
+    short: 'DÜNYA KUPASI GOLÜ',
+    field: 'worldCupGoals',
+    target: 70,
+    entity: PLAYER_ENTITY,
+  },
+  {
+    id: 'ligue1Goals',
+    label: 'Ligue 1 Golü',
+    short: 'LIGUE 1 GOLÜ',
+    field: 'ligue1Goals',
+    target: 500,
+    entity: PLAYER_ENTITY,
+  },
+  {
+    id: 'uclAssists',
+    label: 'Şampiyonlar Ligi Asisti',
+    short: 'ŞAMPİYONLAR LİGİ ASİSTİ',
+    field: 'uclAssists',
+    target: 120,
+    entity: PLAYER_ENTITY,
+  },
+  {
+    id: 'redCards',
+    label: 'Kırmızı Kart',
+    short: 'KIRMIZI KART',
+    field: 'redCards',
+    target: 60,
+    entity: PLAYER_ENTITY,
   },
 ];
 
