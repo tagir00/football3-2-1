@@ -87,7 +87,7 @@ function Call-Api {
         Write-Host "  sleeping 60s..."; Start-Sleep -Seconds 60
         return Call-Api $url
       }
-      if ("$errMsg" -match 'per-day|reached your.*daily|Requests limit') {
+      if ("$errMsg" -match 'per-day|reached your.*daily|Requests? limit') {
         Write-Host "  DAILY LIMIT. Saving state."; Save-State; exit 2
       }
       return $null
