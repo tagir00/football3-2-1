@@ -4,7 +4,8 @@
       <stop offset="0" stop-color="#08111f"/>
       <stop offset="1" stop-color="#0d1c37"/>
     </linearGradient>
-    <linearGradient id="c2cool" x1="0" y1="0" x2="0" y2="1">
+    <!-- userSpaceOnUse: iOS Safari drops objectBoundingBox gradients on <text> in <img> -->
+    <linearGradient id="c2cool" gradientUnits="userSpaceOnUse" x1="0" y1="64" x2="0" y2="215">
       <stop offset="0" stop-color="#7dd3fc"/>
       <stop offset="1" stop-color="#0284c7"/>
     </linearGradient>
@@ -18,6 +19,7 @@
   <rect width="400" height="300" fill="url(#c2spot)"/>
 
   <!-- Big 6 on the left -->
+  <text x="40" y="215" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="210" fill="#38bdf8">6</text>
   <text x="40" y="215" font-family="'Segoe UI', sans-serif" font-weight="900" font-size="210" fill="url(#c2cool)">6</text>
 
   <!-- Player slot pips: 3 columns x 2 rows on the right -->

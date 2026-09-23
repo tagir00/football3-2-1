@@ -8,7 +8,9 @@
       <stop offset="0" stop-color="rgba(34,197,94,0.35)"/>
       <stop offset="1" stop-color="rgba(34,197,94,0)"/>
     </radialGradient>
-    <linearGradient id="c3green" x1="0" y1="0" x2="0" y2="1">
+    <!-- userSpaceOnUse (in the "?" group's coordinates): iOS Safari drops
+         objectBoundingBox gradients on <text> in <img> -->
+    <linearGradient id="c3green" gradientUnits="userSpaceOnUse" x1="0" y1="-89" x2="0" y2="84">
       <stop offset="0" stop-color="#86efac"/>
       <stop offset="1" stop-color="#16a34a"/>
     </linearGradient>
@@ -37,7 +39,8 @@
 
   <!-- Giant ? -->
   <g transform="translate(200 175)">
-    <text x="0" y="0" font-family="'Segoe UI', 'Trebuchet MS', sans-serif" font-weight="900" font-size="240" fill="url(#c3green)" text-anchor="middle" dominant-baseline="middle">?</text>
+    <text x="0" y="0" dy="0.35em" font-family="'Segoe UI', 'Trebuchet MS', sans-serif" font-weight="900" font-size="240" fill="#4ade80" text-anchor="middle">?</text>
+    <text x="0" y="0" dy="0.35em" font-family="'Segoe UI', 'Trebuchet MS', sans-serif" font-weight="900" font-size="240" fill="url(#c3green)" text-anchor="middle">?</text>
   </g>
 
   <!-- Wordmark -->
