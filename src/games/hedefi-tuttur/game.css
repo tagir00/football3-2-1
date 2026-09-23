@@ -2,7 +2,6 @@
    yeşil/lime vurgular. Renkleri :root token'larıyla uyumlu tutuyoruz. */
 
 .ht-hero,
-.ht-setup,
 .ht-game {
   --ht-accent: #4ade80;
   --ht-accent-dim: rgba(74, 222, 128, 0.24);
@@ -32,180 +31,185 @@
   text-shadow: 0 6px 24px rgba(74, 222, 128, 0.18);
 }
 
-/* ------- SETUP ------- */
-.ht-setup {
+/* ------- İSİM GİR & YAZI-TURA + KRİTER ÇARKI -------
+   Draftinho'nun kurulum ekranlarıyla birebir aynı görünüm. Stiller burada
+   ht- önekiyle kopyalı; diğer oyunların CSS'ine bağımlı kalmasın. */
+.ht-mode-panel {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 1.25rem;
   display: grid;
-  gap: 1.25rem;
-  padding: 1.5rem;
-  background: var(--ht-card);
-  border: 1px solid var(--ht-line);
-  border-radius: 2rem;
+  gap: 1rem;
 }
 
-.ht-setup-block {
-  display: grid;
-  gap: 0.5rem;
-}
-
-.ht-chip-row {
+.ht-mode-header {
   display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-.ht-chip {
-  padding: 0.6rem 1.1rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.05);
-  color: var(--text);
-  border: 1px solid var(--ht-inner-line);
-  font-weight: 700;
-  font-size: 0.95rem;
-  cursor: pointer;
-  transition: all 160ms ease;
-}
-
-.ht-chip:hover {
-  border-color: var(--ht-line);
-  transform: translateY(-1px);
-}
-
-.ht-chip.active {
-  background: linear-gradient(135deg, rgba(74, 222, 128, 0.28), rgba(22, 163, 74, 0.22));
-  border-color: var(--ht-accent);
-  color: #ecfeff;
-  box-shadow: 0 6px 18px rgba(74, 222, 128, 0.18);
-}
-
-.ht-custom-target {
-  display: grid;
-  gap: 0.35rem;
-  margin-top: 0.5rem;
-}
-.ht-custom-target span {
+.ht-status-strip {
+  margin: 0;
+  padding: 0.7rem 0.9rem;
+  border-radius: 0.9rem;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid var(--line);
   color: var(--muted);
-  font-size: 0.85rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
-/* ------- COIN FLIP ------- */
-.ht-coinflip {
-  --ht-accent: #4ade80;
-  --ht-accent-dim: rgba(74, 222, 128, 0.24);
-  --ht-line: rgba(74, 222, 128, 0.28);
-  --ht-card: rgba(8, 15, 30, 0.82);
-  --ht-inner-line: rgba(255, 255, 255, 0.08);
+.ht-setup-form {
   display: grid;
-  gap: 1.25rem;
+  gap: 1rem;
   padding: 1.5rem;
-  background: var(--ht-card);
-  border: 1px solid var(--ht-line);
-  border-radius: 2rem;
+  background: var(--panel);
+  border-radius: 1.25rem;
+  border: 1px solid var(--line);
 }
 
-.ht-coin-row {
+.ht-setup-label {
+  display: grid;
+  gap: 0.4rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.ht-setup-input {
+  padding: 0.9rem 1rem;
+  border-radius: 0.9rem;
+  border: 1px solid var(--line);
+  background: rgba(15, 23, 42, 0.6);
+  color: var(--text);
+  font-size: 1.05rem;
+  font-family: inherit;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ht-setup-input:focus {
+  outline: none;
+  border-color: var(--accent-cool);
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.16);
+}
+
+.ht-coin-shell {
+  display: grid;
+  gap: 1rem;
+  padding: 1.25rem 1rem;
+}
+
+.ht-coin-versus {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 0.75rem;
-  padding: 0.5rem 0;
 }
 
-.ht-coin-side {
-  padding: 1.5rem 1rem;
-  border-radius: 1.2rem;
-  background: rgba(15, 23, 42, 0.72);
-  border: 1px solid var(--ht-inner-line);
+.ht-coin-slot {
+  padding: 1rem 0.75rem;
+  border-radius: 1rem;
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid var(--line);
   text-align: center;
   font-weight: 800;
-  font-size: 1.15rem;
-  min-height: 4.5rem;
+  font-size: 1.05rem;
+  min-height: 3rem;
   display: grid;
   place-items: center;
-  transition: border-color 200ms ease, background 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+  overflow-wrap: anywhere;
+  transition: border-color 0.2s, background 0.15s, transform 0.15s;
 }
 
-.ht-coin-name {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: 100%;
-}
-
-.ht-coin-side.spinning {
-  animation: htCoinWobble 0.09s linear infinite;
-}
-@keyframes htCoinWobble {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-2px); }
-  100% { transform: translateY(0); }
-}
-
-.ht-coin-side.winner {
-  border-color: var(--ht-accent);
-  background: linear-gradient(135deg, rgba(74, 222, 128, 0.22), rgba(22, 163, 74, 0.12));
+.ht-coin-slot.highlight {
+  border-color: var(--accent);
+  background: rgba(34, 197, 94, 0.14);
   transform: scale(1.04);
-  box-shadow: 0 12px 32px rgba(74, 222, 128, 0.18);
+}
+
+.ht-coin-slot.dim {
+  opacity: 0.35;
 }
 
 .ht-coin-vs {
-  color: var(--ht-accent);
-  font-weight: 900;
-  letter-spacing: 0.18em;
-  font-size: 1rem;
+  font-weight: 800;
+  color: var(--accent-cool);
+  letter-spacing: 0.15em;
 }
 
 .ht-coin-result {
-  padding: 1rem;
-  border-radius: 1rem;
-  background: linear-gradient(135deg, rgba(74, 222, 128, 0.12), rgba(4, 8, 20, 0.55));
-  border: 1px solid var(--ht-accent);
+  padding: 0.75rem;
+  border-radius: 0.9rem;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.35);
   text-align: center;
   display: grid;
   gap: 0.25rem;
-  animation: htResultIn 320ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.ht-coin-result h3 {
-  font-size: 1.5rem;
-  font-weight: 900;
-  color: #ecfeff;
-  margin: 0;
-}
-
-.ht-coin-note {
+.ht-coin-result-label {
   color: var(--muted);
-  font-size: 0.82rem;
-  margin: 0;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
 }
 
-.ht-coin-actions {
-  display: flex;
-  flex-direction: column;
+.ht-coin-result strong {
+  font-size: 1.25rem;
+  color: var(--accent);
+}
+
+.ht-action-column {
+  display: grid;
   gap: 0.6rem;
+  padding: 0 1rem;
+  justify-items: stretch;
 }
 
-/* ------- CRITERION WHEEL ------- */
+.ht-action-column .primary-button.secondary {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--muted);
+  box-shadow: none;
+  min-height: 2.75rem;
+  font-weight: 700;
+}
+
+.ht-action-column .primary-button.secondary:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.ht-action-column .primary-button:disabled,
+.ht-action-column .primary-button.is-disabled {
+  cursor: not-allowed;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.35);
+  box-shadow: none;
+  transform: none;
+}
+
 .ht-wheel-shell {
   display: grid;
   place-items: center;
-  padding: 1rem 0.5rem;
+  padding: 2rem 1rem;
 }
 
 .ht-wheel-display {
+  min-width: 260px;
+  max-width: 480px;
   width: 100%;
-  max-width: 30rem;
-  min-height: 12rem;
-  padding: 1.5rem 1.25rem;
-  border-radius: 1.4rem;
-  background: linear-gradient(155deg, rgba(74, 222, 128, 0.14), rgba(4, 8, 20, 0.8));
-  border: 1px solid var(--ht-line);
+  padding: 1.75rem 1.5rem;
+  background: linear-gradient(135deg, rgba(56, 189, 248, 0.15), rgba(34, 197, 94, 0.15));
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: 1.5rem;
   display: grid;
-  gap: 0.35rem;
-  place-items: center;
+  gap: 0.55rem;
+  justify-items: center;
   text-align: center;
-  transition: border-color 200ms ease, transform 200ms ease;
+  box-shadow: 0 24px 60px rgba(2, 8, 23, 0.5);
+  transition: transform 0.3s;
 }
 
 .ht-wheel-display.spinning {
@@ -219,8 +223,6 @@
 
 .ht-wheel-display.landed {
   animation: htWheelLand 0.6s ease-out;
-  border-color: var(--ht-accent);
-  box-shadow: 0 12px 40px rgba(74, 222, 128, 0.28);
 }
 @keyframes htWheelLand {
   0%   { transform: scale(0.94); opacity: 0.6; }
@@ -229,46 +231,39 @@
 }
 
 .ht-wheel-eyebrow {
-  margin: 0;
-  color: var(--ht-accent);
-  letter-spacing: 0.14em;
-  font-size: 0.75rem;
-  font-weight: 800;
+  font-size: 0.72rem;
+  color: var(--accent-cool);
+  letter-spacing: 0.15em;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 .ht-wheel-title {
-  font-size: clamp(1.6rem, 5vw, 2.2rem);
-  font-weight: 900;
-  color: #ecfeff;
-  line-height: 1.1;
+  font-size: clamp(1.6rem, 5vw, 2.6rem);
+  line-height: 1.05;
 }
 
 .ht-wheel-sub {
   color: var(--muted);
-  font-size: 0.9rem;
-  font-style: italic;
+  font-size: 0.95rem;
 }
 
 .ht-wheel-target {
   margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.85rem;
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid var(--ht-inner-line);
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.9rem;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--line);
   display: grid;
   gap: 0.15rem;
   place-items: center;
 }
+
 .ht-wheel-target-val {
   font-size: 1.6rem;
   font-weight: 900;
-  color: var(--ht-accent);
+  color: #4ade80;
   font-variant-numeric: tabular-nums;
-}
-.ht-wheel-target .eyebrow {
-  color: var(--muted);
-  font-size: 0.7rem;
 }
 
 /* ------- GAME PANEL ------- */

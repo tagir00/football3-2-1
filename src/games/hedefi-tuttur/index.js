@@ -88,6 +88,19 @@ const CATEGORIES = [
       progress: 'Futbolcu',
     },
   },
+  {
+    id: 'uclGoals',
+    label: 'Şampiyonlar Ligi Golü',
+    short: 'ŞAMPİYONLAR LİGİ GOLÜ',
+    field: 'uclGoals',
+    target: 300,
+    entity: {
+      hint: 'Futbolcunu söyle.',
+      slot: '+ Futbolcu',
+      placeholder: 'Futbolcu ara...',
+      progress: 'Futbolcu',
+    },
+  },
 ];
 
 function ensureStylesheet() {
@@ -144,19 +157,14 @@ export async function mount(container) {
     homePanel: container.querySelector('#htHomePanel'),
     infoButton: container.querySelector('#htInfoButton'),
     startButton: container.querySelector('#htStartButton'),
-    // Setup
-    setupPanel: container.querySelector('#htSetupPanel'),
-    setupBackButton: container.querySelector('#htSetupBackButton'),
-    player1Input: container.querySelector('#htPlayer1Input'),
-    player2Input: container.querySelector('#htPlayer2Input'),
-    setupStatus: container.querySelector('#htSetupStatus'),
-    goToCoinButton: container.querySelector('#htGoToCoinButton'),
-    // Coin
+    // İsim girişi + yazı-tura (tek ekran)
     coinPanel: container.querySelector('#htCoinPanel'),
     coinBackButton: container.querySelector('#htCoinBackButton'),
+    player1Input: container.querySelector('#htPlayer1Input'),
+    player2Input: container.querySelector('#htPlayer2Input'),
     coinStatus: container.querySelector('#htCoinStatus'),
-    coinSideA: container.querySelector('#htCoinSideA'),
-    coinSideB: container.querySelector('#htCoinSideB'),
+    coinName1: container.querySelector('#htCoinName1'),
+    coinName2: container.querySelector('#htCoinName2'),
     coinResult: container.querySelector('#htCoinResult'),
     coinWinnerName: container.querySelector('#htCoinWinnerName'),
     spinCoinButton: container.querySelector('#htSpinCoinButton'),
@@ -264,88 +272,99 @@ export async function mount(container) {
 
   function showHome() {
     els.homePanel.classList.remove('hidden');
-    els.setupPanel.classList.add('hidden');
     els.coinPanel.classList.add('hidden');
     els.wheelPanel.classList.add('hidden');
     els.gamePanel.classList.add('hidden');
   }
 
-  function showSetup() {
-    els.homePanel.classList.add('hidden');
-    els.setupPanel.classList.remove('hidden');
-    els.coinPanel.classList.add('hidden');
-    els.wheelPanel.classList.add('hidden');
-    els.gamePanel.classList.add('hidden');
-    updateSetupStatus();
-  }
-
+  // Draftinho ile aynı akış: isimler ve yazı-tura tek ekranda.
   function showCoin() {
-    const a = els.player1Input.value.trim() || 'Oyuncu 1';
-    const b = els.player2Input.value.trim() || 'Oyuncu 2';
-    state.players[0].name = a;
-    state.players[1].name = b;
     els.homePanel.classList.add('hidden');
-    els.setupPanel.classList.add('hidden');
     els.coinPanel.classList.remove('hidden');
     els.wheelPanel.classList.add('hidden');
     els.gamePanel.classList.add('hidden');
     resetCoinUI();
+    els.player1Input.focus();
   }
 
   function resetCoinUI() {
     state.coinStarter = -1;
     state.coinSpinning = false;
-    els.coinSideA.querySelector('.ht-coin-name').textContent = state.players[0].name;
-    els.coinSideB.querySelector('.ht-coin-name').textContent = state.players[1].name;
-    els.coinSideA.classList.remove('winner', 'spinning');
-    els.coinSideB.classList.remove('winner', 'spinning');
+    els.coinName1.classList.remove('highlight', 'dim');
+    els.coinName2.classList.remove('highlight', 'dim');
     els.coinResult.classList.add('hidden');
     els.goToWheelButton.classList.add('hidden');
-    els.spinCoinButton.disabled = false;
+    els.spinCoinButton.classList.remove('secondary');
     els.spinCoinButton.textContent = 'Yazı-Tura At';
-    els.coinStatus.textContent = "Yazı-Tura'yı at ve ilk seçen oyuncuyu belirle.";
+    els.coinStatus.textContent = "İsimleri gir, sonra Yazı-Tura'ya bas.";
+    updateCoinNamesFromInputs();
+  }
+
+  function updateCoinNamesFromInputs() {
+    els.coinName1.textContent = els.player1Input.value.trim() || '?';
+    els.coinName2.textContent = els.player2Input.value.trim() || '?';
+    updateFlipButtonState();
+  }
+
+  function updateFlipButtonState() {
+    if (state.coinSpinning) return;
+    const bothFilled = els.player1Input.value.trim().length > 0 && els.player2Input.value.trim().length > 0;
+    els.spinCoinButton.disabled = !bothFilled;
+    els.spinCoinButton.classList.toggle('is-disabled', !bothFilled);
+    if (!bothFilled) {
+      els.coinStatus.textContent = 'İki oyuncunun da adını yaz, sonra yazı-turayı at.';
+    } else if (state.coinStarter === -1) {
+      els.coinStatus.textContent = "İsimler tamam. Şimdi Yazı-Tura'yı at.";
+    }
   }
 
   function flipCoin() {
     if (state.coinSpinning) return;
+    const a = els.player1Input.value.trim();
+    const b = els.player2Input.value.trim();
+    if (!a || !b) {
+      els.coinStatus.textContent = 'İki oyuncunun da adını girmen gerek.';
+      (a ? els.player2Input : els.player1Input).focus();
+      return;
+    }
+    state.players[0].name = a;
+    state.players[1].name = b;
+    updateCoinNamesFromInputs();
     state.coinSpinning = true;
     els.spinCoinButton.disabled = true;
     els.coinResult.classList.add('hidden');
-    els.coinSideA.classList.remove('winner');
-    els.coinSideB.classList.remove('winner');
-    els.coinSideA.classList.add('spinning');
-    els.coinSideB.classList.add('spinning');
     els.coinStatus.textContent = 'Yazı-tura dönüyor...';
 
+    const finalIndex = Math.random() < 0.5 ? 0 : 1;
     const totalTicks = 14 + Math.floor(Math.random() * 6);
     let ticks = 0;
+    const setHighlight = (idx) => {
+      els.coinName1.classList.toggle('highlight', idx === 0);
+      els.coinName2.classList.toggle('highlight', idx === 1);
+      els.coinName1.classList.toggle('dim', idx !== 0);
+      els.coinName2.classList.toggle('dim', idx !== 1);
+    };
     const interval = window.setInterval(() => {
+      setHighlight(ticks % 2);
       ticks++;
-      const cur = ticks % 2;
-      els.coinSideA.classList.toggle('winner', cur === 0);
-      els.coinSideB.classList.toggle('winner', cur === 1);
       if (ticks >= totalTicks) {
         window.clearInterval(interval);
-        const winner = Math.random() < 0.5 ? 0 : 1;
-        state.coinStarter = winner;
+        setHighlight(finalIndex);
+        state.coinStarter = finalIndex;
         state.coinSpinning = false;
-        els.coinSideA.classList.remove('spinning');
-        els.coinSideB.classList.remove('spinning');
-        els.coinSideA.classList.toggle('winner', winner === 0);
-        els.coinSideB.classList.toggle('winner', winner === 1);
-        els.coinWinnerName.textContent = state.players[winner].name;
+        els.coinWinnerName.textContent = state.players[finalIndex].name;
         els.coinResult.classList.remove('hidden');
-        els.coinStatus.textContent = 'Sonuç geldi. Oyuna geçebilirsin.';
-        els.spinCoinButton.disabled = false;
-        els.spinCoinButton.textContent = 'Tekrar At';
+        els.coinStatus.textContent = 'Sonuç geldi. Oyun boyunca ilk seçen bu oyuncu olur (turlar arası sıra değişir).';
         els.goToWheelButton.classList.remove('hidden');
+        els.spinCoinButton.textContent = 'Tekrar At';
+        els.spinCoinButton.classList.add('secondary');
+        els.spinCoinButton.disabled = false;
       }
     }, 90);
   }
 
   function showWheel() {
     els.homePanel.classList.add('hidden');
-    els.setupPanel.classList.add('hidden');
     els.coinPanel.classList.add('hidden');
     els.wheelPanel.classList.remove('hidden');
     els.gamePanel.classList.add('hidden');
@@ -356,10 +375,11 @@ export async function mount(container) {
     state.category = null;
     state.wheelSpinning = false;
     els.wheelTitle.textContent = '?';
-    els.wheelSub.textContent = 'Hedefe ulaşacak istatistik';
+    els.wheelSub.textContent = 'Çark dönmeye hazır';
     els.wheelTargetBlock.classList.add('hidden');
     els.wheelDisplay.classList.remove('spinning', 'landed');
     els.spinWheelButton.disabled = false;
+    els.spinWheelButton.classList.remove('secondary');
     els.spinWheelButton.textContent = 'Kriter Çarkını Çevir';
     els.goToGameButton.classList.add('hidden');
     els.wheelStatus.textContent = 'Çark hazır. Çevir ve kategoriyi belirle.';
@@ -400,6 +420,7 @@ export async function mount(container) {
         state.wheelSpinning = false;
         els.spinWheelButton.disabled = false;
         els.spinWheelButton.textContent = 'Tekrar Çevir';
+        els.spinWheelButton.classList.add('secondary');
         els.goToGameButton.classList.remove('hidden');
         els.wheelStatus.textContent = 'Kategori belirlendi. Oyuna geçebilirsin.';
         setTimeout(() => els.wheelDisplay.classList.remove('landed'), 620);
@@ -409,26 +430,13 @@ export async function mount(container) {
 
   function showGame() {
     els.homePanel.classList.add('hidden');
-    els.setupPanel.classList.add('hidden');
     els.coinPanel.classList.add('hidden');
     els.wheelPanel.classList.add('hidden');
     els.gamePanel.classList.remove('hidden');
   }
 
-  // ---------------- Setup UI ----------------
-
-  function updateSetupStatus() {
-    const a = els.player1Input.value.trim();
-    const b = els.player2Input.value.trim();
-    if (!a || !b) {
-      els.setupStatus.textContent = 'İki oyuncunun da adını yaz, sonra devam et.';
-    } else {
-      els.setupStatus.textContent = 'İsimler tamam. Şimdi yazı-turaya geç.';
-    }
-  }
-
   function startGame() {
-    // Names were already captured on showCoin(). Fall back to defaults if the
+    // Names were already captured on flipCoin(). Fall back to defaults if the
     // coin was somehow skipped.
     if (!state.players[0].name) state.players[0].name = 'Oyuncu 1';
     if (!state.players[1].name) state.players[1].name = 'Oyuncu 2';
@@ -850,12 +858,12 @@ export async function mount(container) {
   }
 
   function endGame() {
-    // Skorları da sıfırla ve setup'a dön (yeni oyun için yazı-tura + çark yeniden döner).
+    // Skorları da sıfırla ve isim/yazı-tura ekranına dön (yeni oyun için yazı-tura + çark yeniden döner).
     state.players[0].score = 0;
     state.players[1].score = 0;
     state.coinStarter = -1;
     state.category = null;
-    showSetup();
+    showCoin();
   }
 
   // ---------------- Modals ----------------
@@ -871,16 +879,14 @@ export async function mount(container) {
 
   // ---------------- Wiring ----------------
 
-  bind(els.startButton, 'click', showSetup);
-  bind(els.setupBackButton, 'click', showHome);
+  bind(els.startButton, 'click', showCoin);
   bind(els.infoButton, 'click', openInfo);
   bind(els.helpButton, 'click', openInfo);
   bind(els.closeInfoButton, 'click', closeInfo);
   bind(els.infoModal, 'click', (e) => { if (e.target === els.infoModal) closeInfo(); });
-  bind(els.player1Input, 'input', updateSetupStatus);
-  bind(els.player2Input, 'input', updateSetupStatus);
-  bind(els.goToCoinButton, 'click', showCoin);
-  bind(els.coinBackButton, 'click', showSetup);
+  bind(els.player1Input, 'input', updateCoinNamesFromInputs);
+  bind(els.player2Input, 'input', updateCoinNamesFromInputs);
+  bind(els.coinBackButton, 'click', showHome);
   bind(els.spinCoinButton, 'click', flipCoin);
   bind(els.goToWheelButton, 'click', showWheel);
   bind(els.wheelBackButton, 'click', showCoin);

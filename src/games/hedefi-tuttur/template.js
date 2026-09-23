@@ -22,90 +22,72 @@ export function template() {
       </button>
     </section>
 
-    <section class="setup-panel ht-setup hidden" id="htSetupPanel">
-      <header class="setup-header">
+    <section class="ht-mode-panel hidden" id="htCoinPanel">
+      <div class="ht-mode-header">
         <div>
-          <p class="eyebrow">Ayarlar · Oyuncular & Hedef</p>
-          <h2>Oyunu Kur</h2>
-        </div>
-        <button class="ghost-button" id="htSetupBackButton" type="button">Geri Dön</button>
-      </header>
-
-      <div class="setup-form">
-        <label class="setup-field">
-          <span>1. Oyuncu</span>
-          <input class="setup-input" id="htPlayer1Input" type="text" placeholder="Enes" autocomplete="off" />
-        </label>
-        <label class="setup-field">
-          <span>2. Oyuncu</span>
-          <input class="setup-input" id="htPlayer2Input" type="text" placeholder="Kerem" autocomplete="off" />
-        </label>
-      </div>
-
-      <div class="setup-status" id="htSetupStatus">İki oyuncunun da adını yaz, sonra devam et.</div>
-
-      <button class="primary-button" id="htGoToCoinButton" type="button">Yazı-Tura'ya Geç</button>
-    </section>
-
-    <section class="ht-coinflip hidden" id="htCoinPanel">
-      <header class="setup-header">
-        <div>
-          <p class="eyebrow">Kim Başlıyor?</p>
-          <h2>Yazı-Tura</h2>
+          <p class="eyebrow">Oyuncular · Kim Başlıyor?</p>
+          <h2>İsim Gir & Yazı-Tura</h2>
         </div>
         <button class="ghost-button" id="htCoinBackButton" type="button">Geri Dön</button>
-      </header>
+      </div>
 
-      <p class="setup-status" id="htCoinStatus">Yazı-Tura'yı at ve ilk seçen oyuncuyu belirle.</p>
+      <div class="ht-setup-form">
+        <label class="ht-setup-label">
+          <span>1. Oyuncu</span>
+          <input class="ht-setup-input" id="htPlayer1Input" type="text" placeholder="Enes" maxlength="16" autocomplete="off" />
+        </label>
+        <label class="ht-setup-label">
+          <span>2. Oyuncu</span>
+          <input class="ht-setup-input" id="htPlayer2Input" type="text" placeholder="Kerem" maxlength="16" autocomplete="off" />
+        </label>
+      </div>
 
-      <div class="ht-coin-row">
-        <div class="ht-coin-side" id="htCoinSideA">
-          <span class="ht-coin-name">1</span>
+      <p class="ht-status-strip" id="htCoinStatus">İsimleri gir, sonra Yazı-Tura'ya bas.</p>
+
+      <div class="ht-coin-shell">
+        <div class="ht-coin-versus">
+          <div class="ht-coin-slot" id="htCoinName1">?</div>
+          <span class="ht-coin-vs">VS</span>
+          <div class="ht-coin-slot" id="htCoinName2">?</div>
         </div>
-        <span class="ht-coin-vs">VS</span>
-        <div class="ht-coin-side" id="htCoinSideB">
-          <span class="ht-coin-name">2</span>
+        <div class="ht-coin-result hidden" id="htCoinResult">
+          <span class="ht-coin-result-label">İlk seçen:</span>
+          <strong id="htCoinWinnerName">-</strong>
         </div>
       </div>
 
-      <div class="ht-coin-result hidden" id="htCoinResult">
-        <p class="eyebrow">İLK SEÇEN</p>
-        <h3 id="htCoinWinnerName">-</h3>
-        <p class="ht-coin-note">Turlar arası ilk seçen otomatik olarak değişir.</p>
-      </div>
-
-      <div class="ht-coin-actions">
-        <button class="primary-button" id="htSpinCoinButton" type="button">Yazı-Tura At</button>
+      <div class="ht-action-column">
         <button class="primary-button hidden" id="htGoToWheelButton" type="button">Kriter Çarkına Geç</button>
+        <button class="primary-button" id="htSpinCoinButton" type="button">Yazı-Tura At</button>
       </div>
     </section>
 
-    <section class="ht-coinflip hidden" id="htWheelPanel">
-      <header class="setup-header">
+    <section class="ht-mode-panel hidden" id="htWheelPanel">
+      <div class="ht-mode-header">
         <div>
-          <p class="eyebrow">Kriter Çarkı</p>
-          <h2>Hangi Kategori?</h2>
+          <p class="eyebrow">1. Adım</p>
+          <h2>Kriter Çarkı</h2>
         </div>
         <button class="ghost-button" id="htWheelBackButton" type="button">Geri Dön</button>
-      </header>
+      </div>
 
-      <p class="setup-status" id="htWheelStatus">Çark hazır. Çevir ve kategoriyi belirle.</p>
+      <p class="ht-status-strip" id="htWheelStatus">Çark hazır. Çevir ve kategoriyi belirle.</p>
 
       <div class="ht-wheel-shell">
         <div class="ht-wheel-display" id="htWheelDisplay">
-          <p class="eyebrow ht-wheel-eyebrow">Kriter</p>
+          <span class="ht-wheel-eyebrow">Kriter</span>
           <strong class="ht-wheel-title" id="htWheelTitle">?</strong>
-          <span class="ht-wheel-sub" id="htWheelSub">Hedefe ulaşacak istatistik</span>
+          <span class="ht-wheel-sub" id="htWheelSub">Çark dönmeye hazır</span>
           <div class="ht-wheel-target hidden" id="htWheelTargetBlock">
-            <p class="eyebrow">Hedef</p>
+            <span class="ht-wheel-eyebrow">Hedef</span>
             <span class="ht-wheel-target-val" id="htWheelTargetVal">—</span>
           </div>
         </div>
       </div>
 
-      <div class="ht-coin-actions">
+      <div class="ht-action-column">
+        <button class="primary-button hidden" id="htGoToGameButton" type="button">Oyuna Başla</button>
         <button class="primary-button" id="htSpinWheelButton" type="button">Kriter Çarkını Çevir</button>
-        <button class="primary-button hidden" id="htGoToGameButton" type="button">Oyuna Geç</button>
       </div>
     </section>
 
