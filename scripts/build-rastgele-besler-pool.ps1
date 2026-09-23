@@ -79,11 +79,11 @@ $manualAliases = @{
   'Inter Milan'        = @('internazionale','fc internazionale')
   'Napoli'             = @('ssc napoli')
   'Roma'               = @('as roma','associazione sportiva roma')
-  'Lazio'              = @('ss lazio','societa sportiva lazio')
+  'Lazio'              = @('ss lazio','societa sportiva lazio','societa sportiva lazio s p a')
   'Juventus'           = @('juventus fc','juventus turin')
   'Fenerbahce'         = @('fenerbahce sk','fenerbahce spor kulubu')
   'Galatasaray'        = @('galatasaray sk','galatasaray spor kulubu')
-  'Besiktas'           = @('besiktas jk','besiktas spor kulubu')
+  'Besiktas'           = @('besiktas jk','besiktas spor kulubu','besiktas jimnastik kulubu')
   'PSV Eindhoven'      = @('psv','philips sport vereniging')
   'Ajax'               = @('ajax amsterdam','afc ajax')
   'Fatih Karagumruk'   = @('karagumruk','fatih karagumruk sk')
@@ -110,6 +110,21 @@ $manualAliases = @{
   'Rennes'             = @('stade rennais','stade rennais fc','rennes fc')
   'Lille'              = @('losc lille','lille losc','lille olympique')
   'Toulouse'           = @('toulouse fc','tfc toulouse')
+  # TM clubs.csv uses official/long names for these (kept ASCII so the script
+  # parses the same with or without a UTF-8 BOM)
+  'Benfica'            = @('sl benfica')
+  'Genclerbirligi'     = @('genclerbirligi spor kulubu')
+  'Rizespor'           = @('caykur rizespor')
+  'Fiorentina'         = @('acf fiorentina')
+  'Udinese'            = @('udinese calcio')
+  'Como'               = @('como 1907')
+  'Atalanta'           = @('atalanta bc')
+  'Sassuolo'           = @('us sassuolo')
+  'Stuttgart'          = @('vfb stuttgart')
+  'Wolfsburg'          = @('vfl wolfsburg')
+  'Athletic Club'      = @('athletic bilbao')
+  'Flamengo'           = @('clube de regatas do flamengo')
+  'Santos'             = @('santos futebol clube')
 }
 foreach ($canon in $manualAliases.Keys) {
   foreach ($alias in $manualAliases[$canon]) {
@@ -176,6 +191,33 @@ try {
   }
 } finally { $sr.Dispose() }
 Write-Host "Scanned $total rows. Distinct players: $($players.Count)"
+
+# 2b) Full-career club histories from Transfermarkt (data/tm-player-clubs.json,
+#     { "<tm id>": { "n": [name, artistName], "c": { "<clubId>": apps } } }).
+#     appearances.csv only starts in 2012, so pre-2012 stints (and retired
+#     legends) are missing without this. When a player is in the cache, TM's
+#     club list replaces the CSV-derived one.
+$tmCareerPath = Join-Path $root 'data\tm-player-clubs.json'
+if (Test-Path $tmCareerPath) {
+  $tmCareers = Get-Content -LiteralPath $tmCareerPath -Raw -Encoding UTF8 | ConvertFrom-Json
+  $tmUsed = 0
+  foreach ($prop in $tmCareers.PSObject.Properties) {
+    $pid_ = [int]$prop.Name; $rec = $prop.Value
+    $name = if ($rec.n[1]) { $rec.n[1] } else { $rec.n[0] }
+    if (-not $name) { continue }
+    $clubsSet = [System.Collections.Generic.HashSet[string]]::new()
+    $totalApps = 0; $trackedApps = 0
+    foreach ($c in $rec.c.PSObject.Properties) {
+      $apps = [int]$c.Value; $totalApps += $apps
+      $cid = [int]$c.Name
+      if ($apps -gt 0 -and $clubIdToOur.ContainsKey($cid)) { [void]$clubsSet.Add($clubIdToOur[$cid]); $trackedApps += $apps }
+    }
+    if ($players.ContainsKey($pid_)) { $name = $players[$pid_].name }  # keep the CSV spelling the game already uses
+    $players[$pid_] = @{ name = $name; clubs = $clubsSet; totalApps = $totalApps; trackedApps = $trackedApps }
+    $tmUsed++
+  }
+  Write-Host "Applied Transfermarkt career histories to $tmUsed players"
+}
 
 # 3) Filter — keep any player who touched >=1 of our clubs AND has a career
 #    footprint big enough to be recognizable:
