@@ -179,7 +179,7 @@ const CATEGORIES = [
     id: 'transferFees',
     label: 'Toplam Bonservis Bedeli',
     short: 'BONSERVİS BEDELİ',
-    // Milyon € cinsinden (Transfermarkt kariyer toplamı, kiralık bedelleri dahil).
+    // Milyon € cinsinden (Transfermarkt, tamamlanmış kalıcı transferler; kiralık bedelleri hariç).
     field: 'transferFees',
     target: 600,
     unit: 'M €',
