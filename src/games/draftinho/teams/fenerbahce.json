@@ -128,7 +128,7 @@
                         "clubApps":  248,
                         "weight":  82,
                         "apiFootballId":  18776,
-                        "trophies":  0
+                        "trophies":  4
                     },
                     {
                         "id":  1133200,
@@ -149,7 +149,7 @@
                         "clubApps":  20,
                         "weight":  80,
                         "apiFootballId":  364594,
-                        "trophies":  0
+                        "trophies":  2
                     },
                     {
                         "id":  149663,
@@ -296,7 +296,7 @@
                         "clubApps":  213,
                         "weight":  79,
                         "apiFootballId":  829,
-                        "trophies":  0
+                        "trophies":  6
                     },
                     {
                         "id":  1146274,
@@ -317,7 +317,7 @@
                         "clubApps":  13,
                         "weight":  78,
                         "apiFootballId":  340727,
-                        "trophies":  0
+                        "trophies":  8
                     },
                     {
                         "id":  1393731,
@@ -422,7 +422,7 @@
                         "clubApps":  189,
                         "weight":  68,
                         "apiFootballId":  50097,
-                        "trophies":  0
+                        "trophies":  2
                     },
                     {
                         "id":  361004,
@@ -464,7 +464,7 @@
                         "clubApps":  392,
                         "weight":  71,
                         "apiFootballId":  49857,
-                        "trophies":  0
+                        "trophies":  4
                     },
                     {
                         "id":  758876,
@@ -485,7 +485,7 @@
                         "clubApps":  282,
                         "weight":  66,
                         "apiFootballId":  785,
-                        "trophies":  0
+                        "trophies":  4
                     },
                     {
                         "id":  979473,
@@ -527,7 +527,7 @@
                         "clubApps":  30,
                         "weight":  80,
                         "apiFootballId":  364594,
-                        "trophies":  0
+                        "trophies":  2
                     },
                     {
                         "id":  997165,
@@ -842,7 +842,7 @@
                         "clubApps":  557,
                         "weight":  93,
                         "apiFootballId":  907,
-                        "trophies":  0
+                        "trophies":  21
                     }
                 ],
     "league":  "Super Lig"
