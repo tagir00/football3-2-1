@@ -111,7 +111,7 @@ export const criteria = [
   {
     id: 'trophiesMost',
     title: 'En Çok Kupa Kazanmış',
-    subtitle: 'Kariyerlerinde en çok kupa kazanmış oyunculardan 6 kişilik kadro kur (Süper Lig sayılmaz, sadece kupalar).',
+    subtitle: 'Kariyerlerinde en çok kupa kazanmış oyunculardan 6 kişilik kadro kur (lig şampiyonlukları dahil; bireysel ödüller ve altyapı kupaları sayılmaz).',
     field: 'trophies',
     unit: 'kupa',
     higherIsBetter: true,
