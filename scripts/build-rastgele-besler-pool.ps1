@@ -280,6 +280,13 @@ if (Test-Path $augmentPath) {
     }
   }
   Write-Host "Applied add to $augmentedCount players (+$addedClubs clubs), override to $overriddenCount players"
+  # `remove` drops players from the pool entirely (user-requested exclusions)
+  if ($augRaw.PSObject.Properties.Match('remove').Count -gt 0) {
+    $removeSet = @($augRaw.remove)
+    $before = @($out).Count
+    $out = @($out | Where-Object { $removeSet -notcontains $_.name })
+    Write-Host "Removed $($before - $out.Count) players listed in remove"
+  }
 } else {
   Write-Host "No augmentation file at $augmentPath — skipping."
 }

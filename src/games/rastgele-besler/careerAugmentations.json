@@ -1,5 +1,8 @@
 {
-    "_note":  "Manual patches for Rastgele Beşler\u0027s playerPool.json. `add` merges extra clubs into a player\u0027s list (useful for pre-2012 careers Transfermarkt is missing). `override` REPLACES the clubs list entirely (useful when TM has wrong club rows, or when a very recent transfer isn\u0027t in our CSV yet). Only clubs in our tracked list (src/games/futbol321/data.js) actually score; unknown names are silently dropped.",
+    "_note":  "Manual patches for Rastgele Beşler\u0027s playerPool.json. `add` merges extra clubs into a player\u0027s list (useful for pre-2012 careers Transfermarkt is missing). `override` REPLACES the clubs list entirely (useful when TM has wrong club rows, or when a very recent transfer isn\u0027t in our CSV yet). Only clubs in our tracked list (src/games/futbol321/data.js) actually score; unknown names are silently dropped. `remove` drops players from the pool entirely.",
+    "remove":  [
+                   "Hakan Şükür"
+               ],
     "add":  {
                 "Cristiano Ronaldo":  [
                                           "Sporting CP"
