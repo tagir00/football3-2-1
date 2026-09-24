@@ -116,6 +116,40 @@ export const criteria = [
     unit: 'kupa',
     higherIsBetter: true,
   },
+  {
+    id: 'clubGoalsMost',
+    title: 'En Çok Kulüp Golü',
+    subtitle: 'Kulüp kariyerinde en çok resmi gol atmış oyunculardan kadro kur (kaleci yok).',
+    field: 'clubGoals',
+    unit: 'gol',
+    higherIsBetter: true,
+    excludePosition: 'GK',
+  },
+  {
+    id: 'uclAppsMost',
+    title: 'Şampiyonlar Ligi\'nde En Çok Maç',
+    subtitle: 'Şampiyonlar Ligi\'nde en çok maça çıkmış oyunculardan 6 kişilik kadro kur (eleme turları sayılmaz).',
+    field: 'uclApps',
+    unit: 'maç',
+    higherIsBetter: true,
+  },
+  {
+    id: 'clubsCountMost',
+    title: 'En Çok Kulüp Değiştiren',
+    subtitle: 'Kariyerinde en çok farklı kulüpte oynamış oyunculardan 6 kişilik kadro kur (kiralıklar dahil, altyapı ve milli takım hariç).',
+    field: 'clubsCount',
+    unit: 'kulüp',
+    higherIsBetter: true,
+  },
+  {
+    id: 'shirtHighest',
+    title: 'En Büyük Forma Numarası',
+    subtitle: 'Forma numarası en büyük oyunculardan 6 kişilik kadro kur (numarası olmayan seçilemez).',
+    field: 'shirt',
+    unit: 'numara',
+    higherIsBetter: true,
+    requiresValue: true,
+  },
 ];
 
 export function getFormation(criterion) {

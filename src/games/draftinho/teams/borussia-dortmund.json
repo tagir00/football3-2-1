@@ -23,7 +23,10 @@
                         "clubApps":  277,
                         "weight":  88,
                         "apiFootballId":  25282,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  0,
+                        "clubsCount":  4,
+                        "uclApps":  46
                     },
                     {
                         "id":  132607,
@@ -44,7 +47,10 @@
                         "clubApps":  22,
                         "weight":  87,
                         "apiFootballId":  26395,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  0,
+                        "clubsCount":  7,
+                        "uclApps":  0
                     },
                     {
                         "id":  1140591,
@@ -65,7 +71,10 @@
                         "clubApps":  53,
                         "weight":  86,
                         "apiFootballId":  280463,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  0,
+                        "clubsCount":  1,
+                        "uclApps":  0
                     },
                     {
                         "id":  138491,
@@ -86,7 +95,10 @@
                         "clubApps":  26,
                         "weight":  90,
                         "apiFootballId":  26292,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  0,
+                        "clubsCount":  6,
+                        "uclApps":  7
                     },
                     {
                         "id":  981562,
@@ -107,7 +119,10 @@
                         "clubApps":  71,
                         "weight":  83,
                         "apiFootballId":  null,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  0,
+                        "clubsCount":  4,
+                        "uclApps":  0
                     },
                     {
                         "id":  799046,
@@ -128,7 +143,10 @@
                         "clubApps":  299,
                         "weight":  86,
                         "apiFootballId":  25368,
-                        "trophies":  2
+                        "trophies":  2,
+                        "clubGoals":  16,
+                        "clubsCount":  3,
+                        "uclApps":  20
                     },
                     {
                         "id":  24945,
@@ -149,7 +167,10 @@
                         "clubApps":  236,
                         "weight":  86,
                         "apiFootballId":  26243,
-                        "trophies":  4
+                        "trophies":  4,
+                        "clubGoals":  19,
+                        "clubsCount":  3,
+                        "uclApps":  39
                     },
                     {
                         "id":  577726,
@@ -170,7 +191,10 @@
                         "clubApps":  356,
                         "weight":  82,
                         "apiFootballId":  2194,
-                        "trophies":  4
+                        "trophies":  4,
+                        "clubGoals":  43,
+                        "clubsCount":  5,
+                        "uclApps":  31
                     },
                     {
                         "id":  1471049,
@@ -191,7 +215,10 @@
                         "clubApps":  11,
                         "weight":  75,
                         "apiFootballId":  409215,
-                        "trophies":  6
+                        "trophies":  6,
+                        "clubGoals":  0,
+                        "clubsCount":  2,
+                        "uclApps":  1
                     },
                     {
                         "id":  17175,
@@ -212,7 +239,10 @@
                         "clubApps":  464,
                         "weight":  86,
                         "apiFootballId":  864,
-                        "trophies":  15
+                        "trophies":  15,
+                        "clubGoals":  49,
+                        "clubsCount":  5,
+                        "uclApps":  69
                     },
                     {
                         "id":  1137131,
@@ -233,7 +263,10 @@
                         "clubApps":  6,
                         "weight":  78,
                         "apiFootballId":  341839,
-                        "trophies":  2
+                        "trophies":  2,
+                        "clubGoals":  3,
+                        "clubsCount":  1,
+                        "uclApps":  1
                     },
                     {
                         "id":  1418620,
@@ -254,7 +287,10 @@
                         "clubApps":  6,
                         "weight":  78,
                         "apiFootballId":  394667,
-                        "trophies":  4
+                        "trophies":  4,
+                        "clubGoals":  8,
+                        "clubsCount":  2,
+                        "uclApps":  0
                     },
                     {
                         "id":  1937833,
@@ -275,7 +311,10 @@
                         "clubApps":  9,
                         "weight":  73,
                         "apiFootballId":  null,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  1,
+                        "clubsCount":  1,
+                        "uclApps":  1
                     },
                     {
                         "id":  1002813,
@@ -296,7 +335,10 @@
                         "clubApps":  166,
                         "weight":  60,
                         "apiFootballId":  197448,
-                        "trophies":  2
+                        "trophies":  2,
+                        "clubGoals":  9,
+                        "clubsCount":  5,
+                        "uclApps":  16
                     },
                     {
                         "id":  1134083,
@@ -317,7 +359,10 @@
                         "clubApps":  49,
                         "weight":  75,
                         "apiFootballId":  129718,
-                        "trophies":  12
+                        "trophies":  12,
+                        "clubGoals":  12,
+                        "clubsCount":  3,
+                        "uclApps":  11
                     },
                     {
                         "id":  907463,
@@ -338,7 +383,10 @@
                         "clubApps":  167,
                         "weight":  73,
                         "apiFootballId":  637,
-                        "trophies":  16
+                        "trophies":  16,
+                        "clubGoals":  18,
+                        "clubsCount":  3,
+                        "uclApps":  31
                     },
                     {
                         "id":  994556,
@@ -359,14 +407,17 @@
                         "clubApps":  98,
                         "weight":  77,
                         "apiFootballId":  138935,
-                        "trophies":  10
+                        "trophies":  10,
+                        "clubGoals":  6,
+                        "clubsCount":  3,
+                        "uclApps":  12
                     },
                     {
                         "id":  22780,
                         "name":  "Konstantinos Karetsas",
                         "slug":  "konstantinos-karetsas",
                         "position":  "MID",
-                        "shirt":  20,
+                        "shirt":  19,
                         "age":  18,
                         "birth":  "2007-11-19",
                         "height":  171,
@@ -380,7 +431,10 @@
                         "clubApps":  72,
                         "weight":  68,
                         "apiFootballId":  null,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  12,
+                        "clubsCount":  2,
+                        "uclApps":  1
                     },
                     {
                         "id":  133908,
@@ -401,7 +455,10 @@
                         "clubApps":  386,
                         "weight":  76,
                         "apiFootballId":  1159,
-                        "trophies":  12
+                        "trophies":  12,
+                        "clubGoals":  129,
+                        "clubsCount":  7,
+                        "uclApps":  62
                     },
                     {
                         "id":  1021272,
@@ -422,7 +479,10 @@
                         "clubApps":  177,
                         "weight":  72,
                         "apiFootballId":  198654,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  16,
+                        "clubsCount":  3,
+                        "uclApps":  14
                     },
                     {
                         "id":  800951,
@@ -443,7 +503,10 @@
                         "clubApps":  241,
                         "weight":  86,
                         "apiFootballId":  24845,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  17,
+                        "clubsCount":  3,
+                        "uclApps":  33
                     },
                     {
                         "id":  1836843,
@@ -464,7 +527,10 @@
                         "clubApps":  273,
                         "weight":  68,
                         "apiFootballId":  null,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  3,
+                        "clubsCount":  2,
+                        "uclApps":  0
                     },
                     {
                         "id":  1861666,
@@ -485,7 +551,10 @@
                         "clubApps":  7,
                         "weight":  68,
                         "apiFootballId":  null,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  5,
+                        "clubsCount":  1,
+                        "uclApps":  0
                     },
                     {
                         "id":  19410,
@@ -506,7 +575,10 @@
                         "clubApps":  176,
                         "weight":  68,
                         "apiFootballId":  null,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  0,
+                        "clubsCount":  1,
+                        "uclApps":  0
                     },
                     {
                         "id":  328027,
@@ -527,7 +599,10 @@
                         "clubApps":  296,
                         "weight":  82,
                         "apiFootballId":  21393,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  191,
+                        "clubsCount":  8,
+                        "uclApps":  29
                     },
                     {
                         "id":  980628,
@@ -548,7 +623,10 @@
                         "clubApps":  137,
                         "weight":  72,
                         "apiFootballId":  158644,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  64,
+                        "clubsCount":  3,
+                        "uclApps":  22
                     },
                     {
                         "id":  954076,
@@ -569,7 +647,10 @@
                         "clubApps":  214,
                         "weight":  73,
                         "apiFootballId":  41973,
-                        "trophies":  4
+                        "trophies":  4,
+                        "clubGoals":  47,
+                        "clubsCount":  7,
+                        "uclApps":  10
                     },
                     {
                         "id":  1937835,
@@ -590,14 +671,17 @@
                         "clubApps":  1,
                         "weight":  70,
                         "apiFootballId":  null,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  4,
+                        "clubsCount":  1,
+                        "uclApps":  0
                     },
                     {
                         "id":  9000150,
                         "name":  "Joey Veerman",
                         "slug":  "joey-veerman",
                         "position":  "MID",
-                        "shirt":  null,
+                        "shirt":  25,
                         "age":  27,
                         "birth":  "1998-11-19",
                         "height":  181,
@@ -611,14 +695,17 @@
                         "clubApps":  272,
                         "weight":  73,
                         "apiFootballId":  null,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  61,
+                        "clubsCount":  4,
+                        "uclApps":  24
                     },
                     {
                         "id":  9000152,
                         "name":  "Giannis Konstantelias",
                         "slug":  "giannis-konstantelias",
                         "position":  "MID",
-                        "shirt":  null,
+                        "shirt":  45,
                         "age":  22,
                         "birth":  "2003-05-08",
                         "height":  180,
@@ -632,14 +719,17 @@
                         "clubApps":  149,
                         "weight":  73,
                         "apiFootballId":  null,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  45,
+                        "clubsCount":  3,
+                        "uclApps":  0
                     },
                     {
                         "id":  1401702,
                         "name":  "Ethan Nwaneri",
                         "slug":  "ethan-nwaneri",
                         "position":  "MID",
-                        "shirt":  22,
+                        "shirt":  18,
                         "age":  19,
                         "birth":  "2007-03-21",
                         "height":  176,
@@ -653,7 +743,10 @@
                         "clubApps":  56,
                         "weight":  70,
                         "apiFootballId":  313236,
-                        "trophies":  10
+                        "trophies":  10,
+                        "clubGoals":  12,
+                        "clubsCount":  3,
+                        "uclApps":  11
                     }
                 ],
     "league":  "Bundesliga"

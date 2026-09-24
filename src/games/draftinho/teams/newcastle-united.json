@@ -23,7 +23,10 @@
                         "clubApps":  78,
                         "weight":  72,
                         "apiFootballId":  328105,
-                        "trophies":  2
+                        "trophies":  2,
+                        "clubGoals":  6,
+                        "clubsCount":  1,
+                        "uclApps":  10
                     },
                     {
                         "id":  888550,
@@ -44,7 +47,10 @@
                         "clubApps":  238,
                         "weight":  71,
                         "apiFootballId":  1463,
-                        "trophies":  11
+                        "trophies":  11,
+                        "clubGoals":  33,
+                        "clubsCount":  2,
+                        "uclApps":  11
                     },
                     {
                         "id":  162653,
@@ -65,7 +71,10 @@
                         "clubApps":  273,
                         "weight":  76,
                         "apiFootballId":  18911,
-                        "trophies":  2
+                        "trophies":  2,
+                        "clubGoals":  0,
+                        "clubsCount":  7,
+                        "uclApps":  13
                     },
                     {
                         "id":  1125214,
@@ -86,7 +95,10 @@
                         "clubApps":  8,
                         "weight":  78,
                         "apiFootballId":  318056,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  4,
+                        "clubsCount":  4,
+                        "uclApps":  1
                     },
                     {
                         "id":  560128,
@@ -107,14 +119,17 @@
                         "clubApps":  282,
                         "weight":  81,
                         "apiFootballId":  723,
-                        "trophies":  6
+                        "trophies":  6,
+                        "clubGoals":  74,
+                        "clubsCount":  4,
+                        "uclApps":  19
                     },
                     {
                         "id":  980634,
                         "name":  "Tino Livramento",
                         "slug":  "tino-livramento",
                         "position":  "DEF",
-                        "shirt":  21,
+                        "shirt":  2,
                         "age":  23,
                         "birth":  "2002-11-12",
                         "height":  181,
@@ -128,7 +143,10 @@
                         "clubApps":  134,
                         "weight":  65,
                         "apiFootballId":  158694,
-                        "trophies":  8
+                        "trophies":  8,
+                        "clubGoals":  2,
+                        "clubsCount":  2,
+                        "uclApps":  8
                     },
                     {
                         "id":  1425207,
@@ -149,7 +167,10 @@
                         "clubApps":  49,
                         "weight":  81,
                         "apiFootballId":  365988,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  0,
+                        "clubsCount":  1,
+                        "uclApps":  0
                     },
                     {
                         "id":  1859920,
@@ -170,7 +191,10 @@
                         "clubApps":  24,
                         "weight":  68,
                         "apiFootballId":  null,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  1,
+                        "clubsCount":  2,
+                        "uclApps":  3
                     },
                     {
                         "id":  108508,
@@ -191,7 +215,10 @@
                         "clubApps":  56,
                         "weight":  83,
                         "apiFootballId":  44912,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  0,
+                        "clubsCount":  4,
+                        "uclApps":  0
                     },
                     {
                         "id":  1479682,
@@ -212,7 +239,10 @@
                         "clubApps":  1,
                         "weight":  76,
                         "apiFootballId":  337934,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  0,
+                        "clubsCount":  1,
+                        "uclApps":  1
                     },
                     {
                         "id":  975937,
@@ -233,14 +263,17 @@
                         "clubApps":  199,
                         "weight":  75,
                         "apiFootballId":  19192,
-                        "trophies":  6
+                        "trophies":  6,
+                        "clubGoals":  23,
+                        "clubsCount":  3,
+                        "uclApps":  19
                     },
                     {
                         "id":  963744,
                         "name":  "Lukáš Horníček",
                         "slug":  "lukas-hornicek",
                         "position":  "GK",
-                        "shirt":  1,
+                        "shirt":  21,
                         "age":  24,
                         "birth":  "2002-07-13",
                         "height":  194,
@@ -254,14 +287,17 @@
                         "clubApps":  81,
                         "weight":  83,
                         "apiFootballId":  null,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  0,
+                        "clubsCount":  2,
+                        "uclApps":  0
                     },
                     {
                         "id":  1568123,
                         "name":  "Bazoumana Touré",
                         "slug":  "bazoumana-toure",
                         "position":  "MID",
-                        "shirt":  29,
+                        "shirt":  17,
                         "age":  20,
                         "birth":  "2006-03-02",
                         "height":  175,
@@ -275,14 +311,17 @@
                         "clubApps":  50,
                         "weight":  70,
                         "apiFootballId":  105,
-                        "trophies":  8
+                        "trophies":  8,
+                        "clubGoals":  16,
+                        "clubsCount":  4,
+                        "uclApps":  0
                     },
                     {
                         "id":  954056,
                         "name":  "Nico González",
                         "slug":  "nico-gonzalez",
                         "position":  "MID",
-                        "shirt":  14,
+                        "shirt":  6,
                         "age":  24,
                         "birth":  "2002-01-03",
                         "height":  186,
@@ -296,7 +335,10 @@
                         "clubApps":  230,
                         "weight":  88,
                         "apiFootballId":  161933,
-                        "trophies":  9
+                        "trophies":  9,
+                        "clubGoals":  16,
+                        "clubsCount":  5,
+                        "uclApps":  19
                     },
                     {
                         "id":  372336,
@@ -317,14 +359,17 @@
                         "clubApps":  253,
                         "weight":  78,
                         "apiFootballId":  318056,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  62,
+                        "clubsCount":  10,
+                        "uclApps":  12
                     },
                     {
                         "id":  1122603,
                         "name":  "William Osula",
                         "slug":  "william-osula",
                         "position":  "FW",
-                        "shirt":  18,
+                        "shirt":  10,
                         "age":  23,
                         "birth":  "2003-08-04",
                         "height":  191,
@@ -338,14 +383,17 @@
                         "clubApps":  75,
                         "weight":  81,
                         "apiFootballId":  315237,
-                        "trophies":  4
+                        "trophies":  4,
+                        "clubGoals":  19,
+                        "clubsCount":  3,
+                        "uclApps":  6
                     },
                     {
                         "id":  979232,
                         "name":  "Anthony Elanga",
                         "slug":  "anthony-elanga",
                         "position":  "FW",
-                        "shirt":  20,
+                        "shirt":  19,
                         "age":  24,
                         "birth":  "2002-04-27",
                         "height":  178,
@@ -359,7 +407,10 @@
                         "clubApps":  184,
                         "weight":  70,
                         "apiFootballId":  153430,
-                        "trophies":  2
+                        "trophies":  2,
+                        "clubGoals":  20,
+                        "clubsCount":  3,
+                        "uclApps":  13
                     },
                     {
                         "id":  101882,
@@ -380,7 +431,10 @@
                         "clubApps":  297,
                         "weight":  84,
                         "apiFootballId":  2806,
-                        "trophies":  6
+                        "trophies":  6,
+                        "clubGoals":  49,
+                        "clubsCount":  5,
+                        "uclApps":  22
                     },
                     {
                         "id":  910046,
@@ -401,7 +455,10 @@
                         "clubApps":  211,
                         "weight":  81,
                         "apiFootballId":  38734,
-                        "trophies":  15
+                        "trophies":  15,
+                        "clubGoals":  9,
+                        "clubsCount":  3,
+                        "uclApps":  14
                     },
                     {
                         "id":  1136730,
@@ -422,7 +479,10 @@
                         "clubApps":  107,
                         "weight":  73,
                         "apiFootballId":  284492,
-                        "trophies":  10
+                        "trophies":  10,
+                        "clubGoals":  4,
+                        "clubsCount":  2,
+                        "uclApps":  11
                     },
                     {
                         "id":  855647,
@@ -443,14 +503,17 @@
                         "clubApps":  287,
                         "weight":  66,
                         "apiFootballId":  18778,
-                        "trophies":  8
+                        "trophies":  8,
+                        "clubGoals":  98,
+                        "clubsCount":  5,
+                        "uclApps":  14
                     },
                     {
                         "id":  1868591,
                         "name":  "Aladji Bamba",
                         "slug":  "aladji-bamba",
                         "position":  "MID",
-                        "shirt":  23,
+                        "shirt":  8,
                         "age":  20,
                         "birth":  "2006-07-14",
                         "height":  181,
@@ -464,7 +527,10 @@
                         "clubApps":  23,
                         "weight":  70,
                         "apiFootballId":  280368,
-                        "trophies":  2
+                        "trophies":  2,
+                        "clubGoals":  0,
+                        "clubsCount":  2,
+                        "uclApps":  5
                     },
                     {
                         "id":  99090,
@@ -485,7 +551,10 @@
                         "clubApps":  273,
                         "weight":  87,
                         "apiFootballId":  18961,
-                        "trophies":  6
+                        "trophies":  6,
+                        "clubGoals":  25,
+                        "clubsCount":  7,
+                        "uclApps":  15
                     },
                     {
                         "id":  1014286,
@@ -506,7 +575,10 @@
                         "clubApps":  169,
                         "weight":  80,
                         "apiFootballId":  163189,
-                        "trophies":  9
+                        "trophies":  9,
+                        "clubGoals":  9,
+                        "clubsCount":  3,
+                        "uclApps":  25
                     },
                     {
                         "id":  1154665,
@@ -527,7 +599,10 @@
                         "clubApps":  115,
                         "weight":  81,
                         "apiFootballId":  null,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  0,
+                        "clubsCount":  5,
+                        "uclApps":  0
                     },
                     {
                         "id":  805123,
@@ -548,14 +623,17 @@
                         "clubApps":  214,
                         "weight":  75,
                         "apiFootballId":  null,
-                        "trophies":  0
+                        "trophies":  0,
+                        "clubGoals":  115,
+                        "clubsCount":  7,
+                        "uclApps":  4
                     },
                     {
                         "id":  9100001,
                         "name":  "Matias Fernandez-Pardo",
                         "slug":  "matias-fernandez-pardo",
                         "position":  "FW",
-                        "shirt":  null,
+                        "shirt":  20,
                         "age":  20,
                         "birth":  "2005-04-01",
                         "height":  183,
@@ -568,7 +646,10 @@
                         "nationality":  "Belgium",
                         "trophies":  0,
                         "clubApps":  139,
-                        "weight":  68
+                        "weight":  68,
+                        "clubGoals":  26,
+                        "clubsCount":  3,
+                        "uclApps":  7
                     }
                 ],
     "league":  "Premier League"
