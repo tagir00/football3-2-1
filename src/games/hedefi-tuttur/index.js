@@ -159,6 +159,48 @@ const CATEGORIES = [
     target: 60,
     entity: PLAYER_ENTITY,
   },
+  {
+    id: 'serieAAssists',
+    label: 'Serie A Asisti',
+    short: 'SERIE A ASİSTİ',
+    field: 'serieAAssists',
+    target: 500,
+    entity: PLAYER_ENTITY,
+  },
+  {
+    id: 'superLigApps',
+    label: 'Süper Lig Maçı',
+    short: 'SÜPER LİG MAÇI',
+    field: 'superLigApps',
+    target: 750,
+    entity: PLAYER_ENTITY,
+  },
+  {
+    id: 'transferFees',
+    label: 'Toplam Bonservis Bedeli',
+    short: 'BONSERVİS BEDELİ',
+    // Milyon € cinsinden (Transfermarkt kariyer toplamı, kiralık bedelleri dahil).
+    field: 'transferFees',
+    target: 600,
+    unit: 'M €',
+    entity: PLAYER_ENTITY,
+  },
+  {
+    id: 'laLigaGoals',
+    label: 'La Liga Golü',
+    short: 'LA LIGA GOLÜ',
+    field: 'laLigaGoals',
+    target: 500,
+    entity: PLAYER_ENTITY,
+  },
+  {
+    id: 'turkeyApps',
+    label: 'Türk Milli Takım Maçı',
+    short: 'A MİLLİ TAKIM MAÇI',
+    field: 'turkeyApps',
+    target: 400,
+    entity: PLAYER_ENTITY,
+  },
 ];
 
 function ensureStylesheet() {
@@ -168,6 +210,19 @@ function ensureStylesheet() {
   link.href = STYLE_HREF;
   link.dataset.gameStyle = 'hedefi-tuttur';
   document.head.append(link);
+}
+
+// Kategori değerini ekranda göster — birimli kategorilerde (bonservis, M €)
+// ondalık ve birim eklenir, diğerleri düz sayı.
+function formatValue(category, value) {
+  if (!category?.unit) return String(value);
+  const num = value.toLocaleString('tr-TR', { maximumFractionDigits: 2 });
+  return `${num} ${category.unit}`;
+}
+
+// Ondalıklı toplamlarda kayan nokta artığını temizle (0.1 + 0.2 gibi).
+function roundValue(value) {
+  return Math.round(value * 100) / 100;
 }
 
 function normalizeName(name) {
@@ -471,7 +526,7 @@ export async function mount(container) {
         state.category = finalCat;
         els.wheelTitle.textContent = finalCat.label;
         els.wheelSub.textContent = finalCat.short;
-        els.wheelTargetVal.textContent = String(finalCat.target);
+        els.wheelTargetVal.textContent = formatValue(finalCat, finalCat.target);
         els.wheelTargetBlock.classList.remove('hidden');
         els.wheelDisplay.classList.remove('spinning');
         els.wheelDisplay.classList.add('landed');
@@ -560,7 +615,7 @@ export async function mount(container) {
     els.playerNameB.textContent = state.players[1].name;
     els.progressA.textContent = `${state.picks[0].length} / ${PICKS_PER_PLAYER}`;
     els.progressB.textContent = `${state.picks[1].length} / ${PICKS_PER_PLAYER}`;
-    els.targetValue.textContent = String(currentTarget());
+    els.targetValue.textContent = formatValue(state.category, currentTarget());
     els.targetCat.textContent = state.category.short;
 
     els.playerColA.classList.toggle('turn-active', state.phase === 'picking' && state.activePlayer === 0);
@@ -840,14 +895,14 @@ export async function mount(container) {
     if (!li) return;
     const statEl = li.querySelector('.ht-slot-stat');
     if (statEl) {
-      statEl.textContent = String(pick.apps);
+      statEl.textContent = formatValue(state.category, pick.apps);
     }
     li.classList.add('revealed');
   }
 
   function revealTotals() {
-    const totalA = state.picks[0].reduce((s, p) => s + p.apps, 0);
-    const totalB = state.picks[1].reduce((s, p) => s + p.apps, 0);
+    const totalA = roundValue(state.picks[0].reduce((s, p) => s + p.apps, 0));
+    const totalB = roundValue(state.picks[1].reduce((s, p) => s + p.apps, 0));
     animateCount(els.totalA, totalA, 700);
     animateCount(els.totalB, totalB, 700);
     setTimeout(() => revealResult(totalA, totalB), 780);
@@ -859,19 +914,20 @@ export async function mount(container) {
       const t = Math.min(1, (now - start) / ms);
       const eased = 1 - Math.pow(1 - t, 3);
       const v = Math.round(eased * target);
-      el.textContent = String(v);
+      el.textContent = formatValue(state.category, v);
       if (t < 1) requestAnimationFrame(tick);
-      else el.textContent = String(target);
+      else el.textContent = formatValue(state.category, target);
     }
     requestAnimationFrame(tick);
   }
 
   function revealResult(totalA, totalB) {
     const target = currentTarget();
-    const diffA = Math.abs(totalA - target);
-    const diffB = Math.abs(totalB - target);
-    els.diffA.textContent = `${diffA} uzak`;
-    els.diffB.textContent = `${diffB} uzak`;
+    const diffA = roundValue(Math.abs(totalA - target));
+    const diffB = roundValue(Math.abs(totalB - target));
+    const fmt = (v) => formatValue(state.category, v);
+    els.diffA.textContent = `${fmt(diffA)} uzak`;
+    els.diffB.textContent = `${fmt(diffB)} uzak`;
     els.diffA.classList.remove('win-diff');
     els.diffB.classList.remove('win-diff');
     els.playerColA.classList.remove('turn-active');
@@ -883,7 +939,7 @@ export async function mount(container) {
       els.result.classList.add('tie');
       els.resultEyebrow.textContent = 'Tur Sonucu';
       els.resultTitle.textContent = 'Berabere';
-      els.resultSub.textContent = `İki oyuncu da hedeften ${diffA} uzakta bitirdi. Skor değişmedi.`;
+      els.resultSub.textContent = `İki oyuncu da hedeften ${fmt(diffA)} uzakta bitirdi. Skor değişmedi.`;
     } else {
       const winnerIdx = diffA < diffB ? 0 : 1;
       const winner = state.players[winnerIdx];
@@ -896,7 +952,7 @@ export async function mount(container) {
       els.result.classList.add('win');
       els.resultEyebrow.textContent = 'Kazanan';
       els.resultTitle.textContent = `🏆 ${winner.name}`;
-      els.resultSub.textContent = `${winner.name} ${winnerDiff} uzak · ${loser.name} ${loserDiff} uzak`;
+      els.resultSub.textContent = `${winner.name} ${fmt(winnerDiff)} uzak · ${loser.name} ${fmt(loserDiff)} uzak`;
 
       const winCol = winnerIdx === 0 ? els.playerColA : els.playerColB;
       const winDiff = winnerIdx === 0 ? els.diffA : els.diffB;
