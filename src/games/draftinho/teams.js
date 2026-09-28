@@ -56,7 +56,11 @@ export function loadClubs() {
         }
         return response.json();
       }),
-    );
+    ).catch((error) => {
+      // Don't keep a failed download around; the next visit retries.
+      clubsPromise = null;
+      throw error;
+    });
   }
   return clubsPromise;
 }
@@ -72,7 +76,10 @@ export function loadNationals() {
         }
         return response.json();
       }),
-    );
+    ).catch((error) => {
+      nationalsPromise = null;
+      throw error;
+    });
   }
   return nationalsPromise;
 }

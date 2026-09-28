@@ -99,7 +99,11 @@ async function ensureConnections() {
       );
 
       return { clubClubConnections, countryClubConnections };
-    })();
+    })().catch((error) => {
+      // Don't keep a failed download around; the next visit retries.
+      connectionsPromise = null;
+      throw error;
+    });
   }
 
   return connectionsPromise;

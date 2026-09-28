@@ -41,6 +41,7 @@ function showHub() {
 
   gameRoot.classList.add('hidden');
   gameRoot.innerHTML = '';
+  document.body.classList.remove('game-loading');
   hubRoot.classList.remove('hidden');
   setTheme('stadium');
 }
@@ -66,9 +67,38 @@ async function showGame(id) {
   gameRoot.classList.remove('hidden');
   setTheme('tactic');
 
-  const module = await game.load();
-  activeGame = { id, module };
-  await module.mount(gameRoot);
+  // Games draw their screen first and wire up buttons only after their data
+  // (up to ~1 MB) has downloaded; until then the buttons are inert, so show
+  // that the game is still loading.
+  document.body.classList.add('game-loading');
+  try {
+    const module = await game.load();
+    activeGame = { id, module };
+    await module.mount(gameRoot);
+  } catch (error) {
+    console.error(error);
+    if (activeGame?.id === id) {
+      activeGame.module.unmount?.();
+      activeGame = null;
+    }
+    if (parseRoute() === id) {
+      renderLoadError(id);
+    }
+  } finally {
+    document.body.classList.remove('game-loading');
+  }
+}
+
+function renderLoadError(id) {
+  gameRoot.innerHTML = `
+    <section class="load-error">
+      <h2>Oyun yüklenemedi</h2>
+      <p>İnternet bağlantını kontrol edip tekrar dene.</p>
+      <button class="primary-button" type="button" data-retry>Tekrar Dene</button>
+      <a class="ghost-button" href="#/">Ana Menü</a>
+    </section>
+  `;
+  gameRoot.querySelector('[data-retry]').addEventListener('click', () => showGame(id));
 }
 
 function handleRouteChange() {

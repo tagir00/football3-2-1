@@ -265,7 +265,12 @@ function loadStats() {
         normalized: normalizeName(p.name),
         stats: p, // ham stats — alan seçimi kategoriye göre yapılır
       })),
-    );
+    )
+    .catch((error) => {
+      // Başarısız indirme hafızada kalmasın; bir sonraki girişte tekrar dener.
+      statsPromise = null;
+      throw error;
+    });
   return statsPromise;
 }
 

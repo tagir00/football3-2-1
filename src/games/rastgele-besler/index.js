@@ -110,7 +110,12 @@ function loadPlayerPool() {
           apps: p.apps ?? 0,
         };
       }),
-    );
+    )
+    .catch((error) => {
+      // Don't keep a failed download around; the next visit retries.
+      playerPoolPromise = null;
+      throw error;
+    });
   return playerPoolPromise;
 }
 

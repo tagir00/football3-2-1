@@ -70,6 +70,10 @@ export function loadFamousPool() {
       }
     }
     return out;
+  }).catch((error) => {
+    // Don't keep a failed download around; the next visit retries.
+    poolPromise = null;
+    throw error;
   });
 
   return poolPromise;
