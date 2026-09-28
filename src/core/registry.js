@@ -34,6 +34,13 @@ export const games = [
     accent: 'game-hedefi-tuttur',
     load: () => import('../games/hedefi-tuttur/index.js'),
   },
+  {
+    id: 'kariyer-ikizi',
+    title: 'Kariyer İkizi',
+    cover: './assets/covers/kariyer-ikizi.svg',
+    accent: 'game-kariyer-ikizi',
+    load: () => import('../games/kariyer-ikizi/index.js'),
+  },
 ];
 
 export function getGame(id) {

@@ -1,4 +1,4 @@
-const CACHE_NAME = 'oyun-kutusu-v78';
+const CACHE_NAME = 'oyun-kutusu-v79';
 const APP_ASSETS = [
   './',
   './index.html',
