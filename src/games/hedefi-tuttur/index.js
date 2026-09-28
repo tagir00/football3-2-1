@@ -36,7 +36,7 @@ const CATEGORIES = [
     label: 'Premier League Golü',
     short: 'PREMIER LEAGUE GOLÜ',
     field: 'premierLeagueGoals',
-    target: 200,
+    target: 350,
     entity: {
       hint: 'Futbolcunu söyle.',
       slot: '+ Futbolcu',
