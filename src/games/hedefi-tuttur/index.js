@@ -1,4 +1,5 @@
 import { template } from './template.js';
+import { createShuffleBag } from '../../core/shuffleBag.js';
 
 const STYLE_HREF = new URL('./game.css', import.meta.url).href;
 const PLAYER_STATS_URL = new URL('./playerStats.json', import.meta.url);
@@ -202,6 +203,14 @@ const CATEGORIES = [
     entity: PLAYER_ENTITY,
   },
 ];
+
+const categoriesById = new Map(CATEGORIES.map((c) => [c.id, c]));
+// Aile = alanın lig/turnuva kısmı (serieAApps & serieAAssists -> serieA).
+const categoryBag = createShuffleBag(
+  'hedefi-tuttur-category-bag',
+  CATEGORIES.map((c) => c.id),
+  (id) => categoriesById.get(id).field.replace(/(Apps|Goals|Assists)$/, ''),
+);
 
 function ensureStylesheet() {
   if (document.querySelector('link[data-game-style="hedefi-tuttur"]')) return;
@@ -508,11 +517,9 @@ export async function mount(container) {
     els.wheelDisplay.classList.remove('landed');
     els.wheelDisplay.classList.add('spinning');
 
-    // Aynı kategori üst üste gelmesin — daha önce çıktıysa havuzdan çıkar.
-    const pool = state.category
-      ? CATEGORIES.filter((c) => c.id !== state.category.id)
-      : CATEGORIES;
-    const finalCat = pool[Math.floor(Math.random() * pool.length)];
+    // Torba: her kategori bir kez gelmeden hiçbiri tekrar gelmez; aynı ligin
+    // kategorileri (Serie A Maçı / Serie A Asisti) art arda gelmez.
+    const finalCat = categoriesById.get(categoryBag.draw());
 
     let ticks = 0;
     const totalTicks = 18 + Math.floor(Math.random() * 6);

@@ -8,6 +8,16 @@ import {
   suggestPlayers,
   normalizeName,
 } from './teams.js';
+import { createShuffleBag } from '../../core/shuffleBag.js';
+
+// Every criterion shows up once before any repeats; criteria on the same field
+// (En Ucuz / En Pahalı Kadro) never come right after each other.
+const criteriaById = new Map(criteria.map((c) => [c.id, c]));
+const criterionBag = createShuffleBag(
+  'draftinho-criterion-bag',
+  criteria.map((c) => c.id),
+  (id) => criteriaById.get(id).field,
+);
 
 const STYLE_HREF = new URL('./game.css', import.meta.url).href;
 
@@ -301,10 +311,7 @@ export async function mount(container) {
     els.criterionStatus.textContent = 'Çark dönüyor...';
     els.confirmCriterionButton.classList.add('hidden');
 
-    const pool = state.criterion
-      ? criteria.filter((c) => c.id !== state.criterion.id)
-      : criteria;
-    const finalCriterion = pick(pool);
+    const finalCriterion = criteriaById.get(criterionBag.draw());
     let ticks = 0;
     const maxTicks = 18 + Math.floor(Math.random() * 6);
     const interval = window.setInterval(() => {
