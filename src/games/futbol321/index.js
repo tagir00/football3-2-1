@@ -444,6 +444,9 @@ export async function mount(container) {
     lastCountryClubOrientation: 'country-left',
     currentPair: null,
     usedEntityNames: new Set(),
+    // Bumped whenever the player leaves or switches mode, so a countdown that
+    // is still running can tell it no longer belongs to the screen.
+    countdownToken: 0,
   };
 
   const boundListeners = [];
@@ -496,6 +499,7 @@ export async function mount(container) {
   }
 
   function showHome() {
+    cancelCountdown();
     state.mode = null;
     state.round = 0;
     state.currentPair = null;
@@ -533,10 +537,41 @@ export async function mount(container) {
         : 'Bu tur: ülke sağda · sonraki Başlatta solda';
   }
 
+  // Long single words (Monchengladbach, Wolverhampton) don't fit the narrow
+  // phone cards; shrink the name just enough for its longest word to fit
+  // instead of letting it break mid-word.
+  const measureContext = document.createElement('canvas').getContext('2d');
+
+  function fitEntityNames() {
+    for (const heading of container.querySelectorAll('.entity-card h3')) {
+      // Measure against the fixed-width slot card: an unbreakable word would
+      // otherwise stretch the inner .entity-card along with it.
+      const slot = heading.closest('.slot-card');
+      const slotStyle = getComputedStyle(slot);
+      const available =
+        slot.clientWidth - parseFloat(slotStyle.paddingLeft) - parseFloat(slotStyle.paddingRight);
+      heading.style.fontSize = '';
+      if (available <= 0) {
+        continue;
+      }
+      const style = getComputedStyle(heading);
+      const size = parseFloat(style.fontSize);
+      measureContext.font = `${style.fontWeight} ${size}px ${style.fontFamily}`;
+      const widest = Math.max(
+        // Hyphens are fine break points (Saint-Germain), so they split words too.
+        ...heading.textContent.split(/[\s-]+/).map((word) => measureContext.measureText(word).width),
+      );
+      if (widest > available) {
+        heading.style.fontSize = `${Math.max(12, Math.floor((size * available) / widest))}px`;
+      }
+    }
+  }
+
   function renderPair(pair) {
     window.__renderPairCalls = (window.__renderPairCalls ?? 0) + 1;
     els.leftCard.innerHTML = createCardMarkup(pair.left);
     els.rightCard.innerHTML = createCardMarkup(pair.right);
+    fitEntityNames();
     hydrateClubBadges(els.leftCard);
     hydrateClubBadges(els.rightCard);
     els.leftCard.classList.add('reveal');
@@ -613,6 +648,7 @@ export async function mount(container) {
   }
 
   function selectMode(modeId) {
+    cancelCountdown();
     state.mode = modeId;
     state.round = 0;
     state.currentPair = null;
@@ -652,7 +688,16 @@ export async function mount(container) {
     setStatus('');
   }
 
+  function cancelCountdown() {
+    state.countdownToken += 1;
+    state.isCounting = false;
+    els.countdownLayer.classList.add('hidden');
+  }
+
+  // Resolves true when the countdown ran to the end, false when the player
+  // left or switched mode in the meantime.
   async function runCountdown() {
+    const token = ++state.countdownToken;
     state.isCounting = true;
     els.countdownLayer.classList.remove('hidden');
     els.leftCard.classList.remove('reveal');
@@ -664,10 +709,14 @@ export async function mount(container) {
       void els.countdownLayer.offsetWidth;
       els.countdownLayer.classList.add('pulse');
       await sleep(820);
+      if (token !== state.countdownToken) {
+        return false;
+      }
     }
 
     els.countdownLayer.classList.add('hidden');
     state.isCounting = false;
+    return true;
   }
 
   async function startRound() {
@@ -676,7 +725,9 @@ export async function mount(container) {
     }
 
     setStatus('');
-    await runCountdown();
+    if (!(await runCountdown())) {
+      return;
+    }
 
     let pair;
 
@@ -707,7 +758,9 @@ export async function mount(container) {
     }
 
     setStatus('');
-    await runCountdown();
+    if (!(await runCountdown())) {
+      return;
+    }
     state.currentPair = generateCountryClubPair(state.lastCountryClubOrientation);
 
     if (!state.currentPair) {
@@ -720,6 +773,7 @@ export async function mount(container) {
   }
 
   function goBack() {
+    cancelCountdown();
     state.mode = null;
     state.round = 0;
     state.currentPair = null;
@@ -742,6 +796,12 @@ export async function mount(container) {
       toggleInfoModal(false);
     }
   });
+  bind(document, 'keydown', (event) => {
+    if (event.key === 'Escape' && !els.infoModal.classList.contains('hidden')) {
+      toggleInfoModal(false);
+    }
+  });
+  bind(window, 'resize', fitEntityNames);
 
   renderModeCards();
 
