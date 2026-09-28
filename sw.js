@@ -1,4 +1,4 @@
-const CACHE_NAME = 'oyun-kutusu-v75';
+const CACHE_NAME = 'oyun-kutusu-v76';
 const APP_ASSETS = [
   './',
   './index.html',
@@ -19,15 +19,25 @@ const APP_ASSETS = [
 // Oyun modulleri (src/games/**) burada onceden yuklenmez; lazy-load edildikce
 // asagidaki fetch handler onlari otomatik olarak runtime cache'e ekler.
 
+// Yeni surum kurulur kurulmaz devreye girer (eski sekmelerin kapanmasini
+// beklemez); sayfa da main.js'teki controllerchange ile kendini yeniler.
 self.addEventListener('install', (event) => {
-  event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(APP_ASSETS)));
+  event.waitUntil(
+    caches
+      .open(CACHE_NAME)
+      .then((cache) => cache.addAll(APP_ASSETS))
+      .then(() => self.skipWaiting()),
+  );
 });
 
 self.addEventListener('activate', (event) => {
   event.waitUntil(
-    caches.keys().then((keys) =>
-      Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))),
-    ),
+    caches
+      .keys()
+      .then((keys) =>
+        Promise.all(keys.filter((key) => key !== CACHE_NAME).map((key) => caches.delete(key))),
+      )
+      .then(() => self.clients.claim()),
   );
 });
 
