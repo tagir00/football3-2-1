@@ -1,0 +1,6 @@
+{
+  "_note": "Footballers Hedefi Tuttur's pool misses but Kariyer İkizi should know. name -> Transfermarkt player id; their stats come from the Transfermarkt caches in data/ (scripts/build-kariyer-ikizi-pool.ps1). `ref` forces them into the reference pool (well known in Turkey).",
+  "players": [
+    { "name": "Hurşut Meriç", "tm": "56372", "ref": true }
+  ]
+}

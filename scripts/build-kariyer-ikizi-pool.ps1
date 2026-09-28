@@ -28,8 +28,21 @@ $utf8 = [System.Text.UTF8Encoding]::new($false)
 function Jf($f) { Get-Content -LiteralPath $f -Raw -Encoding UTF8 | ConvertFrom-Json }
 function ToMap($obj) { $h = @{}; foreach ($p in $obj.PSObject.Properties) { $h[$p.Name] = $p.Value }; return $h }
 
-$rows = Jf (Join-Path $root 'src\games\hedefi-tuttur\playerStats.json')
+# (PowerShell 5's ConvertFrom-Json hands back the whole array as one object, so
+# copy it row by row instead of wrapping it in @()).
+$rows = New-Object System.Collections.ArrayList
+foreach ($r in (Jf (Join-Path $root 'src\games\hedefi-tuttur\playerStats.json'))) { [void]$rows.Add($r) }
 $nameIds = ToMap (Jf "$data\tm-name-ids.json")
+# Players Hedefi Tuttur's pool misses (extra-players.json): name + TM id only.
+$forcedRefs = @{}
+foreach ($e in (Jf (Join-Path $root 'src\games\kariyer-ikizi\extra-players.json')).players) {
+  [void]$rows.Add([pscustomobject]@{ name = $e.name })
+  $nameIds[$e.name] = [string]$e.tm
+  if ($e.ref) { $forcedRefs[$e.name] = 1 }
+}
+# Fame: last-12-months English + Turkish Wikipedia page views (data/wiki-fame.json,
+# { tmId: [enViews, trViews, wikipediaLanguageCount] }).
+$fame = ToMap (Jf "$data\wiki-fame.json")
 $perf = ToMap (Jf "$data\tm-player-performance-club.json")
 $clubs = ToMap (Jf "$data\tm-clubs.json")
 $comps = ToMap (Jf "$data\tm-player-competitions.json")
@@ -41,6 +54,15 @@ function Senior($clubId) {
   return -not ($c.name -match '\bU\d\d\b|Youth|Yth|Auswahl|Selec|Juniors?\b|Academy|Akademi')
 }
 function SeniorNT($clubId) { $c = $clubs[[string]$clubId]; return ($c -and $c.nt -and [string]$c.main -eq [string]$clubId) }
+
+# Tuned on examples: in = Hamšík (en 162k / tr 6.6k), Atiba (tr 15k), Gekas (tr
+# 5k + Süper Lig), Lua Lua, Kubo (tr 1.8k); out = Héctor Herrera (en 86k, tr
+# 0.3k), Luis Romo, Hadergjonaj, Sam Surridge (en 182k, tr 0.3k), Strand Larsen.
+$MEGA_EN_VIEWS = 1500000
+$MIN_EN_VIEWS = 150000
+$MIN_TR_VIEWS_GLOBAL = 1500
+$MIN_TR_VIEWS = 10000
+$MIN_TR_VIEWS_SL = 4000
 
 $KEYS = @(
   'n', 'ref', 'ca', 'cg', 'cs', 'nc', 'ng', 'tr', 'fe', 'h', 'b', 'y', 'r', 'ua', 'ug',
@@ -116,15 +138,20 @@ foreach ($row in $rows) {
 
   if (-not $v.ca -and -not $v.pla -and -not $v.saa -and -not $v.sla) { continue }
 
-  # Reference candidates: household names with solid (born 1968+) data. Caps
-  # alone let in small-nation regulars, so they need CL games or a real fee
-  # too; Turkish internationals get a lower bar (young stars like Arda Güler).
-  $nc = [int]$v.nc; $ua = [int]$v.ua; $fe = [double]$v.fe; $sla = [int]$v.sla; $ca = [int]$v.ca
-  $bigCareer = $ca -ge 300 -and (
-    ($nc -ge 60 -and ($ua -ge 10 -or $fe -ge 20)) -or $ua -ge 40 -or [int]$v.tr -ge 12 -or $fe -ge 60 -or
-    ($sla -ge 250 -and $nc -ge 20) -or ($nc -ge 40 -and ($sla -ge 100 -or [int]$v.ug -ge 5)) -or $nc -ge 90)
-  $turkishStar = $null -ne $row.turkeyApps -and [int]$row.turkeyApps -ge 25 -and $ca -ge 120
-  if ($year -ge 1968 -and ($bigCareer -or $turkishStar)) { $v.ref = 1 }
+  # Reference candidates: names people actually know. Stats alone let in
+  # 100-cap regulars nobody here has heard of (Maya Yoshida), so the bar is
+  # Wikipedia interest: worldwide (English page views) or in Turkey (Turkish
+  # page views, which also catches Süper Lig cult figures like Lua Lua).
+  $f = if ($id) { $fame[$id] } else { $null }
+  $enViews = if ($f) { [int]$f[0] } else { 0 }
+  $trViews = if ($f) { [int]$f[1] } else { 0 }
+  # English views alone favour current Premier League squad players (Sam
+  # Surridge 182k), so worldwide names also need some Turkish interest.
+  $known = $enViews -ge $MEGA_EN_VIEWS -or
+    ($enViews -ge $MIN_EN_VIEWS -and $trViews -ge $MIN_TR_VIEWS_GLOBAL) -or
+    $trViews -ge $MIN_TR_VIEWS -or
+    ($trViews -ge $MIN_TR_VIEWS_SL -and [int]$v.sla -ge 80)
+  if ($forcedRefs.ContainsKey($name) -or ($known -and $year -ge 1958 -and [int]$v.ca -ge 120)) { $v.ref = 1 }
 
   [void]$out.Add(@($KEYS | ForEach-Object { if ($v.ContainsKey($_)) { $v[$_] } else { $null } }))
 }
