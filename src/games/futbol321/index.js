@@ -66,6 +66,10 @@ const wikiClubTitleOverrides = new Map([
   ['PSV Eindhoven', 'PSV Eindhoven'],
 ]);
 
+// The pool is thousands of Transfermarkt careers, so a pairing needs at least
+// this many players behind it — one journeyman alone is too obscure to guess.
+const MIN_LINKING_PLAYERS = 2;
+
 let connectionsPromise = null;
 
 async function ensureConnections() {
@@ -76,13 +80,20 @@ async function ensureConnections() {
       const clubClubConnections = buildClubClubConnections(
         eligiblePlayers,
         clubs.map((club) => club.name),
-      ).filter((connection) => connection.clubs.every((clubName) => clubsByName.has(clubName)));
+      ).filter(
+        (connection) =>
+          connection.players.length >= MIN_LINKING_PLAYERS &&
+          connection.clubs.every((clubName) => clubsByName.has(clubName)),
+      );
       const countryClubConnections = buildCountryClubConnections(
         eligiblePlayers,
         countries.map((country) => country.name),
         clubs.map((club) => club.name),
       ).filter(
-        (connection) => countriesByName.has(connection.country) && clubsByName.has(connection.club),
+        (connection) =>
+          connection.players.length >= MIN_LINKING_PLAYERS &&
+          countriesByName.has(connection.country) &&
+          clubsByName.has(connection.club),
       );
 
       return { clubClubConnections, countryClubConnections };
