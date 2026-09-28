@@ -844,3 +844,186 @@
     max-width: 5rem;
   }
 }
+
+/* Phones: both players side by side under a slim target strip, everything
+   tightened so the picks and the search box fit on one screen (like
+   Rastgele Beşler) instead of scrolling up and down. */
+@media (max-width: 520px) {
+  .ht-game {
+    padding: 0.6rem;
+    gap: 0.55rem;
+  }
+
+  .ht-topbar {
+    padding: 0;
+  }
+
+  .ht-score {
+    padding: 0.35rem 0.75rem;
+    gap: 0.5rem;
+  }
+
+  .ht-score-val {
+    font-size: 1.1rem;
+  }
+
+  .ht-board {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 0.5rem;
+  }
+
+  .ht-target-card {
+    grid-column: 1 / -1;
+    min-width: 0;
+    grid-auto-flow: column;
+    justify-content: center;
+    align-items: baseline;
+    gap: 0.6rem;
+    padding: 0.55rem 0.8rem;
+    border-radius: 1rem;
+  }
+
+  .ht-target-card .eyebrow,
+  .ht-target-hint {
+    display: none;
+  }
+
+  .ht-target-value {
+    font-size: 2rem;
+  }
+
+  .ht-target-cat {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+  }
+
+  .ht-player-col {
+    min-width: 0;
+    padding: 0.5rem;
+    gap: 0.4rem;
+    border-radius: 1rem;
+  }
+
+  .ht-player-head .eyebrow {
+    display: none;
+  }
+
+  .ht-player-head {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: baseline;
+    gap: 0.4rem;
+  }
+
+  .ht-player-head h3 {
+    font-size: 0.95rem;
+  }
+
+  .ht-progress {
+    font-size: 0.7rem;
+  }
+
+  .ht-slot-list {
+    gap: 0.3rem;
+  }
+
+  .ht-slot {
+    min-height: 2.35rem;
+    padding: 0.3rem 0.45rem;
+    border-radius: 0.6rem;
+    font-size: 0.76rem;
+    gap: 0.3rem;
+  }
+
+  .ht-slot-name {
+    white-space: normal;
+    line-height: 1.15;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .ht-slot-stat {
+    min-width: 0;
+    padding: 0.1rem 0.35rem;
+    font-size: 0.72rem;
+  }
+
+  .ht-player-foot {
+    gap: 0.3rem;
+    padding-top: 0.25rem;
+  }
+
+  .ht-total-label {
+    font-size: 0.66rem;
+  }
+
+  .ht-total-val {
+    font-size: 1.15rem;
+  }
+
+  .ht-diff {
+    font-size: 0.68rem;
+    min-height: 0;
+  }
+
+  .ht-mod-panel {
+    padding: 0.7rem;
+    gap: 0.5rem;
+    border-radius: 1rem;
+  }
+
+  .ht-turn-block .eyebrow,
+  .ht-turn-hint {
+    display: none;
+  }
+
+  .ht-turn-name {
+    font-size: 1.1rem;
+  }
+
+  .ht-turn-progress {
+    font-size: 0.72rem;
+  }
+
+  .ht-search-block {
+    gap: 0.35rem;
+  }
+
+  .ht-search-input {
+    padding: 0.7rem 2.4rem 0.7rem 0.8rem;
+  }
+
+  .ht-suggestions {
+    max-height: 4.6rem;
+    overflow-y: auto;
+    gap: 0.3rem;
+  }
+
+  .ht-suggestion {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.8rem;
+  }
+
+  .ht-search-status:empty {
+    display: none;
+  }
+
+  .ht-mod-actions {
+    gap: 0.4rem;
+  }
+
+  /* Once the result card is up, the search panel has nothing left to do and
+     would push the winner below the fold. */
+  .ht-game:has(#htResult:not(.hidden)) #htModPanel {
+    display: none;
+  }
+
+  .ht-result {
+    padding: 0.9rem 0.8rem;
+    gap: 0.45rem;
+  }
+
+  .ht-result-title {
+    font-size: 1.5rem;
+  }
+}

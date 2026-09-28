@@ -595,12 +595,184 @@
   100% { transform: scale(1); }
 }
 
+/* Phones: keep both players side by side (like Rastgele Beşler) and tighten
+   everything so the lineups and the name input fit on one screen instead of
+   scrolling up and down between them. */
 @media (max-width: 520px) {
+  .game-panel {
+    padding: 0.6rem;
+    gap: 0.55rem;
+  }
+
+  .game-header {
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .game-header .ghost-button {
+    padding: 0.5rem 0.7rem;
+    font-size: 0.8rem;
+  }
+
+  .game-header .eyebrow {
+    font-size: 0.62rem;
+  }
+
+  .game-header h2 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+
+  .round-badge {
+    font-size: 0.72rem;
+    padding: 0.25rem 0.55rem;
+  }
+
+  /* The header already names the team and the criterion; the big team card
+     is only needed while the team wheel spins. */
+  .game-panel:has(#dPickPanel:not(.hidden)) #dTeamSpinShell {
+    display: none;
+  }
+
+  .team-spin-shell {
+    padding: 0;
+  }
+
+  .team-spin-shell .wheel-display {
+    padding: 0.8rem;
+  }
+
+  .team-spin-shell .wheel-title {
+    font-size: 1.35rem;
+  }
+
   .scoreboard,
   .formations {
-    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 0;
   }
-  .slot-name {
+
+  .score-card {
+    padding: 0.45rem 0.6rem;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    text-align: left;
+    gap: 0 0.4rem;
+  }
+
+  .score-name {
     font-size: 0.82rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .score-value {
+    grid-row: span 2;
+    font-size: 1.35rem;
+  }
+
+  .score-picks {
+    font-size: 0.68rem;
+  }
+
+  .formation-column {
+    padding: 0.45rem;
+    gap: 0.35rem;
+    min-width: 0;
+  }
+
+  .formation-name {
+    display: none;
+  }
+
+  .slot-grid {
+    gap: 0.3rem;
+  }
+
+  .slot {
+    grid-template-columns: auto 1fr;
+    gap: 0.1rem 0.35rem;
+    padding: 0.3rem 0.4rem;
+    min-height: 2.35rem;
+    border-radius: 0.6rem;
+  }
+
+  .slot-pos {
+    font-size: 0.6rem;
+    padding: 0.12rem 0.28rem;
+  }
+
+  .slot-name {
+    font-size: 0.74rem;
+    line-height: 1.15;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+
+  .slot-value {
+    grid-column: 2;
+    font-size: 0.68rem;
+  }
+
+  .pick-panel {
+    margin: 0;
+    padding: 0.7rem;
+    gap: 0.5rem;
+  }
+
+  .pick-eyebrow {
+    font-size: 0.65rem;
+  }
+
+  .pick-title {
+    font-size: 0.95rem;
+  }
+
+  .position-buttons {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.35rem;
+  }
+
+  .position-button {
+    padding: 0.45rem 0.35rem;
+    text-align: center;
+  }
+
+  .position-button strong {
+    font-size: 0.78rem;
+  }
+
+  .position-button span {
+    font-size: 0.64rem;
+  }
+
+  .player-input {
+    gap: 0.45rem;
+  }
+
+  .suggestions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    max-height: 5.2rem;
+  }
+
+  .suggestion {
+    padding: 0.35rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.8rem;
+  }
+
+  .pick-actions .primary-button,
+  .pick-actions .ghost-button {
+    min-height: 2.8rem;
+  }
+
+  .round-result {
+    margin: 0;
+    padding: 1rem 0.8rem;
   }
 }
