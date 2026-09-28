@@ -16,9 +16,9 @@
                         "marketValue":  2700000,
                         "intlGoals":  0,
                         "intlAppearances":  11,
-                        "assists":  0,
-                        "yellowCards":  0,
-                        "redCards":  0,
+                        "assists":  3,
+                        "yellowCards":  41,
+                        "redCards":  3,
                         "nationality":  "Colombia"
                     },
                     {
@@ -33,9 +33,9 @@
                         "marketValue":  465000,
                         "intlGoals":  0,
                         "intlAppearances":  47,
-                        "assists":  0,
-                        "yellowCards":  1,
-                        "redCards":  0,
+                        "assists":  2,
+                        "yellowCards":  64,
+                        "redCards":  3,
                         "nationality":  "Colombia"
                     },
                     {
@@ -49,9 +49,9 @@
                         "marketValue":  110000,
                         "intlGoals":  0,
                         "intlAppearances":  131,
-                        "assists":  1,
-                        "yellowCards":  14,
-                        "redCards":  3,
+                        "assists":  3,
+                        "yellowCards":  28,
+                        "redCards":  6,
                         "nationality":  "Colombia"
                     },
                     {
@@ -66,9 +66,9 @@
                         "marketValue":  1300000,
                         "intlGoals":  0,
                         "intlAppearances":  69,
-                        "assists":  26,
-                        "yellowCards":  43,
-                        "redCards":  2,
+                        "assists":  39,
+                        "yellowCards":  73,
+                        "redCards":  5,
                         "nationality":  "Colombia"
                     },
                     {
@@ -83,9 +83,9 @@
                         "marketValue":  6000000,
                         "intlGoals":  0,
                         "intlAppearances":  5,
-                        "assists":  3,
-                        "yellowCards":  10,
-                        "redCards":  0,
+                        "assists":  4,
+                        "yellowCards":  70,
+                        "redCards":  4,
                         "nationality":  "Colombia"
                     },
                     {
@@ -101,7 +101,7 @@
                         "intlGoals":  4,
                         "intlAppearances":  84,
                         "assists":  7,
-                        "yellowCards":  52,
+                        "yellowCards":  75,
                         "redCards":  2,
                         "nationality":  "Colombia"
                     },
@@ -117,9 +117,9 @@
                         "marketValue":  1400000,
                         "intlGoals":  1,
                         "intlAppearances":  49,
-                        "assists":  20,
-                        "yellowCards":  36,
-                        "redCards":  2,
+                        "assists":  39,
+                        "yellowCards":  63,
+                        "redCards":  5,
                         "nationality":  "Colombia"
                     },
                     {
@@ -134,9 +134,9 @@
                         "marketValue":  23000000,
                         "intlGoals":  1,
                         "intlAppearances":  42,
-                        "assists":  6,
-                        "yellowCards":  43,
-                        "redCards":  1,
+                        "assists":  7,
+                        "yellowCards":  55,
+                        "redCards":  2,
                         "nationality":  "Colombia"
                     },
                     {
@@ -151,9 +151,9 @@
                         "marketValue":  2300000,
                         "intlGoals":  8,
                         "intlAppearances":  55,
-                        "assists":  4,
-                        "yellowCards":  31,
-                        "redCards":  2,
+                        "assists":  8,
+                        "yellowCards":  72,
+                        "redCards":  5,
                         "nationality":  "Colombia"
                     },
                     {
@@ -167,9 +167,9 @@
                         "marketValue":  1900000,
                         "intlGoals":  0,
                         "intlAppearances":  16,
-                        "assists":  10,
-                        "yellowCards":  24,
-                        "redCards":  3,
+                        "assists":  29,
+                        "yellowCards":  66,
+                        "redCards":  4,
                         "nationality":  "Colombia"
                     },
                     {
@@ -184,9 +184,9 @@
                         "marketValue":  23000000,
                         "intlGoals":  5,
                         "intlAppearances":  51,
-                        "assists":  35,
-                        "yellowCards":  53,
-                        "redCards":  1,
+                        "assists":  47,
+                        "yellowCards":  101,
+                        "redCards":  5,
                         "nationality":  "Colombia"
                     },
                     {
@@ -201,9 +201,9 @@
                         "marketValue":  5800000,
                         "intlGoals":  2,
                         "intlAppearances":  13,
-                        "assists":  4,
-                        "yellowCards":  4,
-                        "redCards":  0,
+                        "assists":  32,
+                        "yellowCards":  45,
+                        "redCards":  1,
                         "nationality":  "Colombia"
                     },
                     {
@@ -218,9 +218,9 @@
                         "marketValue":  5500000,
                         "intlGoals":  5,
                         "intlAppearances":  70,
-                        "assists":  15,
-                        "yellowCards":  86,
-                        "redCards":  1,
+                        "assists":  24,
+                        "yellowCards":  158,
+                        "redCards":  7,
                         "nationality":  "Colombia"
                     },
                     {
@@ -235,9 +235,9 @@
                         "marketValue":  1900000,
                         "intlGoals":  6,
                         "intlAppearances":  53,
-                        "assists":  16,
-                        "yellowCards":  3,
-                        "redCards":  0,
+                        "assists":  71,
+                        "yellowCards":  20,
+                        "redCards":  3,
                         "nationality":  "Colombia"
                     },
                     {
@@ -252,8 +252,8 @@
                         "marketValue":  10700000,
                         "intlGoals":  2,
                         "intlAppearances":  9,
-                        "assists":  6,
-                        "yellowCards":  8,
+                        "assists":  32,
+                        "yellowCards":  37,
                         "redCards":  0,
                         "nationality":  "Colombia"
                     },
@@ -269,8 +269,8 @@
                         "marketValue":  16100000,
                         "intlGoals":  7,
                         "intlAppearances":  43,
-                        "assists":  6,
-                        "yellowCards":  7,
+                        "assists":  67,
+                        "yellowCards":  53,
                         "redCards":  0,
                         "nationality":  "Colombia"
                     },
@@ -286,9 +286,9 @@
                         "marketValue":  76000000,
                         "intlGoals":  23,
                         "intlAppearances":  79,
-                        "assists":  59,
-                        "yellowCards":  27,
-                        "redCards":  2,
+                        "assists":  66,
+                        "yellowCards":  35,
+                        "redCards":  5,
                         "nationality":  "Colombia"
                     },
                     {
@@ -303,9 +303,9 @@
                         "marketValue":  10200000,
                         "intlGoals":  2,
                         "intlAppearances":  21,
-                        "assists":  28,
-                        "yellowCards":  40,
-                        "redCards":  4,
+                        "assists":  45,
+                        "yellowCards":  64,
+                        "redCards":  7,
                         "nationality":  "Colombia"
                     },
                     {
@@ -320,9 +320,9 @@
                         "marketValue":  19200000,
                         "intlGoals":  1,
                         "intlAppearances":  11,
-                        "assists":  0,
-                        "yellowCards":  1,
-                        "redCards":  0,
+                        "assists":  3,
+                        "yellowCards":  28,
+                        "redCards":  2,
                         "nationality":  "Colombia"
                     },
                     {
@@ -337,9 +337,9 @@
                         "marketValue":  27000000,
                         "intlGoals":  2,
                         "intlAppearances":  37,
-                        "assists":  10,
-                        "yellowCards":  20,
-                        "redCards":  0,
+                        "assists":  19,
+                        "yellowCards":  57,
+                        "redCards":  4,
                         "nationality":  "Colombia"
                     },
                     {
@@ -354,8 +354,8 @@
                         "marketValue":  5200000,
                         "intlGoals":  0,
                         "intlAppearances":  27,
-                        "assists":  5,
-                        "yellowCards":  7,
+                        "assists":  13,
+                        "yellowCards":  42,
                         "redCards":  1,
                         "nationality":  "Colombia"
                     },
@@ -371,9 +371,9 @@
                         "marketValue":  4600000,
                         "intlGoals":  0,
                         "intlAppearances":  10,
-                        "assists":  0,
-                        "yellowCards":  6,
-                        "redCards":  0,
+                        "assists":  11,
+                        "yellowCards":  60,
+                        "redCards":  2,
                         "nationality":  "Colombia"
                     },
                     {
@@ -387,9 +387,9 @@
                         "marketValue":  1500000,
                         "intlGoals":  31,
                         "intlAppearances":  131,
-                        "assists":  103,
-                        "yellowCards":  33,
-                        "redCards":  1,
+                        "assists":  164,
+                        "yellowCards":  67,
+                        "redCards":  4,
                         "nationality":  "Colombia"
                     },
                     {
@@ -404,9 +404,9 @@
                         "marketValue":  16500000,
                         "intlGoals":  2,
                         "intlAppearances":  11,
-                        "assists":  14,
-                        "yellowCards":  25,
-                        "redCards":  1,
+                        "assists":  49,
+                        "yellowCards":  51,
+                        "redCards":  3,
                         "nationality":  "Colombia"
                     },
                     {
@@ -421,9 +421,9 @@
                         "marketValue":  9500000,
                         "intlGoals":  6,
                         "intlAppearances":  24,
-                        "assists":  56,
-                        "yellowCards":  65,
-                        "redCards":  6,
+                        "assists":  59,
+                        "yellowCards":  92,
+                        "redCards":  7,
                         "nationality":  "Colombia"
                     },
                     {
@@ -438,9 +438,9 @@
                         "marketValue":  27000000,
                         "intlGoals":  5,
                         "intlAppearances":  17,
-                        "assists":  21,
-                        "yellowCards":  34,
-                        "redCards":  1,
+                        "assists":  37,
+                        "yellowCards":  90,
+                        "redCards":  3,
                         "nationality":  "C"
                     }
                 ]

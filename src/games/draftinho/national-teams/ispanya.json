@@ -16,8 +16,8 @@
                         "marketValue":  33000000,
                         "intlGoals":  0,
                         "intlAppearances":  13,
-                        "assists":  0,
-                        "yellowCards":  10,
+                        "assists":  1,
+                        "yellowCards":  14,
                         "redCards":  0,
                         "nationality":  "Spain"
                     },
@@ -34,7 +34,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  66,
                         "assists":  0,
-                        "yellowCards":  16,
+                        "yellowCards":  27,
                         "redCards":  1,
                         "nationality":  "Spain"
                     },
@@ -51,7 +51,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  2,
                         "assists":  0,
-                        "yellowCards":  3,
+                        "yellowCards":  7,
                         "redCards":  0,
                         "nationality":  "Spain"
                     },
@@ -67,8 +67,8 @@
                         "marketValue":  62000000,
                         "intlGoals":  1,
                         "intlAppearances":  32,
-                        "assists":  23,
-                        "yellowCards":  69,
+                        "assists":  33,
+                        "yellowCards":  83,
                         "redCards":  2,
                         "nationality":  "Spain"
                     },
@@ -85,7 +85,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  20,
                         "assists":  5,
-                        "yellowCards":  15,
+                        "yellowCards":  19,
                         "redCards":  2,
                         "nationality":  "Spain"
                     },
@@ -101,9 +101,9 @@
                         "marketValue":  8400000,
                         "intlGoals":  2,
                         "intlAppearances":  54,
-                        "assists":  13,
-                        "yellowCards":  80,
-                        "redCards":  6,
+                        "assists":  14,
+                        "yellowCards":  94,
+                        "redCards":  8,
                         "nationality":  "Spain"
                     },
                     {
@@ -118,8 +118,8 @@
                         "marketValue":  21000000,
                         "intlGoals":  0,
                         "intlAppearances":  27,
-                        "assists":  48,
-                        "yellowCards":  51,
+                        "assists":  52,
+                        "yellowCards":  62,
                         "redCards":  2,
                         "nationality":  "Spain"
                     },
@@ -135,8 +135,8 @@
                         "marketValue":  33000000,
                         "intlGoals":  0,
                         "intlAppearances":  3,
-                        "assists":  7,
-                        "yellowCards":  10,
+                        "assists":  11,
+                        "yellowCards":  27,
                         "redCards":  0,
                         "nationality":  "Spain"
                     },
@@ -152,9 +152,9 @@
                         "marketValue":  42000000,
                         "intlGoals":  2,
                         "intlAppearances":  24,
-                        "assists":  48,
-                        "yellowCards":  54,
-                        "redCards":  1,
+                        "assists":  50,
+                        "yellowCards":  60,
+                        "redCards":  2,
                         "nationality":  "Spain"
                     },
                     {
@@ -187,7 +187,7 @@
                         "intlGoals":  5,
                         "intlAppearances":  32,
                         "assists":  18,
-                        "yellowCards":  48,
+                        "yellowCards":  54,
                         "redCards":  2,
                         "nationality":  "Spain"
                     },
@@ -203,8 +203,8 @@
                         "marketValue":  29000000,
                         "intlGoals":  7,
                         "intlAppearances":  50,
-                        "assists":  46,
-                        "yellowCards":  32,
+                        "assists":  53,
+                        "yellowCards":  48,
                         "redCards":  2,
                         "nationality":  "Spain"
                     },
@@ -220,8 +220,8 @@
                         "marketValue":  164000000,
                         "intlGoals":  6,
                         "intlAppearances":  49,
-                        "assists":  33,
-                        "yellowCards":  14,
+                        "assists":  42,
+                        "yellowCards":  20,
                         "redCards":  1,
                         "nationality":  "Spain"
                     },
@@ -237,9 +237,9 @@
                         "marketValue":  43000000,
                         "intlGoals":  3,
                         "intlAppearances":  24,
-                        "assists":  43,
-                        "yellowCards":  54,
-                        "redCards":  2,
+                        "assists":  56,
+                        "yellowCards":  77,
+                        "redCards":  3,
                         "nationality":  "Spain"
                     },
                     {
@@ -254,8 +254,8 @@
                         "marketValue":  237000000,
                         "intlGoals":  7,
                         "intlAppearances":  33,
-                        "assists":  53,
-                        "yellowCards":  15,
+                        "assists":  58,
+                        "yellowCards":  20,
                         "redCards":  0,
                         "nationality":  "Spain"
                     },
@@ -271,8 +271,8 @@
                         "marketValue":  44000000,
                         "intlGoals":  6,
                         "intlAppearances":  36,
-                        "assists":  41,
-                        "yellowCards":  17,
+                        "assists":  48,
+                        "yellowCards":  19,
                         "redCards":  1,
                         "nationality":  "Spain"
                     },
@@ -288,8 +288,8 @@
                         "marketValue":  50000000,
                         "intlGoals":  4,
                         "intlAppearances":  70,
-                        "assists":  37,
-                        "yellowCards":  67,
+                        "assists":  40,
+                        "yellowCards":  89,
                         "redCards":  2,
                         "nationality":  "Spain"
                     },
@@ -305,8 +305,8 @@
                         "marketValue":  58000000,
                         "intlGoals":  12,
                         "intlAppearances":  58,
-                        "assists":  62,
-                        "yellowCards":  18,
+                        "assists":  82,
+                        "yellowCards":  34,
                         "redCards":  1,
                         "nationality":  "Spain"
                     },
@@ -322,9 +322,9 @@
                         "marketValue":  19400000,
                         "intlGoals":  0,
                         "intlAppearances":  14,
-                        "assists":  110,
-                        "yellowCards":  47,
-                        "redCards":  1,
+                        "assists":  124,
+                        "yellowCards":  65,
+                        "redCards":  2,
                         "nationality":  "Spain"
                     },
                     {
@@ -339,9 +339,9 @@
                         "marketValue":  26000000,
                         "intlGoals":  12,
                         "intlAppearances":  51,
-                        "assists":  39,
-                        "yellowCards":  70,
-                        "redCards":  3,
+                        "assists":  44,
+                        "yellowCards":  97,
+                        "redCards":  5,
                         "nationality":  "Spain"
                     },
                     {
@@ -356,9 +356,9 @@
                         "marketValue":  77000000,
                         "intlGoals":  3,
                         "intlAppearances":  27,
-                        "assists":  12,
-                        "yellowCards":  55,
-                        "redCards":  0,
+                        "assists":  14,
+                        "yellowCards":  68,
+                        "redCards":  1,
                         "nationality":  "Spain"
                     },
                     {
@@ -373,9 +373,9 @@
                         "marketValue":  2900000,
                         "intlGoals":  0,
                         "intlAppearances":  9,
-                        "assists":  27,
-                        "yellowCards":  31,
-                        "redCards":  3,
+                        "assists":  29,
+                        "yellowCards":  67,
+                        "redCards":  4,
                         "nationality":  "Spain"
                     },
                     {
@@ -390,8 +390,8 @@
                         "marketValue":  59000000,
                         "intlGoals":  25,
                         "intlAppearances":  65,
-                        "assists":  38,
-                        "yellowCards":  31,
+                        "assists":  44,
+                        "yellowCards":  36,
                         "redCards":  2,
                         "nationality":  "Spain"
                     },
@@ -407,8 +407,8 @@
                         "marketValue":  27000000,
                         "intlGoals":  30,
                         "intlAppearances":  61,
-                        "assists":  67,
-                        "yellowCards":  34,
+                        "assists":  68,
+                        "yellowCards":  40,
                         "redCards":  2,
                         "nationality":  "Spain"
                     },
@@ -425,7 +425,7 @@
                         "intlGoals":  4,
                         "intlAppearances":  25,
                         "assists":  28,
-                        "yellowCards":  44,
+                        "yellowCards":  49,
                         "redCards":  0,
                         "nationality":  "Spain"
                     },
@@ -441,8 +441,8 @@
                         "marketValue":  29000000,
                         "intlGoals":  1,
                         "intlAppearances":  2,
-                        "assists":  5,
-                        "yellowCards":  3,
+                        "assists":  13,
+                        "yellowCards":  10,
                         "redCards":  0,
                         "nationality":  "Spain"
                     }

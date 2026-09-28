@@ -16,9 +16,9 @@
                         "marketValue":  1100000,
                         "intlGoals":  0,
                         "intlAppearances":  3,
-                        "assists":  0,
-                        "yellowCards":  0,
-                        "redCards":  0,
+                        "assists":  1,
+                        "yellowCards":  22,
+                        "redCards":  1,
                         "nationality":  ""
                     },
                     {
@@ -34,7 +34,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  96,
                         "assists":  3,
-                        "yellowCards":  17,
+                        "yellowCards":  27,
                         "redCards":  0,
                         "nationality":  "Morocco"
                     },
@@ -50,7 +50,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  52,
                         "assists":  0,
-                        "yellowCards":  5,
+                        "yellowCards":  29,
                         "redCards":  1,
                         "nationality":  "Morocco"
                     },
@@ -66,9 +66,9 @@
                         "marketValue":  82000000,
                         "intlGoals":  12,
                         "intlAppearances":  102,
-                        "assists":  71,
-                        "yellowCards":  50,
-                        "redCards":  4,
+                        "assists":  81,
+                        "yellowCards":  73,
+                        "redCards":  6,
                         "nationality":  "Morocco"
                     },
                     {
@@ -84,8 +84,8 @@
                         "intlGoals":  0,
                         "intlAppearances":  5,
                         "assists":  2,
-                        "yellowCards":  10,
-                        "redCards":  0,
+                        "yellowCards":  23,
+                        "redCards":  2,
                         "nationality":  "Morocco"
                     },
                     {
@@ -100,8 +100,8 @@
                         "marketValue":  17500000,
                         "intlGoals":  2,
                         "intlAppearances":  51,
-                        "assists":  22,
-                        "yellowCards":  28,
+                        "assists":  20,
+                        "yellowCards":  31,
                         "redCards":  2,
                         "nationality":  "Morocco"
                     },
@@ -117,8 +117,8 @@
                         "marketValue":  1200000,
                         "intlGoals":  0,
                         "intlAppearances":  18,
-                        "assists":  0,
-                        "yellowCards":  0,
+                        "assists":  33,
+                        "yellowCards":  21,
                         "redCards":  0,
                         "nationality":  "Morocco"
                     },
@@ -135,7 +135,7 @@
                         "intlGoals":  1,
                         "intlAppearances":  9,
                         "assists":  7,
-                        "yellowCards":  52,
+                        "yellowCards":  63,
                         "redCards":  3,
                         "nationality":  "Morocco"
                     },
@@ -152,7 +152,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  13,
                         "assists":  9,
-                        "yellowCards":  6,
+                        "yellowCards":  7,
                         "redCards":  1,
                         "nationality":  "Morocco"
                     },
@@ -168,8 +168,8 @@
                         "marketValue":  19400000,
                         "intlGoals":  1,
                         "intlAppearances":  10,
-                        "assists":  2,
-                        "yellowCards":  4,
+                        "assists":  1,
+                        "yellowCards":  13,
                         "redCards":  0,
                         "nationality":  "Morocco"
                     },
@@ -185,9 +185,9 @@
                         "marketValue":  18500000,
                         "intlGoals":  0,
                         "intlAppearances":  4,
-                        "assists":  9,
-                        "yellowCards":  17,
-                        "redCards":  0,
+                        "assists":  18,
+                        "yellowCards":  34,
+                        "redCards":  1,
                         "nationality":  "Morocco"
                     },
                     {
@@ -201,9 +201,9 @@
                         "marketValue":  360000,
                         "intlGoals":  1,
                         "intlAppearances":  18,
-                        "assists":  3,
-                        "yellowCards":  35,
-                        "redCards":  3,
+                        "assists":  14,
+                        "yellowCards":  106,
+                        "redCards":  12,
                         "nationality":  "Morocco"
                     },
                     {
@@ -218,9 +218,9 @@
                         "marketValue":  3700000,
                         "intlGoals":  0,
                         "intlAppearances":  3,
-                        "assists":  5,
-                        "yellowCards":  2,
-                        "redCards":  2,
+                        "assists":  18,
+                        "yellowCards":  13,
+                        "redCards":  3,
                         "nationality":  "Morocco"
                     },
                     {
@@ -235,7 +235,7 @@
                         "marketValue":  23000000,
                         "intlGoals":  0,
                         "intlAppearances":  10,
-                        "assists":  7,
+                        "assists":  14,
                         "yellowCards":  1,
                         "redCards":  0,
                         "nationality":  "Morocco"
@@ -252,9 +252,9 @@
                         "marketValue":  29000000,
                         "intlGoals":  2,
                         "intlAppearances":  22,
-                        "assists":  6,
-                        "yellowCards":  12,
-                        "redCards":  0,
+                        "assists":  10,
+                        "yellowCards":  29,
+                        "redCards":  1,
                         "nationality":  "Morocco"
                     },
                     {
@@ -269,8 +269,8 @@
                         "marketValue":  32000000,
                         "intlGoals":  3,
                         "intlAppearances":  43,
-                        "assists":  24,
-                        "yellowCards":  24,
+                        "assists":  28,
+                        "yellowCards":  34,
                         "redCards":  1,
                         "nationality":  "Morocco"
                     },
@@ -286,8 +286,8 @@
                         "marketValue":  18500000,
                         "intlGoals":  11,
                         "intlAppearances":  55,
-                        "assists":  11,
-                        "yellowCards":  19,
+                        "assists":  14,
+                        "yellowCards":  35,
                         "redCards":  0,
                         "nationality":  "Morocco"
                     },
@@ -303,8 +303,8 @@
                         "marketValue":  37000000,
                         "intlGoals":  15,
                         "intlAppearances":  33,
-                        "assists":  44,
-                        "yellowCards":  19,
+                        "assists":  45,
+                        "yellowCards":  21,
                         "redCards":  0,
                         "nationality":  "Morocco"
                     },
@@ -320,9 +320,9 @@
                         "marketValue":  21000000,
                         "intlGoals":  0,
                         "intlAppearances":  9,
-                        "assists":  3,
-                        "yellowCards":  7,
-                        "redCards":  0,
+                        "assists":  5,
+                        "yellowCards":  11,
+                        "redCards":  1,
                         "nationality":  "Morocco"
                     },
                     {
@@ -337,8 +337,8 @@
                         "marketValue":  87000000,
                         "intlGoals":  0,
                         "intlAppearances":  8,
-                        "assists":  4,
-                        "yellowCards":  15,
+                        "assists":  5,
+                        "yellowCards":  17,
                         "redCards":  3,
                         "nationality":  "Morocco"
                     },
@@ -354,8 +354,8 @@
                         "marketValue":  60000000,
                         "intlGoals":  12,
                         "intlAppearances":  35,
-                        "assists":  30,
-                        "yellowCards":  10,
+                        "assists":  32,
+                        "yellowCards":  11,
                         "redCards":  0,
                         "nationality":  "Morocco"
                     },
@@ -372,8 +372,8 @@
                         "intlGoals":  0,
                         "intlAppearances":  78,
                         "assists":  18,
-                        "yellowCards":  84,
-                        "redCards":  2,
+                        "yellowCards":  101,
+                        "redCards":  3,
                         "nationality":  "Morocco"
                     },
                     {
@@ -388,9 +388,9 @@
                         "marketValue":  13100000,
                         "intlGoals":  1,
                         "intlAppearances":  7,
-                        "assists":  2,
-                        "yellowCards":  0,
-                        "redCards":  0,
+                        "assists":  14,
+                        "yellowCards":  11,
+                        "redCards":  1,
                         "nationality":  "Morocco"
                     },
                     {
@@ -405,8 +405,8 @@
                         "marketValue":  4900000,
                         "intlGoals":  35,
                         "intlAppearances":  72,
-                        "assists":  15,
-                        "yellowCards":  13,
+                        "assists":  31,
+                        "yellowCards":  16,
                         "redCards":  0,
                         "nationality":  "Morocco"
                     },
@@ -422,8 +422,8 @@
                         "marketValue":  6200000,
                         "intlGoals":  14,
                         "intlAppearances":  43,
-                        "assists":  0,
-                        "yellowCards":  0,
+                        "assists":  90,
+                        "yellowCards":  41,
                         "redCards":  0,
                         "nationality":  "Morocco"
                     },
@@ -439,9 +439,9 @@
                         "marketValue":  10900000,
                         "intlGoals":  0,
                         "intlAppearances":  4,
-                        "assists":  3,
-                        "yellowCards":  1,
-                        "redCards":  0,
+                        "assists":  24,
+                        "yellowCards":  11,
+                        "redCards":  1,
                         "nationality":  "Morocco"
                     }
                 ]

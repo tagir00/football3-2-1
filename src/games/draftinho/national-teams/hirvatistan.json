@@ -16,8 +16,8 @@
                         "marketValue":  4800000,
                         "intlGoals":  0,
                         "intlAppearances":  4,
-                        "assists":  0,
-                        "yellowCards":  9,
+                        "assists":  1,
+                        "yellowCards":  14,
                         "redCards":  0,
                         "nationality":  "Croatia"
                     },
@@ -34,7 +34,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  0,
                         "assists":  0,
-                        "yellowCards":  3,
+                        "yellowCards":  14,
                         "redCards":  0,
                         "nationality":  "Croatia"
                     },
@@ -51,8 +51,8 @@
                         "intlGoals":  0,
                         "intlAppearances":  79,
                         "assists":  1,
-                        "yellowCards":  3,
-                        "redCards":  0,
+                        "yellowCards":  15,
+                        "redCards":  2,
                         "nationality":  "Croatia"
                     },
                     {
@@ -68,8 +68,8 @@
                         "intlGoals":  0,
                         "intlAppearances":  23,
                         "assists":  2,
-                        "yellowCards":  47,
-                        "redCards":  4,
+                        "yellowCards":  67,
+                        "redCards":  6,
                         "nationality":  "Croatia"
                     },
                     {
@@ -84,9 +84,9 @@
                         "marketValue":  3800000,
                         "intlGoals":  1,
                         "intlAppearances":  13,
-                        "assists":  5,
-                        "yellowCards":  28,
-                        "redCards":  1,
+                        "assists":  6,
+                        "yellowCards":  39,
+                        "redCards":  3,
                         "nationality":  "Croatia"
                     },
                     {
@@ -101,8 +101,8 @@
                         "marketValue":  64000000,
                         "intlGoals":  4,
                         "intlAppearances":  52,
-                        "assists":  15,
-                        "yellowCards":  20,
+                        "assists":  19,
+                        "yellowCards":  31,
                         "redCards":  1,
                         "nationality":  "Croatia"
                     },
@@ -118,8 +118,8 @@
                         "marketValue":  13100000,
                         "intlGoals":  0,
                         "intlAppearances":  37,
-                        "assists":  0,
-                        "yellowCards":  10,
+                        "assists":  4,
+                        "yellowCards":  24,
                         "redCards":  1,
                         "nationality":  "Croatia"
                     },
@@ -135,9 +135,9 @@
                         "marketValue":  39000000,
                         "intlGoals":  0,
                         "intlAppearances":  35,
-                        "assists":  16,
-                        "yellowCards":  11,
-                        "redCards":  0,
+                        "assists":  18,
+                        "yellowCards":  24,
+                        "redCards":  1,
                         "nationality":  "Croatia"
                     },
                     {
@@ -152,8 +152,8 @@
                         "marketValue":  64000000,
                         "intlGoals":  1,
                         "intlAppearances":  6,
-                        "assists":  5,
-                        "yellowCards":  12,
+                        "assists":  6,
+                        "yellowCards":  19,
                         "redCards":  1,
                         "nationality":  "Croatia"
                     },
@@ -169,9 +169,9 @@
                         "marketValue":  2900000,
                         "intlGoals":  1,
                         "intlAppearances":  38,
-                        "assists":  6,
-                        "yellowCards":  56,
-                        "redCards":  5,
+                        "assists":  11,
+                        "yellowCards":  100,
+                        "redCards":  8,
                         "nationality":  "Croatia"
                     },
                     {
@@ -186,9 +186,9 @@
                         "marketValue":  1200000,
                         "intlGoals":  39,
                         "intlAppearances":  158,
-                        "assists":  118,
-                        "yellowCards":  64,
-                        "redCards":  1,
+                        "assists":  151,
+                        "yellowCards":  112,
+                        "redCards":  5,
                         "nationality":  "Croatia"
                     },
                     {
@@ -203,9 +203,9 @@
                         "marketValue":  7200000,
                         "intlGoals":  0,
                         "intlAppearances":  10,
-                        "assists":  14,
-                        "yellowCards":  17,
-                        "redCards":  2,
+                        "assists":  22,
+                        "yellowCards":  36,
+                        "redCards":  4,
                         "nationality":  "Croatia"
                     },
                     {
@@ -220,8 +220,8 @@
                         "marketValue":  6200000,
                         "intlGoals":  12,
                         "intlAppearances":  89,
-                        "assists":  49,
-                        "yellowCards":  43,
+                        "assists":  54,
+                        "yellowCards":  56,
                         "redCards":  0,
                         "nationality":  "Croatia"
                     },
@@ -237,8 +237,8 @@
                         "marketValue":  9700000,
                         "intlGoals":  5,
                         "intlAppearances":  117,
-                        "assists":  39,
-                        "yellowCards":  69,
+                        "assists":  50,
+                        "yellowCards":  92,
                         "redCards":  4,
                         "nationality":  "Croatia"
                     },
@@ -254,9 +254,9 @@
                         "marketValue":  49000000,
                         "intlGoals":  2,
                         "intlAppearances":  21,
-                        "assists":  9,
-                        "yellowCards":  12,
-                        "redCards":  0,
+                        "assists":  12,
+                        "yellowCards":  26,
+                        "redCards":  2,
                         "nationality":  "Croatia"
                     },
                     {
@@ -271,8 +271,8 @@
                         "marketValue":  10300000,
                         "intlGoals":  11,
                         "intlAppearances":  66,
-                        "assists":  45,
-                        "yellowCards":  24,
+                        "assists":  63,
+                        "yellowCards":  33,
                         "redCards":  1,
                         "nationality":  "Croatia"
                     },
@@ -288,8 +288,8 @@
                         "marketValue":  9600000,
                         "intlGoals":  1,
                         "intlAppearances":  7,
-                        "assists":  15,
-                        "yellowCards":  11,
+                        "assists":  40,
+                        "yellowCards":  26,
                         "redCards":  2,
                         "nationality":  "Croatia"
                     },
@@ -305,8 +305,8 @@
                         "marketValue":  3800000,
                         "intlGoals":  29,
                         "intlAppearances":  202,
-                        "assists":  97,
-                        "yellowCards":  93,
+                        "assists":  144,
+                        "yellowCards":  131,
                         "redCards":  2,
                         "nationality":  "Croatia"
                     },
@@ -322,9 +322,9 @@
                         "marketValue":  5600000,
                         "intlGoals":  2,
                         "intlAppearances":  17,
-                        "assists":  8,
-                        "yellowCards":  37,
-                        "redCards":  1,
+                        "assists":  15,
+                        "yellowCards":  72,
+                        "redCards":  2,
                         "nationality":  "Croatia"
                     },
                     {
@@ -339,8 +339,8 @@
                         "marketValue":  41000000,
                         "intlGoals":  2,
                         "intlAppearances":  23,
-                        "assists":  17,
-                        "yellowCards":  11,
+                        "assists":  46,
+                        "yellowCards":  19,
                         "redCards":  0,
                         "nationality":  "Croatia"
                     },
@@ -356,8 +356,8 @@
                         "marketValue":  10900000,
                         "intlGoals":  1,
                         "intlAppearances":  22,
-                        "assists":  5,
-                        "yellowCards":  8,
+                        "assists":  32,
+                        "yellowCards":  21,
                         "redCards":  0,
                         "nationality":  "Croatia"
                     },
@@ -373,8 +373,8 @@
                         "marketValue":  7100000,
                         "intlGoals":  1,
                         "intlAppearances":  18,
-                        "assists":  11,
-                        "yellowCards":  11,
+                        "assists":  28,
+                        "yellowCards":  31,
                         "redCards":  0,
                         "nationality":  "Croatia"
                     },
@@ -390,9 +390,9 @@
                         "marketValue":  13000000,
                         "intlGoals":  2,
                         "intlAppearances":  13,
-                        "assists":  21,
-                        "yellowCards":  27,
-                        "redCards":  2,
+                        "assists":  31,
+                        "yellowCards":  58,
+                        "redCards":  3,
                         "nationality":  "Croatia"
                     },
                     {
@@ -407,9 +407,9 @@
                         "marketValue":  2600000,
                         "intlGoals":  7,
                         "intlAppearances":  41,
-                        "assists":  15,
-                        "yellowCards":  47,
-                        "redCards":  0,
+                        "assists":  39,
+                        "yellowCards":  90,
+                        "redCards":  1,
                         "nationality":  "Croatia"
                     },
                     {
@@ -424,8 +424,8 @@
                         "marketValue":  2700000,
                         "intlGoals":  36,
                         "intlAppearances":  119,
-                        "assists":  78,
-                        "yellowCards":  33,
+                        "assists":  95,
+                        "yellowCards":  45,
                         "redCards":  1,
                         "nationality":  "Croatia"
                     },
@@ -441,9 +441,9 @@
                         "marketValue":  21000000,
                         "intlGoals":  2,
                         "intlAppearances":  12,
-                        "assists":  5,
-                        "yellowCards":  5,
-                        "redCards":  0,
+                        "assists":  19,
+                        "yellowCards":  13,
+                        "redCards":  1,
                         "nationality":  "Croatia"
                     }
                 ]

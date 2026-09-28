@@ -17,7 +17,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  48,
                         "assists":  3,
-                        "yellowCards":  16,
+                        "yellowCards":  28,
                         "redCards":  2,
                         "nationality":  "France"
                     },
@@ -34,8 +34,8 @@
                         "intlGoals":  0,
                         "intlAppearances":  4,
                         "assists":  0,
-                        "yellowCards":  18,
-                        "redCards":  0,
+                        "yellowCards":  39,
+                        "redCards":  1,
                         "nationality":  "France"
                     },
                     {
@@ -51,7 +51,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  0,
                         "assists":  1,
-                        "yellowCards":  2,
+                        "yellowCards":  7,
                         "redCards":  0,
                         "nationality":  "France"
                     },
@@ -67,9 +67,9 @@
                         "marketValue":  69000000,
                         "intlGoals":  2,
                         "intlAppearances":  46,
-                        "assists":  17,
-                        "yellowCards":  73,
-                        "redCards":  5,
+                        "assists":  18,
+                        "yellowCards":  87,
+                        "redCards":  9,
                         "nationality":  "France"
                     },
                     {
@@ -85,7 +85,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  38,
                         "assists":  3,
-                        "yellowCards":  25,
+                        "yellowCards":  30,
                         "redCards":  1,
                         "nationality":  "France"
                     },
@@ -102,7 +102,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  30,
                         "assists":  5,
-                        "yellowCards":  51,
+                        "yellowCards":  61,
                         "redCards":  1,
                         "nationality":  "France"
                     },
@@ -119,7 +119,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  7,
                         "assists":  7,
-                        "yellowCards":  33,
+                        "yellowCards":  39,
                         "redCards":  7,
                         "nationality":  "France"
                     },
@@ -135,9 +135,9 @@
                         "marketValue":  5500000,
                         "intlGoals":  0,
                         "intlAppearances":  64,
-                        "assists":  56,
-                        "yellowCards":  67,
-                        "redCards":  3,
+                        "assists":  59,
+                        "yellowCards":  81,
+                        "redCards":  4,
                         "nationality":  "France"
                     },
                     {
@@ -152,8 +152,8 @@
                         "marketValue":  21000000,
                         "intlGoals":  2,
                         "intlAppearances":  49,
-                        "assists":  59,
-                        "yellowCards":  90,
+                        "assists":  60,
+                        "yellowCards":  95,
                         "redCards":  9,
                         "nationality":  "France"
                     },
@@ -170,7 +170,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  42,
                         "assists":  17,
-                        "yellowCards":  59,
+                        "yellowCards":  70,
                         "redCards":  3,
                         "nationality":  "France"
                     },
@@ -187,8 +187,8 @@
                         "intlGoals":  0,
                         "intlAppearances":  56,
                         "assists":  26,
-                        "yellowCards":  43,
-                        "redCards":  3,
+                        "yellowCards":  48,
+                        "redCards":  5,
                         "nationality":  "France"
                     },
                     {
@@ -203,8 +203,8 @@
                         "marketValue":  36000000,
                         "intlGoals":  0,
                         "intlAppearances":  16,
-                        "assists":  24,
-                        "yellowCards":  24,
+                        "assists":  25,
+                        "yellowCards":  25,
                         "redCards":  3,
                         "nationality":  "France"
                     },
@@ -220,8 +220,8 @@
                         "marketValue":  98000000,
                         "intlGoals":  2,
                         "intlAppearances":  14,
-                        "assists":  54,
-                        "yellowCards":  11,
+                        "assists":  65,
+                        "yellowCards":  17,
                         "redCards":  1,
                         "nationality":  "France"
                     },
@@ -237,8 +237,8 @@
                         "marketValue":  49000000,
                         "intlGoals":  1,
                         "intlAppearances":  10,
-                        "assists":  26,
-                        "yellowCards":  15,
+                        "assists":  29,
+                        "yellowCards":  17,
                         "redCards":  0,
                         "nationality":  "France"
                     },
@@ -254,9 +254,9 @@
                         "marketValue":  17300000,
                         "intlGoals":  7,
                         "intlAppearances":  66,
-                        "assists":  44,
-                        "yellowCards":  75,
-                        "redCards":  4,
+                        "assists":  46,
+                        "yellowCards":  91,
+                        "redCards":  5,
                         "nationality":  "France"
                     },
                     {
@@ -271,9 +271,9 @@
                         "marketValue":  73000000,
                         "intlGoals":  3,
                         "intlAppearances":  50,
-                        "assists":  15,
-                        "yellowCards":  66,
-                        "redCards":  2,
+                        "assists":  16,
+                        "yellowCards":  78,
+                        "redCards":  4,
                         "nationality":  "France"
                     },
                     {
@@ -288,8 +288,8 @@
                         "marketValue":  47000000,
                         "intlGoals":  0,
                         "intlAppearances":  19,
-                        "assists":  11,
-                        "yellowCards":  42,
+                        "assists":  10,
+                        "yellowCards":  60,
                         "redCards":  2,
                         "nationality":  "France"
                     },
@@ -305,8 +305,8 @@
                         "marketValue":  164000000,
                         "intlGoals":  7,
                         "intlAppearances":  25,
-                        "assists":  80,
-                        "yellowCards":  22,
+                        "assists":  97,
+                        "yellowCards":  26,
                         "redCards":  0,
                         "nationality":  "France"
                     },
@@ -322,7 +322,7 @@
                         "marketValue":  78000000,
                         "intlGoals":  1,
                         "intlAppearances":  13,
-                        "assists":  13,
+                        "assists":  14,
                         "yellowCards":  14,
                         "redCards":  0,
                         "nationality":  "France"
@@ -339,9 +339,9 @@
                         "marketValue":  3900000,
                         "intlGoals":  2,
                         "intlAppearances":  69,
-                        "assists":  29,
-                        "yellowCards":  50,
-                        "redCards":  1,
+                        "assists":  40,
+                        "yellowCards":  80,
+                        "redCards":  2,
                         "nationality":  "France"
                     },
                     {
@@ -356,8 +356,8 @@
                         "marketValue":  52000000,
                         "intlGoals":  3,
                         "intlAppearances":  35,
-                        "assists":  64,
-                        "yellowCards":  27,
+                        "assists":  70,
+                        "yellowCards":  37,
                         "redCards":  3,
                         "nationality":  "France"
                     },
@@ -373,9 +373,9 @@
                         "marketValue":  212000000,
                         "intlGoals":  66,
                         "intlAppearances":  106,
-                        "assists":  123,
-                        "yellowCards":  53,
-                        "redCards":  2,
+                        "assists":  140,
+                        "yellowCards":  67,
+                        "redCards":  4,
                         "nationality":  "France"
                     },
                     {
@@ -390,8 +390,8 @@
                         "marketValue":  97000000,
                         "intlGoals":  13,
                         "intlAppearances":  67,
-                        "assists":  107,
-                        "yellowCards":  39,
+                        "assists":  114,
+                        "yellowCards":  46,
                         "redCards":  2,
                         "nationality":  "France"
                     },
@@ -407,8 +407,8 @@
                         "marketValue":  124000000,
                         "intlGoals":  3,
                         "intlAppearances":  15,
-                        "assists":  28,
-                        "yellowCards":  14,
+                        "assists":  37,
+                        "yellowCards":  18,
                         "redCards":  0,
                         "nationality":  "France"
                     },
@@ -424,9 +424,9 @@
                         "marketValue":  29000000,
                         "intlGoals":  2,
                         "intlAppearances":  7,
-                        "assists":  20,
-                        "yellowCards":  22,
-                        "redCards":  1,
+                        "assists":  22,
+                        "yellowCards":  28,
+                        "redCards":  2,
                         "nationality":  "France"
                     },
                     {
@@ -441,8 +441,8 @@
                         "marketValue":  87000000,
                         "intlGoals":  6,
                         "intlAppearances":  28,
-                        "assists":  44,
-                        "yellowCards":  13,
+                        "assists":  53,
+                        "yellowCards":  19,
                         "redCards":  1,
                         "nationality":  "France"
                     }

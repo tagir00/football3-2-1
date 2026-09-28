@@ -17,8 +17,8 @@
                         "intlGoals":  0,
                         "intlAppearances":  8,
                         "assists":  0,
-                        "yellowCards":  33,
-                        "redCards":  2,
+                        "yellowCards":  37,
+                        "redCards":  3,
                         "nationality":  "Argentina"
                     },
                     {
@@ -33,8 +33,8 @@
                         "marketValue":  3200000,
                         "intlGoals":  0,
                         "intlAppearances":  4,
-                        "assists":  0,
-                        "yellowCards":  15,
+                        "assists":  1,
+                        "yellowCards":  17,
                         "redCards":  1,
                         "nationality":  "Argentina"
                     },
@@ -51,7 +51,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  67,
                         "assists":  1,
-                        "yellowCards":  28,
+                        "yellowCards":  33,
                         "redCards":  1,
                         "nationality":  "Argentina"
                     },
@@ -67,9 +67,9 @@
                         "marketValue":  3800000,
                         "intlGoals":  1,
                         "intlAppearances":  83,
-                        "assists":  35,
-                        "yellowCards":  70,
-                        "redCards":  7,
+                        "assists":  43,
+                        "yellowCards":  130,
+                        "redCards":  11,
                         "nationality":  "Argentina"
                     },
                     {
@@ -84,8 +84,8 @@
                         "marketValue":  23000000,
                         "intlGoals":  0,
                         "intlAppearances":  5,
-                        "assists":  18,
-                        "yellowCards":  51,
+                        "assists":  21,
+                        "yellowCards":  68,
                         "redCards":  1,
                         "nationality":  "Argentina"
                     },
@@ -101,9 +101,9 @@
                         "marketValue":  48000000,
                         "intlGoals":  2,
                         "intlAppearances":  35,
-                        "assists":  10,
-                        "yellowCards":  43,
-                        "redCards":  1,
+                        "assists":  15,
+                        "yellowCards":  59,
+                        "redCards":  2,
                         "nationality":  "Argentina"
                     },
                     {
@@ -118,8 +118,8 @@
                         "marketValue":  14600000,
                         "intlGoals":  1,
                         "intlAppearances":  65,
-                        "assists":  28,
-                        "yellowCards":  27,
+                        "assists":  31,
+                        "yellowCards":  33,
                         "redCards":  3,
                         "nationality":  "Argentina"
                     },
@@ -135,8 +135,8 @@
                         "marketValue":  46000000,
                         "intlGoals":  4,
                         "intlAppearances":  58,
-                        "assists":  18,
-                        "yellowCards":  89,
+                        "assists":  15,
+                        "yellowCards":  106,
                         "redCards":  9,
                         "nationality":  "Argentina"
                     },
@@ -152,9 +152,9 @@
                         "marketValue":  4800000,
                         "intlGoals":  2,
                         "intlAppearances":  45,
-                        "assists":  13,
-                        "yellowCards":  37,
-                        "redCards":  2,
+                        "assists":  30,
+                        "yellowCards":  81,
+                        "redCards":  3,
                         "nationality":  "Argentina"
                     },
                     {
@@ -169,9 +169,9 @@
                         "marketValue":  1100000,
                         "intlGoals":  8,
                         "intlAppearances":  139,
-                        "assists":  23,
-                        "yellowCards":  130,
-                        "redCards":  7,
+                        "assists":  26,
+                        "yellowCards":  214,
+                        "redCards":  10,
                         "nationality":  "Argentina"
                     },
                     {
@@ -187,7 +187,7 @@
                         "intlGoals":  0,
                         "intlAppearances":  14,
                         "assists":  12,
-                        "yellowCards":  68,
+                        "yellowCards":  85,
                         "redCards":  2,
                         "nationality":  "Argentina"
                     },
@@ -203,8 +203,8 @@
                         "marketValue":  5300000,
                         "intlGoals":  5,
                         "intlAppearances":  84,
-                        "assists":  41,
-                        "yellowCards":  107,
+                        "assists":  39,
+                        "yellowCards":  131,
                         "redCards":  5,
                         "nationality":  "Argentina"
                     },
@@ -220,8 +220,8 @@
                         "marketValue":  14500000,
                         "intlGoals":  2,
                         "intlAppearances":  94,
-                        "assists":  76,
-                        "yellowCards":  80,
+                        "assists":  89,
+                        "yellowCards":  108,
                         "redCards":  6,
                         "nationality":  "Argentina"
                     },
@@ -237,9 +237,9 @@
                         "marketValue":  97000000,
                         "intlGoals":  8,
                         "intlAppearances":  49,
-                        "assists":  36,
-                        "yellowCards":  42,
-                        "redCards":  0,
+                        "assists":  50,
+                        "yellowCards":  64,
+                        "redCards":  3,
                         "nationality":  "Argentina"
                     },
                     {
@@ -254,8 +254,8 @@
                         "marketValue":  77000000,
                         "intlGoals":  7,
                         "intlAppearances":  54,
-                        "assists":  27,
-                        "yellowCards":  44,
+                        "assists":  30,
+                        "yellowCards":  51,
                         "redCards":  1,
                         "nationality":  "Argentina"
                     },
@@ -271,8 +271,8 @@
                         "marketValue":  86000000,
                         "intlGoals":  1,
                         "intlAppearances":  11,
-                        "assists":  18,
-                        "yellowCards":  12,
+                        "assists":  27,
+                        "yellowCards":  20,
                         "redCards":  0,
                         "nationality":  "Argentina"
                     },
@@ -288,9 +288,9 @@
                         "marketValue":  23000000,
                         "intlGoals":  6,
                         "intlAppearances":  58,
-                        "assists":  31,
-                        "yellowCards":  28,
-                        "redCards":  3,
+                        "assists":  34,
+                        "yellowCards":  40,
+                        "redCards":  4,
                         "nationality":  "A"
                     },
                     {
@@ -305,9 +305,9 @@
                         "marketValue":  21000000,
                         "intlGoals":  5,
                         "intlAppearances":  21,
-                        "assists":  7,
-                        "yellowCards":  7,
-                        "redCards":  1,
+                        "assists":  43,
+                        "yellowCards":  36,
+                        "redCards":  3,
                         "nationality":  "Argentina"
                     },
                     {
@@ -322,9 +322,9 @@
                         "marketValue":  7800000,
                         "intlGoals":  5,
                         "intlAppearances":  68,
-                        "assists":  33,
-                        "yellowCards":  47,
-                        "redCards":  2,
+                        "assists":  47,
+                        "yellowCards":  70,
+                        "redCards":  5,
                         "nationality":  "Argentina"
                     },
                     {
@@ -339,9 +339,9 @@
                         "marketValue":  44000000,
                         "intlGoals":  2,
                         "intlAppearances":  16,
-                        "assists":  19,
-                        "yellowCards":  13,
-                        "redCards":  0,
+                        "assists":  24,
+                        "yellowCards":  22,
+                        "redCards":  1,
                         "nationality":  "Argentina"
                     },
                     {
@@ -356,9 +356,9 @@
                         "marketValue":  26000000,
                         "intlGoals":  0,
                         "intlAppearances":  41,
-                        "assists":  17,
-                        "yellowCards":  28,
-                        "redCards":  0,
+                        "assists":  28,
+                        "yellowCards":  40,
+                        "redCards":  2,
                         "nationality":  "Argentina"
                     },
                     {
@@ -373,8 +373,8 @@
                         "marketValue":  44000000,
                         "intlGoals":  2,
                         "intlAppearances":  5,
-                        "assists":  8,
-                        "yellowCards":  11,
+                        "assists":  13,
+                        "yellowCards":  15,
                         "redCards":  1,
                         "nationality":  "Argentina"
                     },
@@ -390,9 +390,9 @@
                         "marketValue":  80000000,
                         "intlGoals":  40,
                         "intlAppearances":  84,
-                        "assists":  58,
-                        "yellowCards":  58,
-                        "redCards":  1,
+                        "assists":  63,
+                        "yellowCards":  83,
+                        "redCards":  2,
                         "nationality":  "Argentina"
                     },
                     {
@@ -407,9 +407,9 @@
                         "marketValue":  16300000,
                         "intlGoals":  125,
                         "intlAppearances":  207,
-                        "assists":  253,
-                        "yellowCards":  54,
-                        "redCards":  1,
+                        "assists":  397,
+                        "yellowCards":  108,
+                        "redCards":  4,
                         "nationality":  "Argentina"
                     },
                     {
@@ -424,8 +424,8 @@
                         "marketValue":  116000000,
                         "intlGoals":  15,
                         "intlAppearances":  59,
-                        "assists":  36,
-                        "yellowCards":  14,
+                        "assists":  68,
+                        "yellowCards":  19,
                         "redCards":  0,
                         "nationality":  "Argentina"
                     },
@@ -441,8 +441,8 @@
                         "marketValue":  26000000,
                         "intlGoals":  0,
                         "intlAppearances":  7,
-                        "assists":  5,
-                        "yellowCards":  7,
+                        "assists":  31,
+                        "yellowCards":  42,
                         "redCards":  0,
                         "nationality":  "Argentina"
                     }

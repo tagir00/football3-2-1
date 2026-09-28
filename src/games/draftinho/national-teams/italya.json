@@ -17,8 +17,8 @@
                         "intlGoals":  0,
                         "intlAppearances":  76,
                         "assists":  0,
-                        "yellowCards":  4,
-                        "redCards":  0,
+                        "yellowCards":  49,
+                        "redCards":  2,
                         "nationality":  "Italy"
                     },
                     {
@@ -33,9 +33,9 @@
                         "marketValue":  30000000,
                         "intlGoals":  0,
                         "intlAppearances":  7,
-                        "assists":  0,
-                        "yellowCards":  3,
-                        "redCards":  0,
+                        "assists":  1,
+                        "yellowCards":  23,
+                        "redCards":  1,
                         "nationality":  "Italy"
                     },
                     {
@@ -50,9 +50,9 @@
                         "marketValue":  15000000,
                         "intlGoals":  0,
                         "intlAppearances":  8,
-                        "assists":  0,
-                        "yellowCards":  1,
-                        "redCards":  0,
+                        "assists":  1,
+                        "yellowCards":  4,
+                        "redCards":  1,
                         "nationality":  "Italy"
                     },
                     {
@@ -67,9 +67,9 @@
                         "marketValue":  60000000,
                         "intlGoals":  2,
                         "intlAppearances":  36,
-                        "assists":  14,
-                        "yellowCards":  35,
-                        "redCards":  1,
+                        "assists":  30,
+                        "yellowCards":  64,
+                        "redCards":  3,
                         "nationality":  "Italy"
                     },
                     {
@@ -84,9 +84,9 @@
                         "marketValue":  15000000,
                         "intlGoals":  4,
                         "intlAppearances":  53,
-                        "assists":  22,
-                        "yellowCards":  33,
-                        "redCards":  0,
+                        "assists":  60,
+                        "yellowCards":  91,
+                        "redCards":  2,
                         "nationality":  "Italy"
                     },
                     {
@@ -101,8 +101,8 @@
                         "marketValue":  40000000,
                         "intlGoals":  2,
                         "intlAppearances":  32,
-                        "assists":  22,
-                        "yellowCards":  22,
+                        "assists":  68,
+                        "yellowCards":  33,
                         "redCards":  0,
                         "nationality":  "Italy"
                     },
@@ -118,9 +118,9 @@
                         "marketValue":  38000000,
                         "intlGoals":  0,
                         "intlAppearances":  17,
-                        "assists":  1,
-                        "yellowCards":  17,
-                        "redCards":  0,
+                        "assists":  7,
+                        "yellowCards":  37,
+                        "redCards":  1,
                         "nationality":  "Italy"
                     },
                     {
@@ -135,9 +135,9 @@
                         "marketValue":  45000000,
                         "intlGoals":  1,
                         "intlAppearances":  17,
-                        "assists":  3,
-                        "yellowCards":  9,
-                        "redCards":  1,
+                        "assists":  18,
+                        "yellowCards":  38,
+                        "redCards":  2,
                         "nationality":  "Italy"
                     },
                     {
@@ -152,9 +152,9 @@
                         "marketValue":  15000000,
                         "intlGoals":  1,
                         "intlAppearances":  27,
-                        "assists":  6,
-                        "yellowCards":  53,
-                        "redCards":  4,
+                        "assists":  16,
+                        "yellowCards":  119,
+                        "redCards":  7,
                         "nationality":  "Italy"
                     },
                     {
@@ -169,9 +169,9 @@
                         "marketValue":  45000000,
                         "intlGoals":  0,
                         "intlAppearances":  16,
-                        "assists":  10,
-                        "yellowCards":  17,
-                        "redCards":  0,
+                        "assists":  35,
+                        "yellowCards":  44,
+                        "redCards":  2,
                         "nationality":  "Italy"
                     },
                     {
@@ -186,9 +186,9 @@
                         "marketValue":  25000000,
                         "intlGoals":  0,
                         "intlAppearances":  6,
-                        "assists":  2,
-                        "yellowCards":  15,
-                        "redCards":  0,
+                        "assists":  24,
+                        "yellowCards":  18,
+                        "redCards":  1,
                         "nationality":  "Italy"
                     },
                     {
@@ -203,9 +203,9 @@
                         "marketValue":  70000000,
                         "intlGoals":  10,
                         "intlAppearances":  63,
-                        "assists":  46,
-                        "yellowCards":  61,
-                        "redCards":  1,
+                        "assists":  77,
+                        "yellowCards":  122,
+                        "redCards":  6,
                         "nationality":  "Italy"
                     },
                     {
@@ -220,9 +220,9 @@
                         "marketValue":  70000000,
                         "intlGoals":  4,
                         "intlAppearances":  27,
-                        "assists":  9,
-                        "yellowCards":  50,
-                        "redCards":  2,
+                        "assists":  39,
+                        "yellowCards":  71,
+                        "redCards":  1,
                         "nationality":  "Italy"
                     },
                     {
@@ -237,8 +237,8 @@
                         "marketValue":  25000000,
                         "intlGoals":  3,
                         "intlAppearances":  33,
-                        "assists":  10,
-                        "yellowCards":  40,
+                        "assists":  30,
+                        "yellowCards":  95,
                         "redCards":  1,
                         "nationality":  "Italy"
                     },
@@ -254,8 +254,8 @@
                         "marketValue":  38000000,
                         "intlGoals":  8,
                         "intlAppearances":  27,
-                        "assists":  16,
-                        "yellowCards":  26,
+                        "assists":  24,
+                        "yellowCards":  28,
                         "redCards":  0,
                         "nationality":  "Italy"
                     },
@@ -271,9 +271,9 @@
                         "marketValue":  35000000,
                         "intlGoals":  1,
                         "intlAppearances":  16,
-                        "assists":  6,
-                        "yellowCards":  16,
-                        "redCards":  0,
+                        "assists":  16,
+                        "yellowCards":  38,
+                        "redCards":  3,
                         "nationality":  "Italy"
                     },
                     {
@@ -288,9 +288,9 @@
                         "marketValue":  22000000,
                         "intlGoals":  0,
                         "intlAppearances":  9,
-                        "assists":  3,
-                        "yellowCards":  10,
-                        "redCards":  0,
+                        "assists":  15,
+                        "yellowCards":  48,
+                        "redCards":  3,
                         "nationality":  "Italy"
                     },
                     {
@@ -305,9 +305,9 @@
                         "marketValue":  18000000,
                         "intlGoals":  4,
                         "intlAppearances":  37,
-                        "assists":  46,
-                        "yellowCards":  32,
-                        "redCards":  1,
+                        "assists":  70,
+                        "yellowCards":  79,
+                        "redCards":  6,
                         "nationality":  "Italy"
                     },
                     {
@@ -322,9 +322,9 @@
                         "marketValue":  25000000,
                         "intlGoals":  8,
                         "intlAppearances":  53,
-                        "assists":  25,
-                        "yellowCards":  20,
-                        "redCards":  0,
+                        "assists":  55,
+                        "yellowCards":  47,
+                        "redCards":  3,
                         "nationality":  "Italy"
                     },
                     {
@@ -339,9 +339,9 @@
                         "marketValue":  45000000,
                         "intlGoals":  8,
                         "intlAppearances":  20,
-                        "assists":  8,
-                        "yellowCards":  10,
-                        "redCards":  0,
+                        "assists":  23,
+                        "yellowCards":  35,
+                        "redCards":  1,
                         "nationality":  "Italy"
                     },
                     {
@@ -356,9 +356,9 @@
                         "marketValue":  40000000,
                         "intlGoals":  6,
                         "intlAppearances":  27,
-                        "assists":  5,
-                        "yellowCards":  10,
-                        "redCards":  0,
+                        "assists":  15,
+                        "yellowCards":  43,
+                        "redCards":  3,
                         "nationality":  "Italy"
                     },
                     {
@@ -373,9 +373,9 @@
                         "marketValue":  15000000,
                         "intlGoals":  4,
                         "intlAppearances":  32,
-                        "assists":  38,
-                        "yellowCards":  30,
-                        "redCards":  0,
+                        "assists":  75,
+                        "yellowCards":  55,
+                        "redCards":  3,
                         "nationality":  "Italy"
                     },
                     {
@@ -390,9 +390,9 @@
                         "marketValue":  32000000,
                         "intlGoals":  10,
                         "intlAppearances":  40,
-                        "assists":  8,
-                        "yellowCards":  8,
-                        "redCards":  0,
+                        "assists":  23,
+                        "yellowCards":  15,
+                        "redCards":  1,
                         "nationality":  "Italy"
                     },
                     {
@@ -407,9 +407,9 @@
                         "marketValue":  25000000,
                         "intlGoals":  3,
                         "intlAppearances":  27,
-                        "assists":  32,
-                        "yellowCards":  33,
-                        "redCards":  0,
+                        "assists":  61,
+                        "yellowCards":  88,
+                        "redCards":  3,
                         "nationality":  "Italy"
                     },
                     {
@@ -424,8 +424,8 @@
                         "marketValue":  25000000,
                         "intlGoals":  3,
                         "intlAppearances":  16,
-                        "assists":  4,
-                        "yellowCards":  15,
+                        "assists":  15,
+                        "yellowCards":  25,
                         "redCards":  0,
                         "nationality":  "Italy"
                     },
@@ -441,9 +441,9 @@
                         "marketValue":  25000000,
                         "intlGoals":  1,
                         "intlAppearances":  5,
-                        "assists":  1,
-                        "yellowCards":  5,
-                        "redCards":  0,
+                        "assists":  11,
+                        "yellowCards":  32,
+                        "redCards":  4,
                         "nationality":  "Italy"
                     }
                 ]

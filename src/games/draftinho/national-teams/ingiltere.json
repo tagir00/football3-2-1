@@ -16,8 +16,8 @@
                         "marketValue":  29000000,
                         "intlGoals":  0,
                         "intlAppearances":  6,
-                        "assists":  0,
-                        "yellowCards":  18,
+                        "assists":  2,
+                        "yellowCards":  20,
                         "redCards":  0,
                         "nationality":  "England"
                     },
@@ -33,8 +33,8 @@
                         "marketValue":  27000000,
                         "intlGoals":  0,
                         "intlAppearances":  2,
-                        "assists":  0,
-                        "yellowCards":  2,
+                        "assists":  3,
+                        "yellowCards":  14,
                         "redCards":  0,
                         "nationality":  "England"
                     },
@@ -50,9 +50,9 @@
                         "marketValue":  13900000,
                         "intlGoals":  0,
                         "intlAppearances":  91,
-                        "assists":  2,
-                        "yellowCards":  27,
-                        "redCards":  0,
+                        "assists":  3,
+                        "yellowCards":  37,
+                        "redCards":  3,
                         "nationality":  "England"
                     },
                     {
@@ -67,8 +67,8 @@
                         "marketValue":  47000000,
                         "intlGoals":  2,
                         "intlAppearances":  28,
-                        "assists":  3,
-                        "yellowCards":  32,
+                        "assists":  5,
+                        "yellowCards":  55,
                         "redCards":  5,
                         "nationality":  "England"
                     },
@@ -84,9 +84,9 @@
                         "marketValue":  48000000,
                         "intlGoals":  0,
                         "intlAppearances":  6,
-                        "assists":  3,
-                        "yellowCards":  13,
-                        "redCards":  0,
+                        "assists":  4,
+                        "yellowCards":  17,
+                        "redCards":  2,
                         "nationality":  "England"
                     },
                     {
@@ -102,8 +102,8 @@
                         "intlGoals":  3,
                         "intlAppearances":  94,
                         "assists":  9,
-                        "yellowCards":  14,
-                        "redCards":  2,
+                        "yellowCards":  25,
+                        "redCards":  3,
                         "nationality":  "England"
                     },
                     {
@@ -119,7 +119,7 @@
                         "intlGoals":  1,
                         "intlAppearances":  37,
                         "assists":  10,
-                        "yellowCards":  31,
+                        "yellowCards":  47,
                         "redCards":  1,
                         "nationality":  "England"
                     },
@@ -135,8 +135,8 @@
                         "marketValue":  41000000,
                         "intlGoals":  0,
                         "intlAppearances":  14,
-                        "assists":  2,
-                        "yellowCards":  11,
+                        "assists":  8,
+                        "yellowCards":  20,
                         "redCards":  1,
                         "nationality":  "England"
                     },
@@ -152,9 +152,9 @@
                         "marketValue":  63000000,
                         "intlGoals":  1,
                         "intlAppearances":  29,
-                        "assists":  30,
-                        "yellowCards":  28,
-                        "redCards":  3,
+                        "assists":  34,
+                        "yellowCards":  36,
+                        "redCards":  4,
                         "nationality":  "England"
                     },
                     {
@@ -169,9 +169,9 @@
                         "marketValue":  43000000,
                         "intlGoals":  0,
                         "intlAppearances":  2,
-                        "assists":  6,
-                        "yellowCards":  21,
-                        "redCards":  1,
+                        "assists":  7,
+                        "yellowCards":  35,
+                        "redCards":  2,
                         "nationality":  "England"
                     },
                     {
@@ -186,9 +186,9 @@
                         "marketValue":  4099999,
                         "intlGoals":  0,
                         "intlAppearances":  11,
-                        "assists":  10,
-                        "yellowCards":  53,
-                        "redCards":  1,
+                        "assists":  15,
+                        "yellowCards":  106,
+                        "redCards":  2,
                         "nationality":  "England"
                     },
                     {
@@ -203,8 +203,8 @@
                         "marketValue":  76000000,
                         "intlGoals":  0,
                         "intlAppearances":  12,
-                        "assists":  8,
-                        "yellowCards":  10,
+                        "assists":  9,
+                        "yellowCards":  12,
                         "redCards":  0,
                         "nationality":  "England"
                     },
@@ -220,8 +220,8 @@
                         "marketValue":  151000000,
                         "intlGoals":  13,
                         "intlAppearances":  56,
-                        "assists":  60,
-                        "yellowCards":  59,
+                        "assists":  63,
+                        "yellowCards":  77,
                         "redCards":  4,
                         "nationality":  "England"
                     },
@@ -237,8 +237,8 @@
                         "marketValue":  68000000,
                         "intlGoals":  0,
                         "intlAppearances":  17,
-                        "assists":  14,
-                        "yellowCards":  25,
+                        "assists":  20,
+                        "yellowCards":  31,
                         "redCards":  1,
                         "nationality":  "England"
                     },
@@ -254,8 +254,8 @@
                         "marketValue":  69000000,
                         "intlGoals":  3,
                         "intlAppearances":  22,
-                        "assists":  33,
-                        "yellowCards":  14,
+                        "assists":  47,
+                        "yellowCards":  19,
                         "redCards":  0,
                         "nationality":  "England"
                     },
@@ -271,8 +271,8 @@
                         "marketValue":  105000000,
                         "intlGoals":  1,
                         "intlAppearances":  22,
-                        "assists":  31,
-                        "yellowCards":  28,
+                        "assists":  45,
+                        "yellowCards":  38,
                         "redCards":  0,
                         "nationality":  "England"
                     },
@@ -288,8 +288,8 @@
                         "marketValue":  72000000,
                         "intlGoals":  0,
                         "intlAppearances":  14,
-                        "assists":  5,
-                        "yellowCards":  14,
+                        "assists":  6,
+                        "yellowCards":  16,
                         "redCards":  0,
                         "nationality":  "England"
                     },
@@ -305,8 +305,8 @@
                         "marketValue":  114000000,
                         "intlGoals":  8,
                         "intlAppearances":  83,
-                        "assists":  43,
-                        "yellowCards":  51,
+                        "assists":  46,
+                        "yellowCards":  61,
                         "redCards":  1,
                         "nationality":  "England"
                     },
@@ -321,8 +321,8 @@
                         "marketValue":  1300000,
                         "intlGoals":  3,
                         "intlAppearances":  90,
-                        "assists":  66,
-                        "yellowCards":  63,
+                        "assists":  87,
+                        "yellowCards":  95,
                         "redCards":  2,
                         "nationality":  "England"
                     },
@@ -338,8 +338,8 @@
                         "marketValue":  115000000,
                         "intlGoals":  17,
                         "intlAppearances":  56,
-                        "assists":  73,
-                        "yellowCards":  32,
+                        "assists":  81,
+                        "yellowCards":  36,
                         "redCards":  0,
                         "nationality":  "England"
                     },
@@ -355,9 +355,9 @@
                         "marketValue":  65000000,
                         "intlGoals":  85,
                         "intlAppearances":  121,
-                        "assists":  104,
-                        "yellowCards":  57,
-                        "redCards":  0,
+                        "assists":  103,
+                        "yellowCards":  66,
+                        "redCards":  1,
                         "nationality":  "England"
                     },
                     {
@@ -372,8 +372,8 @@
                         "marketValue":  82000000,
                         "intlGoals":  4,
                         "intlAppearances":  25,
-                        "assists":  30,
-                        "yellowCards":  32,
+                        "assists":  41,
+                        "yellowCards":  37,
                         "redCards":  3,
                         "nationality":  "England"
                     },
@@ -389,8 +389,8 @@
                         "marketValue":  38000000,
                         "intlGoals":  19,
                         "intlAppearances":  78,
-                        "assists":  88,
-                        "yellowCards":  38,
+                        "assists":  100,
+                        "yellowCards":  40,
                         "redCards":  2,
                         "nationality":  "England"
                     },
@@ -406,8 +406,8 @@
                         "marketValue":  26000000,
                         "intlGoals":  7,
                         "intlAppearances":  24,
-                        "assists":  47,
-                        "yellowCards":  27,
+                        "assists":  82,
+                        "yellowCards":  53,
                         "redCards":  1,
                         "nationality":  "England"
                     },
@@ -423,9 +423,9 @@
                         "marketValue":  22000000,
                         "intlGoals":  1,
                         "intlAppearances":  10,
-                        "assists":  32,
-                        "yellowCards":  35,
-                        "redCards":  0,
+                        "assists":  71,
+                        "yellowCards":  107,
+                        "redCards":  4,
                         "nationality":  "England"
                     },
                     {
@@ -440,8 +440,8 @@
                         "marketValue":  54000000,
                         "intlGoals":  1,
                         "intlAppearances":  16,
-                        "assists":  26,
-                        "yellowCards":  9,
+                        "assists":  27,
+                        "yellowCards":  10,
                         "redCards":  0,
                         "nationality":  "England"
                     }
