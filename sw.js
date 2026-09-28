@@ -1,4 +1,4 @@
-const CACHE_NAME = 'oyun-kutusu-v72';
+const CACHE_NAME = 'oyun-kutusu-v73';
 const APP_ASSETS = [
   './',
   './index.html',
@@ -10,6 +10,10 @@ const APP_ASSETS = [
   './src/core/storage.js',
   './manifest.webmanifest',
   './assets/icons/icon.svg',
+  // 3-2-1 GO country flags (~140 KB) so Ulke-Kulup mode works offline
+  ...'al am ar at az ba be bg br ca ch ci cl cm co cz de dk dz ec eg es fr ga gb-eng ge gh gr hr hu ie it jm ma mx ng nl no pl pt ro rs se si sk sn tg tr ua us uy'
+    .split(' ')
+    .map((code) => `./assets/flags/${code}.png`),
 ];
 
 // Oyun modulleri (src/games/**) burada onceden yuklenmez; lazy-load edildikce

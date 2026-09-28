@@ -69,6 +69,8 @@ const wikiClubTitleOverrides = new Map([
 // The pool is thousands of Transfermarkt careers, so a pairing needs at least
 // this many players behind it — one journeyman alone is too obscure to guess.
 const MIN_LINKING_PLAYERS = 2;
+// Share of club-club rounds that may pair two clubs from the same country.
+const SAME_COUNTRY_SHARE = 0.2;
 
 let connectionsPromise = null;
 
@@ -328,8 +330,9 @@ function loadImageSource(url) {
   });
 }
 
+// Bundled copies of flagcdn.com's w320 PNGs, so flags also show offline.
 function countryFlagUrl(code) {
-  return `https://flagcdn.com/w320/${code}.png`;
+  return `./assets/flags/${code}.png`;
 }
 
 function createCardMarkup(entry) {
@@ -596,7 +599,18 @@ export async function mount(container) {
       state.usedEntityNames.clear();
       pool = clubClubConnections;
     }
-    const connection = pickRandomEntry(pool);
+    // Transfers mostly happen inside a league, so about a third of all
+    // pairings are two clubs from the same country. Pick those only
+    // SAME_COUNTRY_SHARE of the time so rounds mix leagues.
+    const sameCountry = pool.filter(
+      (c) => getClubHomeCountry(c.clubs[0]) === getClubHomeCountry(c.clubs[1]),
+    );
+    const crossCountry = pool.filter(
+      (c) => getClubHomeCountry(c.clubs[0]) !== getClubHomeCountry(c.clubs[1]),
+    );
+    const preferSame = Math.random() < SAME_COUNTRY_SHARE;
+    const preferred = preferSame ? sameCountry : crossCountry;
+    const connection = pickRandomEntry(preferred.length > 0 ? preferred : pool);
     state.usedEntityNames.add(connection.clubs[0]);
     state.usedEntityNames.add(connection.clubs[1]);
     return {
