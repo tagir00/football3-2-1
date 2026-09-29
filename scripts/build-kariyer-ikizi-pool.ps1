@@ -48,6 +48,14 @@ $clubs = ToMap (Jf "$data\tm-clubs.json")
 $comps = ToMap (Jf "$data\tm-player-competitions.json")
 $profiles = ToMap (Jf "$data\tm-player-profile.json")
 
+# Heights the TM profile leaves empty (Gullit, Keane, Ribéry...): Wikidata P2048
+# (data/wikidata-height.json, { tmId: cm }), then players.csv
+$wdHeight = if (Test-Path "$data\wikidata-height.json") { ToMap (Jf "$data\wikidata-height.json") } else { @{} }
+$csvHeight = @{}
+foreach ($r in Import-Csv -LiteralPath (Join-Path $data 'csv\archive\players.csv')) {
+  if ($r.height_in_cm -and [int]$r.height_in_cm -ge 150) { $csvHeight[$r.player_id] = [int]$r.height_in_cm }
+}
+
 function Senior($clubId) {
   $c = $clubs[[string]$clubId]
   if (-not $c -or $c.nt -or $c.type -notin 0, 1, 2) { return $false }
@@ -95,6 +103,8 @@ foreach ($row in $rows) {
   $assistsOk = $year -ge 1978
   if ($birth) { $v.b = $birth }
   if ($prof -and $prof.h -ge 150) { $v.h = [int]$prof.h }
+  elseif ($id -and $wdHeight.ContainsKey($id)) { $v.h = [int]$wdHeight[$id] }
+  elseif ($id -and $csvHeight.ContainsKey($id)) { $v.h = $csvHeight[$id] }
 
   $p = if ($id) { $perf[$id] } else { $null }
   if ($p) {
@@ -135,6 +145,12 @@ foreach ($row in $rows) {
     $assists = if ($L.s -and $null -ne $row.($L.s)) { [int]$row.($L.s) } elseif ($played -and $assistsOk) { [int]$tm[2] } else { $null }
     if ($null -ne $assists) { $v["${code}s"] = $assists }
   }
+
+  # Club games can't be fewer than the league games inside them; Transfermarkt's
+  # pre-1990 club totals are incomplete (Şenol Ustaömer: 310 official Süper Lig
+  # games vs 260 TM club games), so the league sum is a floor.
+  $leagueApps = 0; foreach ($code in $LEAGUES.Keys) { $leagueApps += [int]$v["${code}a"] }
+  if ($v.ContainsKey('ca') -and $leagueApps -gt [int]$v.ca) { $v.ca = $leagueApps }
 
   if (-not $v.ca -and -not $v.pla -and -not $v.saa -and -not $v.sla) { continue }
 
